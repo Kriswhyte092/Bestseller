@@ -1,7 +1,9 @@
 import openpyxl
+import csv
+from datetime import datetime
 
 
-class BonusProcessor:
+class BonusProcessorRefined:
     # Define the bonus thresholds
     bonus_thresholds = {
         80: 2000,
@@ -20,12 +22,18 @@ class BonusProcessor:
 
     def load_workbook(self):
         """Load the workbook and return the active sheet."""
-        workbook = openpyxl.load_workbook(self.file_path)
+        workbook = openpyxl.load_workbook(self.file_path, data_only=True)
         return workbook.active
 
     def extract_dates(self):
-        """Extract dates from the first row of the sheet."""
-        return [cell.value for cell in self.sheet[1]]
+        """Extract dates from the top rows of the sheet."""
+        dates = []
+        for cell in self.sheet[2]:
+            if isinstance(cell.value, (str, datetime)):
+                dates.append(cell.value)
+            else:
+                dates.append(None)
+        return dates
 
     def get_bonus(self, index):
         """Get the bonus based on the index."""
@@ -34,36 +42,42 @@ class BonusProcessor:
                 return self.bonus_thresholds[threshold]
         return 0
 
-    def process_stores(self):
-        """Process each store and print the store name, date, index, and bonus."""
+    def process_stores(self, output_file):
+        """
+        Process each store and write results to a CSV file.
+        """
+        rows = []
         for row in self.sheet.iter_rows(
-            min_row=4, max_row=14, min_col=1, max_col=self.sheet.max_column
+            min_row=4, min_col=1, max_col=self.sheet.max_column
         ):
             store_name = row[0].value
             for i, cell in enumerate(row[1:], start=1):
-                index_str = cell.value
-                if isinstance(index_str, str) and index_str.endswith("%"):
+                if isinstance(cell.value, str) and "%" in cell.value:
                     try:
-                        index = int(index_str[:-1])
+                        index = int(cell.value.replace("%", "").strip())
                         if index >= 100 or (
-                            index > 0 and store_name in ["VMK", "VIK", "NIK"]
+                            index >= 80 and store_name in ["VMK", "VIK", "NIK"]
                         ):
                             bonus = self.get_bonus(index)
-                            print(
-                                f"Store: {store_name}, Date: {self.dates[i]}, Index: {index}, Bonus: {bonus}"
-                            )
+                            if self.dates[i]:
+                                rows.append([self.dates[i], store_name, bonus])
                     except ValueError:
-                        print(
-                            f"Invalid index value: {index_str} for store {store_name} on date {self.dates[i]}"
-                        )
+                        continue
+
+        # Write the results to a CSV file
+        with open(output_file, mode="w", newline="", encoding="utf-8") as file:
+            writer = csv.writer(file)
+            writer.writerow(["Date", "Store", "Bonus"])
+            writer.writerows(rows)
 
 
-def main():
-    """Main function to execute the script."""
-    file_path = r"office/bonus_prjct/Solubonusar_Bestseller_okt2024.xlsx"
-    processor = BonusProcessor(file_path)
-    processor.process_stores()
+# File paths
+refined_output_file_path = "office/bonus_prjct/refined_bonus_results.csv"
 
+# Process the refined logic
+refined_processor = BonusProcessorRefined(
+    "office/bonus_prjct/Solubonusar_Bestseller_okt2024.xlsx"
+)
+refined_processor.process_stores(refined_output_file_path)
 
-if __name__ == "__main__":
-    main()
+refined_output_file_path

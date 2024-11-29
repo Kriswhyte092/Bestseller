@@ -19,13 +19,7 @@ name_mapping = {
 
 def format_date(value):
     if isinstance(value, datetime):
-        return value.strftime("%d %b").lstrip("0")
-    elif isinstance(value, str):
-        try:
-            date_obj = datetime.strptime(value, "%d.%m.%Y")
-            return date_obj.strftime("%d %b").lstrip("0")
-        except ValueError:
-            return value
+        return value.strftime("%d.%m.%Y")
     return value
 
 
@@ -133,20 +127,18 @@ def pair_and_print(file_path, output_csv):
                 index[0] = 0  # Default to 0 if there is not a number in the index
             bonus = get_bonus(name, index[0])
             if bonus != 0:  # Only include entries with a non-zero bonus
-                formatted_result.append(
-                    {"date": format_date(date), "name": name, "index": bonus}
-                )
+                formatted_result.append({"date": date, "name": name, "index": bonus})
 
-    # Write the formatted result to a CSV file without the header
+    # Write the formatted result to a CSV file
     with open(output_csv, mode="w", newline="") as file:
-        writer = csv.writer(file)
-        for row in formatted_result:
-            writer.writerow([row["date"], row["name"], row["index"]])
+        writer = csv.DictWriter(file, fieldnames=["date", "name", "index"])
+        writer.writeheader()
+        writer.writerows(formatted_result)
 
     print(f"The formatted result has been written to {output_csv}")
 
 
 # Example usage
 file_path = "office/bonus_prjct/Solubonusar_Bestseller_okt2024.xlsx"
-output_csv = "office/bonus_prjct/output.csv"
+output_csv = "output.csv"
 pair_and_print(file_path, output_csv)

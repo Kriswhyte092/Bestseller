@@ -26,25 +26,6 @@ class EmployeeBonusProcessor:
                     shifts_data[date].append(row)
         return shifts_data
 
-    def _preprocess_bonuses(self, bonus_file):
-        """
-        Preprocess the bonus file to ensure correct headers and formatting.
-        """
-        bonuses = pd.read_csv(bonus_file, encoding="latin1", header=None)
-
-        # Check and rename columns dynamically if required
-        if bonuses.shape[1] == 3:
-            bonuses.columns = ["Date", "Store", "Bonus"]
-        else:
-            raise ValueError("Unexpected file structure in bonuses file.")
-
-        # Clean and normalize data
-        bonuses["Date"] = bonuses["Date"].str.strip()
-        bonuses["Store"] = bonuses["Store"].str.strip()
-        bonuses["Bonus"] = bonuses["Bonus"].astype(float)
-
-        return bonuses
-
     def _extract_employees(self, shift, store):
         """
         Extract employees working at a specific store in a shift entry.
@@ -64,11 +45,13 @@ class EmployeeBonusProcessor:
         """
         Process the bonuses from the bonuses file and assign them to employees.
         """
-        bonuses = self._preprocess_bonuses(self.bonus_file)
+        bonuses = pd.read_csv(
+            self.bonus_file, header=None, names=["Date", "Store", "Bonus"]
+        )
         employee_bonuses = defaultdict(float)
 
         for _, row in bonuses.iterrows():
-            date, store, bonus = row["Date"], row["Store"], row["Bonus"]
+            date, store, bonus = row["Date"], row["Store"], float(row["Bonus"])
             if date in self.shifts_data:
                 for shift in self.shifts_data[date]:
                     employees = self._extract_employees(shift, store)
@@ -80,7 +63,7 @@ class EmployeeBonusProcessor:
 
 # Load the provided data files
 shifts_file_path = "office/bonus_prjct/shifts-export.csv"
-bonus_file_path = "office/bonus_prjct/output.csv"  # Change to the desired file
+bonus_file_path = "office/bonus_prjct/output.csv"
 
 # Run the processor
 processor = EmployeeBonusProcessor(shifts_file_path, bonus_file_path)

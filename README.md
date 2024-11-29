@@ -1,9 +1,5 @@
 # 📝 TODO List
 
-This README serves as a structured TODO list for managing tasks across different categories.
-
----
-
 ## 📋 Table of Contents
 1. [Overview](#overview)
 2. [Project Tasks](#project-tasks)
@@ -25,15 +21,15 @@ This is a simple TODO list to track tasks for various categories and projects. C
 ## 🚀 Project Tasks
 
 ### 🛠️ Feature Development
-- [ ] **Build user authentication system**
-  - [ ] Design database schema
-  - [ ] Implement login functionality
-  - [ ] Implement logout functionality
+- [ ] **Bonus Project(TOMMI)**
+  - [ ] Búa til documentation þannig við getum leyft þeim að gera þetta sjálf við nennum ekki alltaf að vera loada inn fyrir þau þetta er þeirra vinna
+  - [ ] 
+  - [ ] 
 
-- [ ] **Create a landing page**
+- [ ] **Búa til söluMail fyrir hvern morgun(RONNI/KRISTO/TOMMI(þegar bonus project er búið))**
   - [ ] Design wireframe
-  - [ ] Code HTML/CSS
-  - [ ] Add interactive animations
+  - [ ] Fá hvernig salan kemur frá bc
+  - [ ] Fara í að búa til kóðann og finna hvernig hægt er að automatea mail(mögulega hægt að nota serverinn)
 
 ---
 
@@ -58,39 +54,12 @@ This is a simple TODO list to track tasks for various categories and projects. C
   - [ ] Add setup instructions
   - [ ] Include usage examples
 
----
-
-## 🧑‍🏫 Personal Tasks
-
-### 📚 Learning & Skill Development
-- [ ] Complete a Python course on [Platform]
-- [ ] Read "Clean Code" by Robert C. Martin
-- [ ] Practice React.js by building a small project
-
----
-
-### 🏠 Housekeeping
-- [ ] Organize workspace
-- [ ] Clean out old files from the laptop
-- [ ] Schedule a monthly backup
-
----
 
 ## ✅ Completed Tasks
 Once tasks are completed, move them here for future reference.
 
-- [x] **Set up the project repository** (Completed on 2024-11-15)
-- [x] **Install necessary dependencies** (Completed on 2024-11-16)
-
----
 
 ### Additional Notes
 - Use checkboxes (`- [ ]` for incomplete, `- [x]` for completed).
 - Add dates or additional comments for better tracking.
 
----
-
-### How to Use
-1. Copy this template into your README file.
-2. Edit the sections to suit your project.
-3. Check off tasks as you progress!

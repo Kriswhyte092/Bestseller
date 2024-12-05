@@ -79,7 +79,7 @@ class EmployeeBonusProcessor:
 
 
 # Load the provided data files
-shifts_file_path = "office/bonus_prjct/shifts.csv"
+shifts_file_path = input("shifts: ")
 bonus_file_path = "office/bonus_prjct/output.csv"  # Change to the desired file
 
 # Run the processor
@@ -103,5 +103,5 @@ def save_bonuses_to_csv(employee_bonuses, output_file):
             writer.writerow([employee, bonus])
 
 
-output_file_path = "employee_bonuses.csv"
+output_file_path = "bonus_app/final.csv"
 save_bonuses_to_csv(employee_bonuses, output_file_path)

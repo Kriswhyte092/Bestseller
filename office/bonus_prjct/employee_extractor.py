@@ -79,7 +79,7 @@ class EmployeeBonusProcessor:
 
 
 # Load the provided data files
-shifts_file_path = "office/bonus_prjct/shifts-export.csv"
+shifts_file_path = "office/bonus_prjct/shifts.csv"
 bonus_file_path = "office/bonus_prjct/output.csv"  # Change to the desired file
 
 # Run the processor

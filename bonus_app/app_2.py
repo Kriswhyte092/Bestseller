@@ -207,18 +207,6 @@ class EmployeeBonusProcessor:
         print(f"The employee bonuses have been written to {output_file}")
 
 
-# Stores indexes
-file_path = input("excel: ")
-# Output file for what days the stores have reached the indexes and the bonus amount
-output_file = "bonus_dates_sorted.csv"
-GoalExtractor(file_path, output_file).pair_and_print()
-
-# Sling shift file path
-shifts_file_path = input("sling csv: ")
-bonus_file_path = "bonus_dates_sorted.csv"
-
-EmployeeBonusProcessor(shifts_file_path, bonus_file_path).process_bonuses()
-
 if __name__ == "__main__":
     # Stores indexes
     file_path = input("excel: ")

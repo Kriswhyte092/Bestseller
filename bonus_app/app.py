@@ -215,6 +215,6 @@ GoalExtractor(file_path, output_file).pair_and_print()
 
 # Sling shift file path
 shifts_file_path = "bonus_app/shifts.csv"
-bonus_file_path = "bonus_dates_shorted.csv"
+bonus_file_path = "bonus_dates_sorted.csv"
 
 EmployeeBonusProcessor(shifts_file_path, bonus_file_path).process_bonuses()

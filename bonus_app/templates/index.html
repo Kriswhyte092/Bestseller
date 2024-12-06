@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Processor</title>
+</head>
+<body>
+    <h1>Upload Files for Bonus Processing</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="bonus_file">Bonus File (e.g., Solubonusar.xlsx):</label>
+        <input type="file" name="bonus_file" id="bonus_file" accept=".xlsx" required><br><br>
+
+        <label for="shifts_file">Shifts File (e.g., shifts.csv):</label>
+        <input type="file" name="shifts_file" id="shifts_file" accept=".csv" required><br><br>
+
+        <button type="submit">Process</button>
+    </form>
+</body>
+</html>

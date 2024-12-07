@@ -199,7 +199,7 @@ class EmployeeBonusProcessor:
         """
         Write the employee bonuses to a CSV file.
         """
-        with open(output_file, mode="w", newline="", encoding="utf-8-sig") as file:
+        with open(output_file, mode="w", newline="", encoding="latin-1") as file:
             writer = csv.writer(file)
             writer.writerow(["Employee", "Bonus"])
             for employee, bonus in employee_bonuses.items():

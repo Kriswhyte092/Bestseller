@@ -48,9 +48,6 @@ def process_files():
             with open(final_output, "r") as f:
                 print(f"Final file content:\n{f.read()}")
 
-        print(f"Intermediate output path: {intermediate_output}")
-        print(f"Final output path: {final_output}")
-
         return send_file(
             final_output, as_attachment=True, download_name="final_employee_bonuses.csv"
         )

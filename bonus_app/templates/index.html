@@ -13,22 +13,23 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ffffff;
-            background: #121212;
-            overflow: hidden;
+            background: url('https://via.placeholder.com/1920x1080?text=Calculations+Background') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
         }
 
         h1 {
             text-align: center;
-            color: #ffffff;
+            color: #1db954;
             margin-bottom: 20px;
+            font-size: 28px;
         }
 
         form {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.8);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
             width: 100%;
             max-width: 400px;
         }
@@ -37,7 +38,7 @@
             display: block;
             margin-bottom: 10px;
             font-weight: bold;
-            color: #cccccc;
+            color: #9acd32;
         }
 
         input[type="file"] {
@@ -51,16 +52,16 @@
         }
 
         input[type="file"]::file-selector-button {
-            background: #444444;
+            background: #333333;
             border: none;
             padding: 5px 10px;
             border-radius: 5px;
-            color: #ffffff;
+            color: #9acd32;
             cursor: pointer;
         }
 
         button {
-            background-color: #007bff;
+            background-color: #1db954;
             color: #ffffff;
             border: none;
             padding: 10px 15px;
@@ -68,57 +69,22 @@
             font-size: 16px;
             cursor: pointer;
             width: 100%;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #158443;
         }
 
         footer {
             margin-top: 20px;
             font-size: 14px;
             text-align: center;
-            color: #888888;
-        }
-
-        /* Cool Background Effect */
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        .numbers {
-            font-family: 'Courier New', Courier, monospace;
-            color: rgba(255, 255, 255, 0.05);
-            font-size: 20px;
-            animation: scroll 10s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-100%);
-            }
+            color: #9acd32;
         }
     </style>
 </head>
 <body>
-    <div class="background">
-        <pre class="numbers">
-12345 67890 12345 67890
-67890 12345 67890 12345
-12345 67890 12345 67890
-67890 12345 67890 12345
-12345 67890 12345 67890
-        </pre>
-    </div>
     <div>
         <h1>Upload Files for Bonus Processing</h1>
         <form action="/process" method="post" enctype="multipart/form-data">

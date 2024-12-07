@@ -29,25 +29,46 @@ def upload_files():
 @app.route("/process", methods=["POST"])
 def process_files():
     try:
-        # File paths
+        # Get uploaded files
+        shifts_file = request.files.get("shifts_file")
+        bonus_file = request.files.get("bonus_file")
+
+        if not shifts_file or not bonus_file:
+            return "Please upload both required files.", 400
+
+        # Save uploaded files
+        shifts_file_path = os.path.join(
+            app.config["UPLOAD_FOLDER"], shifts_file.filename
+        )
+        bonus_file_path = os.path.join(app.config["UPLOAD_FOLDER"], bonus_file.filename)
+
+        shifts_file.save(shifts_file_path)
+        bonus_file.save(bonus_file_path)
+
+        print(f"Shifts file saved at: {shifts_file_path}")
+        print(f"Bonus file saved at: {bonus_file_path}")
+
+        # Process with GoalExtractor
         intermediate_output = os.path.join(
             app.config["OUTPUT_FOLDER"], "bonus_dates_sorted.csv"
         )
+        goal_extractor = GoalExtractor(bonus_file_path, intermediate_output)
+        goal_extractor.pair_and_print()
+
+        print(f"Intermediate output generated at: {intermediate_output}")
+
+        # Process with EmployeeBonusProcessor
         final_output = os.path.join(
             app.config["OUTPUT_FOLDER"], "final_employee_bonuses.csv"
         )
+        employee_processor = EmployeeBonusProcessor(
+            shifts_file_path, intermediate_output
+        )
+        employee_processor.process_bonuses()
 
-        # Confirm file operations
-        print(f"Intermediate file exists: {os.path.exists(intermediate_output)}")
-        if os.path.exists(intermediate_output):
-            with open(intermediate_output, "r") as f:
-                print(f"Intermediate file content:\n{f.read()}")
+        print(f"Final output generated at: {final_output}")
 
-        print(f"Final file exists: {os.path.exists(final_output)}")
-        if os.path.exists(final_output):
-            with open(final_output, "r") as f:
-                print(f"Final file content:\n{f.read()}")
-
+        # Serve the final output file
         return send_file(
             final_output, as_attachment=True, download_name="final_employee_bonuses.csv"
         )

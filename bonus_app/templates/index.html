@@ -4,17 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonus Processor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
     <h1>Upload Files for Bonus Processing</h1>
     <form action="/process" method="post" enctype="multipart/form-data">
         <label for="bonus_file">Bonus File (e.g., Solubonusar.xlsx):</label>
-        <input type="file" name="bonus_file" id="bonus_file" accept=".xlsx" required><br><br>
+        <input type="file" name="bonus_file" id="bonus_file" accept=".xlsx" required>
 
         <label for="shifts_file">Shifts File (e.g., shifts.csv):</label>
-        <input type="file" name="shifts_file" id="shifts_file" accept=".csv" required><br><br>
+        <input type="file" name="shifts_file" id="shifts_file" accept=".csv" required>
 
         <button type="submit">Process</button>
     </form>
+
+    <footer>Bonus Processor &copy; 2024</footer>
 </body>
 </html>

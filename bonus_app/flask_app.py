@@ -28,9 +28,6 @@ def upload_files():
 
 @app.route("/process", methods=["POST"])
 def process_files():
-    """
-    Handle file uploads, process the data, and generate output files.
-    """
     try:
         # Get uploaded files
         shifts_file = request.files.get("shifts_file")
@@ -48,12 +45,17 @@ def process_files():
         shifts_file.save(shifts_file_path)
         bonus_file.save(bonus_file_path)
 
+        print(f"Shifts file saved at: {shifts_file_path}")
+        print(f"Bonus file saved at: {bonus_file_path}")
+
         # Process with GoalExtractor
         intermediate_output = os.path.join(
             app.config["OUTPUT_FOLDER"], "bonus_dates_sorted.csv"
         )
         goal_extractor = GoalExtractor(bonus_file_path, intermediate_output)
         goal_extractor.pair_and_print()
+
+        print(f"Intermediate output generated at: {intermediate_output}")
 
         # Process with EmployeeBonusProcessor
         final_output = os.path.join(
@@ -64,12 +66,15 @@ def process_files():
         )
         employee_processor.process_bonuses()
 
+        print(f"Final output generated at: {final_output}")
+
         # Serve the final output file
         return send_file(
             final_output, as_attachment=True, download_name="final_employee_bonuses.csv"
         )
 
     except Exception as e:
+        print(f"Error during processing: {e}")
         return f"An error occurred during processing: {str(e)}", 500
 
 

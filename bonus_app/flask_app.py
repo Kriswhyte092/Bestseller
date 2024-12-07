@@ -58,9 +58,7 @@ def process_files():
         print(f"Intermediate output generated at: {intermediate_output}")
 
         # Process with EmployeeBonusProcessor
-        final_output = os.path.join(
-            app.config["OUTPUT_FOLDER"], "final_employee_bonuses.csv"
-        )
+        final_output = "/home/oppenheimm/Bestseller/final_employee_bonuses.csv"  # Point to the correct file
         employee_processor = EmployeeBonusProcessor(
             shifts_file_path, intermediate_output
         )
@@ -68,7 +66,7 @@ def process_files():
 
         print(f"Final output generated at: {final_output}")
 
-        # Serve the final output file
+        # Serve the correct final output file
         return send_file(
             final_output, as_attachment=True, download_name="final_employee_bonuses.csv"
         )

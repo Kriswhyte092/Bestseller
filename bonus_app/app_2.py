@@ -4,6 +4,7 @@ from collections import defaultdict
 import pandas as pd
 import csv
 import re
+import os
 
 
 class GoalExtractor:
@@ -192,7 +193,11 @@ class EmployeeBonusProcessor:
                         employee_bonuses[employee] += bonus
 
         # Write the employee bonuses to a CSV file
-        self.write_to_csv(employee_bonuses, "final_employee_bonuses.csv")
+        self.write_to_csv(
+            employee_bonuses,
+            os.path.join("bonus_app", "outputs", "final_employee_bonuses.csv"),
+        )
+
         # return employee_bonuses
 
     def write_to_csv(self, employee_bonuses, output_file):

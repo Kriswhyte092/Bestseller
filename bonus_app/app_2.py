@@ -193,10 +193,7 @@ class EmployeeBonusProcessor:
                         employee_bonuses[employee] += bonus
 
         # Write the employee bonuses to a CSV file
-        self.write_to_csv(
-            employee_bonuses,
-            os.path.join("bonus_app", "outputs", "final_employee_bonuses.csv"),
-        )
+        self.write_to_csv(employee_bonuses, os.path.join("final_employee_bonuses.csv"))
 
         # return employee_bonuses
 

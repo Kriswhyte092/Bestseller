@@ -79,7 +79,7 @@ class EmployeeBonusProcessor:
 
 
 # Load the provided data files
-shifts_file_path = "office/bonus_prjct/shifts-export.csv"
+shifts_file_path = "office/bonus_prjct/shifts.csv"
 bonus_file_path = "office/bonus_prjct/output.csv"  # Change to the desired file
 
 # Run the processor
@@ -88,3 +88,20 @@ employee_bonuses = processor.process_bonuses()
 
 for employee, bonus in employee_bonuses.items():
     print(f"{employee}: {bonus}")
+
+import csv
+
+
+def save_bonuses_to_csv(employee_bonuses, output_file):
+    """
+    Save the employee bonuses to a CSV file.
+    """
+    with open(output_file, mode="w", newline="", encoding="utf-8-sig") as file:
+        writer = csv.writer(file)
+        writer.writerow(["Employee", "Bonus"])
+        for employee, bonus in employee_bonuses.items():
+            writer.writerow([employee, bonus])
+
+
+output_file_path = "employee_bonuses.csv"
+save_bonuses_to_csv(employee_bonuses, output_file_path)

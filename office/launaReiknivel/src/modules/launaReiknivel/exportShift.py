@@ -1,5 +1,7 @@
 from utils.launaReiknivel.createShift import *
 from data.launaReiknivel.dataBase import *
+import psycopg2
+from psycopg2 import sql
 
 class exportShift:
     def __init__(self, name, id, date, location, clockIn, clockOut, status):
@@ -21,9 +23,11 @@ class exportShift:
         employee, date, DV, EV = self.shiftToExport()
         print(employee, date, DV, EV)
         try:
-            db = dataBase("launaReiknivel.db")
+            db = dataBase("launtest")
             if db.tableExists(employee):
-                query = f"INSERT INTO {employee} (date, dv, ev) VALUES (?, ?, ?)"
+                query = sql.SQL("INSERT INTO {} (date, dv, ev) VALUES (%s, %s, %s)").format(
+                    sql.Identifier(employee)
+                )
                 db.executeQuery(query, (date, DV, EV)) 
                 db.commit()
                 print(f"shift for {employee} exported to db")

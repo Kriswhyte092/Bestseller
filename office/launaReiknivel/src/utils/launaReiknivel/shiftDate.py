@@ -6,7 +6,7 @@ class Date:
        
     def getDate(self):
         day, month, year = self._getDate()
-        return f"{day}/{month}/{year}"
+        return f"{year}-{str(month).zfill(2)}-{str(day).zfill(2)}"
 
     def isWeekend(self):
         day, month, year = self._getDate()

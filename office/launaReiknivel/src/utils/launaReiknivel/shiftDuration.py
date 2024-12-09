@@ -25,7 +25,11 @@ class Duration:
         total_seconds = int(td.total_seconds())
         hours, remainder = divmod(total_seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
-        return f"{hours}:{minutes}:{seconds}"
+        time = self.timeToDecimal(hours, minutes)
+        return time
+
+    def timeToDecimal(self, hrs, min):
+        return round(hrs + min / 60, 3)
         
 
     def isOvertime(self):
@@ -37,6 +41,3 @@ class Duration:
         DV = self.end - self.start
         EV = 0
         return DV, EV
-    
-
-

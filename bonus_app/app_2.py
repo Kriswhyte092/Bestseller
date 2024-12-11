@@ -200,10 +200,13 @@ class EmployeeBonusProcessor:
         """
         Write the employee bonuses to a CSV file.
         """
+        # Sort the employee bonuses by employee name
+        sorted_bonuses = sorted(employee_bonuses.items())
+
         with open(output_file, mode="w", newline="", encoding="utf-8-sig") as file:
             writer = csv.writer(file)
             writer.writerow(["Employee", "Bonus"])
-            for employee, bonus in employee_bonuses.items():
+            for employee, bonus in sorted_bonuses:
                 writer.writerow([employee, bonus])
         print(f"The employee bonuses have been written to {output_file}")
 

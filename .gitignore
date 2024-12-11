@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #--------------------------#
 # Magento Default Files    #
 #--------------------------#
@@ -43,3 +44,9 @@
 /var/package/*
 !/var/package/*.xml
 
+=======
+
+test.py
+__pycache__/
+.DS_Store
+>>>>>>> tomma_brancherino

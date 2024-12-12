@@ -6,3 +6,4 @@ class NOOSserializer(serializers.ModelSerializer):
         model = NOOS
         fields = ('id', 'itemCard', 'itemName')
 
+

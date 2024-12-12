@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'frontend.apps.FrontendConfig',
     'rest_framework',
     'api.apps.ApiConfig',
     'django.contrib.admin',
@@ -77,12 +78,14 @@ WSGI_APPLICATION = 'innranetBestseller.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'RonniElskarNebbaKonfekt13',
-        'HOST': 'innranetbestseller.ctms4sea6nuq.eu-north-1.rds.amazonaws.com',
-        'PORT': '5432' 
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': 'postgres',
+        #'USER': 'postgres',
+        #'PASSWORD': 'RonniElskarNebbaKonfekt13',
+        #'HOST': 'innranetbestseller.ctms4sea6nuq.eu-north-1.rds.amazonaws.com',
+        #'PORT': '5432' 
     }
 }
 

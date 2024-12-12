@@ -7,5 +7,9 @@ class NOOS(models.Model):
 
 
 
+#item itemCard -> Strilnr, nafn, verð, stærð + magn
+
+
+
 
 

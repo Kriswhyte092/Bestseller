@@ -6,8 +6,17 @@
     <title>Innranet Bestseller</title>
     {% load static %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <scipt src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></scipt>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link 
+      rel="stylesheet" 
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" 
+    />
     <link rel="stylesheet" href="{% static "css/index.css" %}"/>
   </head>
+  <body>
+    <div id="main">
+      <div id="app">
+      </div>
+    </div>
+    <script src="{% static "frontend/main.js" %}"></script>
+  </body>
 </html>

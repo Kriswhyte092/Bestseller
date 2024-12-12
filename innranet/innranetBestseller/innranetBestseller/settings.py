@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -34,6 +35,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "rest_framework",
     "api.apps.ApiConfig",
+    "laun_app.apps.LaunAppConfig",
     "bonus_app.apps.BonusAppConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -80,11 +82,11 @@ WSGI_APPLICATION = "innranetBestseller.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "postgres",
-        "USER": "postgres",
-        "PASSWORD": "RonniElskarNebbaKonfekt13",
-        "HOST": "innranetbestseller.ctms4sea6nuq.eu-north-1.rds.amazonaws.com",
-        "PORT": "5432",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        # "USER": "postgres",
+        # "PASSWORD": "RonniElskarNebbaKonfekt13",
+        # "HOST": "innranetbestseller.ctms4sea6nuq.eu-north-1.rds.amazonaws.com",
+        # "PORT": "5432",
     }
 }
 
@@ -134,14 +136,18 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-MEDIA_URL = "/media/"
+# Define media settings
+MEDIA_URL = "/uploads/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 
+# Define outputs folder for processed files
+OUTPUTS_ROOT = os.path.join(BASE_DIR, "outputs")
+
+# Static files
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
-OUTPUTS_ROOT = os.path.join(BASE_DIR, "outputs")
-
+# Middleware
 MIDDLEWARE += (
     [
         "django.middleware.security.SecurityMiddleware",

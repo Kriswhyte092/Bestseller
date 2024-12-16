@@ -1,52 +1,53 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="static/css/globals.css" />
-    <link rel="stylesheet" href="static/css/styleguide.css" />
-    <link rel="stylesheet" href="static/css/styles.css" />
-  </head>
-    <body>
-      <div class="desktop">
-        <div class="overlap-wrapper">
-          <div class="overlap">
-            <div class="frame">
-              <div class="div">
-                <div class="frame-2"><div class="hello-john">Innranet</div></div>
-                <div class="group">
-                  <div class="search">
-                    <div class="overlap-group">
-                      <div class="ellipse"></div>
-                      <img class="vector" src="https://c.animaapp.com/DNa9M7XV/img/vector.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <script>
+        function resetView() {
+            document.getElementById("content-area").innerHTML = "<h2>Welcome to Innranet</h2>";
+        }
+
+        function loadContent(content) {
+            document.getElementById("content-area").innerHTML = `<h2>${content}</h2>`;
+        }
+    </script>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1 class="sidebar-header">Bestseller</a>
+              <div class="sidebar-buttons">
+                <div class="sidebar-button" onclick="loadContent('NOOS')">NOOS</div>
+                <div class="separator"></div>
+                <div class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</div>
+                <div class="separator"></div>
+                <div class="sidebar-button" onclick="window.location.href='/bonus/'">Bonus</div>
+                <div class="separator"></div>
+                <div class="sidebar-button" onclick="window.location.href='/laun/'">Laun</div>
             </div>
-            <div class="overlap-group-wrapper">
-              <div class="overlap-2">
-                <div class="sidebar-desktop-wrapper">
-                  <div class="sidebar-desktop">
-                    <div class="div-2"><div class="title">NOOS</div></div>
-                    <div class="div-2">
-                      <div class="text-wrapper">Væntanlegt</div>
-                      <img class="icon-sidebar" src="img/4-contacts.svg" />
-                    </div>
-                    <div class="div-2"><div class="text-wrapper">Laun</div></div>
-                    <div class="div-2"><div class="text-wrapper">Bonus</div></div>
-                    <div class="div-2"></div>
-                  </div>
-                </div>
-                <div class="admin">Bestseller</div>
-              </div>
-            </div>
-            <img class="img" src="https://c.animaapp.com/DNa9M7XV/img/vector-1.svg" />
-            <img class="frame-3" src="https://c.animaapp.com/DNa9M7XV/img/frame.svg" />
-            <img class="cash-in-hand" src="https://c.animaapp.com/DNa9M7XV/img/cash-in-hand-1@2x.png" />
-            <img class="event-accepted" src="https://c.animaapp.com/DNa9M7XV/img/event-accepted-tentatively-1@2x.png" />
-          </div>
+            
         </div>
-      </div>
-    </body>
-  </html>
+        
+        <!-- Main Content -->
+        <div class="main">
+          <!-- Top Bar -->
+          <div class="topbar">
+              <h2 class="topbar-title">
+                  <a href="/" class="clickable-header" onclick="resetView()" style="text-decoration: none; color: inherit;">Innranet</a>
+              </h2>
+          </div>
+      
+            <!-- Content Area -->
+            <div class="content" id="content-area">
+                <h2>Welcome to Innranet</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

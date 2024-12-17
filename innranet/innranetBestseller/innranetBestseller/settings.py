@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "info.apps.InfoConfig",
     "django_extensions",
     "rest_framework",
     "api.apps.ApiConfig",
@@ -42,7 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'frontend.apps.FrontendConfig',
+    "frontend.apps.FrontendConfig",
 ]
 
 MIDDLEWARE = [
@@ -80,15 +82,15 @@ WSGI_APPLICATION = "innranetBestseller.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         #'ENGINE': 'django.db.backends.postgresql_psycopg2',
         #'NAME': 'postgres',
         #'USER': 'postgres',
         #'PASSWORD': 'RonniElskarNebbaKonfekt13',
         #'HOST': 'innranetbestseller.ctms4sea6nuq.eu-north-1.rds.amazonaws.com',
-        #'PORT': '5432' 
+        #'PORT': '5432'
     }
 }
 
@@ -127,7 +129,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-#STATIC_URL = "static/"
+# STATIC_URL = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -148,11 +150,9 @@ OUTPUTS_ROOT = os.path.join(BASE_DIR, "outputs")
 # Static files
 STATIC_URL = "/static/"
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "frontend/static")
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "frontend/static")]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 # Middleware

@@ -24,8 +24,9 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("bonus/", include("bonus_app.urls")),  # Include app routes
     path("laun/", include("laun_app.urls")),
-    path('api/', include('api.urls')),
-    path('', include('frontend.urls'))
+    path("api/", include("api.urls")),
+    path("", include("frontend.urls")),
+    path("info/", include("info.urls")),
 ]
 
 

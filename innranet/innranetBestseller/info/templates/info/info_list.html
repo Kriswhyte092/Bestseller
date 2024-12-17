@@ -1,0 +1,8 @@
+{% for info in infos %}
+    <div>
+        <h3>{{ info.title }}</h3>
+        <p>{{ info.content }}</p>
+        <a href="{% url 'edit_info' info.pk %}">Edit</a>
+    </div>
+{% endfor %}
+<a href="{% url 'add_info' %}">Add New</a>

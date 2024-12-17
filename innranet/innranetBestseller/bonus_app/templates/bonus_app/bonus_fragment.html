@@ -1,0 +1,18 @@
+<h2>Bonus Processor</h2>
+<form method="post" enctype="multipart/form-data" action="">
+    {% csrf_token %}
+    <label for="bonus_file">Bonus File (e.g., Solubonusar.xlsx):</label>
+    <input type="file" name="bonus_file" id="bonus_file" required><br><br>
+
+    <label for="shifts_file">Shifts File (e.g., shifts.csv):</label>
+    <input type="file" name="shifts_file" id="shifts_file" required><br><br>
+
+    <button type="submit" style="
+        background-color: #1e6091; 
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        border-radius: 8px;
+        cursor: pointer;">Process</button>
+</form>
+<p>Upload your files to process bonus and shifts. A downloadable CSV will be generated.</p>

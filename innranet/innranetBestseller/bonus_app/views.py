@@ -6,7 +6,8 @@ from django.conf import settings
 from bonus_app.bonus_app_code import GoalExtractor, EmployeeBonusProcessor
 from django.contrib.auth.decorators import login_required
 
-@login_required(login_url='/login')
+
+@login_required(login_url="/login")
 def upload_files(request):
     # Ensure directories exist
     os.makedirs(settings.MEDIA_ROOT, exist_ok=True)
@@ -47,7 +48,8 @@ def upload_files(request):
     # Render the form for GET requests
     return render(request, "bonus_app/index.html")
 
-@login_required(login_url='/login')
+
+@login_required(login_url="/login")
 def process_files(request):
     if request.method == "POST":
         # Ensure directories exist

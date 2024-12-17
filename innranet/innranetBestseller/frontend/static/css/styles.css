@@ -1,4 +1,4 @@
-/* Reset and Layout */
+/* General Layout */
 body, html {
   margin: 0;
   padding: 0;
@@ -11,38 +11,53 @@ body, html {
   height: 100vh;
 }
 
-/* Sidebar Buttons */
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1a1a2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.sidebar-header {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .sidebar-buttons {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .sidebar-button {
+  background-color: #0f3460;
   color: white;
-  text-align: left;
+  border: none;
+  border-radius: 8px;
   padding: 10px 20px;
+  margin: 5px 0;
   font-size: 16px;
+  text-align: center;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .sidebar-button:hover {
-  background-color: rgba(28, 151, 178, 0.2); /* Light blue shade on hover */
+  background-color: #0a74a6;
+  transform: scale(1.03);
 }
-
-.separator {
-  height: 1px;
-  background-color: #444; /* Thin separator line */
-  margin: 0;
-}
-
 
 /* Main Content */
 .main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  background-color: var(--mainlightblue);
+  background-color: #f5f5f9;
 }
 
 /* Top Bar */
@@ -61,12 +76,58 @@ body, html {
   margin: 0;
 }
 
-/* Content Area */
-.content {
-  padding: 20px;
-  background-color: white;
-  flex-grow: 1;
+.clickable-header {
+  text-decoration: none;
   color: black;
-  font-size: 18px;
-  text-align: center;
+  transition: color 0.3s, transform 0.2s;
 }
+
+.clickable-header:hover {
+  color: #0a74a6;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Content Area Fix */
+/* Main Content Area */
+#content-area {
+  width: 100%; /* Full width */
+  height: 100%; /* Stretch vertically */
+  display: flex; 
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+/* Bonus Processor Form */
+form {
+  width: 100%; /* Adjusts form to the container width */
+  box-sizing: border-box; /* Prevents overflow */
+  max-width: 600px; /* Optional: Set a max width for cleaner design */
+  margin: 0 auto; /* Centers form horizontally */
+}
+
+form input[type="file"],
+form button {
+  width: 100%; /* Ensures input and button stretch properly */
+  margin-bottom: 10px; /* Adds spacing */
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e6091;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #14577b;
+}
+

@@ -77,12 +77,48 @@
         }
         
 
-
-
         @keyframes gradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
+        }
+
+        /* General Button Styling */
+        .action-button {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            min-width: 70px; /* Ensures buttons have the same width */
+            text-transform: uppercase;
+        }
+        
+        .action-button:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Edit Button */
+        .action-button.edit {
+            background-color: #1e6091;
+        }
+        
+        .action-button.edit:hover {
+            background-color: #145785;
+        }
+        
+        /* Delete Button */
+        .action-button.delete {
+            background-color: #d9534f;
+        }
+        
+        .action-button.delete:hover {
+            background-color: #c9302c;
         }
     </style>
 </head>
@@ -95,7 +131,6 @@
                 <button class="sidebar-button" onclick="loadContent('NOOS')">NOOS</button>
                 <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
                 <button class="sidebar-button" onclick="fetchContent('/bonus/')">Bonus</button>
-
                 <div class="sidebar-button" onclick="fetchContent('/laun/')">Laun</div>
             </div>
         </div>
@@ -105,10 +140,79 @@
             <!-- Top Bar -->
             <div class="topbar">
                 <a href="/">Innranet</a>
+                <a href="{% url 'create_announcement' %}" style="font-size: 30px;">+</a>
             </div>
             
             <div id="content-area" style="padding: 20px;">
-                <h2>Welcome to Innranet</h2>
+                {% comment %} <h2>Announcements</h2> {% endcomment %}
+                <div class="content-wrapper" style="display: flex; height: 100vh;">
+                    <!-- Main Content -->
+                    <div id="main-content" style="flex: 3; padding: 20px;">
+                        <h2>Welcome to Innranet</h2>
+                        <p>Your main content will appear here.</p>
+                    </div>
+                
+                    <!-- Announcements Sidebar -->
+                    <div id="announcement-box" style="
+                    flex: 0 0 300px;
+                    background-color: #f4f4f9;
+                    padding: 20px;
+                    border-left: 2px solid #ddd;
+                    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+                    overflow-y: auto;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100vh;">
+                
+                    <h3 style="text-align: center; margin-bottom: 20px; font-size: 24px; color: #333;">Announcements</h3>
+                
+                    {% for announcement in announcements %}
+                    <div class="announcement-card" style="
+                        background-color: white;
+                        margin: 10px auto;
+                        padding: 15px;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+                        position: relative;">
+                        
+                        <h4 style="margin: 0 0 10px; font-size: 18px; color: #1a1a2e;">{{ announcement.title }}</h4>
+                        <p style="margin: 0 0 10px; font-size: 14px; color: #555;">{{ announcement.content }}</p>
+                        <small style="color: #888; font-size: 12px;">{{ announcement.created_at|date:"M d, Y H:i" }}</small>
+
+                        <!-- Buttons -->
+                        <div style="margin-top: 10px; display: flex; justify-content: flex-end; gap: 10px;">
+                            <a href="{% url 'edit_announcement' announcement.id %}" style="
+                            background-color: #1e6091;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 5px 10px;
+                            text-decoration: none;
+                            font-size: 12px;">
+                            Edit
+                            </a>                    
+                            <form action="{% url 'delete_announcement' announcement.id %}" method="post" style="display: inline;">
+                                {% csrf_token %}
+                                <button type="submit" style="
+                                    background-color: #d9534f;
+                                    color: white;
+                                    border: none;
+                                    border-radius: 5px;
+                                    padding: 5px 10px;
+                                    cursor: pointer;
+                                    font-size: 12px;">
+                                    Delete
+                                </button>
+                            </form>                            
+                        </div>
+                    </div>
+                    {% empty %}
+                    <p style="text-align: center; color: #aaa;">No announcements available.</p>
+                    {% endfor %}
+                </div>
+                
+                </div>                                                                                    
             </div>
         </div>
     </div>

@@ -4,6 +4,8 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .models import Announcement
 from .forms import AnnouncementForm
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 
 @login_required(login_url='/login')
@@ -35,7 +37,6 @@ def create_announcement(request):
         form = AnnouncementForm()
     return render(request, 'create_announcement.html', {'form': form})
 
-# Edit Announcement
 def edit_announcement(request, pk):
     announcement = get_object_or_404(Announcement, pk=pk)
     if request.method == 'POST':
@@ -47,10 +48,27 @@ def edit_announcement(request, pk):
         form = AnnouncementForm(instance=announcement)
     return render(request, 'edit_announcement.html', {'form': form})
 
-# Delete Announcement
 def delete_announcement(request, pk):
     announcement = get_object_or_404(Announcement, pk=pk)
     if request.method == 'POST':
         announcement.delete()
         return redirect('home')
     return render(request, 'confirm_delete.html', {'announcement': announcement})
+
+@csrf_exempt
+def edit_announcement_ajax(request):
+    if request.method == 'POST':
+        announcement_id = request.POST.get('id')
+        title = request.POST.get('title')
+        content = request.POST.get('content')
+        Announcement.objects.filter(id=announcement_id).update(title=title, content=content)
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False}, status=400)
+
+@csrf_exempt
+def delete_announcement_ajax(request):
+    if request.method == 'POST':
+        announcement_id = request.POST.get('id')
+        Announcement.objects.filter(id=announcement_id).delete()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False}, status=400)

@@ -82,44 +82,6 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
-        /* General Button Styling */
-        .action-button {
-            display: inline-block;
-            padding: 5px 10px;
-            font-size: 12px;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            min-width: 70px; /* Ensures buttons have the same width */
-            text-transform: uppercase;
-        }
-        
-        .action-button:hover {
-            transform: scale(1.05);
-        }
-        
-        /* Edit Button */
-        .action-button.edit {
-            background-color: #1e6091;
-        }
-        
-        .action-button.edit:hover {
-            background-color: #145785;
-        }
-        
-        /* Delete Button */
-        .action-button.delete {
-            background-color: #d9534f;
-        }
-        
-        .action-button.delete:hover {
-            background-color: #c9302c;
-        }
     </style>
 </head>
 <body>
@@ -144,11 +106,10 @@
             </div>
             
             <div id="content-area" style="padding: 20px;">
-                {% comment %} <h2>Announcements</h2> {% endcomment %}
                 <div class="content-wrapper" style="display: flex; height: 100vh;">
                     <!-- Main Content -->
                     <div id="main-content" style="flex: 3; padding: 20px;">
-                        <h2>Welcome to Innranet</h2>
+                        <h2 style="text-align: center;">Welcome to Innranet</h2>
                         <p>Your main content will appear here.</p>
                     </div>
                 
@@ -174,11 +135,34 @@
                         padding: 15px;
                         border-radius: 8px;
                         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-                        position: relative;">
+                        position: relative;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;">
                         
-                        <h4 style="margin: 0 0 10px; font-size: 18px; color: #1a1a2e;">{{ announcement.title }}</h4>
-                        <p style="margin: 0 0 10px; font-size: 14px; color: #555;">{{ announcement.content }}</p>
-                        <small style="color: #888; font-size: 12px;">{{ announcement.created_at|date:"M d, Y H:i" }}</small>
+                        <h4 style=
+                            "margin: 0 0 10px;
+                            font-size: 18px;
+                            color: #1a1a2e;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;">
+                            {{ announcement.title }}
+                        </h4>
+                        <p style="
+                            margin: 0 0 10px;
+                            font-size: 14px;
+                            color: #555;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;">
+                            {{ announcement.content }}
+                        </p>
+                        <small style="
+                            color: #888;
+                            font-size: 12px;">
+                            {{ announcement.created_at|date:"M d, Y H:i" }}
+                        </small>
 
                         <!-- Buttons -->
                         <div style="margin-top: 10px; display: flex; justify-content: flex-end; gap: 10px;">
@@ -191,24 +175,21 @@
                             text-decoration: none;
                             font-size: 12px;">
                             Edit
-                            </a>                    
-                            <form action="{% url 'delete_announcement' announcement.id %}" method="post" style="display: inline;">
-                                {% csrf_token %}
-                                <button type="submit" style="
-                                    background-color: #d9534f;
-                                    color: white;
-                                    border: none;
-                                    border-radius: 5px;
-                                    padding: 5px 10px;
-                                    cursor: pointer;
-                                    font-size: 12px;">
-                                    Delete
-                                </button>
-                            </form>                            
+                            </a>
+                            <a href="{% url 'delete_announcement' announcement.id %}" style="
+                            background-color: #d9534f;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 5px 10px;
+                            text-decoration: none;
+                            font-size: 12px;">
+                            Delete
+                            </a>                        
                         </div>
                     </div>
                     {% empty %}
-                    <p style="text-align: center; color: #aaa;">No announcements available.</p>
+                    <p style="text-align: center; color: #aaa;">No announcements at this time.</p>
                     {% endfor %}
                 </div>
                 

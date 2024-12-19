@@ -139,23 +139,39 @@
 
 
 
-        .announcements-header {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
+.announcements-header {
+    font-size: 28px; /* Larger, bolder header */
+    font-weight: bold;
+    color: #333; /* Darker color for emphasis */
+    margin-bottom: 15px; /* Add more spacing below the header */
+    text-align: center; /* Center-align the header */
+}
 
-        .announcement-list {
-            list-style: none;
-            padding: 0;
-        }
+.announcement-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
 
-        .announcement-list li {
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
-        }
+.announcement-list li {
+    background: #ffffff; /* White background for contrast */
+    border: 1px solid #ddd; /* Subtle border around each item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Add spacing inside each item */
+    margin-bottom: 10px; /* Add spacing between items */
+    font-size: 16px; /* Increase font size for readability */
+    font-weight: 500; /* Slightly bold font */
+    color: #555; /* Softer text color */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+}
+
+.announcement-list li:hover {
+    background-color: #f9f9f9; /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+    cursor: pointer; /* Indicate interactivity */
+}
+
 
         .main {
             flex: 1;

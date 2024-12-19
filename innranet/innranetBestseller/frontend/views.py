@@ -4,20 +4,21 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 
 
-@login_required(login_url='/login')
+# @login_required(login_url='/login')
 def index(request, *args, **kwargs):
-    return render(request, 'frontend/index.html')
+    return render(request, "frontend/index.html")
+
 
 def loginn(request):
-    if request.method=='POST':
-        fnm=request.POST.get('fnm')
-        pwd=request.POST.get('pwd')
+    if request.method == "POST":
+        fnm = request.POST.get("fnm")
+        pwd = request.POST.get("pwd")
         print(f"LOGIN: User: {fnm} Password: {pwd}")
-        user=authenticate(request,username=fnm, password=pwd)
+        user = authenticate(request, username=fnm, password=pwd)
         if user is not None:
-            login(request,user)
-            return redirect('/')
+            login(request, user)
+            return redirect("/")
         else:
-            return redirect('/login')
-    
-    return render(request, 'login.html')
+            return redirect("/login")
+
+    return render(request, "login.html")

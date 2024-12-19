@@ -1,0 +1,12 @@
+<h1>Announcements</h1>
+<ul>
+    {% for announcement in announcements %}
+        <li>
+            <h3>{{ announcement.title }}</h3>
+            <p>{{ announcement.content }}</p>
+            <a href="{% url 'delete_announcement' announcement.id %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create_announcement' %}">Create Announcement</a>
+<a href="{% url 'upload_image' %}">Upload Image</a>

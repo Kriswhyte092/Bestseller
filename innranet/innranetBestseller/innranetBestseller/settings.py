@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "announcements.apps.AnnouncementsConfig",
     "info.apps.InfoConfig",
     "django_extensions",
     "rest_framework",

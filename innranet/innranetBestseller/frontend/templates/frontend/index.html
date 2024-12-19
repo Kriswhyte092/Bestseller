@@ -8,14 +8,28 @@
     <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <style>
-
+        
+        
+        /* Sidebar styles */
         .sidebar {
             position: sticky;
             top: 0;
             height: 100vh;
         }
 
-        /* Sidebar Header */
+        .left-sidebar {
+            width: 250px;
+            background-color: #1a1a2e;
+            padding: 20px;
+        }
+
+        .right-sidebar {
+            width: 300px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
         .sidebar-header {
             font-size: 28px;
             font-weight: bold;
@@ -24,7 +38,6 @@
             text-align: center;
         }
 
-        /* Sidebar Buttons */
         .sidebar-buttons {
             display: flex;
             flex-direction: column;
@@ -51,45 +64,39 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Top Bar */
-        .topbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #ddd;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .topbar a {
-            text-decoration: none;
-            color: #1a1a2e;
+        .announcements-header {
             font-size: 24px;
             font-weight: bold;
-            transition: color 0.3s;
+            color: #333;
+            margin-bottom: 10px;
         }
 
-        .topbar a:hover {
-            color: #1e6091;
+        .announcement-list {
+            list-style: none;
+            padding: 0;
         }
-        
 
+        .announcement-list li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
 
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
 
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        .container {
+            display: flex;
+            height: 100vh;
         }
     </style>
 </head>
 <body>
-    <div class="container" style="display: flex; height: 100vh;">
-        <!-- Sidebar -->
-        <div class="sidebar" style="width: 250px; background-color: #1a1a2e; padding: 20px;">
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar left-sidebar">
             <div class="sidebar-header">Bestseller</div>
             <div class="sidebar-buttons">
                 <button class="sidebar-button" onclick="loadContent('NOOS')">NOOS</button>
@@ -101,15 +108,27 @@
 
         <!-- Main Content -->
         <div class="main">
-            <!-- Top Bar -->
             <div class="topbar">
                 <a href="/">Innranet</a>
-                <a href="create">+</a>
+                <a href="{% url 'announcement_list' %}">+</a>
+
             </div>
-            
-            <div id="content-area" style="padding: 20px;">
+            <div id="content-area">
                 <h2>Welcome to Innranet</h2>
             </div>
+            <div id="frontpage-image-container" style="text-align: center; margin-top: 20px;">
+                <!-- Image will be dynamically loaded here -->
+            </div>
+        </div>
+
+        
+
+        <!-- Right Sidebar -->
+        <div class="sidebar right-sidebar">
+            <div class="announcements-header">Announcements</div>
+            <ul id="announcement-list" class="announcement-list">
+                <!-- Announcements will be dynamically loaded here -->
+            </ul>
         </div>
     </div>
 
@@ -128,8 +147,56 @@
                 document.getElementById("content-area").innerHTML = `<p style="color: red;">Error loading content: ${error.message}</p>`;
             });
         }
+
+        function fetchAnnouncements() {
+            fetch('/announcements/', {
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('announcement-list');
+                list.innerHTML = ''; // Clear existing announcements
+                data.forEach(announcement => {
+                    const li = document.createElement('li');
+                    li.textContent = `${announcement.title}: ${announcement.content}`;
+                    list.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error fetching announcements:', error));
+        }
+
+        window.onload = fetchAnnouncements;
+
+        function fetchFrontPageImage() {
+    fetch('/announcements/image/', {
+        headers: {
+            "X-Requested-With": "XMLHttpRequest"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById('frontpage-image-container');
+        container.innerHTML = ''; // Clear existing image
+        if (data.image_url) {
+            const img = document.createElement('img');
+            img.src = data.image_url;
+            img.alt = 'Front Page Image';
+            img.style.maxWidth = '100%';
+            img.style.height = 'auto';
+            container.appendChild(img);
+        }
+    })
+    .catch(error => console.error('Error fetching frontpage image:', error));
+}
+
+window.onload = () => {
+    fetchAnnouncements();
+    fetchFrontPageImage();
+};
+
+
     </script>
-    
 </body>
 </html>
-

@@ -1,13 +1,78 @@
-<h1>Announcements</h1>
-<ul>
-    {% for announcement in announcements %}
-        <li>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Announcements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .announcement-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .announcement-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .announcement-card h3 {
+            margin: 0 0 10px 0;
+            color: #007BFF;
+        }
+        .announcement-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .actions a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Announcements</h1>
+    <div class="announcement-list">
+        {% for announcement in announcements %}
+        <div class="announcement-card">
             <h3>{{ announcement.title }}</h3>
             <p>{{ announcement.content }}</p>
-            <a href="{% url 'delete_announcement' announcement.id %}">Delete</a>
-        </li>
-    {% endfor %}
-</ul>
-<a href="{% url 'create_announcement' %}">Create Announcement</a>
-<a href="{% url 'upload_image' %}">Upload Image</a>
-<a href="/">Back to Frontpage</a>
+            <div class="links">
+                <a href="{% url 'delete_announcement' announcement.id %}">Delete</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="actions">
+        <a href="{% url 'create_announcement' %}">Create Announcement</a>
+        <a href="{% url 'upload_image' %}">Upload Image</a>
+        <

@@ -49,12 +49,10 @@ def upload_image(request):
 from .models import FrontPageImage
 
 
-def frontpage_image(request):
+def frontpage_images(request):
     if request.headers.get("X-Requested-With") == "XMLHttpRequest":
-        image = FrontPageImage.objects.last()  # Get the latest uploaded image
-        if image and image.image:  # Check if an image exists
-            return JsonResponse(
-                {"image_url": image.image.url}
-            )  # Return the correct URL
-        else:
-            return JsonResponse({"image_url": None})
+        images = FrontPageImage.objects.all()  # Fetch all images
+        image_urls = [image.image.url for image in images]  # Get URLs for all images
+        return JsonResponse({"images": image_urls})  # Return as a JSON array
+    else:
+        return JsonResponse({"image_url": None})

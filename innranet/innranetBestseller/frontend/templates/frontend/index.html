@@ -48,13 +48,13 @@
         .sidebar {
             position: sticky;
             top: 0;
-            height: 100vh;
         }
 
         .left-sidebar {
             width: 250px;
             background-color: #1a1a2e;
             padding: 20px;
+            height: 100%;
         }
 
         .right-sidebar {
@@ -62,6 +62,7 @@
             background-color: #f0f0f0;
             padding: 20px;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100%;
         }
 
         .sidebar-header {
@@ -266,34 +267,37 @@
 
         window.onload = fetchAnnouncements;
 
-        function fetchFrontPageImage() {
-    fetch('/announcements/image/', {
-        headers: {
-            "X-Requested-With": "XMLHttpRequest"
+        function fetchFrontPageImages() {
+            fetch('/announcements/images/', { // Correct URL
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('frontpage-image-container');
+                container.innerHTML = ''; // Clear any existing content
+                if (data.images && data.images.length > 0) {
+                    data.images.forEach(imageUrl => {
+                        const img = document.createElement('img');
+                        img.src = imageUrl;  // Set the image URL
+                        img.alt = 'Front Page Image';
+                        img.style.marginBottom = '10px'; // Add spacing between images
+                        img.style.width = '100%'; // Ensure images fit within the container
+                        container.appendChild(img);  // Add each image to the container
+                    });
+                } else {
+                    container.innerHTML = '<p>No images available</p>';  // Placeholder if no images
+                }
+            })
+            .catch(error => console.error('Error fetching frontpage images:', error));
         }
-    })
-    .then(response => response.json())
-    .then(data => {
-        const container = document.getElementById('frontpage-image-container');
-        container.innerHTML = ''; // Clear any existing content
-        if (data.image_url) {
-            const img = document.createElement('img');
-            img.src = data.image_url;  // Set the image URL
-            img.alt = 'Front Page Image';
-            container.appendChild(img);  // Add the image to the container
-        } else {
-            container.innerHTML = '<p>No image available</p>';  // Show placeholder if no image
-        }
-    })
-    .catch(error => console.error('Error fetching frontpage image:', error));
-}
-
-
-
-window.onload = () => {
-    fetchAnnouncements();
-    fetchFrontPageImage();
-};
+        
+        window.onload = () => {
+            fetchAnnouncements();
+            fetchFrontPageImages(); // Updated to use the correct endpoint
+        };
+            
 
 
     </script>

@@ -85,6 +85,9 @@ def process_files(request):
         )
 
         print(f"Final output path: {final_output_path}")
+        
+        employee_processor = EmployeeBonusProcessor(shifts_file_path, output_csv_path)
+        employee_processor.process_bonuses()
 
         # Return the processed file as a download
         if os.path.exists(final_output_path):

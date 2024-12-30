@@ -3,7 +3,7 @@ Django==4.0.4
 django-appconf==1.0.5
 django-compressor==4.0
 django-libsass==0.9
-django-exstensions
+django-extensions
 djangorestframework
 libsass==0.21.0
 Pillow
@@ -15,3 +15,4 @@ sqlparse==0.4.2
 tzdata==2022.1
 pandas
 openpyxl
+psycopg2==2.9.7

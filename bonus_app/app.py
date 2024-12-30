@@ -12,7 +12,7 @@ class GoalExtractor:
         self.output_csv = output_csv
         self.name_mapping = {
             "VMK": "Vero Moda Kringlan",
-            "VIK": "Vila Kringlan",
+            "VIK": "Vila Kringla",
             "NIK": "Name It Kringlan",
             "JJK": "Jack & Jones Kringlan",
             "SLK": "Selected Kringlan",
@@ -83,8 +83,15 @@ class GoalExtractor:
             (2.0, 10000),
         ]
 
-        special_stores = {"VMK", "VIK", "NIK", "SLK"}
+        special_stores = {
+            "Vero Moda Kringlan", 
+            "Vila Kringla", 
+            "Name It Kringlan", 
+            "Selected Kringlan"
+            }
+        
         bonus = 0
+        
         if name in special_stores:
             for threshold, value in thresholds:
                 if index >= threshold:
@@ -208,13 +215,14 @@ class EmployeeBonusProcessor:
 
 
 # Stores indexes
-file_path = "bonus_app/Solubonusar_Bestseller_okt2024.xlsx"
+file_path = "bonus_app/Solubonusar_Bestseller_nóv2024.xlsx"
 # Output file for what days the stores have reached the indexes and the bonus amount
 output_file = "bonus_dates_sorted.csv"
 GoalExtractor(file_path, output_file).pair_and_print()
 
 # Sling shift file path
-shifts_file_path = "bonus_app/shifts.csv"
+shifts_file_path = "bonus_app/shifts-export.csv"
+
 bonus_file_path = "bonus_dates_sorted.csv"
 
 EmployeeBonusProcessor(shifts_file_path, bonus_file_path).process_bonuses()

@@ -201,7 +201,7 @@ body {
         <div class="sidebar left-sidebar">
             <div class="sidebar-header">Bestseller</div>
             <div class="sidebar-buttons">
-                <button class="sidebar-button" onclick="loadContent('NOOS')">NOOS</button>
+                <button class="sidebar-button" onclick="fetchContent('/noos/')">NOOS</button>
                 <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
                 <button class="sidebar-button" onclick="fetchContent('/bonus/')">Bonus</button>
                 <div class="sidebar-button" onclick="fetchContent('/laun/')">Laun</div>
@@ -226,6 +226,47 @@ body {
                 </div>
             </div>
         </div>
+
+        <script>
+            function loadProductInfo(productName) {
+                const url = `/noos/noos-info/?product=${encodeURIComponent(productName)}`;
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(html => {
+                        // Replace the content of the `.main` container
+                        document.querySelector('.main').innerHTML = html;
+        
+                        // Reattach the event listeners for the sidebar buttons
+                        attachSidebarListeners();
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                        document.querySelector('.main').innerHTML = '<p>Error loading product information.</p>';
+                    });
+            }
+        
+            function attachSidebarListeners() {
+                // Attach event listeners for the sidebar buttons
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/noos/\')"]').onclick = function () {
+                    fetchContent('/noos/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/bonus/\')"]').onclick = function () {
+                    fetchContent('/bonus/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/laun/\')"]').onclick = function () {
+                    fetchContent('/laun/');
+                };
+            }
+        </script>
+        
+        
         
 
         

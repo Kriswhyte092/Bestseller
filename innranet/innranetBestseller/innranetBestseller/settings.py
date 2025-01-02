@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "noos.apps.NoosConfig",
     "announcements.apps.AnnouncementsConfig",
     "info.apps.InfoConfig",
     "django_extensions",
@@ -46,7 +47,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "frontend.apps.FrontendConfig",
-    "noos.apps.NoosConfig",
 ]
 
 MIDDLEWARE = [

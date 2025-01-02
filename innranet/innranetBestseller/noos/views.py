@@ -2,7 +2,6 @@ import requests
 from django.shortcuts import render
 import json
 
-
 LOCAL_JSON_FILE = "product_data.json"
 
 # Function to fetch and store JSON
@@ -57,7 +56,8 @@ def extract_image_urls(data, urls):
             if key == 'images' and isinstance(value, list):
                 for image in value:
                     if isinstance(image, dict) and 'urls' in image:
-                        urls.append(image['urls'])
+                        urls.append(image['urls'][0]['url'])
+                print(urls)
             else:
                 extract_image_urls(value, urls)
     elif isinstance(data, list):

@@ -94,9 +94,6 @@ def noos(request):
         print(f"Error reading or parsing JSON file: {e}")
         products = []
 
-<<<<<<< HEAD
-    return render(request, "noos/noos.html", {"products": products})
-=======
     context = {
         "name": product_name,
         "image_urls": image_urls
@@ -115,4 +112,3 @@ def extract_image_urls(data, urls):
     elif isinstance(data, list):
         for item in data:
             extract_image_urls(item, urls)
->>>>>>> 2d6df07a3c8db0bcb80dc4469ecb491a2362fd4b

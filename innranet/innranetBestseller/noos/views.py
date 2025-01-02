@@ -94,7 +94,6 @@ def noos(request):
         print(f"Error reading or parsing JSON file: {e}")
         products = []
 
-    return render(request, "noos/noos.html", {"products": products})
     context = {"name": product_name, "image_urls": image_urls}
     return render(request, "noos/noos-info.html", context)
 

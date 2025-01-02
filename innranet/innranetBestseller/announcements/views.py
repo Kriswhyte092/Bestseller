@@ -1,10 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Announcement, FrontPageImage
 from .forms import AnnouncementForm, ImageUploadForm
-
-
 from django.http import JsonResponse
-from .models import Announcement
 
 
 def announcement_list(request):
@@ -13,8 +10,11 @@ def announcement_list(request):
         return JsonResponse(announcements, safe=False)
     else:
         announcements = Announcement.objects.all()
+        images = FrontPageImage.objects.all()
         return render(
-            request, "announcements/list.html", {"announcements": announcements}
+            request,
+            "announcements/list.html", 
+            {"announcements": announcements, "images": images}
         )
 
 
@@ -46,9 +46,6 @@ def upload_image(request):
     return render(request, "announcements/upload_image.html", {"form": form})
 
 
-from .models import FrontPageImage
-
-
 def frontpage_images(request):
     if request.headers.get("X-Requested-With") == "XMLHttpRequest":
         images = FrontPageImage.objects.all()  # Fetch all images
@@ -56,3 +53,11 @@ def frontpage_images(request):
         return JsonResponse({"images": image_urls})  # Return as a JSON array
     else:
         return JsonResponse({"image_url": None})
+
+
+def delete_image(request, image_id):
+    image = get_object_or_404(FrontPageImage, id=image_id)
+    if request.method == "POST":
+        image.delete()
+        return redirect('announcement_list')  # Redirect to the correct view
+    return render(request, 'confirm_delete.html', {'image': image})

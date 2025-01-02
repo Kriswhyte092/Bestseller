@@ -57,7 +57,6 @@ def extract_image_urls(data, urls):
                 for image in value:
                     if isinstance(image, dict) and 'urls' in image:
                         urls.append(image['urls'][0]['url'])
-                print(urls)
             else:
                 extract_image_urls(value, urls)
     elif isinstance(data, list):

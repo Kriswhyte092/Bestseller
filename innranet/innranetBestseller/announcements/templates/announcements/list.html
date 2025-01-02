@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Announcements</title>
+    <title>Announcements and Images</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,41 +14,34 @@
             color: #333;
             margin-bottom: 30px;
         }
-        .announcement-list {
+        .content-section {
+            margin-bottom: 50px;
+        }
+        .announcement-list,
+        .image-list {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
         }
-        .announcement-card {
+        .announcement-card,
+        .image-card {
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            text-align: center;
         }
-        .announcement-card h3 {
+        .announcement-card h3,
+        .image-card h3 {
             margin: 0 0 10px 0;
-            color:rgb(0, 0, 0);
+            color: #000;
         }
-        .announcement-card p {
-            color: #555;
-            margin-bottom: 15px;
-        }
-        .links {
-            display: flex;
-            justify-content: space-between;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #0056b3;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
         }
         .actions {
             text-align: center;
@@ -56,24 +49,48 @@
         }
         .actions a {
             margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+        .actions a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
     <h1>Announcements</h1>
-    <div class="announcement-list">
+    <div class="content-section announcement-list">
         {% for announcement in announcements %}
         <div class="announcement-card">
             <h3>{{ announcement.title }}</h3>
             <p>{{ announcement.content }}</p>
-            <div class="links">
-                <a href="{% url 'delete_announcement' announcement.id %}">Delete</a>
-            </div>
+            <form method="post" action="{% url 'delete_announcement' announcement.id %}">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+            </form>
         </div>
         {% endfor %}
     </div>
+
+    <h1>Images</h1>
+    <div class="content-section image-list">
+        {% for image in images %}
+        <div class="image-card">
+            <img src="{{ image.image.url }}" alt="{{ image.title }}" />
+            <h3>{{ image.title }}</h3>
+            <form method="post" action="{% url 'delete_image' image.id %}">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+
     <div class="actions">
         <a href="{% url 'create_announcement' %}">Create Announcement</a>
         <a href="{% url 'upload_image' %}">Upload Image</a>
         <a href="/">Back to frontpage</a>
     </div>
+</body>
+</html>

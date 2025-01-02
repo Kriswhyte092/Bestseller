@@ -28,6 +28,7 @@ urlpatterns = [
     path("", include("frontend.urls")),
     path("info/", include("info.urls")),
     path("announcements/", include("announcements.urls")),
+    path("noos/", include("noos.urls")),
 ]
 
 

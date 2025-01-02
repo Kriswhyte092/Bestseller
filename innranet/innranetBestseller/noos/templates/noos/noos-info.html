@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name }}</title>
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    {% if image_urls %}
+        <div>
+            {% for url in image_urls %}
+                <img src="{{ url }}" alt="{{ name }}" style="width:300px; height:auto; margin:10px;">
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No images available.</p>
+    {% endif %}
+</body>
+</html>

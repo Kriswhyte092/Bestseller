@@ -68,6 +68,16 @@
 <script>
     function loadProductInfo(productName) {
         const url = `/noos/noos-info/?product=${encodeURIComponent(productName)}`;
-        fetchContent(url); // Reuse fetchContent function
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    const productInfo = data.product;
+                    alert(JSON.stringify(productInfo, null, 2)); // Replace with a modal for better UX
+                }
+            })
+            .catch(error => console.error('Error:', error));
     }
 </script>

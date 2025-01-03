@@ -1,5 +1,6 @@
 import requests
 from django.shortcuts import render
+from django.http import JsonResponse
 import json
 import glob
 import os
@@ -91,3 +92,14 @@ def load_all_products():
         except (json.JSONDecodeError, FileNotFoundError) as e:
             print(f"Error reading or parsing file {file_path}: {e}")
     return products
+
+def noos_info(request):
+    product_name = request.GET.get('product', None)
+    if not product_name:
+        return JsonResponse({"error": "No product specified"}, status=400)
+    
+    for product_data in load_all_products():
+        if product_data.get("name") == product_name:
+            return JsonResponse({"product": product_data})
+    
+    return JsonResponse({"error": "Product not found"}, status=404)

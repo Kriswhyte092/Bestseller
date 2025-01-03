@@ -238,17 +238,15 @@ body {
                         return response.text();
                     })
                     .then(html => {
-                        // Replace the content of the `.main` container
-                        document.querySelector('.main').innerHTML = html;
-        
-                        // Reattach the event listeners for the sidebar buttons
-                        attachSidebarListeners();
+                        // Load the product info into the content area
+                        document.querySelector('#content-area').innerHTML = html;
                     })
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
-                        document.querySelector('.main').innerHTML = '<p>Error loading product information.</p>';
+                        document.querySelector('#content-area').innerHTML = '<p>Error loading product information.</p>';
                     });
             }
+
         
             function attachSidebarListeners() {
                 // Attach event listeners for the sidebar buttons
@@ -281,20 +279,18 @@ body {
     </div>
 
     <script>
-        function fetchContent(url) {
-            fetch(url, {
-                headers: {
-                    "X-Requested-With": "XMLHttpRequest" // AJAX request
-                }
-            })
+    function fetchContent(url) {
+        fetch(url)
             .then(response => response.text())
             .then(html => {
-                document.getElementById("content-area").innerHTML = html;
+                // Load content into the #content-area
+                document.getElementById('content-area').innerHTML = html;
             })
             .catch(error => {
-                document.getElementById("content-area").innerHTML = `<p style="color: red;">Error loading content: ${error.message}</p>`;
+                console.error('Error loading content:', error);
+                document.getElementById('content-area').innerHTML = `<p>Error loading content.</p>`;
             });
-        }
+    }
 
         function fetchAnnouncements() {
             fetch('/announcements/', {

@@ -4,24 +4,19 @@
     <title>{{ name }}</title>
 </head>
 <body>
-    <h1>{{ name }}</h1>
-    {% if image_urls %}
-        <div class="product-info-container">
-            <h1>{{ name }}</h1>
-            {% if image_urls %}
-                <div>
-                    {% for url in image_urls %}
-                        <img src="{{ url }}" alt="{{ name }}" style="width:300px; height:auto; margin:10px;">
-                    {% endfor %}
-                </div>
-            {% else %}
-                <p>No images available.</p>
-            {% endif %}
-        </div>
+    <div class="product-info-container">
+        <h1>{{ name }}</h1>
+        {% if image_urls %}
+            <div class="product-gallery">
+                {% for url in image_urls %}
+                    <img src="{{ url }}" alt="{{ name }}" style="width:300px; height:auto; margin:10px;">
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No images available.</p>
+        {% endif %}
+    </div>
     
     
-    {% else %}
-        <p>No images available.</p>
-    {% endif %}
 </body>
 </html>

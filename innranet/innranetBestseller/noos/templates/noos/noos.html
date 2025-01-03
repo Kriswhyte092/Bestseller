@@ -54,16 +54,32 @@
 <body>
     <div class="product-page">
         <h1 style="text-align: center;">NOOS Products</h1>
+        <!-- Server-Side Search Form -->
+        <div style="text-align: center; margin-bottom: 20px;">
+            <form method="GET" action="/noos/">
+                <input
+                    type="text"
+                    name="search"
+                    placeholder="Search products..."
+                    style="padding: 10px; width: 50%; border: 1px solid #ddd; border-radius: 5px;"
+                />
+                <button type="submit" style="padding: 10px 20px; border: none; background-color: #0f3460; color: white; border-radius: 5px; cursor: pointer;">
+                    Search
+                </button>
+            </form>
+        </div>
+        <!-- Product Container -->
         <div class="product-container">
             {% for product in products %}
-                <div class="product-card" onclick="loadProductInfo('{{ product.name }}')">
-                    <img src="{{ product.image_url }}" alt="{{ product.name }}">
-                    <h3>{{ product.name }}</h3>
-                </div>
+            <div class="product-card" onclick="loadProductInfo('{{ product.id }}')">
+                <img src="{{ product.image_url }}" alt="{{ product.name }}">
+                <h3>{{ product.name }}</h3>
+            </div>
             {% endfor %}
         </div>
     </div>
 </body>
+
 </html>
 <script>
     function loadProductInfo(productName) {

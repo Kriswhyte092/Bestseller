@@ -149,12 +149,13 @@ def noos(request):
     )  # JJ NOOS barcodes
     fetch_and_store_json(barcodes)
 
-    search_query = request.GET.get("search", "").lower()
+    search_query = request.GET.get("search", "")
     products = []
 
     for product_data in load_all_products():
         product_name = product_data.get("name", "").lower()
-        if search_query in product_name:  # Filter by search query
+        product_number = str(product_data.get("number", ""))
+        if search_query in product_name or search_query in product_number:
             image_urls = []
             extract_image_urls(product_data, image_urls)
             if image_urls:

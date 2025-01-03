@@ -97,3 +97,33 @@
             .catch(error => console.error('Error:', error));
     }
 </script>
+<body>
+    <!-- Return Button -->
+    <a href="/noos/" style="text-decoration: none;">
+        <button style="
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #0f3460;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;">
+            &larr; Return to NOOS
+        </button>
+    </a>
+
+    <div class="product-info-container">
+        <h1>{{ name }}</h1>
+        {% if image_urls %}
+            <div class="product-gallery">
+                {% for url in image_urls %}
+                    <img src="{{ url }}" alt="{{ name }}" style="width:300px; height:auto; margin:10px;">
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No images available.</p>
+        {% endif %}
+    </div>
+</body>

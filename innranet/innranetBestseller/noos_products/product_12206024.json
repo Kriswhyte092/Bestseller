@@ -657,7 +657,7 @@
                 "text": "Hem g\u00fcnl\u00fck kullan\u0131m hem de \u00f6zel g\u00fcnler i\u00e7in yumu\u015fak aksesuarlarla her k\u0131yafete \u015f\u0131k bir dokunu\u015f kat\u0131n.\n\u00d6rg\u00fc, g\u00fcnl\u00fck kullan\u0131m i\u00e7in m\u00fckemmel olan elastik, yumu\u015fak ve nefes alabilen bir tasar\u0131ma sahiptir.\nRDD, Royal Denim Division'\u0131n k\u0131saltmas\u0131d\u0131r. RDD olarak, kenar denim tarihine s\u0131k\u0131 s\u0131k\u0131ya ba\u011fl\u0131 zamans\u0131z kot pantolonlar \u00fcreterek kalite i\u00e7in referans noktan\u0131z olmay\u0131 hedefliyoruz. Kendimizi zanaatkarl\u0131\u011fa adad\u0131k ve mevsimlere de\u011fil, y\u0131llarca s\u00fcrecek zamans\u0131z par\u00e7alarla gelene\u011fi onurland\u0131rd\u0131k. Her detay d\u00fc\u015f\u00fcn\u00fcld\u00fc, her malzeme bir sebepten dolay\u0131 se\u00e7ildi ve her tasar\u0131m zamana duyarl\u0131 trendleri a\u015fmak i\u00e7in yap\u0131ld\u0131.\n - \u00dcr\u00fcn tipi : Bere\n - Ekstra detaylar : Rozet\n"
             }
         ],
-        "quality_description": "Gender: Male\r\nStyle Type: HAT - WITHOUT SHADE\r\nComposition: 100% Wool (Merino Wool)\r\n",
+        "quality_description": "Gender: Male\nComposition: 100% Wool - Merino - RWS\n",
         "gender": [
             {
                 "language": "Arabic",
@@ -976,8 +976,174 @@
                 "text": "Yeti\u015fkin"
             }
         ],
-        "sustainability": [],
-        "sustainable_choices": [],
+        "sustainability": [
+            {
+                "type": "MADE WITH CERTIFIED MERINO WOOL",
+                "name": "This product is made with certified merino wool where animal welfare has been respected."
+            }
+        ],
+        "sustainable_choices": [
+            {
+                "sustainable_choice": [
+                    {
+                        "language": "Arabic",
+                        "text": "\u0647\u0630\u0627 \u0627\u0644\u0645\u0646\u062a\u062c \u0645\u0635\u0646\u0648\u0639 \u0645\u0646 \u0635\u0648\u0641 \u0645\u064a\u0631\u064a\u0646\u0648 \u0645\u0639\u062a\u0645\u062f \u062d\u064a\u062b \u062a\u0645 \u0627\u062d\u062a\u0631\u0627\u0645 \u0631\u0639\u0627\u064a\u0629."
+                    },
+                    {
+                        "language": "Azerbaijani",
+                        "text": "Bu m\u0259hsul heyvanlar\u0131n rifah\u0131na h\u00f6rm\u0259t edildiyi sertifikatla\u015fd\u0131r\u0131lm\u0131\u015f merino yunla haz\u0131rlan\u0131r."
+                    },
+                    {
+                        "language": "Bulgarian",
+                        "text": "\u0422\u043e\u0437\u0438 \u043f\u0440\u043e\u0434\u0443\u043a\u0442 \u0435 \u043d\u0430\u043f\u0440\u0430\u0432\u0435\u043d \u0441\u044a\u0441 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u0430\u043d\u0430 \u043c\u0435\u0440\u0438\u043d\u043e\u0441\u043e\u0432\u0430 \u0432\u044a\u043b\u043d\u0430, \u043a\u044a\u0434\u0435\u0442\u043e \u0445\u0443\u043c\u0430\u043d\u043d\u043e\u0442\u043e \u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u0435 \u043a\u044a\u043c \u0436\u0438\u0432\u043e\u0442\u043d\u0438\u0442\u0435 \u0435 \u0431\u0438\u043b\u043e \u0441\u043f\u0430\u0437\u0435\u043d\u043e."
+                    },
+                    {
+                        "language": "Bosnian",
+                        "text": "Ovaj proizvod je napravljen od sertifikovane merino vune gde se po\u0161tuje dobrobit \u017eivotinja."
+                    },
+                    {
+                        "language": "Montenegrin",
+                        "text": "Ovaj proizvod je napravljen od sertifikovane merino vune gde je po\u0161tovana dobrobit \u017eivotinja."
+                    },
+                    {
+                        "language": "Czech",
+                        "text": "Tento produkt je vyroben z certifikovan\u00e9 merino vlny, kde byly respektov\u00e1ny dobr\u00e9 \u017eivotn\u00ed podm\u00ednky zv\u00ed\u0159at"
+                    },
+                    {
+                        "language": "Danish",
+                        "text": "Dette produkt er lavet med certificeret merinould, der respekterer dyrevelf\u00e6rden"
+                    },
+                    {
+                        "language": "German",
+                        "text": "Dieses Produkt enth\u00e4lt zertifizierte Merinowolle aus Quellen, die das Tierwohl respektieren"
+                    },
+                    {
+                        "language": "Greek",
+                        "text": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03c0\u03c1\u03bf\u03ca\u03cc\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u03ba\u03b1\u03c4\u03b1\u03c3\u03ba\u03b5\u03c5\u03b1\u03c3\u03bc\u03ad\u03bd\u03bf \u03bc\u03b5 \u03c0\u03b9\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03bf \u03bc\u03b1\u03bb\u03bb\u03af \u03bc\u03b5\u03c1\u03b9\u03bd\u03cc\u03c2, \u03cc\u03c0\u03bf\u03c5 \u03ad\u03c7\u03b5\u03b9 \u03c4\u03b7\u03c1\u03b7\u03b8\u03b5\u03af \u03b7 \u03ba\u03b1\u03bb\u03ae \u03bc\u03b5\u03c4\u03b1\u03c7\u03b5\u03af\u03c1\u03b9\u03c3\u03b7 \u03c4\u03c9\u03bd \u03b6\u03ce\u03c9\u03bd."
+                    },
+                    {
+                        "language": "Canadian English",
+                        "text": "This product is made with certified merino wool where animal welfare has been respected"
+                    },
+                    {
+                        "language": "English",
+                        "text": "This product is made with certified merino wool where animal welfare has been respected"
+                    },
+                    {
+                        "language": "USEnglish",
+                        "text": "This product is made with certified merino wool where animal welfare has been respected"
+                    },
+                    {
+                        "language": "Spanish",
+                        "text": "Este producto est\u00e1 fabricado con lana merina certificada y se ha respetado el bienestar del animal en todo el proceso"
+                    },
+                    {
+                        "language": "Estonian",
+                        "text": "See toode on valmistatud sertifitseeritud meriinovillast, mille puhul on j\u00e4rgitud loomade heaolu"
+                    },
+                    {
+                        "language": "Finnish",
+                        "text": "T\u00e4m\u00e4 tuote on valmistettu sertifioidusta merinovillasta, jonka valmistuksessa kunnioitetaan el\u00e4inten hyvinvointia"
+                    },
+                    {
+                        "language": "Canadian French",
+                        "text": "Cet article est fabriqu\u00e9 avec de la laine m\u00e9rinos certifi\u00e9e produite dans le respect du bien-\u00eatre animal"
+                    },
+                    {
+                        "language": "French",
+                        "text": "Cet article est fabriqu\u00e9 avec de la laine m\u00e9rinos certifi\u00e9e produite dans le respect du bien-\u00eatre animal"
+                    },
+                    {
+                        "language": "Croatian",
+                        "text": "Ovaj proizvod izra\u0111en je od certificirane merino vune gdje se po\u0161tuje dobrobit \u017eivotinja."
+                    },
+                    {
+                        "language": "Hungarian",
+                        "text": "Ez a term\u00e9k tan\u00fas\u00edtv\u00e1nnyal rendelkez\u0151 merin\u00f3i gyapj\u00fab\u00f3l, az \u00e1llatok j\u00f3l\u00e9t\u00e9nek biztos\u00edts\u00e1val k\u00e9sz\u00fclt"
+                    },
+                    {
+                        "language": "Armenian",
+                        "text": "\u0531\u0575\u057d \u0561\u057a\u0580\u0561\u0576\u0584\u0568 \u057a\u0561\u057f\u0580\u0561\u057d\u057f\u057e\u0561\u056e \u0567 \u057d\u0565\u0580\u057f\u056b\u0586\u056b\u056f\u0561\u0581\u057e\u0561\u056e merino \u0562\u0580\u0564\u0578\u057e, \u0578\u0580\u057f\u0565\u0572 \u0570\u0561\u0580\u0563\u057e\u0565\u056c \u0567 \u056f\u0565\u0576\u0564\u0561\u0576\u056b\u0576\u0565\u0580\u056b \u0562\u0561\u0580\u0585\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0568:"
+                    },
+                    {
+                        "language": "Icelandic",
+                        "text": "\u00deessi vara er framleidd \u00far votta\u00f0ri merino ull \u00fear sem velfer\u00f0 d\u00fdra hefur veri\u00f0 virt."
+                    },
+                    {
+                        "language": "Italian",
+                        "text": "Questo prodotto \u00e8 realizzato in lana merino certificata nel pieno pieno rispetto del benessere animale"
+                    },
+                    {
+                        "language": "Japanese",
+                        "text": "\u3053\u306e\u88fd\u54c1\u306f\u3001\u52d5\u7269\u798f\u7949\u304c\u5c0a\u91cd\u3055\u308c\u305f\u8a8d\u5b9a\u30e1\u30ea\u30ce\u30a6\u30fc\u30eb\u3067\u4f5c\u3089\u308c\u3066\u3044\u307e\u3059\u3002"
+                    },
+                    {
+                        "language": "Kazakh",
+                        "text": "\u0411\u04b1\u043b \u04e9\u043d\u0456\u043c \u043c\u0430\u043b \u0431\u0430\u0493\u0443 \u0441\u0430\u049b\u0442\u0430\u043b\u0493\u0430\u043d \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u0442\u0430\u043b\u0493\u0430\u043d \u043c\u0435\u0440\u0438\u043d\u043e\u0441 \u0436\u04af\u043d\u0456\u043c\u0435\u043d \u0434\u0430\u0439\u044b\u043d\u0434\u0430\u043b\u0430\u0434\u044b."
+                    },
+                    {
+                        "language": "Korean",
+                        "text": "\uc774 \uc81c\ud488\uc740 \ub3d9\ubb3c \ubcf5\uc9c0\ub97c \uc874\uc911\ud558\ub294 \uc778\uc99d\ub41c \uba54\ub9ac\ub178 \uc6b8\ub85c \ub9cc\ub4e4\uc5b4\uc84c\uc2b5\ub2c8\ub2e4."
+                    },
+                    {
+                        "language": "Lithuanian",
+                        "text": "\u0160is produktas yra pagamintas i\u0161 sertifikuotos merino vilnos, gamybos metu buvo atsi\u017evelgiama \u012f gyv\u016bn\u0173 gerov\u0119"
+                    },
+                    {
+                        "language": "Latvian",
+                        "text": "\u0160is produkts ir izgatavots no sertific\u0113tas merino vilnas, kur\u0101 ir iev\u0113rota dz\u012bvnieku labtur\u012bba."
+                    },
+                    {
+                        "language": "Macedonian",
+                        "text": "\u041e\u0432\u043e\u0458 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434 \u0435 \u043d\u0430\u043f\u0440\u0430\u0432\u0435\u043d \u0441\u043e \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u0430\u043d\u0430 \u043c\u0435\u0440\u0438\u043d\u043e\u0441\u043e\u0432\u0430 \u0432\u043e\u043b\u043d\u0430 \u043a\u0430\u0434\u0435 \u0448\u0442\u043e \u0435 \u043f\u043e\u0447\u0438\u0442\u0443\u0432\u0430\u043d\u0430 \u0431\u043b\u0430\u0433\u043e\u0441\u043e\u0441\u0442\u043e\u0458\u0431\u0430\u0442\u0430 \u043d\u0430 \u0436\u0438\u0432\u043e\u0442\u043d\u0438\u0442\u0435."
+                    },
+                    {
+                        "language": "Dutch",
+                        "text": "Dit item is gemaakt met gecertificeerde merinowol wat is verkregen met respect voor dierenwelzijn"
+                    },
+                    {
+                        "language": "Norwegian",
+                        "text": "Dette produktet et laget av sertifisert merinoull hvor dyrevelferd har blitt respektert"
+                    },
+                    {
+                        "language": "Polish",
+                        "text": "Produkt wykonano z certyfikowanej we\u0142ny merynosa produkowanej z trosk\u0105 o dobro zwierz\u0105t"
+                    },
+                    {
+                        "language": "Portuguese",
+                        "text": "Este produto \u00e9 fabricado com l\u00e3 merino certificada, onde o bem-estar dos animais \u00e9 respeitado"
+                    },
+                    {
+                        "language": "Romanian",
+                        "text": "Acest produs este fabricat din l\u00e2n\u0103 merinos certificat\u0103, unde bun\u0103starea animalelor a fost respectat\u0103."
+                    },
+                    {
+                        "language": "Slovak",
+                        "text": "Tento v\u00fdrobok je vyroben\u00fd z certifikovanej merino vlny, pri ktorej sa dodr\u017eiavaj\u00fa dobr\u00e9 \u017eivotn\u00e9 podmienky zvierat"
+                    },
+                    {
+                        "language": "Slovenian",
+                        "text": "Ta izdelek je narejen z certificirano merino volno, kjer je bilo spo\u0161tovano dobro po\u010dutje \u017eivali"
+                    },
+                    {
+                        "language": "Albanian",
+                        "text": "Ky produkt \u00ebsht\u00eb b\u00ebr\u00eb me lesh merino t\u00eb \u00e7ertifikuar ku \u00ebsht\u00eb respektuar mir\u00ebqenia e kafsh\u00ebve."
+                    },
+                    {
+                        "language": "Serbian",
+                        "text": "\u041e\u0432\u0430\u0458 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434 \u0458\u0435 \u043d\u0430\u043f\u0440\u0430\u0432\u0459\u0435\u043d \u043e\u0434 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u043e\u0432\u0430\u043d\u0435 \u043c\u0435\u0440\u0438\u043d\u043e \u0432\u0443\u043d\u0435 \u0433\u0434\u0435 \u0458\u0435 \u043f\u043e\u0448\u0442\u043e\u0432\u0430\u043d\u0430 \u0434\u043e\u0431\u0440\u043e\u0431\u0438\u0442 \u0436\u0438\u0432\u043e\u0442\u0438\u045a\u0430."
+                    },
+                    {
+                        "language": "Swedish",
+                        "text": "Denna produkt \u00e4r tillverkad av certifierad merinoull d\u00e4r man har tagit h\u00e4nsyn till djurens v\u00e4lbefinnande"
+                    },
+                    {
+                        "language": "Turkish",
+                        "text": "Bu \u00fcr\u00fcn, hayvanlara etik muamelenin g\u00f6zetildi\u011fi sertifikal\u0131 merinos y\u00fcn\u00fcnden \u00fcretilmi\u015ftir"
+                    }
+                ]
+            }
+        ],
         "animal_product": null,
         "closing_flies": [],
         "style_concept": [
@@ -1316,7 +1482,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u0627\u0644\u0635\u0648\u0641 (\u0635\u0648\u0641 \u0645\u064a\u0631\u064a\u0646\u0648)",
+                        "material": "\u0635\u0648\u0641 - \u0645\u064a\u0631\u064a\u0646\u0648 - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1326,7 +1492,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Yun (Merino yun)",
+                        "material": "Yun - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1336,7 +1502,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u0412\u044a\u043b\u043d\u0430 (\u043c\u0435\u0440\u0438\u043d\u043e\u0441\u043e\u0432\u0430 \u0432\u044a\u043b\u043d\u0430)",
+                        "material": "\u0412\u044a\u043b\u043d\u0430 - \u041c\u0435\u0440\u0438\u043d\u043e - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1346,7 +1512,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "vuna ( merino vuna )",
+                        "material": "Vuna - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1356,7 +1522,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Vuna (Merino Vuna)",
+                        "material": "Vuna - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1366,7 +1532,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Vlna (Vlna Merino)",
+                        "material": "Vlna - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1376,7 +1542,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Uld (merinould)",
+                        "material": "Uld - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1386,7 +1552,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Merinowolle",
+                        "material": "Wolle\u00a0\u2013 Merino\u00a0\u2013 RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1396,7 +1562,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u039c\u03b1\u03bb\u03bb\u03af (\u039c\u03b1\u03bb\u03bb\u03af \u03bc\u03b5\u03c1\u03b9\u03bd\u03cc\u03c2)",
+                        "material": "\u039c\u03b1\u03bb\u03bb\u03af - \u03bc\u03b5\u03c1\u03b9\u03bd\u03cc\u03c2 - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1406,7 +1572,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Merino Wool",
+                        "material": "Wool - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1416,7 +1582,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Wool (Merino Wool)",
+                        "material": "Wool - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1426,7 +1592,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Wool (Merino Wool)",
+                        "material": "Wool - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1436,7 +1602,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Lana (lana de merino)",
+                        "material": "Lana - Merino - Certificaci\u00f3n \u00abRWS\u00bb",
                         "percentage": "100"
                     }
                 ],
@@ -1446,7 +1612,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Vill (meriino)",
+                        "material": "RWS-i meriinovill",
                         "percentage": "100"
                     }
                 ],
@@ -1456,7 +1622,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Villa (Merinovilla)",
+                        "material": "Villa - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1466,7 +1632,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Laine M\u00e9rinos",
+                        "material": "Laine - M\u00e9rinos - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1476,7 +1642,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Laine (Laine M\u00e9rinos)",
+                        "material": "Laine - M\u00e9rinos - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1486,7 +1652,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Vuna (merino vuna)",
+                        "material": "Vuna - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1496,7 +1662,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Gyapj\u00fa (merin\u00f3i gyapj\u00fa)",
+                        "material": "Gyapj\u00fa - merin\u00f3i - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1506,7 +1672,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u0532\u0580\u0564\u0575\u0561 (\u0544\u0565\u0580\u056b\u0576\u0578 \u054e\u0578\u0582\u056c)",
+                        "material": "\u0532\u0580\u0564\u0575\u0561 - \u0544\u0565\u0580\u056b\u0576\u0578 - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1516,7 +1682,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Ull (Merino ull)",
+                        "material": "Ull - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1526,7 +1692,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Lana (Lana Merino)",
+                        "material": "Lana - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1536,7 +1702,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u30a6\u30fc\u30eb(\u30e1\u30ea\u30ce\u30a6\u30fc\u30eb)",
+                        "material": "\u30a6\u30fc\u30eb - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1546,7 +1712,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u0416\u04af\u043d (\u041c\u0435\u0440\u0438\u043d\u043e \u0436\u04af\u043d\u0456)",
+                        "material": "\u0416\u04af\u043d - \u041c\u0435\u0440\u0438\u043d\u043e - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1556,7 +1722,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\uc6b8(\uba54\ub9ac\ub178\uc6cc\ub974)",
+                        "material": "\uc6b8 - \uba54\ub9ac\ub178 - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1566,7 +1732,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Vilna (merino vilna)",
+                        "material": "Vilna \u2013 Merino \u2013 RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1576,7 +1742,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Vilna (merino vilna)",
+                        "material": "Vilna - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1586,7 +1752,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u0412\u043e\u043b\u043d\u0430 (\u041c\u0435\u0440\u0438\u043d\u043e \u0432\u043e\u043b\u043d\u0430)",
+                        "material": "\u0412\u043e\u043b\u043d\u0430 - \u041c\u0435\u0440\u0438\u043d\u043e - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1596,7 +1762,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Wol (merinowol)",
+                        "material": "Wol - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1606,7 +1772,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Ull (merinoull)",
+                        "material": "Ull \u2013 merino \u2013 RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1616,7 +1782,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "We\u0142na (we\u0142na z merynosa)",
+                        "material": "We\u0142na - Merynos - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1626,7 +1792,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "L\u00e3 (L\u00e3 Merino)",
+                        "material": "L\u00e3 - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1636,7 +1802,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "L\u00e2n\u0103 (l\u00e2n\u0103 merinos)",
+                        "material": "L\u00e2n\u0103 - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1646,7 +1812,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Vlna (Merino vlna)",
+                        "material": "Vlna - Merino - U\u0161\u013eachtil\u00fd materi\u00e1l",
                         "percentage": "100"
                     }
                 ],
@@ -1656,7 +1822,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Volna (merino volna)",
+                        "material": "Volna - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1666,7 +1832,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Lesh (Lesh Merino)",
+                        "material": "Lesh - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1676,7 +1842,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "\u0412\u0443\u043d\u0430 (\u041c\u0435\u0440\u0438\u043d\u043e \u0412\u0443\u043d\u0430)",
+                        "material": "\u0412\u0443\u043d\u0430 - \u041c\u0435\u0440\u0438\u043d\u043e - \u0420W\u0421",
                         "percentage": "100"
                     }
                 ],
@@ -1686,7 +1852,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Ull (Merinoull)",
+                        "material": "Ull - Merino - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1696,7 +1862,7 @@
             {
                 "composition_text": [
                     {
-                        "material": "Y\u00fcn (Merinos Y\u00fcn\u00fc)",
+                        "material": "Y\u00fcn - Merinos - RWS",
                         "percentage": "100"
                     }
                 ],
@@ -1705,7 +1871,7 @@
             }
         ],
         "print_types": null,
-        "is_more_sustainable": false,
+        "is_more_sustainable": true,
         "extra_details": [
             {
                 "extra_details": [
@@ -1870,7 +2036,7 @@
         ]
     },
     "lens_tint": null,
-    "lifestyles": null,
+    "lifestyles": [],
     "weight": {
         "net": {
             "value": 0.1,
@@ -19772,6 +19938,1084 @@
                         "last_eta_country_code_iso3": "CHN",
                         "last_eta_country_code_iso2": "CN"
                     }
+                },
+                {
+                    "number": 4922490,
+                    "edi_colour_number": null,
+                    "colors": [
+                        {
+                            "hierachy": "master",
+                            "type": "pantone",
+                            "code": "17-1036 TCX",
+                            "name": [
+                                {
+                                    "language": "English",
+                                    "text": "Bistre"
+                                }
+                            ],
+                            "number": 1000000521,
+                            "hex_code": "#98754A"
+                        },
+                        {
+                            "hierachy": "standard",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0628\u0646\u064a \u063a\u0627\u0645\u0642"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "T\u00fcnd Q\u0259hv\u0259yi"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0422\u044a\u043c\u043d\u043e \u043a\u0430\u0444\u044f\u0432"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "Tamno sme\u0111a"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "Tamno braon"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "Tmav\u011b hn\u011bd\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "M\u00f8rkebrun"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Dunkelbraun"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u03a3\u03ba\u03bf\u03cd\u03c1\u03bf \u03ba\u03b1\u03c6\u03ad"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Dark brown"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Dark brown"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Dark brown"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Marr\u00f3n oscuro"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Tumepruun"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Tummanruskea"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Brun fonc\u00e9"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Brun fonc\u00e9"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "Tamno sme\u0111a"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "S\u00f6t\u00e9tbarna"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u0534\u0561\u0580\u0579\u0576\u0561\u0563\u0578\u0582\u0575\u0576"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "D\u00f6kkbr\u00fann"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Marrone Scuro"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u6697\u8910\u8272"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u049a\u0430\u0440\u0430 \u049b\u043e\u04a3\u044b\u0440"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\uc9d9\uc740 \uac08\uc0c9"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Tamsiai ruda"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "Tum\u0161i br\u016bns"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0422\u0435\u043c\u043d\u043e \u043a\u0430\u0444\u0435\u0430\u0432"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Donker bruin"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "M\u00f8rkebrun"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Ciemny br\u0105zowy"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Castanho Escuro"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "Maro \u00eenchis"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Tmavohned\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Temno rjava"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "Kafe e err\u00ebt"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0422\u0430\u043c\u043d\u043e \u0431\u0440\u0430\u043e\u043d"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "M\u00f6rkbrun"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Koyu kahverengi"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#693307"
+                        },
+                        {
+                            "hierachy": "main",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0623\u0633\u0645\u0631"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "Q\u018fHV\u018fYI"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u041a\u0410\u0424\u042f\u0412"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "BROWN"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "BRAON"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "Hn\u011bd\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "Brun"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Braun"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u039a\u03b1\u03c6\u03ad"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Brown"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Brown"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Brown"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Marr\u00f3n"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Pruun"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Ruskea"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Brun"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Brun"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "SME\u0110"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "Barna"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u0532\u0580\u0561\u0578\u0582\u0576"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "BR\u00daNN"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Marrone"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u8910\u8272"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u0411\u0420\u0410\u0423\u041d"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\uac08\uc0c9"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Ruda"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "BR\u016aNS"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0411\u0440\u0430\u0443\u043d."
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Bruin"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "Brun"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Br\u0105zowy"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Castanho"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "BRUN"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Hned\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Rjava"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "BROWN"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0411\u0420\u0410\u041e\u041d"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "Brun"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Kahverengi"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#945826"
+                        }
+                    ],
+                    "deliveries": [],
+                    "wholesale_price": {
+                        "country": null,
+                        "currency": null,
+                        "gross_price": 0.0,
+                        "net_price": 0.0
+                    },
+                    "noos_information": {
+                        "is_noos": false
+                    },
+                    "skus": [
+                        {
+                            "ean13": 5715825428896,
+                            "size": "ONE SIZE",
+                            "size_sort_order": 600,
+                            "length": null
+                        }
+                    ],
+                    "media": {
+                        "images": []
+                    },
+                    "fabric_pattern": [
+                        {
+                            "language": "Arabic",
+                            "text": "\u062a\u0641\u0635\u064a\u0644"
+                        },
+                        {
+                            "language": "Azerbaijani",
+                            "text": "\u018ftrafl\u0131"
+                        },
+                        {
+                            "language": "Bulgarian",
+                            "text": "\u0414\u0435\u0442\u0430\u0439\u043b"
+                        },
+                        {
+                            "language": "Bosnian",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Montenegrin",
+                            "text": "Detalja"
+                        },
+                        {
+                            "language": "Czech",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Danish",
+                            "text": "Detalje"
+                        },
+                        {
+                            "language": "German",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Greek",
+                            "text": "\u039b\u03b5\u03c0\u03c4\u03bf\u03bc\u03ad\u03c1\u03b5\u03b9\u03b1"
+                        },
+                        {
+                            "language": "Canadian English",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "English",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "USEnglish",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Spanish",
+                            "text": "Detalles"
+                        },
+                        {
+                            "language": "Estonian",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Finnish",
+                            "text": "Koristeellinen"
+                        },
+                        {
+                            "language": "Canadian French",
+                            "text": "D\u00e9tail"
+                        },
+                        {
+                            "language": "French",
+                            "text": "D\u00e9tail"
+                        },
+                        {
+                            "language": "Croatian",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Hungarian",
+                            "text": "R\u00e9szlet"
+                        },
+                        {
+                            "language": "Armenian",
+                            "text": "\u0544\u0561\u0576\u0580\u0561\u0574\u0561\u057d\u0576"
+                        },
+                        {
+                            "language": "Icelandic",
+                            "text": "Sm\u00e1atri\u00f0i"
+                        },
+                        {
+                            "language": "Italian",
+                            "text": "Dettaglio"
+                        },
+                        {
+                            "language": "Japanese",
+                            "text": "\u30c7\u30a3\u30c6\u30fc\u30eb"
+                        },
+                        {
+                            "language": "Kazakh",
+                            "text": "\u0415\u0433\u0436\u0435\u0439-\u0442\u0435\u0433\u0436\u0435\u0439"
+                        },
+                        {
+                            "language": "Korean",
+                            "text": "\uc138\ubd80"
+                        },
+                        {
+                            "language": "Lithuanian",
+                            "text": "Detal\u0117s"
+                        },
+                        {
+                            "language": "Latvian",
+                            "text": "Deta\u013cu"
+                        },
+                        {
+                            "language": "Macedonian",
+                            "text": "\u0414\u0435\u0442\u0430\u043b\u0438"
+                        },
+                        {
+                            "language": "Dutch",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Norwegian",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Polish",
+                            "text": "Element"
+                        },
+                        {
+                            "language": "Portuguese",
+                            "text": "Detalhe"
+                        },
+                        {
+                            "language": "Romanian",
+                            "text": "Am\u0103nunt"
+                        },
+                        {
+                            "language": "Slovak",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Slovenian",
+                            "text": "Podrobnosti"
+                        },
+                        {
+                            "language": "Albanian",
+                            "text": "Detaji"
+                        },
+                        {
+                            "language": "Serbian",
+                            "text": "\u0414\u0435\u0442\u0430\u0459\u0430"
+                        },
+                        {
+                            "language": "Swedish",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Turkish",
+                            "text": "Detay"
+                        }
+                    ],
+                    "business_model": {
+                        "business_model_type_name": "COLLECTION",
+                        "business_model_number": 1,
+                        "business_model_display_name": "Collection"
+                    },
+                    "transactional_data": {
+                        "first_confirmed_eta": "03/20/2025",
+                        "last_eta_country_of_origin": "CHINA",
+                        "last_eta_country_code_iso3": "CHN",
+                        "last_eta_country_code_iso2": "CN"
+                    }
+                },
+                {
+                    "number": 4922491,
+                    "edi_colour_number": null,
+                    "colors": [
+                        {
+                            "hierachy": "master",
+                            "type": "pantone",
+                            "code": "17-4405 TCX",
+                            "name": [
+                                {
+                                    "language": "English",
+                                    "text": "Monument"
+                                }
+                            ],
+                            "number": 1000001310,
+                            "hex_code": "#84898C"
+                        },
+                        {
+                            "hierachy": "standard",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0631\u0645\u0627\u062f\u064a \u0645\u062a\u0648\u0633\u0637"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "Orta T\u00fcnd-q\u0131rm\u0131z\u0131"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0421\u0440\u0435\u0434\u043d\u043e \u0441\u0438\u0432\u043e"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "Srednje siva"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "Srednje siva"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "St\u0159edn\u011b \u0161ed\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "Gr\u00e5"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Grau"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u039c\u03b5\u03c3\u03b1\u03af\u03bf \u03b3\u03ba\u03c1\u03b9"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Medium gray"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Medium grey"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Medium gray"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Gris intermedio"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Keskmine hall"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Keskiharmaa"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Gris moyen"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Gris moyen"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "Srednje siva"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "K\u00f6z\u00e9psz\u00fcrke"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u0544\u056b\u057b\u056b\u0576 Grey"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "Mi\u00f0lungs gr\u00e1r"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Grigio Medio"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u30df\u30c7\u30a3\u30a2\u30e0\u30b0\u30ec\u30fc"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u041e\u0440\u0442\u0430\u0448\u0430 \u0441\u04b1\u0440"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\ubbf8\ub514\uc5c4 \uadf8\ub808\uc774"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Vidutini\u0161kai pilka"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "Vid\u0113ji pel\u0113ks"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0421\u0440\u0435\u0434\u043d\u043e \u0441\u0438\u0432"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Medium grijs"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "Mellomgr\u00e5"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "\u015aredni szary"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Cinzento de tonalidade m\u00e9dia"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "Gri mediu"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Stredne siv\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Srednje siva"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "Gri e mesme"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0421\u0440\u0435\u0434\u045a\u0435 \u0441\u0438\u0432\u0430"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "Mellangr\u00e5"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Gri"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#858585"
+                        },
+                        {
+                            "hierachy": "main",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0631\u0645\u0627\u062f\u064a"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "QREY"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0421\u0418\u0412"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "SIV"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "GREY"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "\u0160ed\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "Gr\u00e5"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Grau"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u0393\u03ba\u03c1\u03b9"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Gray"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Grey"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Gray"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Gris"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Hall"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Harmaa"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Gris"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Gris"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "SIV"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "Sz\u00fcrke"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u0533\u0580\u0565\u0575"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "GR\u00c1R"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Grigio"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u7070\u8272"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u0413\u0420\u0415\u0419"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\ud68c\uc0c9"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Pilka"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "PEL\u0112KS"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0413\u0440\u0435\u0458."
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Grijs"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "Gr\u00e5"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Szary"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Cinzento"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "GRI"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Siv\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Siva"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "GREY"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0413\u0420\u0415Y"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "Gr\u00e5"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Gri"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#858585"
+                        }
+                    ],
+                    "deliveries": [],
+                    "wholesale_price": {
+                        "country": null,
+                        "currency": null,
+                        "gross_price": 0.0,
+                        "net_price": 0.0
+                    },
+                    "noos_information": {
+                        "is_noos": false
+                    },
+                    "skus": [
+                        {
+                            "ean13": 5715825428902,
+                            "size": "ONE SIZE",
+                            "size_sort_order": 600,
+                            "length": null
+                        }
+                    ],
+                    "media": {
+                        "images": []
+                    },
+                    "fabric_pattern": [
+                        {
+                            "language": "Arabic",
+                            "text": "\u062a\u0641\u0635\u064a\u0644"
+                        },
+                        {
+                            "language": "Azerbaijani",
+                            "text": "\u018ftrafl\u0131"
+                        },
+                        {
+                            "language": "Bulgarian",
+                            "text": "\u0414\u0435\u0442\u0430\u0439\u043b"
+                        },
+                        {
+                            "language": "Bosnian",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Montenegrin",
+                            "text": "Detalja"
+                        },
+                        {
+                            "language": "Czech",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Danish",
+                            "text": "Detalje"
+                        },
+                        {
+                            "language": "German",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Greek",
+                            "text": "\u039b\u03b5\u03c0\u03c4\u03bf\u03bc\u03ad\u03c1\u03b5\u03b9\u03b1"
+                        },
+                        {
+                            "language": "Canadian English",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "English",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "USEnglish",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Spanish",
+                            "text": "Detalles"
+                        },
+                        {
+                            "language": "Estonian",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Finnish",
+                            "text": "Koristeellinen"
+                        },
+                        {
+                            "language": "Canadian French",
+                            "text": "D\u00e9tail"
+                        },
+                        {
+                            "language": "French",
+                            "text": "D\u00e9tail"
+                        },
+                        {
+                            "language": "Croatian",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Hungarian",
+                            "text": "R\u00e9szlet"
+                        },
+                        {
+                            "language": "Armenian",
+                            "text": "\u0544\u0561\u0576\u0580\u0561\u0574\u0561\u057d\u0576"
+                        },
+                        {
+                            "language": "Icelandic",
+                            "text": "Sm\u00e1atri\u00f0i"
+                        },
+                        {
+                            "language": "Italian",
+                            "text": "Dettaglio"
+                        },
+                        {
+                            "language": "Japanese",
+                            "text": "\u30c7\u30a3\u30c6\u30fc\u30eb"
+                        },
+                        {
+                            "language": "Kazakh",
+                            "text": "\u0415\u0433\u0436\u0435\u0439-\u0442\u0435\u0433\u0436\u0435\u0439"
+                        },
+                        {
+                            "language": "Korean",
+                            "text": "\uc138\ubd80"
+                        },
+                        {
+                            "language": "Lithuanian",
+                            "text": "Detal\u0117s"
+                        },
+                        {
+                            "language": "Latvian",
+                            "text": "Deta\u013cu"
+                        },
+                        {
+                            "language": "Macedonian",
+                            "text": "\u0414\u0435\u0442\u0430\u043b\u0438"
+                        },
+                        {
+                            "language": "Dutch",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Norwegian",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Polish",
+                            "text": "Element"
+                        },
+                        {
+                            "language": "Portuguese",
+                            "text": "Detalhe"
+                        },
+                        {
+                            "language": "Romanian",
+                            "text": "Am\u0103nunt"
+                        },
+                        {
+                            "language": "Slovak",
+                            "text": "Detail"
+                        },
+                        {
+                            "language": "Slovenian",
+                            "text": "Podrobnosti"
+                        },
+                        {
+                            "language": "Albanian",
+                            "text": "Detaji"
+                        },
+                        {
+                            "language": "Serbian",
+                            "text": "\u0414\u0435\u0442\u0430\u0459\u0430"
+                        },
+                        {
+                            "language": "Swedish",
+                            "text": "Detalj"
+                        },
+                        {
+                            "language": "Turkish",
+                            "text": "Detay"
+                        }
+                    ],
+                    "business_model": {
+                        "business_model_type_name": "COLLECTION",
+                        "business_model_number": 1,
+                        "business_model_display_name": "Collection"
+                    },
+                    "transactional_data": {
+                        "first_confirmed_eta": "03/20/2025",
+                        "last_eta_country_of_origin": "CHINA",
+                        "last_eta_country_code_iso3": "CHN",
+                        "last_eta_country_code_iso2": "CN"
+                    }
                 }
             ],
             "variant_text": "RDD28 Kit Label",
@@ -24881,7 +26125,7 @@
         ],
         "additional_cares": null
     },
-    "collection_name": "2025 MAIN #4",
+    "collection_name": "2026 MAIN #1",
     "retail_prices": [
         {
             "country": "AUS",

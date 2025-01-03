@@ -2515,11 +2515,11 @@
     "lifestyles": [],
     "weight": {
         "net": {
-            "value": 0.646,
+            "value": 0.678,
             "unit": "kg"
         },
         "gross": {
-            "value": 0.702,
+            "value": 0.734,
             "unit": "kg"
         }
     },

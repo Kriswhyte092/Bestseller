@@ -7980,12 +7980,6 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715514787921,
-                            "size": "110",
-                            "size_sort_order": 11000,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715514787914,
                             "size": "115",
                             "size_sort_order": 11500,
@@ -7998,27 +7992,15 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715514787983,
-                            "size": "125",
-                            "size_sort_order": 12500,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715514787976,
-                            "size": "130",
-                            "size_sort_order": 13000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715514787938,
-                            "size": "135",
-                            "size_sort_order": 13500,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715514787990,
                             "size": "140",
                             "size_sort_order": 14000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715514787952,
+                            "size": "150",
+                            "size_sort_order": 15000,
                             "length": null
                         },
                         {
@@ -8028,9 +8010,27 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715514787952,
-                            "size": "150",
-                            "size_sort_order": 15000,
+                            "ean13": 5715514787938,
+                            "size": "135",
+                            "size_sort_order": 13500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715514787976,
+                            "size": "130",
+                            "size_sort_order": 13000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715514787983,
+                            "size": "125",
+                            "size_sort_order": 12500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715514787921,
+                            "size": "110",
+                            "size_sort_order": 11000,
                             "length": null
                         }
                     ],
@@ -8626,81 +8626,9 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715730885852,
-                            "size": "80",
-                            "size_sort_order": 8000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885821,
-                            "size": "85",
-                            "size_sort_order": 8500,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885920,
-                            "size": "90",
-                            "size_sort_order": 9000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715728309445,
-                            "size": "95",
-                            "size_sort_order": 9500,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885838,
-                            "size": "100",
-                            "size_sort_order": 10000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885883,
-                            "size": "105",
-                            "size_sort_order": 10500,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885890,
-                            "size": "110",
-                            "size_sort_order": 11000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885869,
-                            "size": "115",
-                            "size_sort_order": 11500,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885937,
-                            "size": "120",
-                            "size_sort_order": 12000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730881502,
-                            "size": "125",
-                            "size_sort_order": 12500,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885876,
-                            "size": "130",
-                            "size_sort_order": 13000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885845,
-                            "size": "135",
-                            "size_sort_order": 13500,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715730885913,
-                            "size": "140",
-                            "size_sort_order": 14000,
+                            "ean13": 5715730885944,
+                            "size": "150",
+                            "size_sort_order": 15000,
                             "length": null
                         },
                         {
@@ -8710,9 +8638,81 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715730885944,
-                            "size": "150",
-                            "size_sort_order": 15000,
+                            "ean13": 5715730885913,
+                            "size": "140",
+                            "size_sort_order": 14000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885845,
+                            "size": "135",
+                            "size_sort_order": 13500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885876,
+                            "size": "130",
+                            "size_sort_order": 13000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730881502,
+                            "size": "125",
+                            "size_sort_order": 12500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885937,
+                            "size": "120",
+                            "size_sort_order": 12000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885869,
+                            "size": "115",
+                            "size_sort_order": 11500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885890,
+                            "size": "110",
+                            "size_sort_order": 11000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885883,
+                            "size": "105",
+                            "size_sort_order": 10500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885838,
+                            "size": "100",
+                            "size_sort_order": 10000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715728309445,
+                            "size": "95",
+                            "size_sort_order": 9500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885920,
+                            "size": "90",
+                            "size_sort_order": 9000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885821,
+                            "size": "85",
+                            "size_sort_order": 8500,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715730885852,
+                            "size": "80",
+                            "size_sort_order": 8000,
                             "length": null
                         }
                     ],

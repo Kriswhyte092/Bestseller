@@ -2351,11 +2351,11 @@
     "lifestyles": [],
     "weight": {
         "net": {
-            "value": 0.708,
+            "value": 0.738,
             "unit": "kg"
         },
         "gross": {
-            "value": 0.788,
+            "value": 0.806,
             "unit": "kg"
         }
     },

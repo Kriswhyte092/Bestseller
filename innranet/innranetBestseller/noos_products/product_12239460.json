@@ -3241,15 +3241,15 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715430225033,
-                            "size": "XL",
-                            "size_sort_order": 9000,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715430225279,
                             "size": "XXL",
                             "size_sort_order": 10000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715430225033,
+                            "size": "XL",
+                            "size_sort_order": 9000,
                             "length": null
                         }
                     ],
@@ -3833,21 +3833,9 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715504357820,
-                            "size": "XXS",
-                            "size_sort_order": 2000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715502888876,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715502544192,
-                            "size": "S",
-                            "size_sort_order": 4000,
+                            "ean13": 5715502544185,
+                            "size": "XXL",
+                            "size_sort_order": 10000,
                             "length": null
                         },
                         {
@@ -3857,9 +3845,21 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715430327904,
-                            "size": "L",
-                            "size_sort_order": 8000,
+                            "ean13": 5715502544192,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715502888876,
+                            "size": "XS",
+                            "size_sort_order": 3000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715504357820,
+                            "size": "XXS",
+                            "size_sort_order": 2000,
                             "length": null
                         },
                         {
@@ -3869,9 +3869,9 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715502544185,
-                            "size": "XXL",
-                            "size_sort_order": 10000,
+                            "ean13": 5715430327904,
+                            "size": "L",
+                            "size_sort_order": 8000,
                             "length": null
                         }
                     ],
@@ -4434,30 +4434,6 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715504357813,
-                            "size": "XXS",
-                            "size_sort_order": 2000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715502888869,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715502544154,
-                            "size": "S",
-                            "size_sort_order": 4000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715502544178,
-                            "size": "M",
-                            "size_sort_order": 6000,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715430327898,
                             "size": "L",
                             "size_sort_order": 8000,
@@ -4473,6 +4449,30 @@
                             "ean13": 5715502544147,
                             "size": "XXL",
                             "size_sort_order": 10000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715502544178,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715502544154,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715502888869,
+                            "size": "XS",
+                            "size_sort_order": 3000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715504357813,
+                            "size": "XXS",
+                            "size_sort_order": 2000,
                             "length": null
                         }
                     ],
@@ -5185,33 +5185,15 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715504357806,
-                            "size": "XXS",
-                            "size_sort_order": 2000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715502888944,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715502544239,
                             "size": "S",
                             "size_sort_order": 4000,
                             "length": null
                         },
                         {
-                            "ean13": 5715502544253,
-                            "size": "M",
-                            "size_sort_order": 6000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715430327881,
-                            "size": "L",
-                            "size_sort_order": 8000,
+                            "ean13": 5715502544222,
+                            "size": "XXL",
+                            "size_sort_order": 10000,
                             "length": null
                         },
                         {
@@ -5221,9 +5203,27 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715502544222,
-                            "size": "XXL",
-                            "size_sort_order": 10000,
+                            "ean13": 5715504357806,
+                            "size": "XXS",
+                            "size_sort_order": 2000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715502544253,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715502888944,
+                            "size": "XS",
+                            "size_sort_order": 3000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715430327881,
+                            "size": "L",
+                            "size_sort_order": 8000,
                             "length": null
                         }
                     ],
@@ -5936,24 +5936,6 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715431016807,
-                            "size": "XXS",
-                            "size_sort_order": 2000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715430225781,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715430225446,
-                            "size": "S",
-                            "size_sort_order": 4000,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715430225453,
                             "size": "M",
                             "size_sort_order": 6000,
@@ -5966,9 +5948,9 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715430225460,
-                            "size": "XL",
-                            "size_sort_order": 9000,
+                            "ean13": 5715609095337,
+                            "size": "XXXL",
+                            "size_sort_order": 11000,
                             "length": null
                         },
                         {
@@ -5978,9 +5960,27 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715609095337,
-                            "size": "XXXL",
-                            "size_sort_order": 11000,
+                            "ean13": 5715430225446,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715430225781,
+                            "size": "XS",
+                            "size_sort_order": 3000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431016807,
+                            "size": "XXS",
+                            "size_sort_order": 2000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715430225460,
+                            "size": "XL",
+                            "size_sort_order": 9000,
                             "length": null
                         }
                     ],
@@ -6693,39 +6693,9 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715609095245,
-                            "size": "XXS",
-                            "size_sort_order": 2000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715609095368,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715609095238,
-                            "size": "S",
-                            "size_sort_order": 4000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715609095405,
-                            "size": "M",
-                            "size_sort_order": 6000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715600693501,
-                            "size": "L",
-                            "size_sort_order": 8000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715609095511,
-                            "size": "XL",
-                            "size_sort_order": 9000,
+                            "ean13": 5715609095542,
+                            "size": "XXXL",
+                            "size_sort_order": 11000,
                             "length": null
                         },
                         {
@@ -6735,9 +6705,39 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715609095542,
-                            "size": "XXXL",
-                            "size_sort_order": 11000,
+                            "ean13": 5715609095511,
+                            "size": "XL",
+                            "size_sort_order": 9000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715600693501,
+                            "size": "L",
+                            "size_sort_order": 8000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715609095405,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715609095238,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715609095368,
+                            "size": "XS",
+                            "size_sort_order": 3000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715609095245,
+                            "size": "XXS",
+                            "size_sort_order": 2000,
                             "length": null
                         }
                     ],
@@ -9451,12 +9451,6 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715609095351,
-                            "size": "XL",
-                            "size_sort_order": 9000,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715609095382,
                             "size": "XXL",
                             "size_sort_order": 10000,
@@ -9466,6 +9460,12 @@
                             "ean13": 5715609095375,
                             "size": "XXXL",
                             "size_sort_order": 11000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715609095351,
+                            "size": "XL",
+                            "size_sort_order": 9000,
                             "length": null
                         }
                     ],
@@ -10002,39 +10002,9 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715615436117,
-                            "size": "XXS",
-                            "size_sort_order": 2000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715615427917,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715615427764,
-                            "size": "S",
-                            "size_sort_order": 4000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715615427771,
-                            "size": "M",
-                            "size_sort_order": 6000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715608131012,
-                            "size": "L",
-                            "size_sort_order": 8000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715615427788,
-                            "size": "XL",
-                            "size_sort_order": 9000,
+                            "ean13": 5715615436148,
+                            "size": "XXXL",
+                            "size_sort_order": 11000,
                             "length": null
                         },
                         {
@@ -10044,9 +10014,39 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715615436148,
-                            "size": "XXXL",
-                            "size_sort_order": 11000,
+                            "ean13": 5715615427788,
+                            "size": "XL",
+                            "size_sort_order": 9000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715608131012,
+                            "size": "L",
+                            "size_sort_order": 8000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715615427771,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715615427764,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715615427917,
+                            "size": "XS",
+                            "size_sort_order": 3000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715615436117,
+                            "size": "XXS",
+                            "size_sort_order": 2000,
                             "length": null
                         }
                     ],
@@ -11287,18 +11287,6 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715431016814,
-                            "size": "XXS",
-                            "size_sort_order": 2000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715430224982,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715430224807,
                             "size": "S",
                             "size_sort_order": 4000,
@@ -11308,12 +11296,6 @@
                             "ean13": 5715430235421,
                             "size": "M",
                             "size_sort_order": 6000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715421400890,
-                            "size": "L",
-                            "size_sort_order": 8000,
                             "length": null
                         },
                         {
@@ -11332,6 +11314,24 @@
                             "ean13": 5715609095252,
                             "size": "XXXL",
                             "size_sort_order": 11000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715421400890,
+                            "size": "L",
+                            "size_sort_order": 8000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715430224982,
+                            "size": "XS",
+                            "size_sort_order": 3000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431016814,
+                            "size": "XXS",
+                            "size_sort_order": 2000,
                             "length": null
                         }
                     ],
@@ -12157,27 +12157,9 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715611721279,
-                            "size": "XS",
-                            "size_sort_order": 3000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715611721248,
-                            "size": "S",
-                            "size_sort_order": 4000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715611721262,
-                            "size": "M",
-                            "size_sort_order": 6000,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715610315905,
-                            "size": "L",
-                            "size_sort_order": 8000,
+                            "ean13": 5715611721231,
+                            "size": "XXL",
+                            "size_sort_order": 10000,
                             "length": null
                         },
                         {
@@ -12187,9 +12169,27 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715611721231,
-                            "size": "XXL",
-                            "size_sort_order": 10000,
+                            "ean13": 5715610315905,
+                            "size": "L",
+                            "size_sort_order": 8000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715611721262,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715611721248,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715611721279,
+                            "size": "XS",
+                            "size_sort_order": 3000,
                             "length": null
                         }
                     ],

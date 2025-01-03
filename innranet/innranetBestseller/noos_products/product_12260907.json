@@ -2927,159 +2927,15 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715608414276,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414504,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414757,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414870,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415464,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415501,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415662,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414917,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608415075,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413682,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413644,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413651,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413668,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413675,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413637,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715601095373,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413620,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608414191,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608414511,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608415518,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608415679,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608414924,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608415082,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608415228,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"34"
-                        },
-                        {
                             "ean13": 5715608415303,
                             "size": "28",
                             "size_sort_order": 2800,
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715608413729,
-                            "size": "29",
-                            "size_sort_order": 2900,
+                            "ean13": 5715608415228,
+                            "size": "27",
+                            "size_sort_order": 2700,
                             "length": "\"34"
                         },
                         {
@@ -3131,10 +2987,10 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715608415686,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"34"
+                            "ean13": 5715608414511,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715608414931,
@@ -3219,6 +3075,150 @@
                             "size": "42",
                             "size_sort_order": 4200,
                             "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608413620,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413668,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413651,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413682,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415075,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608414917,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415662,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608415501,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608415464,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414870,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414757,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414504,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414276,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608413729,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415686,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415082,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608414924,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415679,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415518,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608414191,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715601095373,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413637,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413675,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413644,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"32"
                         }
                     ],
                     "media": {
@@ -3846,12 +3846,6 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715608414580,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715608414771,
                             "size": "34",
                             "size_sort_order": 3400,
@@ -3861,12 +3855,6 @@
                             "ean13": 5715608414894,
                             "size": "36",
                             "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415495,
-                            "size": "38",
-                            "size_sort_order": 3800,
                             "length": "\"30"
                         },
                         {
@@ -3891,12 +3879,6 @@
                             "ean13": 5715608415198,
                             "size": "26",
                             "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608414108,
-                            "size": "27",
-                            "size_sort_order": 2700,
                             "length": "\"32"
                         },
                         {
@@ -3942,12 +3924,6 @@
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715608414214,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715608414597,
                             "size": "38",
                             "size_sort_order": 3800,
@@ -3960,21 +3936,9 @@
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715608415792,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715608415044,
                             "size": "25",
                             "size_sort_order": 2500,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608415204,
-                            "size": "26",
-                            "size_sort_order": 2600,
                             "length": "\"34"
                         },
                         {
@@ -4005,12 +3969,6 @@
                             "ean13": 5715608414160,
                             "size": "31",
                             "size_sort_order": 3100,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608414139,
-                            "size": "32",
-                            "size_sort_order": 3200,
                             "length": "\"34"
                         },
                         {
@@ -4074,12 +4032,6 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715608415419,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"36"
-                        },
-                        {
                             "ean13": 5715608415457,
                             "size": "30",
                             "size_sort_order": 3000,
@@ -4132,6 +4084,54 @@
                             "size": "42",
                             "size_sort_order": 4200,
                             "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608415419,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608414139,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415204,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415792,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608414214,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608414108,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415495,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414580,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
                         }
                     ],
                     "media": {
@@ -4711,153 +4711,15 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715611855776,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855783,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855790,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855806,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855813,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855820,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855837,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855844,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855851,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855868,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855875,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855882,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855899,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855905,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715611855912,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715611855929,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715611855936,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715611855943,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715611855950,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715611855967,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715611855974,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715611855981,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715607785629,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715611855998,
                             "size": "34",
                             "size_sort_order": 3400,
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715611856001,
-                            "size": "36",
-                            "size_sort_order": 3600,
+                            "ean13": 5715607785629,
+                            "size": "33",
+                            "size_sort_order": 3300,
                             "length": "\"32"
                         },
                         {
@@ -4879,10 +4741,10 @@
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715611856049,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"34"
+                            "ean13": 5715611855981,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715611856056,
@@ -4915,10 +4777,10 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715611856100,
+                            "ean13": 5715611855974,
                             "size": "31",
                             "size_sort_order": 3100,
-                            "length": "\"34"
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715611856117,
@@ -4927,10 +4789,10 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715611856124,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"34"
+                            "ean13": 5715611855967,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715611856131,
@@ -4945,16 +4807,16 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715611856155,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"34"
+                            "ean13": 5715611855950,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"32"
                         },
                         {
-                            "ean13": 5715611856162,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"34"
+                            "ean13": 5715611855943,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715611856179,
@@ -4999,10 +4861,10 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715611856247,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"36"
+                            "ean13": 5715611855936,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715611856254,
@@ -5017,10 +4879,10 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715611856278,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"36"
+                            "ean13": 5715611855912,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715611856285,
@@ -5035,15 +4897,153 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715611856308,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"36"
+                            "ean13": 5715611855905,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"30"
                         },
                         {
                             "ean13": 5715611856315,
                             "size": "42",
                             "size_sort_order": 4200,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715611855899,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855882,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855875,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855868,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855851,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855844,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855837,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855820,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855813,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855806,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855790,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855783,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611855776,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715611856001,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715611855929,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715611856049,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715611856100,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715611856124,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715611856155,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715611856162,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715611856247,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715611856278,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715611856308,
+                            "size": "40",
+                            "size_sort_order": 4000,
                             "length": "\"36"
                         }
                     ],
@@ -5642,12 +5642,6 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715613959557,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715613959595,
                             "size": "29",
                             "size_sort_order": 2900,
@@ -5672,30 +5666,6 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715613960034,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715613960072,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715613960126,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715613960195,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715613984658,
                             "size": "40",
                             "size_sort_order": 4000,
@@ -5711,12 +5681,6 @@
                             "ean13": 5715613959199,
                             "size": "25",
                             "size_sort_order": 2500,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715613959236,
-                            "size": "26",
-                            "size_sort_order": 2600,
                             "length": "\"32"
                         },
                         {
@@ -5744,12 +5708,6 @@
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715613959861,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715613959939,
                             "size": "32",
                             "size_sort_order": 3200,
@@ -5765,12 +5723,6 @@
                             "ean13": 5715613960089,
                             "size": "34",
                             "size_sort_order": 3400,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715613960133,
-                            "size": "36",
-                            "size_sort_order": 3600,
                             "length": "\"32"
                         },
                         {
@@ -5798,12 +5750,6 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715613959243,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"34"
-                        },
-                        {
                             "ean13": 5715613959403,
                             "size": "27",
                             "size_sort_order": 2700,
@@ -5822,12 +5768,6 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715613959823,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"34"
-                        },
-                        {
                             "ean13": 5715613984634,
                             "size": "31",
                             "size_sort_order": 3100,
@@ -5840,12 +5780,6 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715613960041,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"34"
-                        },
-                        {
                             "ean13": 5715613960096,
                             "size": "34",
                             "size_sort_order": 3400,
@@ -5855,12 +5789,6 @@
                             "ean13": 5715613960140,
                             "size": "36",
                             "size_sort_order": 3600,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715613960218,
-                            "size": "38",
-                            "size_sort_order": 3800,
                             "length": "\"34"
                         },
                         {
@@ -5888,18 +5816,6 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715613959410,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715613959588,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"36"
-                        },
-                        {
                             "ean13": 5715613959663,
                             "size": "29",
                             "size_sort_order": 2900,
@@ -5909,12 +5825,6 @@
                             "ean13": 5715613959830,
                             "size": "30",
                             "size_sort_order": 3000,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715613959908,
-                            "size": "31",
-                            "size_sort_order": 3100,
                             "length": "\"36"
                         },
                         {
@@ -5958,6 +5868,96 @@
                             "size": "42",
                             "size_sort_order": 4200,
                             "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715613959908,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715613959588,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715613959410,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715613960218,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715613960041,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715613959823,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715613959243,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715613960133,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715613959861,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715613959236,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715613960195,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715613960126,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715613960072,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715613960034,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715613959557,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"30"
                         }
                     ],
                     "media": {
@@ -6387,150 +6387,6 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715715070778,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715070891,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715016660,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715016653,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011559,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011566,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011573,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011542,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011580,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011535,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071195,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071225,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071287,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071409,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715070785,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715070907,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715016677,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998486,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998493,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998509,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998516,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998479,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715615499235,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998455,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715714998462,
                             "size": "36",
                             "size_sort_order": 3600,
@@ -6663,10 +6519,10 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715715071102,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"36"
+                            "ean13": 5715714998455,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715715071133,
@@ -6675,15 +6531,171 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715715071164,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"36"
+                            "ean13": 5715714998479,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"32"
                         },
                         {
                             "ean13": 5715715019821,
                             "size": "32",
                             "size_sort_order": 3200,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715714998516,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998509,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715019814,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715715024030,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715715016677,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715070907,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715070785,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715071409,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071225,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071195,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011535,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011580,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011542,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011573,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011566,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011559,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715016653,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715016660,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715070891,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715070778,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715615499235,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998493,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998486,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715071287,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071102,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715715071164,
+                            "size": "31",
+                            "size_sort_order": 3100,
                             "length": "\"36"
                         },
                         {
@@ -6696,18 +6708,6 @@
                             "ean13": 5715715019807,
                             "size": "34",
                             "size_sort_order": 3400,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715715019814,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715715024030,
-                            "size": "38",
-                            "size_sort_order": 3800,
                             "length": "\"36"
                         },
                         {
@@ -7180,18 +7180,6 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715715011627,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011634,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715715011603,
                             "size": "32",
                             "size_sort_order": 3200,
@@ -7210,142 +7198,16 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715715071201,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071232,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715715071324,
                             "size": "40",
                             "size_sort_order": 4000,
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715715071447,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715070822,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715070945,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715016714,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998356,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998363,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998370,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998387,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998349,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715615499198,
                             "size": "33",
                             "size_sort_order": 3300,
                             "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998325,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998332,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715008924,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715071331,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715071454,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715070839,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715715070952,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715715071010,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715715071072,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715715016721,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"34"
                         },
                         {
                             "ean13": 5715714998424,
@@ -7484,6 +7346,144 @@
                             "size": "42",
                             "size_sort_order": 4200,
                             "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715715016721,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715715071072,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715715071010,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715715070952,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715715070839,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715715071454,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715071331,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715008924,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998332,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998325,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998349,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998387,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998370,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998363,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998356,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715016714,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715070945,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715070822,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715071447,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071232,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071201,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011634,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011627,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"30"
                         }
                     ],
                     "media": {
@@ -7919,12 +7919,6 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715715070853,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715715016745,
                             "size": "27",
                             "size_sort_order": 2700,
@@ -7937,154 +7931,16 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715715011672,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011689,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715715011696,
                             "size": "31",
                             "size_sort_order": 3100,
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715715011665,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011702,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715011658,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071188,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071218,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071249,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715071362,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715715070747,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715070860,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715016752,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998226,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715714998233,
                             "size": "29",
                             "size_sort_order": 2900,
                             "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998240,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998257,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998219,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715615499181,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998196,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715714998202,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715008887,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715071256,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715071379,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715715070754,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"34"
                         },
                         {
                             "ean13": 5715715070877,
@@ -8247,6 +8103,150 @@
                             "size": "42",
                             "size_sort_order": 4200,
                             "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715715070754,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715715071379,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715071256,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715008887,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998202,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998196,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715615499181,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998219,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998257,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998240,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715714998226,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715016752,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715070860,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715070747,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715715071362,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071249,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071218,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715071188,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011658,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011702,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011665,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011689,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715011672,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715715070853,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"30"
                         }
                     ],
                     "media": {
@@ -8701,33 +8701,9 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715608414818,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414337,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715608414344,
                             "size": "29",
                             "size_sort_order": 2900,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414351,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414368,
-                            "size": "31",
-                            "size_sort_order": 3100,
                             "length": "\"30"
                         },
                         {
@@ -8737,39 +8713,9 @@
                             "length": "\"30"
                         },
                         {
-                            "ean13": 5715608414429,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
                             "ean13": 5715608414764,
                             "size": "34",
                             "size_sort_order": 3400,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414863,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415488,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415587,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415747,
-                            "size": "42",
-                            "size_sort_order": 4200,
                             "length": "\"30"
                         },
                         {
@@ -8779,39 +8725,9 @@
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715608415150,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413965,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715608413927,
                             "size": "28",
                             "size_sort_order": 2800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413934,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413941,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413958,
-                            "size": "31",
-                            "size_sort_order": 3100,
                             "length": "\"32"
                         },
                         {
@@ -8821,21 +8737,9 @@
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715601095441,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715608413903,
                             "size": "34",
                             "size_sort_order": 3400,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608414207,
-                            "size": "36",
-                            "size_sort_order": 3600,
                             "length": "\"32"
                         },
                         {
@@ -8845,27 +8749,9 @@
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715608415594,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608415754,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715608415006,
                             "size": "25",
                             "size_sort_order": 2500,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608415167,
-                            "size": "26",
-                            "size_sort_order": 2600,
                             "length": "\"34"
                         },
                         {
@@ -8881,12 +8767,6 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715608414009,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"34"
-                        },
-                        {
                             "ean13": 5715608414016,
                             "size": "30",
                             "size_sort_order": 3000,
@@ -8896,30 +8776,6 @@
                             "ean13": 5715608414023,
                             "size": "31",
                             "size_sort_order": 3100,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608413996,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608414030,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608413972,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608413989,
-                            "size": "36",
-                            "size_sort_order": 3600,
                             "length": "\"34"
                         },
                         {
@@ -9023,6 +8879,150 @@
                             "size": "42",
                             "size_sort_order": 4200,
                             "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608413989,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608413972,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608414030,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608413996,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608414009,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415167,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415754,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415594,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608414207,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715601095441,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413958,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413941,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413934,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413965,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415150,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415747,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608415587,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608415488,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414863,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414429,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414368,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414351,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414337,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414818,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"30"
                         }
                     ],
                     "media": {
@@ -9609,159 +9609,15 @@
                     },
                     "skus": [
                         {
-                            "ean13": 5715608414948,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415105,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414795,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414238,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414245,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414252,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414269,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414221,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414665,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414740,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414887,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415471,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415549,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608415709,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": "\"30"
-                        },
-                        {
-                            "ean13": 5715608414955,
-                            "size": "25",
-                            "size_sort_order": 2500,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608415112,
-                            "size": "26",
-                            "size_sort_order": 2600,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413828,
-                            "size": "27",
-                            "size_sort_order": 2700,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413781,
-                            "size": "28",
-                            "size_sort_order": 2800,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413798,
-                            "size": "29",
-                            "size_sort_order": 2900,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413804,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413811,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413774,
-                            "size": "32",
-                            "size_sort_order": 3200,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715601095397,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"32"
-                        },
-                        {
-                            "ean13": 5715608413767,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"32"
-                        },
-                        {
                             "ean13": 5715608414184,
                             "size": "36",
                             "size_sort_order": 3600,
                             "length": "\"32"
                         },
                         {
-                            "ean13": 5715608414672,
-                            "size": "38",
-                            "size_sort_order": 3800,
+                            "ean13": 5715608413767,
+                            "size": "34",
+                            "size_sort_order": 3400,
                             "length": "\"32"
                         },
                         {
@@ -9795,6 +9651,210 @@
                             "length": "\"34"
                         },
                         {
+                            "ean13": 5715601095397,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413774,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413873,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608413811,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413804,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413798,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413835,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608413781,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608413828,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415563,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415723,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"34"
+                        },
+                        {
+                            "ean13": 5715608415112,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608414955,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"32"
+                        },
+                        {
+                            "ean13": 5715608415259,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608415709,
+                            "size": "42",
+                            "size_sort_order": 4200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608415549,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608415433,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608414726,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608415471,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414887,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414740,
+                            "size": "34",
+                            "size_sort_order": 3400,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414702,
+                            "size": "36",
+                            "size_sort_order": 3600,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608414825,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608415570,
+                            "size": "40",
+                            "size_sort_order": 4000,
+                            "length": "\"36"
+                        },
+                        {
+                            "ean13": 5715608414665,
+                            "size": "33",
+                            "size_sort_order": 3300,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414221,
+                            "size": "32",
+                            "size_sort_order": 3200,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414269,
+                            "size": "31",
+                            "size_sort_order": 3100,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414252,
+                            "size": "30",
+                            "size_sort_order": 3000,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414245,
+                            "size": "29",
+                            "size_sort_order": 2900,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414238,
+                            "size": "28",
+                            "size_sort_order": 2800,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414795,
+                            "size": "27",
+                            "size_sort_order": 2700,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608415105,
+                            "size": "26",
+                            "size_sort_order": 2600,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414948,
+                            "size": "25",
+                            "size_sort_order": 2500,
+                            "length": "\"30"
+                        },
+                        {
+                            "ean13": 5715608414672,
+                            "size": "38",
+                            "size_sort_order": 3800,
+                            "length": "\"32"
+                        },
+                        {
                             "ean13": 5715608415327,
                             "size": "28",
                             "size_sort_order": 2800,
@@ -9804,12 +9864,6 @@
                             "ean13": 5715608413866,
                             "size": "29",
                             "size_sort_order": 2900,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608413873,
-                            "size": "30",
-                            "size_sort_order": 3000,
                             "length": "\"34"
                         },
                         {
@@ -9831,12 +9885,6 @@
                             "length": "\"34"
                         },
                         {
-                            "ean13": 5715608413835,
-                            "size": "34",
-                            "size_sort_order": 3400,
-                            "length": "\"34"
-                        },
-                        {
                             "ean13": 5715608413842,
                             "size": "36",
                             "size_sort_order": 3600,
@@ -9846,18 +9894,6 @@
                             "ean13": 5715608414689,
                             "size": "38",
                             "size_sort_order": 3800,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608415563,
-                            "size": "40",
-                            "size_sort_order": 4000,
-                            "length": "\"34"
-                        },
-                        {
-                            "ean13": 5715608415723,
-                            "size": "42",
-                            "size_sort_order": 4200,
                             "length": "\"34"
                         },
                         {
@@ -9873,9 +9909,9 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715608415259,
-                            "size": "27",
-                            "size_sort_order": 2700,
+                            "ean13": 5715608414733,
+                            "size": "33",
+                            "size_sort_order": 3300,
                             "length": "\"36"
                         },
                         {
@@ -9891,51 +9927,15 @@
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715608415433,
-                            "size": "30",
-                            "size_sort_order": 3000,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715608414726,
-                            "size": "31",
-                            "size_sort_order": 3100,
-                            "length": "\"36"
-                        },
-                        {
                             "ean13": 5715608414719,
                             "size": "32",
                             "size_sort_order": 3200,
                             "length": "\"36"
                         },
                         {
-                            "ean13": 5715608414733,
-                            "size": "33",
-                            "size_sort_order": 3300,
-                            "length": "\"36"
-                        },
-                        {
                             "ean13": 5715608414696,
                             "size": "34",
                             "size_sort_order": 3400,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715608414702,
-                            "size": "36",
-                            "size_sort_order": 3600,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715608414825,
-                            "size": "38",
-                            "size_sort_order": 3800,
-                            "length": "\"36"
-                        },
-                        {
-                            "ean13": 5715608415570,
-                            "size": "40",
-                            "size_sort_order": 4000,
                             "length": "\"36"
                         },
                         {

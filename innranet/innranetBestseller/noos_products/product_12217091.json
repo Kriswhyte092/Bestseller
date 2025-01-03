@@ -4344,21 +4344,15 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715306483581,
-                            "size": "42",
-                            "size_sort_order": 4200,
-                            "length": null
-                        },
-                        {
-                            "ean13": 5715314253756,
-                            "size": "43",
-                            "size_sort_order": 4300,
-                            "length": null
-                        },
-                        {
                             "ean13": 5715314253763,
                             "size": "44",
                             "size_sort_order": 4400,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715314253787,
+                            "size": "46",
+                            "size_sort_order": 4600,
                             "length": null
                         },
                         {
@@ -4368,9 +4362,15 @@
                             "length": null
                         },
                         {
-                            "ean13": 5715314253787,
-                            "size": "46",
-                            "size_sort_order": 4600,
+                            "ean13": 5715314253756,
+                            "size": "43",
+                            "size_sort_order": 4300,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715306483581,
+                            "size": "42",
+                            "size_sort_order": 4200,
                             "length": null
                         }
                     ],

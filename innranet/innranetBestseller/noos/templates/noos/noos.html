@@ -3,6 +3,18 @@
 <head>
     <title>NOOS Products</title>
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-page {
+            max-height: 100vh; /* Restrict to viewport height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
         .product-container {
             display: flex;
             flex-wrap: wrap;
@@ -37,25 +49,19 @@
             font-size: 16px;
             margin-bottom: 5px;
         }
-
-        .product-card a {
-            text-decoration: none;
-            color: inherit;
-        }
     </style>
 </head>
 <body>
-    <h1>NOOS Products</h1>
-    <div class="product-container">
-        {% for product in products %}
-            <div class="product-card" onclick="loadProductInfo('{{ product.name }}')">
-                <img src="{{ product.image_url }}" alt="{{ product.name }}">
-                <h3>{{ product.name }}</h3>
-            </div>
-        {% endfor %}
+    <div class="product-page">
+        <h1 style="text-align: center;">NOOS Products</h1>
+        <div class="product-container">
+            {% for product in products %}
+                <div class="product-card" onclick="loadProductInfo('{{ product.name }}')">
+                    <img src="{{ product.image_url }}" alt="{{ product.name }}">
+                    <h3>{{ product.name }}</h3>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-    
-    
-    
 </body>
 </html>

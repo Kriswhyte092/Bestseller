@@ -1,59 +1,33 @@
 import requests
 from django.shortcuts import render
 import json
+import glob
+import os
 
-LOCAL_JSON_FILE = "product_data.json"
-
+NOOS_FOLDER = "noos_products"
 
 # Function to fetch and store JSON
-def fetch_and_store_json():
-    barcodes = ["5712836984809"]
-    base_url = "https://apigw.bestseller.com/pds/style/ean/"
+def fetch_and_store_json(barcodes):
+
+    base_url = "https://apigw.bestseller.com/pds/style/"
     headers = {"Ocp-Apim-Subscription-Key": "0d5c75bf70b244e6a7ab7480f6e39b07"}
-    api_url = f"{base_url}{barcodes[0]}"
-    try:
-        response = requests.get(api_url, headers=headers)
-        response.raise_for_status()  # Raise an exception for HTTP errors
-        with open(LOCAL_JSON_FILE, "w") as file:
-            json.dump(response.json(), file, indent=4)
-    except requests.RequestException as e:
-        print(f"Error fetching data from API: {e}")
-        return False
-    return True
+    
+    for barcode in barcodes:
+        if os.path.exists(f"noos_products/product_{barcode}.json"):
+            continue
+        
+        api_url = f"{base_url}{barcode}"
+        try:
+            response = requests.get(api_url, headers=headers)
+            response.raise_for_status()  # Raise an exception for HTTP errors
+            
+            file_path = os.path.join(NOOS_FOLDER, f"product_{barcode}.json")
 
-
-# Function to read JSON, extract data, and render
-def product_info(request):
-    product_name = request.GET.get("product", None)  # Extract the product name
-    if not product_name or not fetch_and_store_json():
-        return render(
-            request, "noos/noos-info.html", {"name": "Error", "image_urls": []}
-        )
-
-    try:
-        with open(LOCAL_JSON_FILE, "r") as file:
-            product_data = json.load(file)
-
-        # Check if the product matches the requested name
-        if product_name != product_data.get("name"):
-            return render(
-                request,
-                "noos/noos-info.html",
-                {"name": "No Product Found", "image_urls": []},
-            )
-
-        # Extract image URLs
-        image_urls = []
-        extract_image_urls(product_data, image_urls)
-    except (json.JSONDecodeError, FileNotFoundError) as e:
-        print(f"Error reading or parsing JSON file: {e}")
-        return render(
-            request, "noos/noos-info.html", {"name": "Error", "image_urls": []}
-        )
-
-    return render(
-        request, "noos/noos-info.html", {"name": product_name, "image_urls": image_urls}
-    )
+            # Save each product's data in a separate file
+            with open(file_path, "w") as file:
+                json.dump(response.json(), file, indent=4)
+        except requests.RequestException as e:
+            print(f"Error fetching data for barcode {barcode}: {e}")
 
 
 def extract_image_urls(data, urls):
@@ -71,43 +45,49 @@ def extract_image_urls(data, urls):
 
 
 def noos(request):
-    # Ensure the JSON file exists (fetch if necessary)
-    if not fetch_and_store_json():
-        return render(request, "noos/noos.html", {"products": []})
+    barcodes = list(set([
+        "12230334", "12242998", "12136795", "12242690", "12152757", 
+        "12118114", "12263507", "12254346", "12206024", "12066296", 
+        "12059471", "12022977", "12269002", "12248067", "12111773", 
+        "12075392", "12248070", "12266069", "12262858", "12203642", 
+        "12240477", "12150724", "12217091", "12236089", "12209663", 
+        "12133074", "12147024", "12148275", "12259815", "12248551", 
+        "12168656", "12263530", "12263335", "12261690", "12111026", 
+        "12113450", "12278009", "12216664", "12193754", "12139912", 
+        "12141844", "12258150", "12193553", "12260907", "12150148", 
+        "12150160", "12150158", "12159954", "12200751", "12138115", 
+        "12227385", "12260628", "12182486", "12248409", "12266046", 
+        "12192150", "12097662", "12208157", "12259944", "12267470", 
+        "12259945", "12210830", "12270279", "12208364", "12189339", 
+        "12157417", "12157321", "12259666", "12259664", "12257479", 
+        "12265328", "12239460", "12268183", "12257492", "12265298", 
+        "12265315", "12182461", "12268609", "12258672", "12259449", 
+        "12259393", "12259459", "12260481", "12156101", "12254412", 
+        "12205777", "12113648", "12059220", "12200404", "12258848", 
+        "12156102", "12241611", "12251180", "12074784"
+    ])) # JJ NOOS barcodes
+    fetch_and_store_json(barcodes)  # Fetch data for all barcodes
 
-    try:
-        with open(LOCAL_JSON_FILE, "r") as file:
-            product_data = json.load(file)
-
-        # Extract product name
+    products = []
+    for product_data in load_all_products():
+        # Extract product name and first image URL
         product_name = product_data.get("name", "No Name Available")
-
-        # Extract image URLs
         image_urls = []
         extract_image_urls(product_data, image_urls)
-
-        # Use only the first image for the noos.html page
-        products = (
-            [{"name": product_name, "image_url": image_urls[0]}] if image_urls else []
-        )
-    except (json.JSONDecodeError, FileNotFoundError) as e:
-        print(f"Error reading or parsing JSON file: {e}")
-        products = []
+        
+        if image_urls:
+            products.append({"name": product_name, "image_url": image_urls[0]})
 
     return render(request, "noos/noos.html", {"products": products})
-    context = {"name": product_name, "image_urls": image_urls}
-    return render(request, "noos/noos-info.html", context)
 
 
-def extract_image_urls(data, urls):
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if key == "images" and isinstance(value, list):
-                for image in value:
-                    if isinstance(image, dict) and "urls" in image:
-                        urls.append(image["urls"][0]["url"])
-            else:
-                extract_image_urls(value, urls)
-    elif isinstance(data, list):
-        for item in data:
-            extract_image_urls(item, urls)
+def load_all_products():
+    products = []
+    for file_path in glob.glob("noos_products/product_*.json"):  # Match all product files
+        try:
+            with open(file_path, "r") as file:
+                product_data = json.load(file)
+                products.append(product_data)
+        except (json.JSONDecodeError, FileNotFoundError) as e:
+            print(f"Error reading or parsing file {file_path}: {e}")
+    return products

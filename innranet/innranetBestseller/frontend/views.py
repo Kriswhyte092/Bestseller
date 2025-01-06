@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
-from .decorators import unauthenticated_user, allowed_users
+from .decorators import unauthenticated_user
 
 
 @login_required(login_url='/login')

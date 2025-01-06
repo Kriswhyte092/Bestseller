@@ -68,7 +68,6 @@ body {
     color: #1e6091; /* Change color on hover */
 }
 
-        
         /* Sidebar styles */
         .sidebar {
             position: sticky;
@@ -150,7 +149,6 @@ body {
     min-height: 100%; /* Ensure it fills the full height of the parent container */
 }
 
-
 #frontpage-image-container {
     flex: 1; /* Image container takes up less space */
     max-width: 300px; /* Limit maximum width */
@@ -168,12 +166,9 @@ body {
     margin-bottom: 10px; /* Add spacing between images */
 }
 
-
 body {
     overflow: hidden; /* Disable scrolling for the entire page */
 }
-
-
 
 .announcements-header {
     font-size: 28px; /* Larger, bolder header */
@@ -232,7 +227,6 @@ body {
             <div class="sidebar-header">Bestseller</div>
             <div class="sidebar-buttons">
                 <button class="sidebar-button" onclick="window.location.href='/noos/'">NOOS</button>
-
                 <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
                 <button class="sidebar-button" onclick="fetchContent('/bonus/')">Bonus</button>
                 <div class="sidebar-button" onclick="fetchContent('/laun/')">Laun</div>
@@ -283,7 +277,6 @@ body {
                     });
             }
 
-        
             function attachSidebarListeners() {
                 // Attach event listeners for the sidebar buttons
                 document.querySelector('.sidebar-button[onclick="fetchContent(\'/noos/\')"]').onclick = function () {
@@ -299,11 +292,6 @@ body {
                 };
             }
         </script>
-        
-        
-        
-
-        
 
         <!-- Right Sidebar -->
         <div class="sidebar right-sidebar">
@@ -379,8 +367,6 @@ body {
             fetchAnnouncements();
             fetchFrontPageImages(); // Updated to use the correct endpoint
         };
-            
-
 
     </script>
 </body>

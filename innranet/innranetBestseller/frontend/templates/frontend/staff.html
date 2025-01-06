@@ -1,0 +1,358 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Innranet</title>
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <style>
+        .topbar {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Push items to opposite sides */
+    padding: 10px 20px; /* Add padding inside the bar */
+    background: rgba(255, 255, 255, 0.8); /* Background color */
+    backdrop-filter: blur(10px); /* Add a blur effect */
+    border-bottom: 1px solid #ddd; /* Add a bottom border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000; /* Ensure it stays on top */
+    margin-bottom: 20px; /* Add padding below the topbar */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Replace with the font-family used for 'Bestseller' */
+}
+
+
+.topbar-title {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the title to the left */
+}
+
+.topbar-add {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: auto; /* Pushes the `+` to the right */
+    padding: 5px 10px; /* Optional: Add spacing inside the `+` */
+    transition: color 0.3s;
+}
+
+.topbar-add:hover {
+    color: #1e6091; /* Change color on hover */
+}
+
+        
+        /* Sidebar styles */
+        .sidebar {
+            position: sticky;
+            top: 0;
+        }
+
+        .left-sidebar {
+            width: 250px;
+            background-color: #1a1a2e;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .right-sidebar {
+            width: 300px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .sidebar-header {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .sidebar-button {
+            background-color: #0f3460;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-button:hover {
+            background-color: #1e6091;
+            transform: scale(1.03);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .main {
+    display: flex;
+    flex-direction: column; /* Stack the topbar and content */
+    min-height: 100vh; /* Ensure it fills the full height of the viewport */
+}
+
+.content-wrapper {
+    display: flex; /* Align content and image side by side */
+    justify-content: space-between; /* Space between main content and image */
+    align-items: stretch; /* Stretch items to fill equal height */
+    gap: 20px; /* Add spacing between sections */
+    flex-grow: 1; /* Allow the content wrapper to grow and take remaining space */
+}
+
+#content-area {
+    flex: 2; /* Allow the main content to take up more space horizontally */
+    background-color: white; /* White background for the content area */
+    padding: 20px; /* Add padding inside */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    display: flex; /* Use flexbox inside the content area */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    min-height: 100%; /* Ensure it fills the full height of the parent container */
+}
+
+
+#frontpage-image-container {
+    flex: 1; /* Image container takes up less space */
+    max-width: 300px; /* Limit maximum width */
+    height: calc(100vh - 50px); /* Adjust height to fit the screen, minus padding or margins */
+    overflow-y: auto; /* Enable vertical scrolling for the image container */
+    text-align: center; /* Center the images inside the container */
+    position: relative; /* Ensure it remains positioned within its parent */
+}
+
+#frontpage-image-container img {
+    width: 100%; /* Scale the image to fit the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for aesthetics */
+    margin-bottom: 10px; /* Add spacing between images */
+}
+
+
+body {
+    overflow: hidden; /* Disable scrolling for the entire page */
+}
+
+
+
+.announcements-header {
+    font-size: 28px; /* Larger, bolder header */
+    font-weight: bold;
+    color: #333; /* Darker color for emphasis */
+    margin-bottom: 15px; /* Add more spacing below the header */
+    text-align: center; /* Center-align the header */
+}
+
+.announcement-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.announcement-list li {
+    background: #ffffff; /* White background for contrast */
+    border: 1px solid #ddd; /* Subtle border around each item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Add spacing inside each item */
+    margin-bottom: 10px; /* Add spacing between items */
+    font-size: 16px; /* Increase font size for readability */
+    font-weight: 500; /* Slightly bold font */
+    color: #555; /* Softer text color */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+}
+
+
+
+.announcement-list li:hover {
+    font-family: 'Roboto', sans-serif; /* Replace with the specific font used in 'Bestseller' */
+    font-weight: 500; /* Match the weight */
+    color: inherit; /* Maintain existing colors */
+    background-color: #f9f9f9; /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+    cursor: pointer; /* Indicate interactivity */
+}
+
+
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar left-sidebar">
+            <div class="sidebar-header">Bestseller</div>
+            <div class="sidebar-buttons">
+                <button class="sidebar-button" onclick="window.location.href='/noos/'">NOOS</button>
+                <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <a href="/" class="topbar-title">Innranet</a>
+            </div>
+        
+            <div class="content-wrapper">
+                <!-- Main Content -->
+                <div id="content-area">
+                    <h2>Welcome to Innranet</h2>
+                </div>
+        
+                <!-- Image Container -->
+                <div id="frontpage-image-container">
+                    <!-- Image will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function loadProductInfo(productName) {
+                const url = `/noos/noos-info/?product=${encodeURIComponent(productName)}`;
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(html => {
+                        // Load the product info into the content area
+                        document.querySelector('#content-area').innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                        document.querySelector('#content-area').innerHTML = '<p>Error loading product information.</p>';
+                    });
+            }
+
+        
+            function attachSidebarListeners() {
+                // Attach event listeners for the sidebar buttons
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/noos/\')"]').onclick = function () {
+                    fetchContent('/noos/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/bonus/\')"]').onclick = function () {
+                    fetchContent('/bonus/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/laun/\')"]').onclick = function () {
+                    fetchContent('/laun/');
+                };
+            }
+        </script>
+        
+        
+        
+
+        
+
+        <!-- Right Sidebar -->
+        <div class="sidebar right-sidebar">
+            <div class="announcements-header">Announcements</div>
+            <ul id="announcement-list" class="announcement-list">
+                <!-- Announcements will be dynamically loaded here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+    function fetchContent(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                // Load content into the #content-area
+                document.getElementById('content-area').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+                document.getElementById('content-area').innerHTML = `<p>Error loading content.</p>`;
+            });
+    }
+
+        function fetchAnnouncements() {
+            fetch('/announcements/', {
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('announcement-list');
+                list.innerHTML = ''; // Clear existing announcements
+                data.forEach(announcement => {
+                    const li = document.createElement('li');
+                    li.textContent = `${announcement.title}: ${announcement.content}`;
+                    list.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error fetching announcements:', error));
+        }
+
+        window.onload = fetchAnnouncements;
+
+        function fetchFrontPageImages() {
+            fetch('/announcements/images/', { // Correct URL
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('frontpage-image-container');
+                container.innerHTML = ''; // Clear any existing content
+                if (data.images && data.images.length > 0) {
+                    data.images.forEach(imageUrl => {
+                        const img = document.createElement('img');
+                        img.src = imageUrl;  // Set the image URL
+                        img.alt = 'Front Page Image';
+                        img.style.marginBottom = '10px'; // Add spacing between images
+                        img.style.width = '100%'; // Ensure images fit within the container
+                        container.appendChild(img);  // Add each image to the container
+                    });
+                } else {
+                    container.innerHTML = '<p>No images available</p>';  // Placeholder if no images
+                }
+            })
+            .catch(error => console.error('Error fetching frontpage images:', error));
+        }
+        
+        window.onload = () => {
+            fetchAnnouncements();
+            fetchFrontPageImages(); // Updated to use the correct endpoint
+        };
+            
+
+
+    </script>
+</body>
+</html>

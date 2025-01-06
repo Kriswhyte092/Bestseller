@@ -25,6 +25,26 @@ body {
     font-family: 'Roboto', sans-serif; /* Replace with the font-family used for 'Bestseller' */
 }
 
+.topbar-user {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.user-profile,
+.logout-button {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #1a1a2e;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.user-profile:hover,
+.logout-button:hover {
+    color: #1e6091;
+}
+
+
 
 .topbar-title {
     text-decoration: none;
@@ -223,6 +243,11 @@ body {
             <div class="topbar">
                 <a href="/" class="topbar-title">Innranet</a>
                 <a href="{% url 'announcement_list' %}" class="topbar-add">+</a>
+                <div class="topbar-user">
+                    <a href="#" class="user-profile">Profile</a>
+                    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+                </div>
+
             </div>
         
             <div class="content-wrapper">

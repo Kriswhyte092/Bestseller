@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 
 
-@login_required(login_url='/login')
+@login_required(login_url="/login")
 def index(request, *args, **kwargs):
     return render(request, "frontend/index.html")
 
@@ -22,3 +22,12 @@ def loginn(request):
             return redirect("/login")
 
     return render(request, "login.html")
+
+
+from django.contrib.auth import logout
+
+
+@login_required(login_url="/login")
+def logout_view(request):
+    logout(request)
+    return redirect("/login")

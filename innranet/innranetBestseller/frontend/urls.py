@@ -8,6 +8,7 @@ urlpatterns = [
     path("NOOS", views.index),
     path("bonus", views.index),
     path("login/", views.loginn),
+    path("logout/", views.logout_view, name="logout"),
 ]
 
 if settings.DEBUG:

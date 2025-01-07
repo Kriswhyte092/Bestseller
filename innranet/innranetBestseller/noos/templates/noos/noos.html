@@ -71,7 +71,7 @@
         <!-- Product Container -->
         <div class="product-container">
             {% for product in products %}
-            <div class="product-card" onclick="loadProductInfo('{{ product.id }}')">
+            <div class="product-card" onclick="loadProductInfo('{{ product.name }}')">
                 <img src="{{ product.image_url }}" alt="{{ product.name }}">
                 <h3>{{ product.name }}</h3>
             </div>

@@ -191,6 +191,8 @@ def noos_info(request):
 
     for product_data in load_all_products():
         if product_data.get("name") == product_name:
-            return JsonResponse({"product": product_data})
+            image_urls = []
+            extract_image_urls(product_data, image_urls)
+            return render(request, "noos/noos-info.html", {"name": product_data.get("name"), "image_urls": image_urls})
 
     return JsonResponse({"error": "Product not found"}, status=404)

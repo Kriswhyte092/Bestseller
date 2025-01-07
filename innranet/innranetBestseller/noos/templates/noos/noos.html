@@ -12,7 +12,7 @@
             max-height: 100vh; /* Restrict to viewport height */
             overflow-y: auto; /* Enable vertical scrolling */
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color:rgb(255, 255, 255);
         }
 
         .product-container {
@@ -23,7 +23,7 @@
         }
 
         .product-card {
-            width: 200px;
+            width: 150px;
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 10px;
@@ -55,15 +55,15 @@
     <div class="product-page">
         <h1 style="text-align: center;">NOOS Products</h1>
         <!-- Server-Side Search Form -->
-        <div style="text-align: center; margin-bottom: 20px;">
-            <form method="GET" action="/noos/">
+        <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+            <form method="GET" action="/noos/" style="display: flex; flex-direction: column; align-items: center;">
                 <input
-                type="text"
-                name="search"
-                placeholder="Search products by barcode..."
-                style="padding: 10px; width: 50%; border: 1px solid #ddd; border-radius: 5px;"
+                    type="text"
+                    name="search"
+                    placeholder="Search products by barcode..."
+                    style="padding: 10px; width: 100%; max-width: 500px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;"
                 />
-                <button type="submit" style="padding: 10px 20px; border: none; background-color: #0f3460; color: white; border-radius: 5px; cursor: pointer;">
+                <button type="submit" style="padding: 10px; width: 100%; max-width: 200px; border: none; background-color: #0f3460; color: white; border-radius: 5px; cursor: pointer;">
                     Search
                 </button>
             </form>
@@ -98,22 +98,6 @@
     }
 </script>
 <body>
-    <!-- Return Button -->
-    <a href="/noos/" style="text-decoration: none;">
-        <button style="
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 15px;
-            background-color: #0f3460;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;">
-            &larr; Return to NOOS
-        </button>
-    </a>
-
     <div class="product-info-container">
         <h1>{{ name }}</h1>
         {% if image_urls %}
@@ -127,20 +111,3 @@
         {% endif %}
     </div>
 </body>
-<!-- Return Button to Landing Page -->
-<a href="/" style="text-decoration: none;">
-    <button style="
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 10px 15px;
-        background-color: #0f3460;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-weight: bold;
-        cursor: pointer;">
-        
-        &larr; Back to Frontpage       
-    </button>
-</a>

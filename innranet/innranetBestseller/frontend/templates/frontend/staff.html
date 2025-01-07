@@ -44,8 +44,6 @@ body {
     color: #1e6091;
 }
 
-
-
 .topbar-title {
     text-decoration: none;
     color: #1a1a2e;
@@ -150,7 +148,6 @@ body {
     min-height: 100%; /* Ensure it fills the full height of the parent container */
 }
 
-
 #frontpage-image-container {
     flex: 1; /* Image container takes up less space */
     max-width: 300px; /* Limit maximum width */
@@ -168,12 +165,9 @@ body {
     margin-bottom: 10px; /* Add spacing between images */
 }
 
-
 body {
     overflow: hidden; /* Disable scrolling for the entire page */
 }
-
-
 
 .announcements-header {
     font-size: 28px; /* Larger, bolder header */
@@ -202,8 +196,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
 }
 
-
-
 .announcement-list li:hover {
     font-family: 'Roboto', sans-serif; /* Replace with the specific font used in 'Bestseller' */
     font-weight: 500; /* Match the weight */
@@ -212,7 +204,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
     cursor: pointer; /* Indicate interactivity */
 }
-
 
         .main {
             flex: 1;
@@ -231,7 +222,7 @@ body {
         <div class="sidebar left-sidebar">
             <div class="sidebar-header">Bestseller</div>
             <div class="sidebar-buttons">
-                <button class="sidebar-button" onclick="window.location.href='/noos/'">NOOS</button>
+                <button class="sidebar-button" onclick="fetchContent('/noos/')">NOOS</button>
                 <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
             </div>
         </div>
@@ -243,15 +234,14 @@ body {
                     <a href="#" class="user-profile">Profile</a>
                     <a href="{% url 'logout' %}" class="logout-button">Logout</a>
                 </div>
-
             </div>
-        
+
             <div class="content-wrapper">
                 <!-- Main Content -->
                 <div id="content-area">
                     <h2>Welcome to Innranet</h2>
                 </div>
-        
+
                 <!-- Image Container -->
                 <div id="frontpage-image-container">
                     <!-- Image will be dynamically loaded here -->
@@ -279,7 +269,6 @@ body {
                     });
             }
 
-        
             function attachSidebarListeners() {
                 // Attach event listeners for the sidebar buttons
                 document.querySelector('.sidebar-button[onclick="fetchContent(\'/noos/\')"]').onclick = function () {
@@ -295,12 +284,6 @@ body {
                 };
             }
         </script>
-        
-        
-        
-
-        
-
         <!-- Right Sidebar -->
         <div class="sidebar right-sidebar">
             <div class="announcements-header">Announcements</div>
@@ -375,9 +358,6 @@ body {
             fetchAnnouncements();
             fetchFrontPageImages(); // Updated to use the correct endpoint
         };
-            
-
-
     </script>
 </body>
 </html>

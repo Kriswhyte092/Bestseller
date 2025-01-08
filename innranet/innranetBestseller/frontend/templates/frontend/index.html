@@ -152,6 +152,45 @@ body {
     justify-content: center; /* Center content vertically */
     min-height: 100%; /* Ensure it fills the full height of the parent container */
 }
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar-search-input {
+    flex: 3; /* Take up most of the space */
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-right: 1px solid #ddd; /* Divider line */
+}
+
+#sidebar-search-btn {
+    flex: 1; /* Take up less space */
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+#sidebar-search-btn:hover {
+    background-color: #1e6091;
+}
+
+
 
 #frontpage-image-container {
     flex: 1; /* Image container takes up less space */
@@ -230,10 +269,20 @@ body {
         <div class="sidebar left-sidebar">
             <div class="sidebar-header">Bestseller</div>
             <div class="sidebar-buttons">
+                    <!-- New Search Bar -->
+    <input
+    type="text"
+    id="sidebar-search-input"
+    placeholder="Search products..."
+    class="sidebar-button"
+    style="text-align: left; padding-left: 10px;"
+/>
+<button class="sidebar-button" id="sidebar-search-btn" onclick="searchProducts()">Search</button>
                 <button class="sidebar-button" onclick="fetchContent('/noos/')">NOOS</button>
                 <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
                 <button class="sidebar-button" onclick="fetchContent('/bonus/')">Bonus</button>
                 <div class="sidebar-button" onclick="fetchContent('/laun/')">Laun</div>
+
             </div>
         </div>
 
@@ -280,6 +329,20 @@ body {
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
                         document.querySelector('#content-area').innerHTML = '<p>Error loading product information.</p>';
+                    });
+            }
+            function searchProducts() {
+                const query = document.getElementById('sidebar-search-input').value.trim();
+                if (!query) return;
+
+                fetch(`/noos/?search=${encodeURIComponent(query)}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching search results:', error);
+                        document.getElementById('content-area').innerHTML = '<p>Error loading search results.</p>';
                     });
             }
 

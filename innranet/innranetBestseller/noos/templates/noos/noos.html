@@ -54,20 +54,7 @@
 <body>
     <div class="product-page">
         <h1 style="text-align: center;">NOOS Products</h1>
-        <!-- Server-Side Search Form -->
-        <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-            <form method="GET" action="/noos/" style="display: flex; flex-direction: column; align-items: center;">
-                <input
-                    type="text"
-                    name="search"
-                    placeholder="Search products by barcode..."
-                    style="padding: 10px; width: 100%; max-width: 500px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;"
-                />
-                <button type="submit" style="padding: 10px; width: 100%; max-width: 200px; border: none; background-color: #0f3460; color: white; border-radius: 5px; cursor: pointer;">
-                    Search
-                </button>
-            </form>
-        </div>
+
         <!-- Product Container -->
         <div class="product-container">
             {% for product in products %}

@@ -280,7 +280,8 @@ body {
                 <a href="/" class="topbar-title">Innranet</a>
                 <a href="{% url 'announcement_list' %}" class="topbar-add" style="margin-top: -2.5px;">+</a>
                 <div class="topbar-user">
-                    <a href="#" class="user-profile" style="font-weight: bold;">Profile</a>
+                    <a href="{% url 'profile' %}" class="user-profile">Profile</a>
+
                     <a href="{% url 'logout' %}" class="logout-button" style="font-weight: bold;">Logout</a>
                 </div>
 

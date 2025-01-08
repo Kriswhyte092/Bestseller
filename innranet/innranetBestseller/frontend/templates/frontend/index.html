@@ -116,7 +116,7 @@ body {
             border-radius: 8px;
             padding: 10px 20px;
             margin: 10px 0;
-            font-size: 16px;
+            font-size: 14px;
             text-align: center;
             cursor: pointer;
             transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
@@ -263,7 +263,7 @@ body {
                             type="text"
                             id="sidebar-search-input"
                             placeholder="Search products..."
-                            style="width: 70%; text-align: left; padding-left: 10px; border: none; border-radius: 8px 0 0 8px; height: 39px; margin-top: 10px;"
+                            style="width: 70%; text-align: left; padding-left: 10px; border: none; border-radius: 8px 0 0 8px; height: 37px; margin-top: 10px;"
                         />
                         <button class="sidebar-button" id="sidebar-search-btn" onclick="searchProducts()" style="border-radius: 0 8px 8px 0; font-weight: bold;">Search</button>
                     </div>
@@ -278,10 +278,10 @@ body {
         <div class="main">
             <div class="topbar">
                 <a href="/" class="topbar-title">Innranet</a>
-                <a href="{% url 'announcement_list' %}" class="topbar-add">+</a>
+                <a href="{% url 'announcement_list' %}" class="topbar-add" style="margin-top: -2.5px;">+</a>
                 <div class="topbar-user">
-                    <a href="#" class="user-profile">Profile</a>
-                    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+                    <a href="#" class="user-profile" style="font-weight: bold;">Profile</a>
+                    <a href="{% url 'logout' %}" class="logout-button" style="font-weight: bold;">Logout</a>
                 </div>
 
             </div>

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "userprofile.apps.UserprofileConfig",
     "noos.apps.NoosConfig",
     "announcements.apps.AnnouncementsConfig",
     "info.apps.InfoConfig",
@@ -156,6 +157,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "frontend/static")]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
+LOGIN_URL = "/login/"  # Update if your login URL is different
 
 # Middleware
 MIDDLEWARE += (

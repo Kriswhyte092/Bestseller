@@ -53,6 +53,7 @@ body {
     color: #1a1a2e;
     font-size: 24px;
     font-weight: bold;
+    margin-top: -1px;
     margin-right: auto; /* Pushes the title to the left */
 }
 
@@ -96,6 +97,7 @@ body {
             font-size: 28px;
             font-weight: bold;
             color: white;
+            margin-top: 0px;
             margin-bottom: 28px;
             text-align: center;
         }
@@ -114,7 +116,7 @@ body {
             border-radius: 8px;
             padding: 10px 20px;
             margin: 10px 0;
-            font-size: 16px;
+            font-size: 14px;
             text-align: center;
             cursor: pointer;
             transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
@@ -153,6 +155,30 @@ body {
     min-height: 100%; /* Ensure it fills the full height of the parent container */
 }
 
+    .search-container {
+        display: flex;
+        width: 100%;
+        margin-bottom: 0px; /* Add some spacing below the search bar */
+    }
+
+    .sidebar-button {
+        background-color: #0f3460;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .sidebar-button:hover {
+        background-color: #1a1a2e;
+    }
+
+
+
+
 #frontpage-image-container {
     flex: 1; /* Image container takes up less space */
     max-width: 300px; /* Limit maximum width */
@@ -175,10 +201,11 @@ body {
 }
 
 .announcements-header {
-    font-size: 28px; /* Larger, bolder header */
+    font-size: 24px; /* Larger, bolder header */
     font-weight: bold;
     color: #333; /* Darker color for emphasis */
-    margin-bottom: 15px; /* Add more spacing below the header */
+    margin-top: 12px;
+    margin-bottom: 38px; /* Add more spacing below the header */
     text-align: center; /* Center-align the header */
 }
 
@@ -230,20 +257,32 @@ body {
         <div class="sidebar left-sidebar">
             <div class="sidebar-header">Bestseller</div>
             <div class="sidebar-buttons">
-                <button class="sidebar-button" onclick="fetchContent('/noos/')">NOOS</button>
-                <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
-                <button class="sidebar-button" onclick="fetchContent('/bonus/')">Bonus</button>
-                <div class="sidebar-button" onclick="fetchContent('/laun/')">Laun</div>
+                    <!-- New Search Bar -->
+                    <div class="search-container">
+                        <input
+                            type="text"
+                            id="sidebar-search-input"
+                            placeholder="Search products..."
+                            style="width: 70%; text-align: left; padding-left: 10px; border: none; border-radius: 8px 0 0 8px; height: 37px; margin-top: 10px;"
+                        />
+                        <button class="sidebar-button" id="sidebar-search-btn" onclick="searchProducts()" style="border-radius: 0 8px 8px 0; font-weight: bold;">Search</button>
+                    </div>
+                    <button class="sidebar-button" onclick="fetchContent('/noos/')" style="font-weight: bold;">NOOS</button>
+                    <button class="sidebar-button" onclick="loadContent('Væntanlegt')" style="font-weight: bold;">Væntanlegt</button>
+                    <button class="sidebar-button" onclick="fetchContent('/bonus/')" style="font-weight: bold;">Bonus</button>
+                    <div class="sidebar-button" onclick="fetchContent('/laun/')" style="font-weight: bold;">Laun</div>
+
             </div>
         </div>
 
         <div class="main">
             <div class="topbar">
                 <a href="/" class="topbar-title">Innranet</a>
-                <a href="{% url 'announcement_list' %}" class="topbar-add">+</a>
+                <a href="{% url 'announcement_list' %}" class="topbar-add" style="margin-top: -2.5px;">+</a>
                 <div class="topbar-user">
-                    <a href="#" class="user-profile">Profile</a>
-                    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+                    <a href="{% url 'profile' %}" class="user-profile">Profile</a>
+
+                    <a href="{% url 'logout' %}" class="logout-button" style="font-weight: bold;">Logout</a>
                 </div>
 
             </div>
@@ -280,6 +319,20 @@ body {
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
                         document.querySelector('#content-area').innerHTML = '<p>Error loading product information.</p>';
+                    });
+            }
+            function searchProducts() {
+                const query = document.getElementById('sidebar-search-input').value.trim();
+                if (!query) return;
+
+                fetch(`/noos/?search=${encodeURIComponent(query)}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching search results:', error);
+                        document.getElementById('content-area').innerHTML = '<p>Error loading search results.</p>';
                     });
             }
 

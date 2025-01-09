@@ -251,42 +251,33 @@ body {
   /* Remove default margin */
 }
 
-.announcement-list li {
-  background: #ffffff;
-  /* White background for contrast */
-  border: 1px solid #ddd;
-  /* Subtle border around each item */
-  border-radius: 8px;
-  /* Rounded corners */
-  padding: 10px 15px;
-  /* Add spacing inside each item */
-  margin-bottom: 10px;
-  /* Add spacing between items */
-  font-size: 16px;
-  /* Increase font size for readability */
-  font-weight: 500;
-  /* Slightly bold font */
-  color: #555;
-  /* Softer text color */
-  transition: background-color 0.3s, box-shadow 0.3s;
-  /* Smooth hover effect */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  /* Light shadow for depth */
+.announcement-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
-.announcement-list li:hover {
+.announcement-list li {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
   font-family: 'Roboto', sans-serif;
-  /* Replace with the specific font used in 'Bestseller' */
-  font-weight: 500;
-  /* Match the weight */
-  color: inherit;
-  /* Maintain existing colors */
-  background-color: #f9f9f9;
-  /* Light gray background on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Stronger shadow on hover */
-  cursor: pointer;
-  /* Indicate interactivity */
+}
+.announcement-list li .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+.announcement-list li .content {
+  font-size: 14px;
+  color: #555;
 }
 
 .main {

@@ -271,6 +271,7 @@ body {
                     <button class="sidebar-button" onclick="loadContent('Væntanlegt')" style="font-weight: bold;">Væntanlegt</button>
                     <button class="sidebar-button" onclick="fetchContent('/bonus/')" style="font-weight: bold;">Bonus</button>
                     <div class="sidebar-button" onclick="fetchContent('/laun/')" style="font-weight: bold;">Laun</div>
+                    
 
             </div>
         </div>
@@ -280,7 +281,7 @@ body {
                 <a href="/" class="topbar-title">Innranet</a>
                 <a href="{% url 'announcement_list' %}" class="topbar-add" style="margin-top: -2.5px;">+</a>
                 <div class="topbar-user">
-                    <a href="{% url 'profile' %}" class="user-profile">Profile</a>
+                    <a href="javascript:void(0);" class="user-profile" onclick="loadContent('/profile/')">Profile</a>
 
                     <a href="{% url 'logout' %}" class="logout-button" style="font-weight: bold;">Logout</a>
                 </div>
@@ -301,6 +302,16 @@ body {
                 </div>
             </div>
         </div>
+        <script>
+            function loadContent(url) {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('content-area').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading content:', error));
+            }
+        </script>
 
         <script>
             function loadProductInfo(productName) {

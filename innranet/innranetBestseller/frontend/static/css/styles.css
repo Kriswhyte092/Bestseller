@@ -131,3 +131,11 @@ form button:hover {
   background-color: #14577b;
 }
 
+.profile-card {
+  background: var(--mainlightblue);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--navy-background);
+  font-size: 16px;
+}

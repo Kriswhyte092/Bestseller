@@ -1,0 +1,56 @@
+.profile-card {
+    background: var(--blue-middle); /* Blue box */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: var(--white); /* White text */
+}
+
+.profile-card h1 {
+    font-size: 26px;
+    color: var(--mainlightblue);
+    margin-bottom: 20px;
+}
+
+.profile-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.profile-card p strong {
+    color: var(--mainlightblue); /* Light blue text for labels */
+}
+
+.profile-card hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid var(--mainlightblue); /* Light blue line */
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff4b5c;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #ff1f3a;
+}

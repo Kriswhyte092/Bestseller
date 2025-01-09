@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -39,13 +40,11 @@
                 <a href="/" class="topbar-title">Innranet</a>
                 <a href="{% url 'announcement_list' %}" class="topbar-add" style="margin-top: -2.5px;">+</a>
                 <div class="topbar-user">
-                    <a href="javascript:void(0);" class="user-profile" onclick="loadContent('/profile/')">Profile</a>
-
-                    <a href="{% url 'logout' %}" class="logout-button" style="font-weight: bold;">Logout</a>
+                    <a href="javascript:void(0);" class="user-profile" onclick="loadContent('/profile/')">
+                        <i class="fas fa-user" style="color: black;"></i>
+                    </a>
                 </div>
-
-            </div>
-        
+            </div>        
             <div class="content-wrapper">
                 <!-- Main Content -->
                 <div id="content-area">

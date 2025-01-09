@@ -1,77 +1,32 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="globals.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}" />
     <style>
-
-
-        #content-area {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            width: 100%;
-        }
-
-        .profile-card {
-            background: var(--blue-middle); /* Blue box */
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-            color: var(--white); /* White text */
-        }
-
-        .profile-card h1 {
-            font-size: 26px;
-            color: var(--mainlightblue);
-            margin-bottom: 20px;
-        }
-
-        .profile-card p {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-
-        .profile-card p strong {
-            color: var(--mainlightblue); /* Light blue text for labels */
-        }
-
-        .profile-card hr {
-            margin: 20px 0;
-            border: none;
-            border-top: 1px solid var(--mainlightblue); /* Light blue line */
-        }
-
-        .profile-actions {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .profile-actions button {
+        .logout-button {
+            display: inline-block;
             padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff4b5c;
             border: none;
-            border-radius: 8px;
-            background: var(--mainlightblue); /* Light blue buttons */
-            color: var(--blue-middle);
-            font-size: 14px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
             cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
         }
-
-        .profile-actions button:hover {
-            background: var(--white);
-            color: var(--blue-middle);
-            transform: scale(1.05);
+        .logout-button:hover {
+            background-color: #ff1f3a;
         }
     </style>
 </head>
@@ -85,9 +40,10 @@
             <p><strong>Superuser Access:</strong> {{ is_superuser }}</p>
             <hr>
             <div class="profile-actions">
-                <button>Log Out</button>
+                <a href="{% url 'logout' %}" class="logout-button">Logout</a>
             </div>
         </div>
     </div>
 </body>
 </html>
+

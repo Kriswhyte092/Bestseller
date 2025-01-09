@@ -9,46 +9,46 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="styleguide.css">
     <style>
+
+
         #content-area {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            align-items: center;
             padding: 20px;
-            background-color: var(--mainlightblue);
+            width: 100%;
         }
 
         .profile-card {
-            background: #ffffff;
+            background: var(--blue-middle); /* Blue box */
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             max-width: 500px;
             width: 100%;
             text-align: center;
+            color: var(--white); /* White text */
         }
 
         .profile-card h1 {
             font-size: 26px;
-            color: var(--blue-middle);
+            color: var(--mainlightblue);
             margin-bottom: 20px;
         }
 
         .profile-card p {
             margin: 10px 0;
             font-size: 16px;
-            color: var(--navy-background);
         }
 
         .profile-card p strong {
-            color: var(--light-blue-button);
+            color: var(--mainlightblue); /* Light blue text for labels */
         }
 
         .profile-card hr {
             margin: 20px 0;
             border: none;
-            border-top: 1px solid var(--grayscale-gray-light);
+            border-top: 1px solid var(--mainlightblue); /* Light blue line */
         }
 
         .profile-actions {
@@ -61,29 +61,30 @@
             padding: 10px 20px;
             border: none;
             border-radius: 8px;
-            background: var(--light-blue-button);
-            color: #ffffff;
+            background: var(--mainlightblue); /* Light blue buttons */
+            color: var(--blue-middle);
             font-size: 14px;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
         }
 
         .profile-actions button:hover {
-            background: var(--blue-middle);
+            background: var(--white);
+            color: var(--blue-middle);
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div id="content-area">
         <div class="profile-card">
-            <h1>User Profile</h1>
+            <h1>Profile Details</h1>
             <p><strong>Username:</strong> {{ username }}</p>
             <p><strong>Access Level:</strong> {{ access_level }}</p>
             <p><strong>Staff Access:</strong> {{ is_staff }}</p>
             <p><strong>Superuser Access:</strong> {{ is_superuser }}</p>
             <hr>
             <div class="profile-actions">
-                <button>Edit Profile</button>
                 <button>Log Out</button>
             </div>
         </div>

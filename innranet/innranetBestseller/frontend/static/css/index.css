@@ -138,6 +138,10 @@ body {
   /* Stack the topbar and content */
   min-height: 100vh;
   /* Ensure it fills the full height of the viewport */
+  background-image: url("/static/images/so-white.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .content-wrapper {

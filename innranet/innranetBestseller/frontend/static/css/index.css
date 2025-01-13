@@ -94,12 +94,12 @@ body {
   background-color: #1a1a2e;
   padding: 20px;
   height: 100%;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 
 .left-sidebar:hover {
   transform: scale(1.005); /* Slightly increase scale on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.9); /* Enhance shadow on hover */
 }
 
 .right-sidebar {
@@ -218,6 +218,8 @@ body {
   min-height: 100%;
   /* Ensure it fills the full height of the parent container */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  padding-bottom: 40px;
 }
 
 #content-area:hover {

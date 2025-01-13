@@ -21,6 +21,12 @@
   /* Add padding below the topbar */
   border-radius: 10px;
   max-width: 81.5%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+.topbar:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 
 body {
@@ -81,35 +87,40 @@ body {
   top: 0;
 }
 
+
 .left-sidebar {
-  width: 250px;
+  
+  width: 260px;
   background-color: #1a1a2e;
   padding: 20px;
   height: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 .left-sidebar:hover {
-  transform: scale(1.02); /* Slightly increase scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 
 .right-sidebar {
   border-radius: 8px; /* Curved corners */
   position: fixed; /* Make it fixed relative to the viewport */
   top: 20px;
-  right: 10px;
+  right: 20px;
   bottom: 20px;
-  width: 300px; /* Set a fixed width */
+  width: 280px; /* Set a fixed width */
   height: 100vh; /* Cover the full viewport height */
-  background-color: #8b1f1f;
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow-y: auto; /* Enable scrolling for overflow */
   z-index: 1000; /* Ensure it appears above other content */
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
 }
 
 .right-sidebar:hover {
-  transform: scale(1.02); /* Slightly increase scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.01); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 
 .sidebar-header {
@@ -166,7 +177,7 @@ body {
   max-width: 3000px; /* Set the maximum width */
   margin: 0 auto; /* Center the main container */
   /* Ensure it fills the full height of the viewport */
-  background-image: url("/static/images/no.jpg");
+  background-image: url("/static/images/art.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -206,6 +217,12 @@ body {
   /* Center content vertically */
   min-height: 100%;
   /* Ensure it fills the full height of the parent container */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#content-area:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 
 .search-container {

@@ -7,7 +7,7 @@
   /* Push items to opposite sides */
   padding: 10px 20px;
   /* Add padding inside the bar */
-  background: rgba(255, 255, 255, 0.8);
+  background: #ffffffff;
   /* Background color */
   backdrop-filter: blur(10px);
   /* Add a blur effect */
@@ -87,12 +87,29 @@ body {
   height: 100%;
 }
 
+.left-sidebar:hover {
+  transform: scale(1.02); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
 .right-sidebar {
   width: 300px;
-  background-color: #f0f0f0;
+  background-color: #8b1f1f;
   padding: 20px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  border-radius: 8px; /* Curved corners */
+
+  top: 20px; /* 10px from the top */
+  right: 20px; /* 10px from the right */
+  bottom: 20px; /* 10px from the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+  margin: 18px; /* Ensure it doesn't touch the edges */
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.right-sidebar:hover {
+  transform: scale(1.02); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 .sidebar-header {
@@ -106,10 +123,18 @@ body {
 }
 
 
-.sidebar-buttons {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.sidebar-button {
+  background-color: #0f3460;
+  color: white;
+  border: 2px solid #1e6091; /* Add border outline */
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow */
 }
 
 .sidebar-button {
@@ -128,8 +153,8 @@ body {
 
 .sidebar-button:hover {
   background-color: #1e6091;
-  transform: scale(1.03);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 .main {
@@ -137,8 +162,11 @@ body {
   flex-direction: column;
   /* Stack the topbar and content */
   min-height: 100vh;
+  width: 100%;
+  max-width: 3000px; /* Set the maximum width */
+  margin: 0 auto; /* Center the main container */
   /* Ensure it fills the full height of the viewport */
-  background-image: url("/static/images/so-white.png");
+  background-image: url("/static/images/no.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

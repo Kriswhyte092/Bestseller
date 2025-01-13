@@ -1,5 +1,4 @@
 body {
-    background-image: url("{% static 'images/bestseller3.png' %}");
     background-position: center;
     background-repeat: no-repeat;            
     color: #eaeaea;

@@ -315,9 +315,14 @@ body {
   border: 1px solid white;
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+
+.announcement-list li:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 .announcement-list li .title {
   font-size: 18px;

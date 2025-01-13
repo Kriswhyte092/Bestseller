@@ -175,31 +175,30 @@
     .catch(error => console.error('Error fetching announcements:', error));
 }
 
-        function fetchFrontPageImages() {
-            fetch('/announcements/images/', { // Correct URL
-                headers: {
-                    "X-Requested-With": "XMLHttpRequest"
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('frontpage-image-container');
-                container.innerHTML = ''; // Clear any existing content
-                if (data.images && data.images.length > 0) {
-                    data.images.forEach(imageUrl => {
-                        const img = document.createElement('img');
-                        img.src = imageUrl;  // Set the image URL
-                        img.alt = 'Front Page Image';
-                        img.style.marginBottom = '10px'; // Add spacing between images
-                        img.style.width = '100%'; // Ensure images fit within the container
-                        container.appendChild(img);  // Add each image to the container
-                    });
-                } else {
-                    container.innerHTML = '<p>No images available</p>';  // Placeholder if no images
-                }
-            })
-            .catch(error => console.error('Error fetching frontpage images:', error));
-        }
+    function fetchFrontPageImages() {
+        fetch('/announcements/images/', {
+            headers: { "X-Requested-With": "XMLHttpRequest" }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('frontpage-image-container');
+            container.innerHTML = ''; // Clear existing content
+            if (data.images && data.images.length > 0) {
+                container.classList.add('has-images'); // Add class when images are present
+                data.images.forEach(imageUrl => {
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    img.alt = 'Front Page Image';
+                    img.style.marginBottom = '10px';
+                    img.style.width = '100%';
+                    container.appendChild(img);
+                });
+            } else {
+                container.classList.remove('has-images'); // Remove class if no images
+            }
+        })
+        .catch(error => console.error('Error fetching frontpage images:', error));
+    }
         
         window.onload = () => {
             fetchAnnouncements();

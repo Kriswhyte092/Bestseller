@@ -92,6 +92,7 @@ body {
 
 .left-sidebar {
   width: 280px;
+  width: 15%;
   background-color: #1a1a2e;
   padding: 20px;
 
@@ -115,7 +116,7 @@ body {
   top: 20px;
   right: 20px;
   bottom: 1px;
-  width: 280px; /* Set a fixed width */
+  width: 14.5%; /* Set a fixed width */
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow-y: auto; /* Enable scrolling for overflow */
@@ -245,7 +246,7 @@ body {
 
 #frontpage-image-container {
   flex: 0; /* Do not take space when empty */
-  max-width: 260px;
+  max-width: 20%;
   display: none; /* Hidden by default */
 }
 

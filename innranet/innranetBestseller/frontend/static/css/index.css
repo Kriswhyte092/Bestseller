@@ -87,7 +87,7 @@ body {
 }
 
 .left-sidebar {
-  width: 260px;
+  width: 15%;
   background-color: #1a1a2e;
   padding: 20px;
   height: 100%;
@@ -105,7 +105,7 @@ body {
   top: 20px;
   right: 20px;
   bottom: 1px;
-  width: 280px; /* Set a fixed width */
+  width: 14.5%; /* Set a fixed width */
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow-y: auto; /* Enable scrolling for overflow */

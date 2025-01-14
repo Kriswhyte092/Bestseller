@@ -22,6 +22,10 @@
   border-radius: 10px;
   max-width: 81.5%;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+  position: fixed;
+  left: 320px;
+  right: 340px
+
 }
 
 .topbar:hover {
@@ -87,11 +91,17 @@ body {
 }
 
 .left-sidebar {
-  width: 260px;
+  width: 280px;
   background-color: #1a1a2e;
   padding: 20px;
-  height: 100%;
+
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+  border-radius: 8px; /* Curved corners */
+  position: fixed; 
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .left-sidebar:hover {
@@ -185,6 +195,11 @@ body {
   gap: 20px; /* Space between sections */
   flex-grow: 1;
   padding-right: 300px; /* Adjust for right sidebar space */
+  position: fixed;
+  left: 320px;
+  right:100px;
+  bottom: 20px;
+  top:100px;
 }
 
 #content-area {

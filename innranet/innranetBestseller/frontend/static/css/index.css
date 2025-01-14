@@ -230,7 +230,7 @@ body {
 
 #frontpage-image-container {
   flex: 0; /* Do not take space when empty */
-  max-width: 260px;
+  max-width: 20%;
   display: none; /* Hidden by default */
 }
 

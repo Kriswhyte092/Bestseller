@@ -1,31 +1,18 @@
 .topbar {
   display: flex;
-  /* Use flexbox for alignment */
-  align-items: center;
-  /* Align items vertically */
-  justify-content: space-between;
-  /* Push items to opposite sides */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Push items to opposite sides */
   padding: 10px 20px;
-  /* Add padding inside the bar */
-  background: #ffffffff;
-  /* Background color */
-  backdrop-filter: blur(10px);
-  /* Add a blur effect */
-  border-bottom: 1px solid #ddd;
-  /* Add a bottom border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Optional shadow */
-  z-index: 1000;
-  /* Ensure it stays on top */
+  background: #ffffff; /* Background color */
+  backdrop-filter: blur(10px); /* Add a blur effect */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  z-index: 1000; /* Ensure it stays on top */
   margin-bottom: 20px;
-  /* Add padding below the topbar */
   border-radius: 10px;
-  max-width: 81.5%;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
   position: fixed;
-  left: 320px;
-  right: 340px
-
+  width: 66.8%; /* Adjust width to fit between sidebars */
+  left: calc(15% + 35px); /* Align with the left sidebar */
 }
 
 .topbar:hover {
@@ -91,11 +78,9 @@ body {
 }
 
 .left-sidebar {
-  width: 280px;
   width: 15%;
   background-color: #1a1a2e;
   padding: 20px;
-
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
   border-radius: 8px; /* Curved corners */
   position: fixed; 
@@ -195,12 +180,11 @@ body {
   align-items: stretch; /* Ensure equal height */
   gap: 20px; /* Space between sections */
   flex-grow: 1;
-  padding-right: 300px; /* Adjust for right sidebar space */
-  position: fixed;
-  left: 320px;
-  right:100px;
-  bottom: 20px;
-  top:100px;
+  margin-left: 15%; /* Match the left-sidebar width and gap */
+  margin-right: 14.5%; /* Match the right-sidebar width and gap */
+  margin-top: 50px; /* Adjust for the topbar height (50px) and its bottom margin (20px) */
+  padding: 20px; /* Optional: Add padding for inner spacing */
+  overflow-y: auto; /* Enable scrolling for overflow */
 }
 
 #content-area {

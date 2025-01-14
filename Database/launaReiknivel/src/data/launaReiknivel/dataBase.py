@@ -63,3 +63,5 @@ class dataBase:
         """).format(sql.Identifier(tableName))
         self.cursor.execute(create_table_query)
         print(f"Table '{tableName}' created.")
+
+    

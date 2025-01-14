@@ -41,4 +41,3 @@ class Duration:
         DV = self.end - self.start
         EV = 0
         return DV, EV
-

@@ -1,5 +1,6 @@
 from utils.launaReiknivel.createShift import *
 from data.launaReiknivel.dataBase import *
+from data.utils.checkDb import checkDb
 import psycopg2
 from psycopg2 import sql
 
@@ -14,8 +15,13 @@ class exportShift:
             clockOut=clockOut,
             status=status
         )
+        self.checkDb = checkDb()
+
+    def exportEmployee(self):
+
 
     def shiftToExport(self):
+        print(self.checkDb)
         DV, EV = self.shift.getDuration()
         return self.shift.getEmployee(), self.shift.getDate(), DV, EV
 
@@ -23,8 +29,9 @@ class exportShift:
         location = self.shift.getLocation()
         employee, date, DV, EV = self.shiftToExport()
         print(employee, date, DV, EV)
+        db_name = self.checkDb
         try:
-            db = dataBase("Laun_nov-des")
+            db = dataBase(db_name)
             if db.tableExists(employee):
                 query = sql.SQL("INSERT INTO {} (date, dv, ev, location) VALUES (%s, %s, %s, %s)").format(
                     sql.Identifier(employee)
@@ -37,3 +44,6 @@ class exportShift:
             db.rollback()  
         finally:
             db.close()
+
+
+

@@ -6,11 +6,12 @@ class Product(models.Model):
     ItemNo = models.CharField(max_length=255)
     VariantCode = models.CharField(max_length=255)
     VariantName = models.CharField(max_length=255)
+    BarcodeNo = models.CharField(max_length=255, default="")
     image_url = models.URLField()
     noos = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.ItemNo} - {self.VariantCode} - {self.VariantName}"  # Adjust as necessary
+        return f"{self.ItemNo} - {self.VariantCode} - {self.BarcodeNo} - {self.VariantName}"  # Adjust as necessary
 
 
 class Store(models.Model):
@@ -29,4 +30,4 @@ class Inventory(models.Model):
         unique_together = ('store', 'product')  # Ensures one inventory record per store-product pair
 
     def __str__(self):
-        return f"{self.product.ItemNo} in {self.store.store_name} - {self.quantity} units"
+        return f"{self.product.ItemNo} / {self.product.VariantCode} - {self.store.store_name}: {self.quantity} units"

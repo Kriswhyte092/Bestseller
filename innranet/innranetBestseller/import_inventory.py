@@ -31,11 +31,13 @@ for record in data:
     variant_code = record["VariantCode"]
     location_code = record["LocationCode"]
     inventory_quantity = record["Inventory"]
+    barcode = record["barcodeNo"]
 
     # Ensure the product exists
     product, _ = Product.objects.get_or_create(
         ItemNo=item_no,
         VariantCode=variant_code,
+        BarcodeNo=barcode,
         defaults={"VariantName": "", "image_url": "", "noos": False}
     )
 

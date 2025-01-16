@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 
 # Create your models here.
 
@@ -7,7 +8,7 @@ class Product(models.Model):
     VariantCode = models.CharField(max_length=255)
     VariantName = models.CharField(max_length=255)
     BarcodeNo = models.CharField(max_length=255, default="")
-    image_url = models.URLField()
+    image_urls = models.JSONField(blank=True, default=list)
     noos = models.BooleanField(default=False)
 
     def __str__(self):

@@ -3,35 +3,109 @@
 <head>
     <title>{{ name }}</title>
     <style>
-        .product-info-container {
-            max-height: 100vh; /* Limit the height to the viewport height */
-            overflow-y: auto; /* Enable vertical scrolling */
-            padding: 20px; /* Add some padding */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
         }
-        .product-gallery {
+
+        .product-info-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
         }
+
+        .product-info-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .product-gallery-container {
+            max-width: 100%;
+            max-height: 400px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+
+        .product-gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .product-gallery::-webkit-scrollbar-thumb {
+            background-color: #bbb;
+            border-radius: 4px;
+        }
+
         .product-gallery img {
-            width: 200px;
-            height: auto;
-            margin: 10px;
+            flex: 0 0 auto;
+            max-height: 300px;
+            width: auto;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .product-gallery img:hover {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .product-gallery img.active {
+            flex-grow: 1;
+            max-height: 350px;
+            opacity: 1;
         }
     </style>
 </head>
 <body>
     <div class="product-info-container">
         <h1>{{ name }}</h1>
-        {% if image_urls %}
-            <div class="product-gallery">
+        <div class="product-gallery-container">
+            <div class="product-gallery" id="product-gallery">
                 {% for url in image_urls %}
-                    <img src="{{ url }}" alt="{{ name }}">
+                    <img src="{{ url }}" alt="{{ name }}" onclick="makeActive(this)">
                 {% endfor %}
             </div>
-        {% else %}
-            <p>No images available.</p>
-        {% endif %}
+        </div>
     </div>
+
+    <script>
+        function makeActive(selectedImage) {
+            // Remove 'active' class from all images
+            const images = document.querySelectorAll('#product-gallery img');
+            images.forEach(img => img.classList.remove('active'));
+
+            // Add 'active' class to the clicked image
+            selectedImage.classList.add('active');
+        }
+
+        // Automatically make the first image active
+        window.onload = function() {
+            const images = document.querySelectorAll('#product-gallery img');
+            if (images.length > 0) {
+                images[0].classList.add('active');
+            }
+        };
+    </script>
 </body>
 </html>

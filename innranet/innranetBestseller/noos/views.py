@@ -194,8 +194,10 @@ def noos_info(request):
             image_urls = []
             extract_image_urls(product_data, image_urls)
 
-            # Example: Assuming "locations" key exists in product_data
+            # Example data (replace with actual product data structure)
             locations = {"Reykjavik": 15, "Akureyri": 7, "Selfoss": 10}
+            colors = product_data.get("colors", {"Red": "#FF0000", "Blue": "#0000FF"})
+            sizes = product_data.get("sizes", ["S", "M", "L", "XL"])
 
             return render(
                 request,
@@ -204,6 +206,8 @@ def noos_info(request):
                     "name": product_data.get("name"),
                     "image_urls": image_urls,
                     "locations": locations,
+                    "colors": colors,
+                    "sizes": sizes,
                 },
             )
 

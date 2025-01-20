@@ -193,6 +193,18 @@ def noos_info(request):
         if product_data.get("name") == product_name:
             image_urls = []
             extract_image_urls(product_data, image_urls)
-            return render(request, "noos/noos-info.html", {"name": product_data.get("name"), "image_urls": image_urls})
+
+            # Example: Assuming "locations" key exists in product_data
+            locations = {"Reykjavik": 15, "Akureyri": 7, "Selfoss": 10}
+
+            return render(
+                request,
+                "noos/noos-info.html",
+                {
+                    "name": product_data.get("name"),
+                    "image_urls": image_urls,
+                    "locations": locations,
+                },
+            )
 
     return JsonResponse({"error": "Product not found"}, status=404)

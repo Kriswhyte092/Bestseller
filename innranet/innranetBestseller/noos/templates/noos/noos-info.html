@@ -11,48 +11,32 @@
         }
 
         .product-info-container {
-            max-width: 800px;
-            margin: 40px auto;
+            max-width: 1200px;
+            margin: 10px auto;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            flex-direction: row;
+            gap: 20px;
         }
 
-        .product-info-container h1 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            text-align: center;
-        }
-
+        /* Left side for the image slider */
         .product-gallery-container {
-            max-width: 100%;
+            flex: 1;
             max-height: 400px;
             overflow-x: auto;
             overflow-y: hidden;
             display: flex;
-            justify-content: center;
             align-items: center;
-            padding: 10px;
+            justify-content: center;
         }
 
         .product-gallery {
             display: flex;
             flex-wrap: nowrap;
             gap: 10px;
-        }
-
-        .product-gallery::-webkit-scrollbar {
-            height: 8px;
-        }
-
-        .product-gallery::-webkit-scrollbar-thumb {
-            background-color: #bbb;
-            border-radius: 4px;
         }
 
         .product-gallery img {
@@ -75,17 +59,58 @@
             max-height: 350px;
             opacity: 1;
         }
+
+        /* Right side for product details */
+        .product-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-details h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .location-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .location-list li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .location-list li span {
+            font-weight: bold;
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <div class="product-info-container">
-        <h1>{{ name }}</h1>
+        <!-- Left: Image slider -->
         <div class="product-gallery-container">
             <div class="product-gallery" id="product-gallery">
                 {% for url in image_urls %}
                     <img src="{{ url }}" alt="{{ name }}" onclick="makeActive(this)">
                 {% endfor %}
             </div>
+        </div>
+
+        <!-- Right: Product details -->
+        <div class="product-details">
+            <h1>{{ name }}</h1>
+            <ul class="location-list">
+                {% for location, count in locations.items %}
+                    <li>{{ location }}: <span>{{ count }}</span></li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 
@@ -109,3 +134,4 @@
     </script>
 </body>
 </html>
+

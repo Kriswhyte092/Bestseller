@@ -9,10 +9,10 @@
         }
 
         .product-page {
-            max-height: 100vh; /* Restrict to viewport height */
-            overflow-y: auto; /* Enable vertical scrolling */
+            max-height: 100vh;
+            overflow-y: auto;
             padding: 20px;
-            background-color:rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
         }
 
         .product-container {
@@ -23,7 +23,7 @@
         }
 
         .product-card {
-            width: 140px;
+            width: 220px;
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 10px;
@@ -49,51 +49,52 @@
             font-size: 16px;
             margin-bottom: 5px;
         }
+
+        .inventory-status {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .low-stock {
+            color: red;
+        }
+
+        .store-inventory {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .store-inventory p {
+            margin: 0;
+            padding: 2px 0;
+        }
     </style>
 </head>
 <body>
     <div class="product-page">
-
-        <!-- Product Container -->
+        {% if message %}
+        <p style="text-align: center; font-size: 18px; color: red; margin: 20px;">{{ message }}</p>
+        {% else %}
         <div class="product-container">
             {% for product in products %}
-            <div class="product-card" onclick="loadProductInfo('{{ product.name }}')">
+            <div class="product-card">
                 <img src="{{ product.image_url }}" alt="{{ product.name }}">
                 <h3>{{ product.name }}</h3>
+                <div class="store-inventory">
+                    <strong>Store Inventory:</strong>
+                    {% for store in product.store_inventory %}
+                        <p>{{ store.store_name }}: 
+                        <span class="{% if store.quantity <= 0 %}low-stock{% endif %}">
+                            {{ store.quantity }}
+                        </span>
+                        </p>
+                    {% endfor %}
+                </div>
             </div>
             {% endfor %}
         </div>
-    </div>
-</body>
-
-</html>
-<script>
-    function loadProductInfo(productName) {
-        const url = `/noos/noos-info/?product=${encodeURIComponent(productName)}`;
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                if (data.error) {
-                    alert(data.error);
-                } else {
-                    const productInfo = data.product;
-                    alert(JSON.stringify(productInfo, null, 2)); // Replace with a modal for better UX
-                }
-            })
-            .catch(error => console.error('Error:', error));
-    }
-</script>
-<body>
-    <div class="product-info-container">
-        <h1>{{ name }}</h1>
-        {% if image_urls %}
-            <div class="product-gallery">
-                {% for url in image_urls %}
-                    <img src="{{ url }}" alt="{{ name }}" style="width:300px; height:auto; margin:10px;">
-                {% endfor %}
-            </div>
-        {% else %}
-
         {% endif %}
     </div>
 </body>
+</html>

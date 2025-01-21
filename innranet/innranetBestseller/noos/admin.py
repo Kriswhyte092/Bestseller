@@ -41,6 +41,7 @@ class HasImageUrlsFilter(admin.SimpleListFilter):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('ItemNo', 'VariantCode', 'BarcodeNo', 'VariantName', 'noos', 'has_image_urls', 'inventory_level')
     list_filter = ('noos', HasImageUrlsFilter)
+    search_fields = ('ItemNo', 'VariantCode', 'BarcodeNo', 'VariantName')  # Fields to search in
 
     def has_image_urls(self, obj):
         return bool(obj.image_urls)
@@ -54,6 +55,33 @@ class ProductAdmin(admin.ModelAdmin):
     inventory_level.short_description = 'Total Inventory'
 
 
-admin.site.register(Store)
+class InventoryInline(admin.TabularInline):
+    model = Inventory
+    extra = 0  # Prevent extra empty rows
+    fields = ('product', 'quantity', 'noos_status', 'has_image_urls_status')
+    readonly_fields = ('product', 'quantity', 'noos_status', 'has_image_urls_status')  # Make fields read-only
 
+    def noos_status(self, obj):
+        # Access the related product's noos field
+        return obj.product.noos
+    noos_status.short_description = 'Noos'
+    noos_status.boolean = True  # Show checkmarks in the admin
+
+    def has_image_urls_status(self, obj):
+        # Check if the related product has image URLs
+        return bool(obj.product.image_urls)
+    has_image_urls_status.short_description = 'Has Image URLs'
+    has_image_urls_status.boolean = True  # Show checkmarks in the admin
+
+
+class StoreAdmin(admin.ModelAdmin):
+    list_display = ('store_name',)  # Adjust fields as per your Store model
+    inlines = [InventoryInline]  # Include the inline for inventory
+
+class InventoryAdmin(admin.ModelAdmin):
+    list_display = ('product', 'store', 'quantity', 'has_image_urls')
+    list_filter = ('store', 'product')
+    
+
+admin.site.register(Store, StoreAdmin)
 admin.site.register(Inventory)

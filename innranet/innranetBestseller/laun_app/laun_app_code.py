@@ -1,6 +1,7 @@
 import pandas as pd
 from datetime import datetime
 
+
 class DataExtraction:
     def __init__(self, input_file, output_file):
         self.input_file = input_file
@@ -39,6 +40,9 @@ class DataExtraction:
             .reset_index()
         )
 
+        # Round all numeric columns to 2 decimal places
+        summary = summary.round(2)
+
         # Save results to CSV
         summary.to_csv(self.output_file, index=False)
         print(f"Summary saved to: {self.output_file}")
@@ -66,8 +70,6 @@ class DataExtraction:
         else:
             if clock_out <= regular_cutoff:
                 regular_hours = (clock_out - clock_in).total_seconds() / 3600
-            elif clock_in >= regular_cutoff:
-                overtime_hours = (clock_out - clock_in).total_seconds() / 3600
             else:
                 regular_hours = (regular_cutoff - clock_in).total_seconds() / 3600
                 overtime_hours = (clock_out - regular_cutoff).total_seconds() / 3600

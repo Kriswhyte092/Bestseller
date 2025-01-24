@@ -1,0 +1,67 @@
+body {
+    background-image: url("{% static 'images/bestseller3.png' %}");
+    background-position: center;
+    background-repeat: no-repeat;            
+    color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background:rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}
+
+.form-container h1 {
+    color: #eaeaea;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.form-container h2 {
+    color: #eaeaea;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.form-container label {
+    color: #b3b3b3;
+    margin-top: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.form-container .submit-button {
+    background-color:rgb(147, 172, 174);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.form-container .submit-button:hover {
+    background-color:rgb(35, 52, 60);
+}

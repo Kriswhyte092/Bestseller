@@ -7,214 +7,203 @@
     <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
     <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-    <style>
-
-        .sidebar {
-            position: sticky;
-            top: 0;
-            height: 100vh;
-        }
-
-        /* Sidebar Header */
-        .sidebar-header {
-            font-size: 28px;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        /* Sidebar Buttons */
-        .sidebar-buttons {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .sidebar-button {
-            background-color: #0f3460;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 20px;
-            margin: 10px 0;
-            font-size: 16px;
-            text-align: center;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .sidebar-button:hover {
-            background-color: #1e6091;
-            transform: scale(1.03);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Top Bar */
-        .topbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #ddd;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .topbar a {
-            text-decoration: none;
-            color: #1a1a2e;
-            font-size: 24px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .topbar a:hover {
-            color: #1e6091;
-        }
-        
-
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container" style="display: flex; height: 100vh;">
-        <!-- Sidebar -->
-        <div class="sidebar" style="width: 250px; background-color: #1a1a2e; padding: 20px;">
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar left-sidebar">
             <div class="sidebar-header">Bestseller</div>
             <div class="sidebar-buttons">
-                <button class="sidebar-button" onclick="loadContent('NOOS')">NOOS</button>
-                <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
-                <button class="sidebar-button" onclick="fetchContent('/bonus/')">Bonus</button>
-                <div class="sidebar-button" onclick="fetchContent('/laun/')">Laun</div>
+                    <!-- New Search Bar -->
+                    <div class="search-container">
+                        <input
+                            type="text"
+                            id="sidebar-search-input"
+                            placeholder="Search products..."
+                            style="width: 70%; text-align: left; padding-left: 10px; border: none; border-radius: 8px 0 0 8px; height: 37px; margin-top: 10px;"
+                        />
+                        <button class="sidebar-button" id="sidebar-search-btn" onclick="searchProducts()" style="border-radius: 0 8px 8px 0; font-weight: bold;">Search</button>
+                    </div>
+                    <button class="sidebar-button" onclick="fetchContent('/noos/')" style="font-weight: bold;">NOOS</button>
+                    <button class="sidebar-button" onclick="loadContent('Væntanlegt')" style="font-weight: bold;">Væntanlegt</button>
+                    <button class="sidebar-button" onclick="fetchContent('/bonus/')" style="font-weight: bold;">Bonus</button>
+                    <div class="sidebar-button" onclick="fetchContent('/laun/')" style="font-weight: bold;">Laun</div>
             </div>
         </div>
 
-        <!-- Main Content -->
         <div class="main">
-            <!-- Top Bar -->
             <div class="topbar">
-                <a href="/">Innranet</a>
-                <a href="{% url 'create_announcement' %}" style="font-size: 30px;">+</a>
-            </div>
-            
-            <div id="content-area" style="padding: 20px;">
-                <div class="content-wrapper" style="display: flex; height: 100vh;">
-                    <!-- Main Content -->
-                    <div id="main-content" style="flex: 3; padding: 20px;">
-                        <h2 style="text-align: center;">Welcome to Innranet</h2>
-                        <p>Your main content will appear here.</p>
-                    </div>
-                
-                    <!-- Announcements Sidebar -->
-                    <div id="announcement-box" style="
-                    width: 300px;
-                    background-color: #f4f4f9;
-                    padding: 20px;
-                    border-left: 2px solid #ddd;
-                    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
-                    overflow-y: auto;
-                    position: absolute;
-                    right: 0;
-                    top: 10;
-                    height: 100vh;">
-                
-                    <h3 style="text-align: center; margin-bottom: 20px; font-size: 24px; color: #333;">Announcements</h3>
-                
-                    {% for announcement in announcements %}
-                    <div class="announcement-card" style="
-                        background-color: white;
-                        margin: 10px auto;
-                        padding: 15px;
-                        border-radius: 8px;
-                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-                        position: relative;
-                        box-sizing: border-box;
-                        overflow: hidden;
-                        text-overflow: ellipsis;">
-                        
-                        <h4 style=
-                            "margin: 0 0 10px;
-                            font-size: 18px;
-                            color: #1a1a2e;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;">
-                            {{ announcement.title }}
-                        </h4>
-                        <p style="
-                            margin: 0 0 10px;
-                            font-size: 14px;
-                            color: #555;
-                            display: -webkit-box;
-                            -webkit-box-orient: vertical;
-                            overflow: hidden;">
-                            {{ announcement.content }}
-                        </p>
-                        <small style="
-                            color: #888;
-                            font-size: 12px;">
-                            {{ announcement.created_at|date:"M d, Y H:i" }}
-                        </small>
-
-                        <!-- Buttons -->
-                        <div style="margin-top: 10px; display: flex; justify-content: flex-end; gap: 10px;">
-                            <a href="{% url 'edit_announcement' announcement.id %}" style="
-                            background-color: #1e6091;
-                            color: white;
-                            border: none;
-                            border-radius: 5px;
-                            padding: 5px 10px;
-                            text-decoration: none;
-                            font-size: 12px;">
-                            Edit
-                            </a>
-                            <a href="{% url 'delete_announcement' announcement.id %}" style="
-                            background-color: #d9534f;
-                            color: white;
-                            border: none;
-                            border-radius: 5px;
-                            padding: 5px 10px;
-                            text-decoration: none;
-                            font-size: 12px;">
-                            Delete
-                            </a>                        
-                        </div>
-                    </div>
-                    {% empty %}
-                    <p style="text-align: center; color: #aaa;">No announcements at this time.</p>
-                    {% endfor %}
+                <a href="/" class="topbar-title">Innranet</a>
+                <a href="{% url 'announcement_list' %}" class="topbar-add" style="margin-top: -2.5px;">+</a>
+                <div class="topbar-user">
+                    <a href="javascript:void(0);" class="user-profile" onclick="loadContent('/profile/')">
+                        <i class="fas fa-user" style="color: black;"></i>
+                    </a>
                 </div>
-                
-                </div>                                                                                    
+            </div>        
+            <div class="content-wrapper">
+                <!-- Main Content -->
+                <div id="content-area">
+                <!-- Spotify Playlist Embed -->
+                <iframe 
+                style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6VgekffbfOhRF4ei3v1X9n?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+                </div>
+                <!-- Image Container -->
+                <div id="frontpage-image-container">
+                    <!-- Image will be dynamically loaded here -->
+                </div>
+                <!-- Right Sidebar -->
+                <div class="sidebar right-sidebar">
+                <div class="announcements-header">Announcements</div>
+                <ul id="announcement-list" class="announcement-list">
+                    <!-- Announcements will be dynamically loaded here -->
+                </ul>
             </div>
         </div>
+        </div>
+        <script>
+            function loadContent(url) {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('content-area').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading content:', error));
+            }
+        </script>
+
+        <script>
+            function loadProductInfo(productName) {
+                const url = `/noos/noos-info/?product=${encodeURIComponent(productName)}`;
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(html => {
+                        // Load the product info into the content area
+                        document.querySelector('#content-area').innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                        document.querySelector('#content-area').innerHTML = '<p>Error loading product information.</p>';
+                    });
+            }
+            function searchProducts() {
+                const query = document.getElementById('sidebar-search-input').value.trim();
+                if (!query) return;
+
+                fetch(`/noos/?search=${encodeURIComponent(query)}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching search results:', error);
+                        document.getElementById('content-area').innerHTML = '<p>Error loading search results.</p>';
+                    });
+            }
+
+            function attachSidebarListeners() {
+                // Attach event listeners for the sidebar buttons
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/noos/\')"]').onclick = function () {
+                    fetchContent('/noos/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/bonus/\')"]').onclick = function () {
+                    fetchContent('/bonus/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/laun/\')"]').onclick = function () {
+                    fetchContent('/laun/');
+                };
+            }
+        </script>
     </div>
 
     <script>
-        function fetchContent(url) {
-            fetch(url, {
-                headers: {
-                    "X-Requested-With": "XMLHttpRequest" // AJAX request
-                }
-            })
+    function fetchContent(url) {
+        fetch(url)
             .then(response => response.text())
             .then(html => {
-                document.getElementById("content-area").innerHTML = html;
+                // Load content into the #content-area
+                document.getElementById('content-area').innerHTML = html;
             })
             .catch(error => {
-                document.getElementById("content-area").innerHTML = `<p style="color: red;">Error loading content: ${error.message}</p>`;
+                console.error('Error loading content:', error);
+                document.getElementById('content-area').innerHTML = `<p>Error loading content.</p>`;
             });
+    }
+
+    function fetchAnnouncements() {
+    fetch('/announcements/', {
+        headers: {
+            "X-Requested-With": "XMLHttpRequest"
         }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const list = document.getElementById('announcement-list');
+        list.innerHTML = ''; // Clear existing announcements
+        data.forEach(announcement => {
+            const li = document.createElement('li');
+
+            // Create the title element
+            const title = document.createElement('div');
+            title.className = 'title';
+            title.textContent = announcement.title;
+
+            // Create the content element
+            const content = document.createElement('div');
+            content.className = 'content';
+            content.textContent = announcement.content;
+
+            // Append title and content to the announcement
+            li.appendChild(title);
+            li.appendChild(content);
+
+            // Add the announcement to the list
+            list.appendChild(li);
+        });
+    })
+    .catch(error => console.error('Error fetching announcements:', error));
+}
+
+    function fetchFrontPageImages() {
+        fetch('/announcements/images/', {
+            headers: { "X-Requested-With": "XMLHttpRequest" }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('frontpage-image-container');
+            container.innerHTML = ''; // Clear existing content
+            if (data.images && data.images.length > 0) {
+                container.classList.add('has-images'); // Add class when images are present
+                data.images.forEach(imageUrl => {
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    img.alt = 'Front Page Image';
+                    img.style.marginBottom = '10px';
+                    img.style.width = '100%';
+                    container.appendChild(img);
+                });
+            } else {
+                container.classList.remove('has-images'); // Remove class if no images
+            }
+        })
+        .catch(error => console.error('Error fetching frontpage images:', error));
+    }
+        
+        window.onload = () => {
+            fetchAnnouncements();
+            fetchFrontPageImages(); // Updated to use the correct endpoint
+        };
     </script>
-    
 </body>
 </html>
-

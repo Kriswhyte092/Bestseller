@@ -1,0 +1,4092 @@
+{
+    "number": 12248067,
+    "name": "JACROAD TRUNK SN",
+    "brand_name": "Jack & Jones",
+    "brand_id": "04",
+    "ean_number": "5715431051686",
+    "is_licensed_goods": false,
+    "expected_supplier_name": "QUANZHOU BAISHI GARMENTS & WEAVINGS CO.,LTD",
+    "expected_supplier_number": 401443,
+    "suppliers": [
+        {
+            "name": "",
+            "origin_country": ""
+        }
+    ],
+    "grouping": {
+        "product_line_id": "0409",
+        "sub_brand": "JACK&JONES ADDITIONALS",
+        "product_group_id": "BX07",
+        "product_group": [
+            {
+                "language": "Arabic",
+                "text": "\u0645\u0644\u0627\u0628\u0633 \u0627\u0644\u0633\u0628\u0627\u062d\u0629 \u0648\u0627\u0644\u0645\u0644\u0627\u0628\u0633 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629"
+            },
+            {
+                "language": "Azerbaijani",
+                "text": "\u00dczg\u00fc\u00e7\u00fcl\u00fck- &Alt paltar\u0131"
+            },
+            {
+                "language": "Bulgarian",
+                "text": "\u041f\u043b\u0443\u0432\u0430\u043d\u0435 - & \u0411\u0435\u043b\u044c\u043e"
+            },
+            {
+                "language": "Bosnian",
+                "text": "Plivanje i donji ve\u0161"
+            },
+            {
+                "language": "Montenegrin",
+                "text": "Plivanje- & Donji ve\u0161"
+            },
+            {
+                "language": "Czech",
+                "text": "Plavky a spodn\u00ed pr\u00e1dlo"
+            },
+            {
+                "language": "Danish",
+                "text": "Badet\u00f8j og undert\u00f8j"
+            },
+            {
+                "language": "German",
+                "text": "Bademode & Unterw\u00e4sche"
+            },
+            {
+                "language": "Greek",
+                "text": "\u039c\u03b1\u03b3\u03b9\u03cc"
+            },
+            {
+                "language": "Canadian English",
+                "text": "Swimwear & Underwear"
+            },
+            {
+                "language": "English",
+                "text": "Swim- & Underwear"
+            },
+            {
+                "language": "USEnglish",
+                "text": "Swimwear & Underwear"
+            },
+            {
+                "language": "Spanish",
+                "text": "Ropa interior y de ba\u00f1o"
+            },
+            {
+                "language": "Estonian",
+                "text": "Ujumisriided ja aluspesu"
+            },
+            {
+                "language": "Finnish",
+                "text": "Uima- ja alusasut"
+            },
+            {
+                "language": "Canadian French",
+                "text": "Maillots de bain et sous-v\u00eatements"
+            },
+            {
+                "language": "French",
+                "text": "Maillots de bain et sous-v\u00eatements"
+            },
+            {
+                "language": "Croatian",
+                "text": "Plivanje i donje rublje"
+            },
+            {
+                "language": "Hungarian",
+                "text": "F\u00fcrd\u0151ruha \u00e9s feh\u00e9rnem\u0171"
+            },
+            {
+                "language": "Armenian",
+                "text": "\u053c\u0578\u0572\u0561\u0566\u0563\u0565\u057d\u057f- & \u0546\u0565\u0580\u0584\u0576\u0561\u0566\u0563\u0565\u057d\u057f"
+            },
+            {
+                "language": "Icelandic",
+                "text": "Sund- & N\u00e6rf\u00f6t"
+            },
+            {
+                "language": "Italian",
+                "text": "Costumi da bagno e intimo"
+            },
+            {
+                "language": "Japanese",
+                "text": "\u30b9\u30a4\u30e0&\u4e0b\u7740"
+            },
+            {
+                "language": "Kazakh",
+                "text": "Swim- & \u0456\u0448 \u043a\u0438\u0456\u043c\u0456"
+            },
+            {
+                "language": "Korean",
+                "text": "\uc218\uc601 & \uc18d\uc637"
+            },
+            {
+                "language": "Lithuanian",
+                "text": "Maudymosi ir apatiniai drabu\u017eiai"
+            },
+            {
+                "language": "Latvian",
+                "text": "Peld\u0113t- & Apak\u0161ve\u013ca"
+            },
+            {
+                "language": "Macedonian",
+                "text": "\u041f\u043b\u0438\u0432\u0430\u045a\u0435... \u0418 \u0414\u043e\u043b\u043d\u0430 \u043e\u0431\u043b\u0435\u043a\u0430"
+            },
+            {
+                "language": "Dutch",
+                "text": "Zwemkleding & ondergoed"
+            },
+            {
+                "language": "Norwegian",
+                "text": "Bade- & undert\u00f8y"
+            },
+            {
+                "language": "Polish",
+                "text": "Stroje k\u0105pielowe i bielizna"
+            },
+            {
+                "language": "Portuguese",
+                "text": "Roupa de banho e interior"
+            },
+            {
+                "language": "Romanian",
+                "text": "\u00cenot & Lenjerie"
+            },
+            {
+                "language": "Slovak",
+                "text": "Plavky- a spodn\u00e1 bielize\u0148"
+            },
+            {
+                "language": "Slovenian",
+                "text": "Plavalna obla\u010dila in spodnje perilo"
+            },
+            {
+                "language": "Albanian",
+                "text": "Not- & Mbathje"
+            },
+            {
+                "language": "Serbian",
+                "text": "\u041f\u043b\u0438\u0432\u0430\u045a\u0435 - & \u0414\u043e\u045a\u0438 \u0432\u0435\u0448"
+            },
+            {
+                "language": "Swedish",
+                "text": "Bad- & underkl\u00e4der"
+            },
+            {
+                "language": "Turkish",
+                "text": "Mayo ve \u0130\u00e7 Giyim"
+            }
+        ],
+        "product_sub_group_id": "BX0713",
+        "product_sub_group": [
+            {
+                "language": "Arabic",
+                "text": "\u062c\u0630\u0648\u0639"
+            },
+            {
+                "language": "Azerbaijani",
+                "text": "G\u00f6vd\u0259l\u0259r"
+            },
+            {
+                "language": "Bulgarian",
+                "text": "\u041a\u0443\u0444\u0430\u0440\u0438"
+            },
+            {
+                "language": "Bosnian",
+                "text": "Prtlja\u017enici"
+            },
+            {
+                "language": "Montenegrin",
+                "text": "Prtlja\u017enici"
+            },
+            {
+                "language": "Czech",
+                "text": "Tren\u00fdrky"
+            },
+            {
+                "language": "Danish",
+                "text": "Boxershorts"
+            },
+            {
+                "language": "German",
+                "text": "Boxershorts"
+            },
+            {
+                "language": "Greek",
+                "text": "\u03a3\u03bf\u03c1\u03c4\u03c2"
+            },
+            {
+                "language": "Canadian English",
+                "text": "Boxers"
+            },
+            {
+                "language": "English",
+                "text": "Trunks"
+            },
+            {
+                "language": "USEnglish",
+                "text": "Trunks"
+            },
+            {
+                "language": "Spanish",
+                "text": "B\u00f3xers"
+            },
+            {
+                "language": "Estonian",
+                "text": "Ujumisp\u00fcksid"
+            },
+            {
+                "language": "Finnish",
+                "text": "Alushousut"
+            },
+            {
+                "language": "Canadian French",
+                "text": "Boxer"
+            },
+            {
+                "language": "French",
+                "text": "Maillots"
+            },
+            {
+                "language": "Croatian",
+                "text": "Ga\u0107e"
+            },
+            {
+                "language": "Hungarian",
+                "text": "Als\u00f3nadr\u00e1g"
+            },
+            {
+                "language": "Armenian",
+                "text": "\u054f\u0580\u0578\u0582\u0576\u056f\u0576\u0565\u0580"
+            },
+            {
+                "language": "Icelandic",
+                "text": "Sundsk\u00fdla"
+            },
+            {
+                "language": "Italian",
+                "text": "Boxer"
+            },
+            {
+                "language": "Japanese",
+                "text": "\u30c8\u30e9\u30f3\u30af\u30b9"
+            },
+            {
+                "language": "Kazakh",
+                "text": "\u041e\u049b\u043f\u0430\u049b\u0442\u0430\u0440"
+            },
+            {
+                "language": "Korean",
+                "text": "\uac04\uc120"
+            },
+            {
+                "language": "Lithuanian",
+                "text": "Trumpik\u0117s"
+            },
+            {
+                "language": "Latvian",
+                "text": "Stumbriem"
+            },
+            {
+                "language": "Macedonian",
+                "text": "\u0411\u0430\u0433\u0430\u0436\u043d\u0438\u0446\u0438"
+            },
+            {
+                "language": "Dutch",
+                "text": "Boxershorts"
+            },
+            {
+                "language": "Norwegian",
+                "text": "Underbukser"
+            },
+            {
+                "language": "Polish",
+                "text": "Bokserki"
+            },
+            {
+                "language": "Portuguese",
+                "text": "Boxers"
+            },
+            {
+                "language": "Romanian",
+                "text": "Trunchiuri"
+            },
+            {
+                "language": "Slovak",
+                "text": "Boxerky"
+            },
+            {
+                "language": "Slovenian",
+                "text": "Kratke hla\u010de"
+            },
+            {
+                "language": "Albanian",
+                "text": "Bagazhet"
+            },
+            {
+                "language": "Serbian",
+                "text": "\u041f\u0440\u0442\u0459\u0430\u0436\u043d\u0438\u0446\u0438"
+            },
+            {
+                "language": "Swedish",
+                "text": "Kalsonger"
+            },
+            {
+                "language": "Turkish",
+                "text": "Mayolar"
+            }
+        ],
+        "customs_code": 61071100,
+        "customs_import_code": 6107110000,
+        "detail_type": [
+            {
+                "language": "Arabic",
+                "text": "\u062c\u0630\u0648\u0639"
+            },
+            {
+                "language": "Azerbaijani",
+                "text": "G\u00f6vd\u0259l\u0259r"
+            },
+            {
+                "language": "Bulgarian",
+                "text": "\u041a\u0443\u0444\u0430\u0440\u0438"
+            },
+            {
+                "language": "Bosnian",
+                "text": "Prtlja\u017enici"
+            },
+            {
+                "language": "Montenegrin",
+                "text": "Prtlja\u017enici"
+            },
+            {
+                "language": "Czech",
+                "text": "Tren\u00fdrky"
+            },
+            {
+                "language": "Danish",
+                "text": "Underbukser"
+            },
+            {
+                "language": "German",
+                "text": "Shorts"
+            },
+            {
+                "language": "Greek",
+                "text": "\u03a3\u03bf\u03c1\u03c4\u03c2"
+            },
+            {
+                "language": "Canadian English",
+                "text": "Boxers"
+            },
+            {
+                "language": "English",
+                "text": "Trunks"
+            },
+            {
+                "language": "USEnglish",
+                "text": "Trunks"
+            },
+            {
+                "language": "Spanish",
+                "text": "B\u00f3xers"
+            },
+            {
+                "language": "Estonian",
+                "text": "P\u00fcksikud"
+            },
+            {
+                "language": "Finnish",
+                "text": "Alushousut"
+            },
+            {
+                "language": "Canadian French",
+                "text": "Boxers"
+            },
+            {
+                "language": "French",
+                "text": "Maillots"
+            },
+            {
+                "language": "Croatian",
+                "text": "Ga\u0107e"
+            },
+            {
+                "language": "Hungarian",
+                "text": "Trunk als\u00f3nadr\u00e1g"
+            },
+            {
+                "language": "Armenian",
+                "text": "\u054f\u0580\u0578\u0582\u0576\u056f\u0576\u0565\u0580"
+            },
+            {
+                "language": "Icelandic",
+                "text": "Sundsk\u00fdla"
+            },
+            {
+                "language": "Italian",
+                "text": "Boxer"
+            },
+            {
+                "language": "Japanese",
+                "text": "\u30c8\u30e9\u30f3\u30af\u30b9"
+            },
+            {
+                "language": "Kazakh",
+                "text": "\u041e\u049b\u043f\u0430\u049b\u0442\u0430\u0440"
+            },
+            {
+                "language": "Korean",
+                "text": "\uac04\uc120"
+            },
+            {
+                "language": "Lithuanian",
+                "text": "Trumpik\u0117s"
+            },
+            {
+                "language": "Latvian",
+                "text": "Stumbriem"
+            },
+            {
+                "language": "Macedonian",
+                "text": "\u0411\u0430\u0433\u0430\u0436\u043d\u0438\u0446\u0438"
+            },
+            {
+                "language": "Dutch",
+                "text": "Boxershorts"
+            },
+            {
+                "language": "Norwegian",
+                "text": "Underbukser"
+            },
+            {
+                "language": "Polish",
+                "text": "Bokserki"
+            },
+            {
+                "language": "Portuguese",
+                "text": "Trunks"
+            },
+            {
+                "language": "Romanian",
+                "text": "Trunchiuri"
+            },
+            {
+                "language": "Slovak",
+                "text": "Boxerky"
+            },
+            {
+                "language": "Slovenian",
+                "text": "Kratke hla\u010de"
+            },
+            {
+                "language": "Albanian",
+                "text": "Bagazhet"
+            },
+            {
+                "language": "Serbian",
+                "text": "\u041f\u0440\u0442\u0459\u0430\u0436\u043d\u0438\u0446\u0438"
+            },
+            {
+                "language": "Swedish",
+                "text": "Boxershorts"
+            },
+            {
+                "language": "Turkish",
+                "text": "Mayo"
+            }
+        ],
+        "pack_size": 1,
+        "purchase_division": "Accessories",
+        "strategic_type": null
+    },
+    "characteristic": {
+        "product_description": [
+            {
+                "language": "English",
+                "text": "Trunks are close-fitting like boxer briefs, except they have a shorter fit. Trunks cover less leg than boxer briefs.\nJersey is a lightweight and stretchy fabric that ensures comfort.\n - Product Type : Trunks\n - Extra details : Elasticated waistband\n"
+            },
+            {
+                "language": "Arabic",
+                "text": "\u0627\u0644\u062c\u0630\u0648\u0639 \u0645\u0646\u0627\u0633\u0628\u0629 \u0645\u062b\u0644 \u0633\u0631\u0627\u0648\u064a\u0644 \u0627\u0644\u0645\u0644\u0627\u0643\u0645 \u060c \u0625\u0644\u0627 \u0623\u0646\u0647\u0627 \u0630\u0627\u062a \u0645\u0642\u0627\u0633 \u0623\u0642\u0635\u0631. \u062a\u063a\u0637\u064a \u062c\u0630\u0648\u0639 \u0627\u0644\u0633\u0627\u0642 \u0623\u0642\u0644 \u0645\u0646 \u0633\u0631\u0627\u0648\u064a\u0644 \u0627\u0644\u0645\u0644\u0627\u0643\u0645.\n\u0627\u0644\u062c\u064a\u0631\u0633\u064a\u0647 \u0647\u0648 \u0646\u0633\u064a\u062c \u062e\u0641\u064a\u0641 \u0627\u0644\u0648\u0632\u0646 \u0648\u0645\u0637\u0627\u0637\u064a \u064a\u0636\u0645\u0646 \u0627\u0644\u0631\u0627\u062d\u0629.\n - \u0646\u0648\u0639 \u0627\u0644\u0645\u0646\u062a\u062c : \u062c\u0630\u0648\u0639\n - \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0636\u0627\u0641\u064a\u0629 : \u062e\u0635\u0631 \u0645\u0637\u0627\u0637\u064a\n"
+            },
+            {
+                "language": "Azerbaijani",
+                "text": "Trunks, daha q\u0131sa bir fitd\u0259n ba\u015fqa, boks\u00e7u q\u0131sas\u0131 kimi bir-birl\u0259rin\u0259 yax\u0131n uy\u011fun g\u0259lir. Trunks boks\u00e7u q\u0131sa m\u0259lumatlar\u0131ndan daha az aya\u011f\u0131n\u0131 \u00f6rt\u00fcr.\nCersi y\u00fcng\u00fcl v\u0259 uzanm\u0131\u015f par\u00e7ad\u0131r ki, rahatl\u0131\u011f\u0131 t\u0259min edir.\n - M\u0259hsul N\u00f6v\u00fc : G\u00f6vd\u0259l\u0259r\n - Ekstra t\u0259fsilatlar : Elastik bel\n"
+            },
+            {
+                "language": "Bulgarian",
+                "text": "\u041a\u0443\u0444\u0430\u0440\u0438\u0442\u0435 \u0441\u0430 \u043f\u043b\u044a\u0442\u043d\u043e \u043f\u0440\u0438\u043b\u0435\u043f\u043d\u0430\u043b\u0438 \u043a\u0430\u0442\u043e \u0431\u043e\u043a\u0441\u0435\u0440\u043a\u0438, \u0441 \u0438\u0437\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0430 \u0442\u043e\u0432\u0430, \u0447\u0435 \u0438\u043c\u0430\u0442 \u043f\u043e-\u043a\u044a\u0441\u043e \u043f\u0440\u0438\u043b\u044f\u0433\u0430\u043d\u0435. \u041a\u0443\u0444\u0430\u0440\u0438\u0442\u0435 \u043f\u043e\u043a\u0440\u0438\u0432\u0430\u0442 \u043f\u043e-\u043c\u0430\u043b\u043a\u043e \u043a\u0440\u0430\u043a\u0430 \u043e\u0442 \u0431\u043e\u043a\u0441\u0435\u0440\u043a\u0438\u0442\u0435.\n\u0414\u0436\u044a\u0440\u0441\u0438\u0442\u043e \u0435 \u043b\u0435\u043a\u0430 \u0438 \u0435\u043b\u0430\u0441\u0442\u0438\u0447\u043d\u0430 \u043c\u0430\u0442\u0435\u0440\u0438\u044f, \u043a\u043e\u044f\u0442\u043e \u043e\u0441\u0438\u0433\u0443\u0440\u044f\u0432\u0430 \u043a\u043e\u043c\u0444\u043e\u0440\u0442.\n - \u0422\u0438\u043f \u043d\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430 : \u041a\u0443\u0444\u0430\u0440\u0438\n - \u0414\u043e\u043f\u044a\u043b\u043d\u0438\u0442\u0435\u043b\u043d\u0438 \u0434\u0435\u0442\u0430\u0439\u043b\u0438 : \u041b\u0430\u0441\u0442\u0438\u043a \u043d\u0430 \u0442\u0430\u043b\u0438\u044f\u0442\u0430\n"
+            },
+            {
+                "language": "Bosnian",
+                "text": "Prtlja\u017enici su usko prikladni kao bokserice, osim \u0161to imaju kra\u0107i fit. Prtlja\u017enici pokrivaju manje nogu od bokserica..\nJersey je lagana i rastezljiva tkanina koja osigurava udobnost.\n - Vrsta proizvoda : Prtlja\u017enici\n - Dodatni detalji : Elasti\u010dna traka struka\n"
+            },
+            {
+                "language": "Montenegrin",
+                "text": "Prtlja\u017enici su usko uklopljeni kao bokserice, samo \u0161to imaju kra\u0107i napad. Prtlja\u017enici pokrivaju manje noge od bokserica.\nD\u017eersi je lagana i rastegljiva tkanina koja osigurava udobnost.\n - Tip proizvoda : Prtlja\u017enici\n - Dodatni detalji : Elasti\u010dna traka za struk\n"
+            },
+            {
+                "language": "Czech",
+                "text": "Tren\u00fdrky jsou p\u0159il\u00e9hav\u00e9 jako boxerky, jen maj\u00ed krat\u0161\u00ed st\u0159ih. Tren\u00fdrky zakr\u00fdvaj\u00ed nohu m\u00e9n\u011b ne\u017e boxerky.\n\u017derzej je lehk\u00e1 a pru\u017en\u00e1 tkanina, kter\u00e1 zaji\u0161\u0165uje pohodl\u00ed.\n - Typ v\u00fdrobku : Tren\u00fdrky\n - Extra detaily : Elastick\u00fd pas\n"
+            },
+            {
+                "language": "Danish",
+                "text": "Trunks er t\u00e6tsiddende som boxerbriefs, bortset fra at de har en kortere pasform. Trunks d\u00e6kker mindre ben end briefs.\nJersey er et let og elastisk materiale, der sikrer komfort.\n - Produkttype : Underbukser\n - Detaljer : Elastisk linning\n"
+            },
+            {
+                "language": "German",
+                "text": "Unterhosen sind eng anliegend wie Boxershorts, nur dass sie k\u00fcrzer geschnitten sind. Unterhosen bedecken daher weniger Bein als Boxershorts.\nJersey ist ein leichter und dehnbarer Stoff mit hohem Tragekomfort.\n - Produkttyp : Shorts\n - Details : Elastisches Taillenbund\n"
+            },
+            {
+                "language": "Greek",
+                "text": "\u03a4\u03b1 \u03ba\u03bf\u03bd\u03c4\u03ac \u03c0\u03b1\u03bd\u03c4\u03b5\u03bb\u03bf\u03bd\u03ac\u03ba\u03b9\u03b1 \u03b5\u03c6\u03b1\u03c1\u03bc\u03cc\u03b6\u03bf\u03c5\u03bd \u03cc\u03c0\u03c9\u03c2 \u03c4\u03b1 \u03bc\u03c0\u03bf\u03be\u03b5\u03c1\u03ac\u03ba\u03b9\u03b1, \u03b5\u03ba\u03c4\u03cc\u03c2 \u03b1\u03c0\u03cc \u03c4\u03bf \u03cc\u03c4\u03b9 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c0\u03b9\u03bf \u03ba\u03bf\u03bd\u03c4\u03ac. \u03a4\u03b1 \u03ba\u03bf\u03bd\u03c4\u03ac \u03c0\u03b1\u03bd\u03c4\u03b5\u03bb\u03bf\u03bd\u03ac\u03ba\u03b9\u03b1 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03bf\u03c5\u03bd \u03bb\u03b9\u03b3\u03cc\u03c4\u03b5\u03c1\u03bf \u03c0\u03cc\u03b4\u03b9 \u03b1\u03c0\u03cc \u03c4\u03bf \u03bc\u03c0\u03bf\u03be\u03b5\u03c1\u03ac\u03ba\u03b9.\n\u03a4\u03bf \u03b6\u03ad\u03c1\u03c3\u03b5\u03ca \u03b5\u03af\u03bd\u03b1\u03b9 \u03ad\u03bd\u03b1 \u03b5\u03bb\u03b1\u03c6\u03c1\u03cd \u03ba\u03b1\u03b9 \u03b5\u03bb\u03b1\u03c3\u03c4\u03b9\u03ba\u03cc \u03cd\u03c6\u03b1\u03c3\u03bc\u03b1, \u03c0\u03bf\u03c5 \u03b5\u03be\u03b1\u03c3\u03c6\u03b1\u03bb\u03af\u03b6\u03b5\u03b9 \u03ac\u03bd\u03b5\u03c3\u03b7.\n - \u03a4\u03cd\u03c0\u03bf\u03c2 \u03c0\u03c1\u03bf\u03ca\u03cc\u03bd\u03c4\u03bf\u03c2 : \u03a3\u03bf\u03c1\u03c4\u03c2\n - \u0395\u03c0\u03b9\u03c0\u03bb\u03ad\u03bf\u03bd \u03bb\u03b5\u03c0\u03c4\u03bf\u03bc\u03ad\u03c1\u03b5\u03b9\u03b5\u03c2 : \u0395\u03bb\u03b1\u03c3\u03c4\u03b9\u03ba\u03cc \u03b6\u03c9\u03bd\u03ac\u03c1\u03b9\n"
+            },
+            {
+                "language": "Canadian English",
+                "text": "Trunks are close-fitting like boxer briefs, except they have a shorter fit. Trunks cover less leg than boxer briefs.\nJersey is a lightweight and stretchy fabric that ensures comfort.\n - Product Type : Boxers\n - Extra details : Elasticated waistband\n"
+            },
+            {
+                "language": "USEnglish",
+                "text": "Trunks are close-fitting like boxer briefs, except they have a shorter fit. Trunks cover less leg than boxer briefs.\nJersey is a lightweight and stretchy fabric that ensures comfort.\n - Product Type : Trunks\n - Extra details : Elasticated waistband\n"
+            },
+            {
+                "language": "Spanish",
+                "text": "Los b\u00f3xers son ajustados tan como los b\u00f3xers cortos, pero a\u00fan m\u00e1s cortos. Los b\u00f3xers cubren menos pierna que los b\u00f3xers cortos.\nEl jersey es una tela ligera y el\u00e1stica que brinda comodidad garantizada.\n - Art\u00edculo : B\u00f3xers\n - Detalles : Cinturilla el\u00e1stica\n"
+            },
+            {
+                "language": "Estonian",
+                "text": "P\u00fcksikud istuvad tihedamalt \u00fcmber nagu bokserp\u00fcksid, kuid need on l\u00fchema l\u00f5ikega. P\u00fcksikud katavad v\u00e4hem jalga kui bokserp\u00fcksid.\nD\u017e\u00f6rsi on kerge ja veniv kangas, mis tagab mugavuse.\n - Toote t\u00fc\u00fcp : P\u00fcksikud\n - T\u00e4iendav info : Veniv v\u00e4rvel\n"
+            },
+            {
+                "language": "Finnish",
+                "text": "Alushousut istuvat napakasti kuten bokserit, mutta niiss\u00e4 on lyhyempi leikkaus. Alushousut peitt\u00e4v\u00e4t v\u00e4hemm\u00e4n reitt\u00e4 kuin bokserit.\nJersey on kevytt\u00e4, joustavaa ja miellytt\u00e4v\u00e4n tuntuista kangasta.\n - Tuotetyyppi : Alushousut\n - Lis\u00e4 yksityiskohdat : Joustava vy\u00f6t\u00e4r\u00f6nauha\n"
+            },
+            {
+                "language": "Canadian French",
+                "text": "Les troncs sont aussi ajust\u00e9s que les boxers, mais ils sont plus courts et couvrent moins de jambes que les boxers.\nLe jersey est un tissu l\u00e9ger et stretch qui assure le confort.\n - Type d'article : Boxers\n - D\u00e9tails : Ceinture \u00e9lastiqu\u00e9e\n"
+            },
+            {
+                "language": "French",
+                "text": "Les shorties sont aussi ajust\u00e9s que les boxers, mais ils sont plus courts. Les shorties couvrent moins de jambes que les boxers.\nLe jersey est un tissu l\u00e9ger et stretch qui assure le confort.\n - Type d'article : Maillots\n - D\u00e9tails : Ceinture \u00e9lastiqu\u00e9e\n"
+            },
+            {
+                "language": "Croatian",
+                "text": "Ga\u0107e su bliske poput bokserica, osim \u0161to imaju kra\u0107e prianjanje. Ga\u0107e pokrivaju manje nogu od bokserica.\nJersey je lagana i rastezljiva tkanina koja osigurava udobnost.\n - Vrsta proizvoda : Ga\u0107e\n - Dodatni detalji : Elasti\u010dni pojas\n"
+            },
+            {
+                "language": "Hungarian",
+                "text": "A trunk als\u00f3nadr\u00e1g a boxerals\u00f3hoz hasonl\u00f3an szorosan illeszkedik, de r\u00f6videbb a sz\u00e1ra. A trunk als\u00f3 kevesebbet takar, mint a boxer.\nA jersey egy k\u00f6nny\u0171, rugalmas anyag, amelynek k\u00e9nyelmes a visel\u00e9se.\n - Term\u00e9kt\u00edpus : Trunk als\u00f3nadr\u00e1g\n - Tov\u00e1bbi r\u00e9szletek : Rugalmas der\u00e9kr\u00e9sz\n"
+            },
+            {
+                "language": "Armenian",
+                "text": "\u0532\u0565\u057c\u0576\u0561\u056d\u0581\u056b\u056f\u0576\u0565\u0580\u0568 \u0574\u0578\u057f\u056b\u056f \u0565\u0576, \u056b\u0576\u0579\u057a\u0565\u057d \u0562\u057c\u0576\u0581\u0584\u0561\u0574\u0561\u0580\u057f\u056b\u056f\u056b \u056f\u0561\u0580\u0573 \u056f\u0561\u0580\u0573 \u0570\u0561\u0580\u0574\u0561\u0580\u0561\u0576\u0584: \u0532\u0565\u057c\u0576\u0561\u056d\u0581\u056b\u056f\u0576\u0565\u0580\u0568 \u0561\u057e\u0565\u056c\u056b \u0584\u056b\u0579 \u0565\u0576 \u056e\u0561\u056e\u056f\u0578\u0582\u0574 \u0578\u057f\u0584\u0568, \u0584\u0561\u0576 \u0562\u057c\u0576\u0581\u0584\u0561\u0574\u0561\u0580\u057f\u056b\u056f\u056b \u056f\u0561\u0580\u0573\u0561\u056f\u0576\u0565\u0580\u0568.\n\u054b\u0565\u0580\u057d\u056b\u0568 \u0569\u0565\u0569\u0565\u0582 \u0565\u0582 \u0571\u0563\u057e\u0578\u0572 \u0563\u0578\u0580\u056e\u057e\u0561\u056e\u0584 \u0567, \u0578\u0580\u0568 \u0561\u057a\u0561\u0570\u0578\u057e\u0578\u0582\u0574 \u0567 \u0570\u0561\u0580\u0574\u0561\u0580\u0561\u057e\u0565\u057f\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0568.\n - \u0531\u057a\u0580\u0561\u0576\u0584\u056b \u057f\u0565\u057d\u0561\u056f : \u054f\u0580\u0578\u0582\u0576\u056f\u0576\u0565\u0580\n - \u053c\u0580\u0561\u0581\u0578\u0582\u0581\u056b\u0579 \u0574\u0561\u0576\u0580\u0561\u0574\u0561\u057d\u0576\u0565\u0580 : \u0537\u056c\u0561\u057d\u057f\u056b\u056f \u0563\u0578\u057f\u056f\u0561\u057f\u0565\u0572\n"
+            },
+            {
+                "language": "Icelandic",
+                "text": "Koffort passa vel eins og boxern\u00e6rbuxur, nema \u00fe\u00e6r passa styttra. Koffort hylja f\u00e6rri f\u00e6tur en boxern\u00e6rbuxur.\nJersey er l\u00e9tt og teygjanlegt efni sem tryggir \u00fe\u00e6gindi.\n - V\u00f6rutegund : Sundsk\u00fdla\n - Vi\u00f0b\u00f3taruppl\u00fdsingar : Teygjanlegt mittisband\n"
+            },
+            {
+                "language": "Italian",
+                "text": "I boxer aderenti parigamba presentano una lunghezza inferiore rispetto ai boxer aderenti standard, lasciando quindi le gambe completamente scoperte.\nIl jersey \u00e8 un tessuto leggero ed elasticizzato che assicura comfort.\n - Tipologia di prodotto : Boxer\n - Dettagli : Fascia elasticizzata in vita\n"
+            },
+            {
+                "language": "Japanese",
+                "text": "\u30c8\u30e9\u30f3\u30af\u30b9\u306f\u30dc\u30af\u30b5\u30fc\u30d6\u30ea\u30fc\u30d5\u306e\u3088\u3046\u306b\u3074\u3063\u305f\u308a\u3068\u30d5\u30a3\u30c3\u30c8\u3057\u307e\u3059\u304c\u3001\u30d5\u30a3\u30c3\u30c8\u611f\u304c\u77ed\u304f\u306a\u3063\u3066\u3044\u307e\u3059\u3002\u30c8\u30e9\u30f3\u30af\u30b9\u306f\u30dc\u30af\u30b5\u30fc\u30d6\u30ea\u30fc\u30d5\u3088\u308a\u3082\u811a\u3092\u8986\u3046\u90e8\u5206\u304c\u5c11\u306a\u3044.\n\u30b8\u30e3\u30fc\u30b8\u30fc\u306f\u8efd\u91cf\u3067\u4f38\u7e2e\u6027\u306e\u3042\u308b\u751f\u5730\u3067\u3001\u5feb\u9069\u3055\u3092\u4fdd\u8a3c\u3057\u307e\u3059.\n - \u88fd\u54c1\u30bf\u30a4\u30d7 : \u30c8\u30e9\u30f3\u30af\u30b9\n - \u8ffd\u52a0\u60c5\u5831 : \u4f38\u7e2e\u6027\u30a6\u30a8\u30b9\u30c8\u30d0\u30f3\u30c9\n"
+            },
+            {
+                "language": "Kazakh",
+                "text": "\u041e\u049b\u043f\u0430\u043d\u0434\u0430\u0440\u044b \u0431\u043e\u043a\u0441\u0448\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u049b\u0438\u044b\u0441\u0442\u044b\u0440\u044b\u043b\u0493\u0430\u043d\u043d\u0430\u043d \u0431\u0430\u0441\u049b\u0430, \u0431\u043e\u043a\u0441\u0448\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u043c\u0430\u04a3\u0434\u0430\u0439\u0448\u0430\u043b\u0430\u0440 \u0441\u0438\u044f\u049b\u0442\u044b \u0442\u044b\u0493\u044b\u0437 \u049b\u0438\u044b\u0441\u0442\u044b\u0440\u044b\u043b\u0493\u0430\u043d. \u041e\u049b\u043f\u0430\u049b\u0442\u0430\u0440 \u0431\u043e\u043a\u0441\u0448\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u0430\u049b\u043f\u0430\u0440\u0430\u0442\u049b\u0430 \u049b\u0430\u0440\u0430\u0493\u0430\u043d\u0434\u0430 \u0430\u044f\u049b\u0442\u044b \u0430\u0437 \u0436\u0430\u0431\u0430\u0434\u044b.\n\u0414\u0436\u0435\u0440\u0441\u0438 \u2014 \u0436\u0430\u0439\u043b\u044b\u043b\u044b\u049b \u049b\u0430\u043c\u0442\u0430\u043c\u0430\u0441\u044b\u0437 \u0435\u0442\u0435\u0442\u0456\u043d \u0436\u0435\u04a3\u0456\u043b \u0436\u04d9\u043d\u0435 \u0441\u043e\u0437\u044b\u043b\u044b\u04a3\u049b\u044b \u043c\u0430\u0442\u0430.\n - \u04e8\u043d\u0456\u043c \u0442\u04af\u0440\u0456 : \u041e\u049b\u043f\u0430\u049b\u0442\u0430\u0440\n - \u049a\u043e\u0441\u044b\u043c\u0448\u0430 \u043c\u04d9\u043b\u0456\u043c\u0435\u0442\u0442\u0435\u0440 : \u0421\u0435\u0440\u043f\u0456\u043c\u0434\u0456 \u0431\u0435\u043b\u0431\u0435\u0443\n"
+            },
+            {
+                "language": "Korean",
+                "text": "\ud2b8\ub801\ud06c\ub294 \ubcf5\uc11c \ube0c\ub9ac\ud504\ucc98\ub7fc \ubab8\uc5d0 \uaf2d \ub9de\uc9c0\ub9cc \ud54f\uc774 \ub354 \uc9e7\uc2b5\ub2c8\ub2e4. \ud2b8\ub801\ud06c\ub294 \uc0ac\uac01 \ud32c\ud2f0\ubcf4\ub2e4 \ub2e4\ub9ac\ub97c \ub35c \ub36e\uc2b5\ub2c8\ub2e4..\n\uc800\uc9c0\ub294 \uac00\ubccd\uace0 \uc2e0\ucd95\uc131\uc774 \uc788\ub294 \uc6d0\ub2e8\uc73c\ub85c \ud3b8\uc548\ud568\uc744 \ubcf4\uc7a5\ud569\ub2c8\ub2e4.\n - \uc0c1\ud488 \uc885\ub958 : \uac04\uc120\n - \ucd94\uac00 \uc138\ubd80 \uc815\ubcf4 : \uc2e0\ucd95\uc131 \uc788\ub294 \ud5c8\ub9ac\ubc34\ub4dc\n"
+            },
+            {
+                "language": "Lithuanian",
+                "text": "Trumpik\u0117s yra prigludusios kaip boksin\u0117s kelnait\u0117s, i\u0161skyrus tai, kad jos yra trumpesn\u0117s. Baga\u017ein\u0117s dengia ma\u017eiau koj\u0173 nei boksin\u0117s kelnait\u0117s.\nD\u017eersis yra lengvas ir tamprus audinys, u\u017etikrinantis komfort\u0105 \u200b.\n - Produkto tipas : Trumpik\u0117s\n - Papildomos detal\u0117s : Elastinga juosmens juosta\n"
+            },
+            {
+                "language": "Latvian",
+                "text": "Bag\u0101\u017enieki ir cie\u0161i piegu\u013co\u0161i k\u0101 boksera biks\u012btes, iz\u0146emot to, ka tiem ir \u012bs\u0101ks piegriezums. Stumbri nosedz maz\u0101k k\u0101ju nek\u0101 bokseru biks\u012btes.\nD\u017eersija ir viegls un elast\u012bgs audums, kas nodro\u0161ina komfortu.\n - Produkta veids : Stumbriem\n - Papildu inform\u0101cija : Elast\u012bg\u0101 jostasvieta\n"
+            },
+            {
+                "language": "Macedonian",
+                "text": "\u0411\u0430\u0433\u0430\u0436\u043d\u0438\u0446\u0438\u0442\u0435 \u0441\u0435 \u0431\u043b\u0438\u0441\u043a\u0443 \u043a\u0430\u043a\u043e \u0431\u043e\u043a\u0441\u0435\u0440\u0441\u043a\u0438 \u0441\u043b\u0438\u043a\u0438, \u0441\u0430\u043c\u043e \u0448\u0442\u043e \u0438\u043c\u0430\u0430\u0442 \u043f\u043e\u043a\u0440\u0430\u0442\u043a\u0430 \u0432\u043a\u043b\u043e\u043f\u0443\u0432\u0430\u045a\u0435. \u0411\u0430\u0433\u0430\u0436\u043d\u0438\u0446\u0438\u0442\u0435 \u043f\u043e\u043a\u0440\u0438\u0432\u0430\u0430\u0442 \u043f\u043e\u043c\u0430\u043b\u043a\u0443 \u043d\u043e\u0437\u0435 \u043e\u0442\u043a\u043e\u043b\u043a\u0443 \u0431\u043e\u043a\u0441\u0435\u0440\u0441\u043a\u0438\u0442\u0435 \u0441\u043b\u0438\u043a\u0438.\n\u041c\u0430\u0438\u0447\u043a\u0430\u0442\u0430 \u0435 \u043b\u0435\u0441\u043d\u0430 \u0438 \u0440\u0430\u0441\u0442\u0435\u0433\u043d\u0430\u0442\u0430 \u0442\u043a\u0430\u0435\u043d\u0438\u043d\u0430 \u043a\u043e\u0458\u0430 \u043e\u0431\u0435\u0437\u0431\u0435\u0434\u0443\u0432\u0430 \u0443\u0434\u043e\u0431\u043d\u043e\u0441\u0442.\n - \u0422\u0438\u043f \u043d\u0430 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434 : \u0411\u0430\u0433\u0430\u0436\u043d\u0438\u0446\u0438\n - \u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u043d\u0438 \u0434\u0435\u0442\u0430\u043b\u0438 : \u0415\u043b\u0430\u0441\u0442\u0438\u0447\u0435\u043d \u043f\u043e\u0458\u0430\u0441\n"
+            },
+            {
+                "language": "Dutch",
+                "text": "Boxers zijn nauwsluitend en net wat korter dan boxer briefs. Hierdoor bedekken ze iets minder van het bovenbeen.\nJersey is een zachte en rekbare stof die zorgt voor comfort.\n - Producttype : Boxershorts\n - Details : Elastische tailleband\n"
+            },
+            {
+                "language": "Norwegian",
+                "text": "Underbukser er like tettsittende som boksertruser, bortsett fra at de har en kortere passform. Underbukser dekker mindre av bena enn boksertruser.\nJersey er et lett og stretchy stoff som s\u00f8rger for komfort.\n - Produkttype : Underbukser\n - Detaljer : Elastisk linning\n"
+            },
+            {
+                "language": "Polish",
+                "text": "Hipsterki s\u0105 dopasowane jak kr\u00f3tkie bokserki, ale s\u0105 kr\u00f3tsze. Zakrywaj\u0105 mniej uda ni\u017c bokserki.\nJersey to lekki i elastyczny materia\u0142 zapewniaj\u0105cy wygod\u0119.\n - Rodzaj produktu : Bokserki\n - Szczeg\u00f3\u0142y : Elastyczny pas w talii\n"
+            },
+            {
+                "language": "Portuguese",
+                "text": "As cuecas s\u00e3o justas como as cuecas boxer, mas t\u00eam um ajuste mais curto. As cuecas cobrem menos as pernas do que as cuecas boxer.\nO Jersey \u00e9 um tecido leve e el\u00e1stico que garante conforto.\n - Tipo de produto : Trunks\n - Detalhes extra : Cintura el\u00e1stica\n"
+            },
+            {
+                "language": "Romanian",
+                "text": "Trunchiurile sunt apropiate ca chilo\u021bii boxer, cu excep\u021bia faptului c\u0103 au o potrivire mai scurt\u0103. Trunchiurile acoper\u0103 mai pu\u021bin piciorul dec\u00e2t chilo\u021bii boxeri.\nJersey este o \u021bes\u0103tur\u0103 u\u0219oar\u0103 \u0219i elastic\u0103 care asigur\u0103 confort.\n - Tip produs : Trunchiuri\n - Detalii suplimentare : Band\u0103 elastic\u0103 \u00een talie\n"
+            },
+            {
+                "language": "Slovak",
+                "text": "Tren\u00edrky s\u00fa priliehav\u00e9 ako boxerky, len maj\u00fa krat\u0161\u00ed strih. Tren\u00edrky zakr\u00fdvaj\u00fa menej nohy ako boxerky.\nJersey je \u013eahk\u00e1 a elastick\u00e1 tkanina, ktor\u00e1 zaru\u010duje pohodlie.\n - Druh v\u00fdrobku : Boxerky\n - Extra detaily : Elastick\u00fd p\u00e1s\n"
+            },
+            {
+                "language": "Slovenian",
+                "text": "Hla\u010de so oprijete kot boksarice, le da imajo kraj\u0161i kroj. Hla\u010de pokrivajo manj nog kot boksarice.\nJersey je lahka in raztegljiva tkanina, ki zagotavlja udobje.\n - Vrsta izdelka : Kratke hla\u010de\n - Dodatne podrobnosti : Elasti\u010den pas\n"
+            },
+            {
+                "language": "Albanian",
+                "text": "Bagazhet jan\u00eb t\u00eb ngushta si pantallona boksier\u00ebsh, p\u00ebrve\u00e7se kan\u00eb nj\u00eb p\u00ebrshtatje m\u00eb t\u00eb shkurt\u00ebr. Bagazhet mbulojn\u00eb m\u00eb pak k\u00ebmb\u00eb se pantallonat e boksierit.\nXhersi \u00ebsht\u00eb nj\u00eb p\u00eblhur\u00eb e leht\u00eb dhe e tendosur q\u00eb siguron rehati.\n - Lloji i produktit : Bagazhet\n - Detaje shtes\u00eb : Beli elastik\n"
+            },
+            {
+                "language": "Serbian",
+                "text": "\u041f\u0440\u0442\u0459\u0430\u0436\u043d\u0438\u0446\u0438 \u0441\u0443 \u0443\u0441\u043a\u043e \u0443\u043a\u043b\u043e\u043f\u0459\u0435\u043d\u0438 \u043a\u0430\u043e \u0431\u043e\u043a\u0441\u0435\u0440\u0438\u0446\u0435, \u0441\u0430\u043c\u043e \u0448\u0442\u043e \u0438\u043c\u0430\u0458\u0443 \u043a\u0440\u0430\u045b\u0438 \u043d\u0430\u043f\u0430\u0434. \u041f\u0440\u0442\u0459\u0430\u0436\u043d\u0438\u0446\u0438 \u043f\u043e\u043a\u0440\u0438\u0432\u0430\u0458\u0443 \u043c\u0430\u045a\u0435 \u043d\u043e\u0433\u0435 \u043e\u0434 \u0431\u043e\u043a\u0441\u0435\u0440\u0438\u0446\u0430.\n\u040f\u0435\u0440\u0441\u0438 \u0458\u0435 \u043b\u0430\u0433\u0430\u043d\u0430 \u0438 \u0440\u0430\u0441\u0442\u0435\u0433\u0459\u0438\u0432\u0430 \u0442\u043a\u0430\u043d\u0438\u043d\u0430 \u043a\u043e\u0458\u0430 \u043e\u0441\u0438\u0433\u0443\u0440\u0430\u0432\u0430 \u0443\u0434\u043e\u0431\u043d\u043e\u0441\u0442.\n - \u0422\u0438\u043f \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0430 : \u041f\u0440\u0442\u0459\u0430\u0436\u043d\u0438\u0446\u0438\n - \u0414\u043e\u0434\u0430\u0442\u043d\u0438 \u0434\u0435\u0442\u0430\u0459\u0438 : \u0415\u043b\u0430\u0441\u0442\u0438\u0447\u043d\u0430 \u0442\u0440\u0430\u043a\u0430 \u0437\u0430 \u0441\u0442\u0440\u0443\u043a\n"
+            },
+            {
+                "language": "Swedish",
+                "text": "Trunks \u00e4r \u00e5tsittande som boxerkalsonger, f\u00f6rutom att de har en kortare passform. Kalsongerna t\u00e4cker mindre av benen \u00e4n boxerkalsonger.\nJersey \u00e4r ett l\u00e4tt och stretchigt tyg som garanterar komfort.\n - Produkttyp : Boxershorts\n - Detaljer : Elastiskt midjeband\n"
+            },
+            {
+                "language": "Turkish",
+                "text": "K\u0131sa boxerlar k\u00fclot boxerlar gibi \u00fczerinize tam oturan dar kesim bir modele sahiptir. Ancak k\u00fclot boxerlara g\u00f6re bacaklar\u0131n daha az k\u0131sm\u0131n\u0131 kapat\u0131r.\nJersey; rahatl\u0131k sa\u011flayan yumu\u015fak, esnek bir kuma\u015ft\u0131r.\n - \u00dcr\u00fcn tipi : Mayo\n - Ekstra detaylar : Lastikli bel\n"
+            }
+        ],
+        "quality_description": "Gender: Male\r\nManufacture: Circular Knit\r\nManufacture Detail: Single Jersey\r\nStyle Type: TRUNKS\r\n\r\nFabric Name: JJ-AC-ES1\r\nComposition: 95% Cotton, 5% Elastane\r\nDensity: CPI: 43     WPI:64\r\nGauge: 28\r\nWeight: 180\r\nYarn Grade: 40s\r\nTwist Per Inch: 24\r\nFiber Length: 29 mm\r\nFabrics Comments: Waistband: JJ-AC-ES2\r\n",
+        "gender": [
+            {
+                "language": "Arabic",
+                "text": "\u0630\u0643\u0631"
+            },
+            {
+                "language": "Azerbaijani",
+                "text": "Ki\u015fi"
+            },
+            {
+                "language": "Bulgarian",
+                "text": "\u041c\u044a\u0436\u043a\u0438"
+            },
+            {
+                "language": "Bosnian",
+                "text": "Mu\u0161ki"
+            },
+            {
+                "language": "Montenegrin",
+                "text": "Mu\u0459karac"
+            },
+            {
+                "language": "Czech",
+                "text": "Pro mu\u017ee"
+            },
+            {
+                "language": "Danish",
+                "text": "Herre"
+            },
+            {
+                "language": "German",
+                "text": "Herren"
+            },
+            {
+                "language": "Greek",
+                "text": "\u0386\u03bd\u03c4\u03c1\u03b1\u03c2"
+            },
+            {
+                "language": "Canadian English",
+                "text": "Male"
+            },
+            {
+                "language": "English",
+                "text": "Male"
+            },
+            {
+                "language": "USEnglish",
+                "text": "Male"
+            },
+            {
+                "language": "Spanish",
+                "text": "Hombre"
+            },
+            {
+                "language": "Estonian",
+                "text": "Mees"
+            },
+            {
+                "language": "Finnish",
+                "text": "Mies"
+            },
+            {
+                "language": "Canadian French",
+                "text": "Homme"
+            },
+            {
+                "language": "French",
+                "text": "Homme"
+            },
+            {
+                "language": "Croatian",
+                "text": "Mu\u0161ki"
+            },
+            {
+                "language": "Hungarian",
+                "text": "F\u00e9rfi"
+            },
+            {
+                "language": "Armenian",
+                "text": "\u0531\u0580\u0561\u056f\u0561\u0576"
+            },
+            {
+                "language": "Icelandic",
+                "text": "Karlkyns"
+            },
+            {
+                "language": "Italian",
+                "text": "Maschile"
+            },
+            {
+                "language": "Japanese",
+                "text": "\u7537\u6027"
+            },
+            {
+                "language": "Kazakh",
+                "text": "\u0415\u0440\u043a\u0435\u043a"
+            },
+            {
+                "language": "Korean",
+                "text": "\ub0a8\uc131"
+            },
+            {
+                "language": "Lithuanian",
+                "text": "Vyri\u0161kas"
+            },
+            {
+                "language": "Latvian",
+                "text": "V\u012brie\u0161u"
+            },
+            {
+                "language": "Macedonian",
+                "text": "\u041c\u0430\u0436\u0458\u0430\u043a."
+            },
+            {
+                "language": "Dutch",
+                "text": "Heren"
+            },
+            {
+                "language": "Norwegian",
+                "text": "Mann"
+            },
+            {
+                "language": "Polish",
+                "text": "M\u0119\u017cczyzna"
+            },
+            {
+                "language": "Portuguese",
+                "text": "Masculino"
+            },
+            {
+                "language": "Romanian",
+                "text": "Mascul"
+            },
+            {
+                "language": "Slovak",
+                "text": "P\u00e1nsky"
+            },
+            {
+                "language": "Slovenian",
+                "text": "Mo\u0161ki"
+            },
+            {
+                "language": "Albanian",
+                "text": "Mashkull"
+            },
+            {
+                "language": "Serbian",
+                "text": "\u041c\u0443\u0459\u043a\u0430\u0440\u0430\u0446"
+            },
+            {
+                "language": "Swedish",
+                "text": "Man"
+            },
+            {
+                "language": "Turkish",
+                "text": "Erkek"
+            }
+        ],
+        "gender_bte": 140025,
+        "gender_fedas": 275531,
+        "target_group": [
+            {
+                "language": "Arabic",
+                "text": "\u0628\u0627\u0644\u063a"
+            },
+            {
+                "language": "Azerbaijani",
+                "text": "Yetkin"
+            },
+            {
+                "language": "Bulgarian",
+                "text": "\u0412\u044a\u0437\u0440\u0430\u0441\u0442\u0435\u043d"
+            },
+            {
+                "language": "Bosnian",
+                "text": "Odrasle"
+            },
+            {
+                "language": "Montenegrin",
+                "text": "Odraslih"
+            },
+            {
+                "language": "Czech",
+                "text": "Dosp\u011bl\u00ed"
+            },
+            {
+                "language": "Danish",
+                "text": "Voksen"
+            },
+            {
+                "language": "German",
+                "text": "Erwachsener"
+            },
+            {
+                "language": "Greek",
+                "text": "\u0395\u03bd\u03ae\u03bb\u03b9\u03ba\u03b1\u03c2"
+            },
+            {
+                "language": "Canadian English",
+                "text": "Adult"
+            },
+            {
+                "language": "English",
+                "text": "Adult"
+            },
+            {
+                "language": "USEnglish",
+                "text": "Adult"
+            },
+            {
+                "language": "Spanish",
+                "text": "Adultos"
+            },
+            {
+                "language": "Estonian",
+                "text": "T\u00e4iskasvanud"
+            },
+            {
+                "language": "Finnish",
+                "text": "Aikuiset"
+            },
+            {
+                "language": "Canadian French",
+                "text": "Adulte"
+            },
+            {
+                "language": "French",
+                "text": "Adulte"
+            },
+            {
+                "language": "Croatian",
+                "text": "Odrasla osoba"
+            },
+            {
+                "language": "Hungarian",
+                "text": "Feln\u0151tt"
+            },
+            {
+                "language": "Armenian",
+                "text": "\u0531\u0576\u0579\u0561\u0583\u0561\u0570\u0561\u057d"
+            },
+            {
+                "language": "Icelandic",
+                "text": "Fullor\u00f0inn"
+            },
+            {
+                "language": "Italian",
+                "text": "Adulti"
+            },
+            {
+                "language": "Japanese",
+                "text": "\u5927\u4eba"
+            },
+            {
+                "language": "Kazakh",
+                "text": "\u0415\u0440\u0435\u0441\u0435\u043a\u0442\u0435\u0440"
+            },
+            {
+                "language": "Korean",
+                "text": "\uc131\uc778"
+            },
+            {
+                "language": "Lithuanian",
+                "text": "Suaugusiems"
+            },
+            {
+                "language": "Latvian",
+                "text": "Pieaugu\u0161ais"
+            },
+            {
+                "language": "Macedonian",
+                "text": "\u0412\u043e\u0437\u0440\u0430\u0441\u0435\u043d"
+            },
+            {
+                "language": "Dutch",
+                "text": "Volwassenen"
+            },
+            {
+                "language": "Norwegian",
+                "text": "Voksen"
+            },
+            {
+                "language": "Polish",
+                "text": "Doro\u015bli"
+            },
+            {
+                "language": "Portuguese",
+                "text": "Adultos"
+            },
+            {
+                "language": "Romanian",
+                "text": "Adult"
+            },
+            {
+                "language": "Slovak",
+                "text": "Dospel\u00fd"
+            },
+            {
+                "language": "Slovenian",
+                "text": "Odrasli"
+            },
+            {
+                "language": "Albanian",
+                "text": "I rritur"
+            },
+            {
+                "language": "Serbian",
+                "text": "\u041e\u0434\u0440\u0430\u0441\u043b\u0438\u0445"
+            },
+            {
+                "language": "Swedish",
+                "text": "Vuxna"
+            },
+            {
+                "language": "Turkish",
+                "text": "Yeti\u015fkin"
+            }
+        ],
+        "sustainability": [],
+        "sustainable_choices": [],
+        "animal_product": null,
+        "closing_flies": [],
+        "style_concept": null,
+        "contrast_fabric": [],
+        "style_fabric_commercial_text": [
+            {
+                "language": "Arabic",
+                "text": "\u0627\u0644\u062c\u064a\u0631\u0633\u064a\u0647 \u0647\u0648 \u0646\u0633\u064a\u062c \u062e\u0641\u064a\u0641 \u0627\u0644\u0648\u0632\u0646 \u0648\u0645\u0637\u0627\u0637\u064a \u064a\u0636\u0645\u0646 \u0627\u0644\u0631\u0627\u062d\u0629"
+            },
+            {
+                "language": "Azerbaijani",
+                "text": "Cersi y\u00fcng\u00fcl v\u0259 uzanm\u0131\u015f par\u00e7ad\u0131r ki, rahatl\u0131\u011f\u0131 t\u0259min edir"
+            },
+            {
+                "language": "Bulgarian",
+                "text": "\u0414\u0436\u044a\u0440\u0441\u0438\u0442\u043e \u0435 \u043b\u0435\u043a\u0430 \u0438 \u0435\u043b\u0430\u0441\u0442\u0438\u0447\u043d\u0430 \u043c\u0430\u0442\u0435\u0440\u0438\u044f, \u043a\u043e\u044f\u0442\u043e \u043e\u0441\u0438\u0433\u0443\u0440\u044f\u0432\u0430 \u043a\u043e\u043c\u0444\u043e\u0440\u0442"
+            },
+            {
+                "language": "Bosnian",
+                "text": "Jersey je lagana i rastezljiva tkanina koja osigurava udobnost"
+            },
+            {
+                "language": "Montenegrin",
+                "text": "D\u017eersi je lagana i rastegljiva tkanina koja osigurava udobnost"
+            },
+            {
+                "language": "Czech",
+                "text": "\u017derzej je lehk\u00e1 a pru\u017en\u00e1 tkanina, kter\u00e1 zaji\u0161\u0165uje pohodl\u00ed"
+            },
+            {
+                "language": "Danish",
+                "text": "Jersey er et let og elastisk materiale, der sikrer komfort"
+            },
+            {
+                "language": "German",
+                "text": "Jersey ist ein leichter und dehnbarer Stoff mit hohem Tragekomfort"
+            },
+            {
+                "language": "Greek",
+                "text": "\u03a4\u03bf \u03b6\u03ad\u03c1\u03c3\u03b5\u03ca \u03b5\u03af\u03bd\u03b1\u03b9 \u03ad\u03bd\u03b1 \u03b5\u03bb\u03b1\u03c6\u03c1\u03cd \u03ba\u03b1\u03b9 \u03b5\u03bb\u03b1\u03c3\u03c4\u03b9\u03ba\u03cc \u03cd\u03c6\u03b1\u03c3\u03bc\u03b1, \u03c0\u03bf\u03c5 \u03b5\u03be\u03b1\u03c3\u03c6\u03b1\u03bb\u03af\u03b6\u03b5\u03b9 \u03ac\u03bd\u03b5\u03c3\u03b7"
+            },
+            {
+                "language": "Canadian English",
+                "text": "Jersey is a lightweight and stretchy fabric that ensures comfort"
+            },
+            {
+                "language": "English",
+                "text": "Jersey is a lightweight and stretchy fabric that ensures comfort"
+            },
+            {
+                "language": "USEnglish",
+                "text": "Jersey is a lightweight and stretchy fabric that ensures comfort"
+            },
+            {
+                "language": "Spanish",
+                "text": "El jersey es una tela ligera y el\u00e1stica que brinda comodidad garantizada"
+            },
+            {
+                "language": "Estonian",
+                "text": "D\u017e\u00f6rsi on kerge ja veniv kangas, mis tagab mugavuse"
+            },
+            {
+                "language": "Finnish",
+                "text": "Jersey on kevytt\u00e4, joustavaa ja miellytt\u00e4v\u00e4n tuntuista kangasta"
+            },
+            {
+                "language": "Canadian French",
+                "text": "Le jersey est un tissu l\u00e9ger et stretch qui assure le confort"
+            },
+            {
+                "language": "French",
+                "text": "Le jersey est un tissu l\u00e9ger et stretch qui assure le confort"
+            },
+            {
+                "language": "Croatian",
+                "text": "Jersey je lagana i rastezljiva tkanina koja osigurava udobnost"
+            },
+            {
+                "language": "Hungarian",
+                "text": "A jersey egy k\u00f6nny\u0171, rugalmas anyag, amelynek k\u00e9nyelmes a visel\u00e9se"
+            },
+            {
+                "language": "Armenian",
+                "text": "\u054b\u0565\u0580\u057d\u056b\u0568 \u0569\u0565\u0569\u0565\u0582 \u0565\u0582 \u0571\u0563\u057e\u0578\u0572 \u0563\u0578\u0580\u056e\u057e\u0561\u056e\u0584 \u0567, \u0578\u0580\u0568 \u0561\u057a\u0561\u0570\u0578\u057e\u0578\u0582\u0574 \u0567 \u0570\u0561\u0580\u0574\u0561\u0580\u0561\u057e\u0565\u057f\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0568"
+            },
+            {
+                "language": "Icelandic",
+                "text": "Jersey er l\u00e9tt og teygjanlegt efni sem tryggir \u00fe\u00e6gindi"
+            },
+            {
+                "language": "Italian",
+                "text": "Il jersey \u00e8 un tessuto leggero ed elasticizzato che assicura comfort"
+            },
+            {
+                "language": "Japanese",
+                "text": "\u30b8\u30e3\u30fc\u30b8\u30fc\u306f\u8efd\u91cf\u3067\u4f38\u7e2e\u6027\u306e\u3042\u308b\u751f\u5730\u3067\u3001\u5feb\u9069\u3055\u3092\u4fdd\u8a3c\u3057\u307e\u3059"
+            },
+            {
+                "language": "Kazakh",
+                "text": "\u0414\u0436\u0435\u0440\u0441\u0438 \u2014 \u0436\u0430\u0439\u043b\u044b\u043b\u044b\u049b \u049b\u0430\u043c\u0442\u0430\u043c\u0430\u0441\u044b\u0437 \u0435\u0442\u0435\u0442\u0456\u043d \u0436\u0435\u04a3\u0456\u043b \u0436\u04d9\u043d\u0435 \u0441\u043e\u0437\u044b\u043b\u044b\u04a3\u049b\u044b \u043c\u0430\u0442\u0430"
+            },
+            {
+                "language": "Korean",
+                "text": "\uc800\uc9c0\ub294 \uac00\ubccd\uace0 \uc2e0\ucd95\uc131\uc774 \uc788\ub294 \uc6d0\ub2e8\uc73c\ub85c \ud3b8\uc548\ud568\uc744 \ubcf4\uc7a5\ud569\ub2c8\ub2e4"
+            },
+            {
+                "language": "Lithuanian",
+                "text": "D\u017eersis yra lengvas ir tamprus audinys, u\u017etikrinantis komfort\u0105 \u200b"
+            },
+            {
+                "language": "Latvian",
+                "text": "D\u017eersija ir viegls un elast\u012bgs audums, kas nodro\u0161ina komfortu"
+            },
+            {
+                "language": "Macedonian",
+                "text": "\u041c\u0430\u0438\u0447\u043a\u0430\u0442\u0430 \u0435 \u043b\u0435\u0441\u043d\u0430 \u0438 \u0440\u0430\u0441\u0442\u0435\u0433\u043d\u0430\u0442\u0430 \u0442\u043a\u0430\u0435\u043d\u0438\u043d\u0430 \u043a\u043e\u0458\u0430 \u043e\u0431\u0435\u0437\u0431\u0435\u0434\u0443\u0432\u0430 \u0443\u0434\u043e\u0431\u043d\u043e\u0441\u0442"
+            },
+            {
+                "language": "Dutch",
+                "text": "Jersey is een zachte en rekbare stof die zorgt voor comfort"
+            },
+            {
+                "language": "Norwegian",
+                "text": "Jersey er et lett og stretchy stoff som s\u00f8rger for komfort"
+            },
+            {
+                "language": "Polish",
+                "text": "Jersey to lekki i elastyczny materia\u0142 zapewniaj\u0105cy wygod\u0119"
+            },
+            {
+                "language": "Portuguese",
+                "text": "O Jersey \u00e9 um tecido leve e el\u00e1stico que garante conforto"
+            },
+            {
+                "language": "Romanian",
+                "text": "Jersey este o \u021bes\u0103tur\u0103 u\u0219oar\u0103 \u0219i elastic\u0103 care asigur\u0103 confort"
+            },
+            {
+                "language": "Slovak",
+                "text": "Jersey je \u013eahk\u00e1 a elastick\u00e1 tkanina, ktor\u00e1 zaru\u010duje pohodlie"
+            },
+            {
+                "language": "Slovenian",
+                "text": "Jersey je lahka in raztegljiva tkanina, ki zagotavlja udobje"
+            },
+            {
+                "language": "Albanian",
+                "text": "Xhersi \u00ebsht\u00eb nj\u00eb p\u00eblhur\u00eb e leht\u00eb dhe e tendosur q\u00eb siguron rehati"
+            },
+            {
+                "language": "Serbian",
+                "text": "\u040f\u0435\u0440\u0441\u0438 \u0458\u0435 \u043b\u0430\u0433\u0430\u043d\u0430 \u0438 \u0440\u0430\u0441\u0442\u0435\u0433\u0459\u0438\u0432\u0430 \u0442\u043a\u0430\u043d\u0438\u043d\u0430 \u043a\u043e\u0458\u0430 \u043e\u0441\u0438\u0433\u0443\u0440\u0430\u0432\u0430 \u0443\u0434\u043e\u0431\u043d\u043e\u0441\u0442"
+            },
+            {
+                "language": "Swedish",
+                "text": "Jersey \u00e4r ett l\u00e4tt och stretchigt tyg som garanterar komfort"
+            },
+            {
+                "language": "Turkish",
+                "text": "Jersey; rahatl\u0131k sa\u011flayan yumu\u015fak, esnek bir kuma\u015ft\u0131r"
+            }
+        ],
+        "functions": null,
+        "handle_description": null,
+        "leg_details": null,
+        "length_size_description": null,
+        "lining_commercial_text": null,
+        "padding_commercial_text": null,
+        "pocket": null,
+        "shoe_toecap_type": null,
+        "sleeve_type": null,
+        "cuff_type": null,
+        "strap_types": null,
+        "waist": null,
+        "neckline_collar": null,
+        "fit": null,
+        "body_type": null,
+        "composition_output": [
+            {
+                "composition_text": [
+                    {
+                        "material": "\u0642\u0637\u0646",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u0627\u0644\u0625\u064a\u0644\u0627\u0633\u062a\u064a\u0646",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u0627\u0644\u0646\u0633\u064a\u062c \u0627\u0644\u0631\u0626\u064a\u0633\u064a",
+                "language": "Arabic"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Pamb\u0131q",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u018fsas par\u00e7a",
+                "language": "Azerbaijani"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\u041f\u0430\u043c\u0443\u043a",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u0415\u043b\u0430\u0441\u0442\u0430\u043d",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430 \u0442\u044a\u043a\u0430\u043d",
+                "language": "Bulgarian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Pamuk",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Glavna tkanina",
+                "language": "Bosnian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Pamuk",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Glavna tkanina",
+                "language": "Montenegrin"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bavlna",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Hlavn\u00ed tkanina",
+                "language": "Czech"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bomuld",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Hovedstof",
+                "language": "Danish"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Baumwolle",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elasthan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Material",
+                "language": "German"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\u0392\u03b1\u03bc\u03b2\u03ac\u03ba\u03b9",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u0395\u03bb\u03b1\u03c3\u03c4\u03ac\u03bd\u03b7",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u039a\u03cd\u03c1\u03b9\u03bf \u03cd\u03c6\u03b1\u03c3\u03bc\u03b1",
+                "language": "Greek"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Cotton",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Main fabric",
+                "language": "Canadian English"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Cotton",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Main fabric",
+                "language": "English"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Cotton",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Main fabric",
+                "language": "USEnglish"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Algod\u00f3n",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastano",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Tejido principal",
+                "language": "Spanish"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Puuvill",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastaan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "P\u00f5hikangas",
+                "language": "Estonian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Puuvilla",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastaani",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "P\u00e4\u00e4llikangas",
+                "language": "Finnish"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Coton",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u00c9lasthanne",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Tissu principal",
+                "language": "Canadian French"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Coton",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u00c9lasthanne",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Tissu principal",
+                "language": "French"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Pamuk",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Glavna tkanina",
+                "language": "Croatian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Pamut",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elaszt\u00e1n",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "F\u0151 anyag",
+                "language": "Hungarian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\u053f\u0578\u057f\u0578\u0580\u0561\u056f\u0561\u0575\u056b\u0576",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u0537\u056c\u0561\u057d\u057f\u0561\u0576",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u0533\u056c\u056d\u0561\u057e\u0578\u0580 \u056f\u057f\u0578\u0580",
+                "language": "Armenian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "B\u00f3mull",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "A\u00f0alefni",
+                "language": "Icelandic"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Cotone",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Tessuto principale",
+                "language": "Italian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\u7dbf",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u30a8\u30e9\u30b9\u30bf\u30f3",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u30e1\u30a4\u30f3\u30d5\u30a1\u30d6\u30ea\u30c3\u30af",
+                "language": "Japanese"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\u041c\u0430\u049b\u0442\u0430",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u042d\u043b\u0430\u0441\u0442\u0430\u043d",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u041d\u0435\u0433\u0456\u0437\u0433\u0456 \u043c\u0430\u0442\u0430",
+                "language": "Kazakh"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\uba74",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\uc5d8\ub77c\uc2a4\ud14c\uc778",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\uc8fc\uc694 \uc9c1\ubb3c",
+                "language": "Korean"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Medviln\u0117",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastanas",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Pagrindinis audinys",
+                "language": "Lithuanian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Kokvilna",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elast\u0101ns",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Galvenais audums",
+                "language": "Latvian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\u041f\u0430\u043c\u0443\u043a.",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u0415\u043b\u0430\u0441\u0442\u0430\u043d.",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u0413\u043b\u0430\u0432\u043d\u0430 \u0442\u043a\u0430\u0435\u043d\u0438\u043d\u0430",
+                "language": "Macedonian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Katoen",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastaan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Hoofdstof",
+                "language": "Dutch"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bomull",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Hovedstoff",
+                "language": "Norwegian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bawe\u0142na",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Materia\u0142 dominuj\u0105cy",
+                "language": "Polish"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Algod\u00e3o",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastano",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Tecido principal",
+                "language": "Portuguese"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bumbac",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u021aes\u0103tura principal\u0103",
+                "language": "Romanian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bavlna",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Z\u00e1kladn\u00e1 tkanina",
+                "language": "Slovak"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bomba\u017e",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Glavna tkanina",
+                "language": "Slovenian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Pambuk",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastane",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "P\u00eblhur\u00eb kryesore",
+                "language": "Albanian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "\u041f\u0430\u043c\u0443\u043a",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "\u0415\u043b\u0430\u0441\u0442\u0430\u043d\u0435",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "\u0413\u043b\u0430\u0432\u043d\u0430 \u0442\u043a\u0430\u043d\u0438\u043d\u0430",
+                "language": "Serbian"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Bomull",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Huvudtyg",
+                "language": "Swedish"
+            },
+            {
+                "composition_text": [
+                    {
+                        "material": "Pamuk",
+                        "percentage": "95"
+                    },
+                    {
+                        "material": "Elastan",
+                        "percentage": "5"
+                    }
+                ],
+                "type": "Ana kumas",
+                "language": "Turkish"
+            }
+        ],
+        "print_types": null,
+        "is_more_sustainable": false,
+        "extra_details": [
+            {
+                "extra_details": [
+                    {
+                        "language": "Arabic",
+                        "text": "\u062e\u0635\u0631 \u0645\u0637\u0627\u0637\u064a"
+                    },
+                    {
+                        "language": "Azerbaijani",
+                        "text": "Elastik bel"
+                    },
+                    {
+                        "language": "Bulgarian",
+                        "text": "\u041b\u0430\u0441\u0442\u0438\u043a \u043d\u0430 \u0442\u0430\u043b\u0438\u044f\u0442\u0430"
+                    },
+                    {
+                        "language": "Bosnian",
+                        "text": "Elasti\u010dna traka struka"
+                    },
+                    {
+                        "language": "Montenegrin",
+                        "text": "Elasti\u010dna traka za struk"
+                    },
+                    {
+                        "language": "Czech",
+                        "text": "Elastick\u00fd pas"
+                    },
+                    {
+                        "language": "Danish",
+                        "text": "Elastisk linning"
+                    },
+                    {
+                        "language": "German",
+                        "text": "Elastisches Taillenbund"
+                    },
+                    {
+                        "language": "Greek",
+                        "text": "\u0395\u03bb\u03b1\u03c3\u03c4\u03b9\u03ba\u03cc \u03b6\u03c9\u03bd\u03ac\u03c1\u03b9"
+                    },
+                    {
+                        "language": "Canadian English",
+                        "text": "Elasticated waistband"
+                    },
+                    {
+                        "language": "English",
+                        "text": "Elasticated waistband"
+                    },
+                    {
+                        "language": "USEnglish",
+                        "text": "Elasticated waistband"
+                    },
+                    {
+                        "language": "Spanish",
+                        "text": "Cinturilla el\u00e1stica"
+                    },
+                    {
+                        "language": "Estonian",
+                        "text": "Veniv v\u00e4rvel"
+                    },
+                    {
+                        "language": "Finnish",
+                        "text": "Joustava vy\u00f6t\u00e4r\u00f6nauha"
+                    },
+                    {
+                        "language": "Canadian French",
+                        "text": "Ceinture \u00e9lastiqu\u00e9e"
+                    },
+                    {
+                        "language": "French",
+                        "text": "Ceinture \u00e9lastiqu\u00e9e"
+                    },
+                    {
+                        "language": "Croatian",
+                        "text": "Elasti\u010dni pojas"
+                    },
+                    {
+                        "language": "Hungarian",
+                        "text": "Rugalmas der\u00e9kr\u00e9sz"
+                    },
+                    {
+                        "language": "Armenian",
+                        "text": "\u0537\u056c\u0561\u057d\u057f\u056b\u056f \u0563\u0578\u057f\u056f\u0561\u057f\u0565\u0572"
+                    },
+                    {
+                        "language": "Icelandic",
+                        "text": "Teygjanlegt mittisband"
+                    },
+                    {
+                        "language": "Italian",
+                        "text": "Fascia elasticizzata in vita"
+                    },
+                    {
+                        "language": "Japanese",
+                        "text": "\u4f38\u7e2e\u6027\u30a6\u30a8\u30b9\u30c8\u30d0\u30f3\u30c9"
+                    },
+                    {
+                        "language": "Kazakh",
+                        "text": "\u0421\u0435\u0440\u043f\u0456\u043c\u0434\u0456 \u0431\u0435\u043b\u0431\u0435\u0443"
+                    },
+                    {
+                        "language": "Korean",
+                        "text": "\uc2e0\ucd95\uc131 \uc788\ub294 \ud5c8\ub9ac\ubc34\ub4dc"
+                    },
+                    {
+                        "language": "Lithuanian",
+                        "text": "Elastinga juosmens juosta"
+                    },
+                    {
+                        "language": "Latvian",
+                        "text": "Elast\u012bg\u0101 jostasvieta"
+                    },
+                    {
+                        "language": "Macedonian",
+                        "text": "\u0415\u043b\u0430\u0441\u0442\u0438\u0447\u0435\u043d \u043f\u043e\u0458\u0430\u0441"
+                    },
+                    {
+                        "language": "Dutch",
+                        "text": "Elastische tailleband"
+                    },
+                    {
+                        "language": "Norwegian",
+                        "text": "Elastisk linning"
+                    },
+                    {
+                        "language": "Polish",
+                        "text": "Elastyczny pas w talii"
+                    },
+                    {
+                        "language": "Portuguese",
+                        "text": "Cintura el\u00e1stica"
+                    },
+                    {
+                        "language": "Romanian",
+                        "text": "Band\u0103 elastic\u0103 \u00een talie"
+                    },
+                    {
+                        "language": "Slovak",
+                        "text": "Elastick\u00fd p\u00e1s"
+                    },
+                    {
+                        "language": "Slovenian",
+                        "text": "Elasti\u010den pas"
+                    },
+                    {
+                        "language": "Albanian",
+                        "text": "Beli elastik"
+                    },
+                    {
+                        "language": "Serbian",
+                        "text": "\u0415\u043b\u0430\u0441\u0442\u0438\u0447\u043d\u0430 \u0442\u0440\u0430\u043a\u0430 \u0437\u0430 \u0441\u0442\u0440\u0443\u043a"
+                    },
+                    {
+                        "language": "Swedish",
+                        "text": "Elastiskt midjeband"
+                    },
+                    {
+                        "language": "Turkish",
+                        "text": "Lastikli bel"
+                    }
+                ]
+            }
+        ]
+    },
+    "lens_tint": null,
+    "lifestyles": null,
+    "weight": {
+        "net": {
+            "value": 0.074,
+            "unit": "kg"
+        },
+        "gross": {
+            "value": 0.083,
+            "unit": "kg"
+        }
+    },
+    "availability": null,
+    "season": [
+        {
+            "language": "Arabic",
+            "text": "\u0627\u0644\u062e\u0631\u064a\u0641 \u0648\u0627\u0644\u0634\u062a\u0627\u0621"
+        },
+        {
+            "language": "Azerbaijani",
+            "text": "Pay\u0131z-Q\u0131\u015f"
+        },
+        {
+            "language": "Bulgarian",
+            "text": "\u0415\u0441\u0435\u043d-\u0417\u0438\u043c\u0430"
+        },
+        {
+            "language": "Bosnian",
+            "text": "Jesen-zima"
+        },
+        {
+            "language": "Montenegrin",
+            "text": "jesen-zima"
+        },
+        {
+            "language": "Czech",
+            "text": "Podzim-zima"
+        },
+        {
+            "language": "Danish",
+            "text": "Efter\u00e5r-vinter"
+        },
+        {
+            "language": "German",
+            "text": "Herbst-Winter"
+        },
+        {
+            "language": "Greek",
+            "text": "\u03a6\u03b8\u03b9\u03bd\u03cc\u03c0\u03c9\u03c1\u03bf-\u03c7\u03b5\u03b9\u03bc\u03ce\u03bd\u03b1\u03c2"
+        },
+        {
+            "language": "Canadian English",
+            "text": "Fall-winter"
+        },
+        {
+            "language": "English",
+            "text": "Autumn-winter"
+        },
+        {
+            "language": "USEnglish",
+            "text": "Fall-winter"
+        },
+        {
+            "language": "Spanish",
+            "text": "Oto\u00f1o-invierno"
+        },
+        {
+            "language": "Estonian",
+            "text": "S\u00fcgis-talv"
+        },
+        {
+            "language": "Finnish",
+            "text": "Syksy-Talvi"
+        },
+        {
+            "language": "Canadian French",
+            "text": "Automne-hiver"
+        },
+        {
+            "language": "French",
+            "text": "Automne-hiver"
+        },
+        {
+            "language": "Croatian",
+            "text": "Jesen-zima"
+        },
+        {
+            "language": "Hungarian",
+            "text": "\u0150sz-t\u00e9l"
+        },
+        {
+            "language": "Armenian",
+            "text": "\u0531\u0577\u0578\u0582\u0576-\u0571\u0574\u0565\u057c"
+        },
+        {
+            "language": "Icelandic",
+            "text": "Haust-vetur"
+        },
+        {
+            "language": "Italian",
+            "text": "Autunno-Inverno"
+        },
+        {
+            "language": "Japanese",
+            "text": "\u79cb\u51ac"
+        },
+        {
+            "language": "Kazakh",
+            "text": "\u041a\u04af\u0437-\u049b\u044b\u0441"
+        },
+        {
+            "language": "Korean",
+            "text": "\uac00\uc744-\uaca8\uc6b8"
+        },
+        {
+            "language": "Lithuanian",
+            "text": "Ruduo \u2013 \u017eiema"
+        },
+        {
+            "language": "Latvian",
+            "text": "Rudens-ziema"
+        },
+        {
+            "language": "Macedonian",
+            "text": "\u0415\u0441\u0435\u043d-\u0417\u0438\u043c\u0430"
+        },
+        {
+            "language": "Dutch",
+            "text": "Herfst-winter"
+        },
+        {
+            "language": "Norwegian",
+            "text": "H\u00f8st\u2013vinter"
+        },
+        {
+            "language": "Polish",
+            "text": "Jesie\u0144-zima"
+        },
+        {
+            "language": "Portuguese",
+            "text": "Outono - Inverno"
+        },
+        {
+            "language": "Romanian",
+            "text": "Toamna-Iarna"
+        },
+        {
+            "language": "Slovak",
+            "text": "Jese\u0148-zima"
+        },
+        {
+            "language": "Slovenian",
+            "text": "Jesen-zima"
+        },
+        {
+            "language": "Albanian",
+            "text": "Vjesht\u00eb-dim\u00ebr"
+        },
+        {
+            "language": "Serbian",
+            "text": "\u0458\u0435\u0441\u0435\u043d-\u0437\u0438\u043c\u0430"
+        },
+        {
+            "language": "Swedish",
+            "text": "H\u00f6st-Vinter"
+        },
+        {
+            "language": "Turkish",
+            "text": "Sonbahar-K\u0131\u015f"
+        }
+    ],
+    "sub_season": [
+        {
+            "language": "Arabic",
+            "text": "\u062e\u0631\u064a\u0641"
+        },
+        {
+            "language": "Azerbaijani",
+            "text": "Pay\u0131z"
+        },
+        {
+            "language": "Bulgarian",
+            "text": "\u0415\u0441\u0435\u043d"
+        },
+        {
+            "language": "Bosnian",
+            "text": "Jesen"
+        },
+        {
+            "language": "Montenegrin",
+            "text": "Jesen"
+        },
+        {
+            "language": "Czech",
+            "text": "Podzim"
+        },
+        {
+            "language": "Danish",
+            "text": "Efter\u00e5r"
+        },
+        {
+            "language": "German",
+            "text": "Herbst"
+        },
+        {
+            "language": "Greek",
+            "text": "\u03a6\u03b8\u03b9\u03bd\u03cc\u03c0\u03c9\u03c1\u03bf"
+        },
+        {
+            "language": "Canadian English",
+            "text": "Fall"
+        },
+        {
+            "language": "English",
+            "text": "Autumn"
+        },
+        {
+            "language": "USEnglish",
+            "text": "Fall"
+        },
+        {
+            "language": "Spanish",
+            "text": "Oto\u00f1o"
+        },
+        {
+            "language": "Estonian",
+            "text": "S\u00fcgis"
+        },
+        {
+            "language": "Finnish",
+            "text": "Syksy"
+        },
+        {
+            "language": "Canadian French",
+            "text": "Automne"
+        },
+        {
+            "language": "French",
+            "text": "Automne"
+        },
+        {
+            "language": "Croatian",
+            "text": "Jesen"
+        },
+        {
+            "language": "Hungarian",
+            "text": "\u0150sz"
+        },
+        {
+            "language": "Armenian",
+            "text": "\u0531\u0577\u0578\u0582\u0576"
+        },
+        {
+            "language": "Icelandic",
+            "text": "Haust"
+        },
+        {
+            "language": "Italian",
+            "text": "Autunno"
+        },
+        {
+            "language": "Japanese",
+            "text": "\u79cb"
+        },
+        {
+            "language": "Kazakh",
+            "text": "\u041a\u04af\u0437"
+        },
+        {
+            "language": "Korean",
+            "text": "\uac00\uc744"
+        },
+        {
+            "language": "Lithuanian",
+            "text": "Ruduo"
+        },
+        {
+            "language": "Latvian",
+            "text": "Rudens"
+        },
+        {
+            "language": "Macedonian",
+            "text": "\u0415\u0441\u0435\u043d"
+        },
+        {
+            "language": "Dutch",
+            "text": "Herfst"
+        },
+        {
+            "language": "Norwegian",
+            "text": "H\u00f8st"
+        },
+        {
+            "language": "Polish",
+            "text": "Jesien"
+        },
+        {
+            "language": "Portuguese",
+            "text": "Outono"
+        },
+        {
+            "language": "Romanian",
+            "text": "Toamn\u0103"
+        },
+        {
+            "language": "Slovak",
+            "text": "Jese\u0148"
+        },
+        {
+            "language": "Slovenian",
+            "text": "Jesen"
+        },
+        {
+            "language": "Albanian",
+            "text": "Vjesht\u00eb"
+        },
+        {
+            "language": "Serbian",
+            "text": "\u0408\u0435\u0441\u0435\u043d"
+        },
+        {
+            "language": "Swedish",
+            "text": "H\u00f6st"
+        },
+        {
+            "language": "Turkish",
+            "text": "Sonbahar"
+        }
+    ],
+    "transactional_data": {
+        "first_confirmed_eta": "05/16/2023",
+        "last_eta_country_of_origin": "CHINA",
+        "last_eta_country_code_iso3": "CHN",
+        "last_eta_country_code_iso2": "CN"
+    },
+    "style_variants": [
+        {
+            "characteristics": [],
+            "options": [
+                {
+                    "number": 4368355,
+                    "edi_colour_number": null,
+                    "colors": [
+                        {
+                            "hierachy": "master",
+                            "type": "pantone",
+                            "code": "16-4120 TCX",
+                            "name": [
+                                {
+                                    "language": "English",
+                                    "text": "Dusk Blue"
+                                }
+                            ],
+                            "number": 1000001274,
+                            "hex_code": "#7BA0C0"
+                        },
+                        {
+                            "hierachy": "standard",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0623\u0632\u0631\u0642 \u0645\u062a\u0648\u0633\u0637"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "Orta Mavi"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0421\u0440\u0435\u0434\u043d\u043e \u0441\u0438\u043d\u044c\u043e"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "Srednje plavo"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "Srednje plava"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "St\u0159edn\u011b modr\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "Bl\u00e5"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Blau"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u039c\u03b5\u03c3\u03b1\u03af\u03bf \u03bc\u03c0\u03bb\u03b5"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Medium blue"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Medium blue"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Medium blue"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Azul intermedio"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Keskmine sinine"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Keskisininen"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Bleu moyen"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Bleu moyen"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "Srednje plava"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "K\u00f6z\u00e9pk\u00e9k"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u0544\u056b\u057b\u056b\u0576 \u056f\u0561\u057a\u0578\u0582\u0575\u057f"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "Mi\u00f0lungs bl\u00e1r"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Blu Medio"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u30df\u30c7\u30a3\u30a2\u30e0\u30d6\u30eb\u30fc"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u041e\u0440\u0442\u0430 \u043a\u04e9\u043a"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\ubbf8\ub514\uc5c4 \ube14\ub8e8"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Vidutini\u0161kai m\u0117lyna"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "Vid\u0113ji zils"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0421\u0440\u0435\u0434\u043d\u043e \u0441\u0438\u043d\u043e"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Medium blauw"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "Mellombl\u00e5"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "\u015aredni niebieski"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Azul de tonalidade m\u00e9dia"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "Albastru mediu"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Stredne modr\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Srednje modra"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "Bluja mesatare"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0421\u0440\u0435\u0434\u045a\u0435 \u043f\u043b\u0430\u0432\u0430"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "Mellanbl\u00e5"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Mavi"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#1500FF"
+                        },
+                        {
+                            "hierachy": "main",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0623\u0632\u0631\u0642"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "G\u00d6Y"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0421\u0418\u041d"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "PLAVA"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "PLAVA"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "Modr\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "Bl\u00e5"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Blau"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u039c\u03c0\u03bb\u03b5"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Blue"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Blue"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Blue"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Azul"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Sinine"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Sininen"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Bleu"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Bleu"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "PLAV"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "K\u00e9k"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u053f\u0531\u054a\u0548\u0552\u0545\u054f"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "BL\u00c1R"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Blu"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u9752\u3044"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u041a\u04e8\u041a"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\ud30c\ub791"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "M\u0117lyna"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "ZILS"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0421\u0418\u041d\u041e"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Blauw"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "Bl\u00e5"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Niebieski"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Azul"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "ALBASTRU"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Modr\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Modra"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "BLU"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u041f\u041b\u0410\u0412\u0410"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "Bl\u00e5"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Mavi"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#1500FF"
+                        }
+                    ],
+                    "deliveries": [],
+                    "wholesale_price": {
+                        "country": null,
+                        "currency": null,
+                        "gross_price": 0.0,
+                        "net_price": 0.0
+                    },
+                    "noos_information": {
+                        "is_noos": true
+                    },
+                    "skus": [
+                        {
+                            "ean13": 5715431058715,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058685,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058692,
+                            "size": "L",
+                            "size_sort_order": 8000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058708,
+                            "size": "XL",
+                            "size_sort_order": 9000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058678,
+                            "size": "XXL",
+                            "size_sort_order": 10000,
+                            "length": null
+                        }
+                    ],
+                    "media": {
+                        "images": [
+                            {
+                                "urls": [
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368355/kLM3vkGd8EcKp_004_variations/kLM3vkGd8EcKp_004_thumbnail.png",
+                                        "size": "thumbnail",
+                                        "checksum": null
+                                    },
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368355/kLM3vkGd8EcKp_004_variations/kLM3vkGd8EcKp_004_preview.png",
+                                        "size": "preview",
+                                        "checksum": null
+                                    },
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368355/kLM3vkGd8EcKp_004.png",
+                                        "size": "original",
+                                        "checksum": null
+                                    }
+                                ],
+                                "type": "model",
+                                "perspective": 4,
+                                "perspective_name": "Back",
+                                "asset_channel_status": "B2B ready",
+                                "modified_at": "2024-04-08T12:22:02.929172+00:00",
+                                "version": "1"
+                            }
+                        ]
+                    },
+                    "fabric_pattern": null,
+                    "business_model": {
+                        "business_model_type_name": "SEASONAL",
+                        "business_model_number": 3,
+                        "business_model_display_name": "Seasonal NOOS"
+                    },
+                    "transactional_data": {
+                        "first_confirmed_eta": "05/16/2023",
+                        "last_eta_country_of_origin": "CHINA",
+                        "last_eta_country_code_iso3": "CHN",
+                        "last_eta_country_code_iso2": "CN"
+                    }
+                },
+                {
+                    "number": 4368354,
+                    "edi_colour_number": null,
+                    "colors": [
+                        {
+                            "hierachy": "master",
+                            "type": "pantone",
+                            "code": "19-5320 TCX",
+                            "name": [
+                                {
+                                    "language": "English",
+                                    "text": "Ponderosa Pine"
+                                }
+                            ],
+                            "number": 1000001574,
+                            "hex_code": "#203B3D"
+                        },
+                        {
+                            "hierachy": "standard",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0627\u0644\u0641\u064a\u0631\u0648\u0632 \u0627\u0644\u062f\u0627\u0643\u0646"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "Xanl\u0131q Tursiq"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0422\u044a\u043c\u0435\u043d \u0442\u044e\u0440\u043a\u043e\u0430\u0437"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "Tamna tirkizna"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "Tamni tirkiz"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "Tmav\u011b tyrkysov\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "M\u00f8rk turkis"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Dunkelt\u00fcrkis"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u03a3\u03ba\u03bf\u03cd\u03c1\u03bf \u03c4\u03c5\u03c1\u03ba\u03bf\u03c5\u03ac\u03b6"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Dark turquoise"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Dark turquoise"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Dark turquoise"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Turquesa oscuro"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Tumet\u00fcrkiis"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Tumma turkoosi"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Turquoise fonc\u00e9"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Turquoise fonc\u00e9"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "Tamna tirkizna"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "S\u00f6t\u00e9tt\u00fcrkiz"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u054f\u0561\u057e\u0561\u0580\u056b \u0569\u0578\u0582\u0580\u0574\u0561"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "D\u00f6kkgr\u00e6nbl\u00e1r"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Turchese Scuro"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u30c0\u30fc\u30af\u30bf\u30fc\u30b3\u30a4\u30ba"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u041a\u04af\u04a3\u0433\u0456\u0440\u0442 \u043a\u04e9\u0433\u0456\u043b\u0434\u0456\u0440"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\ub2e4\ud06c \ud130\ucf70\uc774\uc988"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Tamsi turkio"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "Tum\u0161s tirk\u012bzs"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0422\u0435\u043c\u043d\u043e \u0442\u0438\u0440\u043a\u0438\u0437\u043d\u043e"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Donker turquoise"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "M\u00f8rketurkis"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Ciemny turkusowy"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Turquesa Escuro"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "Turcoaz \u00eenchis"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Tmavo tyrkysov\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Temno turkizna"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "Turquoise e err\u00ebt"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0422\u0430\u043c\u043d\u0438 \u0442\u0438\u0440\u043a\u0438\u0437"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "M\u00f6rkturkos"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Koyu turkuaz"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#098778"
+                        },
+                        {
+                            "hierachy": "main",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0641\u064a\u0631\u0648\u0632"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "TUR\u015eU"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0422\u042e\u0420\u041a\u041e\u0410\u0417"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "TIRKIZ"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "TIRKIZ"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "Tyrkysov\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "Turkis"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "T\u00fcrkis"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u03a4\u03c5\u03c1\u03ba\u03bf\u03c5\u03ac\u03b6"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Turquoise"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Turquoise"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Turquoise"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Turquesa"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "T\u00fcrkiis"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Turkoosi"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Turquoise"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Turquoise"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "TIRKIZ"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "T\u00fcrkiz"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u054f\u0578\u0582\u0580\u056f\u0578\u0582\u0575\u0561"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "GR\u00c6NBL\u00c1R"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Turchese"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u30c8\u30eb\u30b3\u77f3"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u041a\u04e8\u0413\u0406\u041b\u0414\u0406\u0420"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\ud130\ud0a4\uc625"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Turkio"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "TIRK\u012aZA"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0422\u0420\u041a\u0418\u0417"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Turquoise"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "Turkis"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Turkusowy"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Turquesa"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "TURCOAZ"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Tyrkysov\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Turkizna"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "TURQUOISE"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0422\u0418\u0420\u041a\u0418\u0417"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "Turkos"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Turkuaz"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#22D4BF"
+                        }
+                    ],
+                    "deliveries": [],
+                    "wholesale_price": {
+                        "country": null,
+                        "currency": null,
+                        "gross_price": 0.0,
+                        "net_price": 0.0
+                    },
+                    "noos_information": {
+                        "is_noos": true
+                    },
+                    "skus": [
+                        {
+                            "ean13": 5715431058616,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058586,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058593,
+                            "size": "L",
+                            "size_sort_order": 8000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058609,
+                            "size": "XL",
+                            "size_sort_order": 9000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058579,
+                            "size": "XXL",
+                            "size_sort_order": 10000,
+                            "length": null
+                        }
+                    ],
+                    "media": {
+                        "images": [
+                            {
+                                "urls": [
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368354/04B6LZ3PDVflO_005_variations/04B6LZ3PDVflO_005_thumbnail.png",
+                                        "size": "thumbnail",
+                                        "checksum": null
+                                    },
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368354/04B6LZ3PDVflO_005_variations/04B6LZ3PDVflO_005_preview.png",
+                                        "size": "preview",
+                                        "checksum": null
+                                    },
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368354/04B6LZ3PDVflO_005.png",
+                                        "size": "original",
+                                        "checksum": null
+                                    }
+                                ],
+                                "type": "model",
+                                "perspective": 5,
+                                "perspective_name": "Front Full",
+                                "asset_channel_status": "B2B ready",
+                                "modified_at": "2024-04-08T12:22:00.643413+00:00",
+                                "version": "1"
+                            }
+                        ]
+                    },
+                    "fabric_pattern": null,
+                    "business_model": {
+                        "business_model_type_name": "SEASONAL",
+                        "business_model_number": 3,
+                        "business_model_display_name": "Seasonal NOOS"
+                    },
+                    "transactional_data": {
+                        "first_confirmed_eta": "05/16/2023",
+                        "last_eta_country_of_origin": "CHINA",
+                        "last_eta_country_code_iso3": "CHN",
+                        "last_eta_country_code_iso2": "CN"
+                    }
+                },
+                {
+                    "number": 4368356,
+                    "edi_colour_number": null,
+                    "colors": [
+                        {
+                            "hierachy": "master",
+                            "type": "pantone",
+                            "code": "19-3923 TCX",
+                            "name": [
+                                {
+                                    "language": "English",
+                                    "text": "Navy Blazer"
+                                }
+                            ],
+                            "number": 1000002075,
+                            "hex_code": "#282D3C"
+                        },
+                        {
+                            "hierachy": "standard",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0623\u0632\u0631\u0642 \u063a\u0627\u0645\u0642"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "T\u00fcnd Mavi"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0422\u044a\u043c\u043d\u043e \u0441\u0438\u043d\u044c\u043e"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "Tamno plava"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "Tamnoplava"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "Tmav\u011b modr\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "M\u00f8rkebl\u00e5"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Dunkelblau"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u03a3\u03ba\u03bf\u03cd\u03c1\u03bf \u03bc\u03c0\u03bb\u03b5"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Dark blue"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Dark blue"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Dark blue"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Azul oscuro"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Tumesinine"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Tummansininen"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Bleu fonc\u00e9"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Bleu fonc\u00e9"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "Tamnoplava"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "S\u00f6t\u00e9tk\u00e9k"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u0544\u0578\u0582\u0563 \u056f\u0561\u057a\u0578\u0582\u0575\u057f"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "D\u00f6kkbl\u00e1r"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Blu Scuro"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u6fc3\u7d3a"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u049a\u0430\u0440\u0430 \u043a\u04e9\u043a"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\uac10\uc0c9"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "Tamsiai m\u0117lyna"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "Tum\u0161i zils"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0422\u0435\u043c\u043d\u043e \u0441\u0438\u043d\u0430"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Donker blauw"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "M\u00f8rkebl\u00e5"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Ciemny niebieski"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Azul Escuro"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "Albastru \u00eenchis"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Tmavomodr\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Temno modra"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "Blu e err\u00ebt"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u0422\u0430\u043c\u043d\u043e\u043f\u043b\u0430\u0432\u0430"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "M\u00f6rkbl\u00e5"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Koyu mavi"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#001E70"
+                        },
+                        {
+                            "hierachy": "main",
+                            "type": "",
+                            "code": "",
+                            "name": [
+                                {
+                                    "language": "Arabic",
+                                    "text": "\u0623\u0632\u0631\u0642"
+                                },
+                                {
+                                    "language": "Azerbaijani",
+                                    "text": "G\u00d6Y"
+                                },
+                                {
+                                    "language": "Bulgarian",
+                                    "text": "\u0421\u0418\u041d"
+                                },
+                                {
+                                    "language": "Bosnian",
+                                    "text": "PLAVA"
+                                },
+                                {
+                                    "language": "Montenegrin",
+                                    "text": "PLAVA"
+                                },
+                                {
+                                    "language": "Czech",
+                                    "text": "Modr\u00e1"
+                                },
+                                {
+                                    "language": "Danish",
+                                    "text": "Bl\u00e5"
+                                },
+                                {
+                                    "language": "German",
+                                    "text": "Blau"
+                                },
+                                {
+                                    "language": "Greek",
+                                    "text": "\u039c\u03c0\u03bb\u03b5"
+                                },
+                                {
+                                    "language": "Canadian English",
+                                    "text": "Blue"
+                                },
+                                {
+                                    "language": "English",
+                                    "text": "Blue"
+                                },
+                                {
+                                    "language": "USEnglish",
+                                    "text": "Blue"
+                                },
+                                {
+                                    "language": "Spanish",
+                                    "text": "Azul"
+                                },
+                                {
+                                    "language": "Estonian",
+                                    "text": "Sinine"
+                                },
+                                {
+                                    "language": "Finnish",
+                                    "text": "Sininen"
+                                },
+                                {
+                                    "language": "Canadian French",
+                                    "text": "Bleu"
+                                },
+                                {
+                                    "language": "French",
+                                    "text": "Bleu"
+                                },
+                                {
+                                    "language": "Croatian",
+                                    "text": "PLAV"
+                                },
+                                {
+                                    "language": "Hungarian",
+                                    "text": "K\u00e9k"
+                                },
+                                {
+                                    "language": "Armenian",
+                                    "text": "\u053f\u0531\u054a\u0548\u0552\u0545\u054f"
+                                },
+                                {
+                                    "language": "Icelandic",
+                                    "text": "BL\u00c1R"
+                                },
+                                {
+                                    "language": "Italian",
+                                    "text": "Blu"
+                                },
+                                {
+                                    "language": "Japanese",
+                                    "text": "\u9752\u3044"
+                                },
+                                {
+                                    "language": "Kazakh",
+                                    "text": "\u041a\u04e8\u041a"
+                                },
+                                {
+                                    "language": "Korean",
+                                    "text": "\ud30c\ub791"
+                                },
+                                {
+                                    "language": "Lithuanian",
+                                    "text": "M\u0117lyna"
+                                },
+                                {
+                                    "language": "Latvian",
+                                    "text": "ZILS"
+                                },
+                                {
+                                    "language": "Macedonian",
+                                    "text": "\u0421\u0418\u041d\u041e"
+                                },
+                                {
+                                    "language": "Dutch",
+                                    "text": "Blauw"
+                                },
+                                {
+                                    "language": "Norwegian",
+                                    "text": "Bl\u00e5"
+                                },
+                                {
+                                    "language": "Polish",
+                                    "text": "Niebieski"
+                                },
+                                {
+                                    "language": "Portuguese",
+                                    "text": "Azul"
+                                },
+                                {
+                                    "language": "Romanian",
+                                    "text": "ALBASTRU"
+                                },
+                                {
+                                    "language": "Slovak",
+                                    "text": "Modr\u00e1"
+                                },
+                                {
+                                    "language": "Slovenian",
+                                    "text": "Modra"
+                                },
+                                {
+                                    "language": "Albanian",
+                                    "text": "BLU"
+                                },
+                                {
+                                    "language": "Serbian",
+                                    "text": "\u041f\u041b\u0410\u0412\u0410"
+                                },
+                                {
+                                    "language": "Swedish",
+                                    "text": "Bl\u00e5"
+                                },
+                                {
+                                    "language": "Turkish",
+                                    "text": "Mavi"
+                                }
+                            ],
+                            "number": null,
+                            "hex_code": "#1500FF"
+                        }
+                    ],
+                    "deliveries": [],
+                    "wholesale_price": {
+                        "country": null,
+                        "currency": null,
+                        "gross_price": 0.0,
+                        "net_price": 0.0
+                    },
+                    "noos_information": {
+                        "is_noos": true
+                    },
+                    "skus": [
+                        {
+                            "ean13": 5715431058661,
+                            "size": "S",
+                            "size_sort_order": 4000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058630,
+                            "size": "M",
+                            "size_sort_order": 6000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058647,
+                            "size": "L",
+                            "size_sort_order": 8000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058654,
+                            "size": "XL",
+                            "size_sort_order": 9000,
+                            "length": null
+                        },
+                        {
+                            "ean13": 5715431058623,
+                            "size": "XXL",
+                            "size_sort_order": 10000,
+                            "length": null
+                        }
+                    ],
+                    "media": {
+                        "images": [
+                            {
+                                "urls": [
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368356/YqzlMkdE84i0g_007_variations/YqzlMkdE84i0g_007_thumbnail.png",
+                                        "size": "thumbnail",
+                                        "checksum": null
+                                    },
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368356/YqzlMkdE84i0g_007_variations/YqzlMkdE84i0g_007_preview.png",
+                                        "size": "preview",
+                                        "checksum": null
+                                    },
+                                    {
+                                        "url": "https://media.cdn.bestseller.com/style/12248067/4368356/YqzlMkdE84i0g_007.png",
+                                        "size": "original",
+                                        "checksum": null
+                                    }
+                                ],
+                                "type": "model",
+                                "perspective": 7,
+                                "perspective_name": "Detail",
+                                "asset_channel_status": "B2B ready",
+                                "modified_at": "2024-04-08T12:21:58.858326+00:00",
+                                "version": "1"
+                            }
+                        ]
+                    },
+                    "fabric_pattern": null,
+                    "business_model": {
+                        "business_model_type_name": "SEASONAL",
+                        "business_model_number": 3,
+                        "business_model_display_name": "Seasonal NOOS"
+                    },
+                    "transactional_data": {
+                        "first_confirmed_eta": "05/16/2023",
+                        "last_eta_country_of_origin": "CHINA",
+                        "last_eta_country_code_iso3": "CHN",
+                        "last_eta_country_code_iso2": "CN"
+                    }
+                }
+            ],
+            "variant_text": null,
+            "number": null,
+            "option_additional_colours": null
+        }
+    ],
+    "measurement": {
+        "glasses_measurement": null,
+        "head_circumference": null,
+        "heel_information": {
+            "height": null,
+            "height_type": null,
+            "sole_heel_commercial_text": null
+        },
+        "sleeve_length": null
+    },
+    "model_details": {
+        "height": null,
+        "size": null
+    },
+    "accessories": {
+        "depth": null,
+        "height": null,
+        "width": null
+    },
+    "occation_styling": [
+        {
+            "language": "Arabic",
+            "text": "\u0627\u0644\u062c\u0630\u0648\u0639 \u0645\u0646\u0627\u0633\u0628\u0629 \u0645\u062b\u0644 \u0633\u0631\u0627\u0648\u064a\u0644 \u0627\u0644\u0645\u0644\u0627\u0643\u0645 \u060c \u0625\u0644\u0627 \u0623\u0646\u0647\u0627 \u0630\u0627\u062a \u0645\u0642\u0627\u0633 \u0623\u0642\u0635\u0631. \u062a\u063a\u0637\u064a \u062c\u0630\u0648\u0639 \u0627\u0644\u0633\u0627\u0642 \u0623\u0642\u0644 \u0645\u0646 \u0633\u0631\u0627\u0648\u064a\u0644 \u0627\u0644\u0645\u0644\u0627\u0643\u0645"
+        },
+        {
+            "language": "Azerbaijani",
+            "text": "Trunks, daha q\u0131sa bir fitd\u0259n ba\u015fqa, boks\u00e7u q\u0131sas\u0131 kimi bir-birl\u0259rin\u0259 yax\u0131n uy\u011fun g\u0259lir. Trunks boks\u00e7u q\u0131sa m\u0259lumatlar\u0131ndan daha az aya\u011f\u0131n\u0131 \u00f6rt\u00fcr"
+        },
+        {
+            "language": "Bulgarian",
+            "text": "\u041a\u0443\u0444\u0430\u0440\u0438\u0442\u0435 \u0441\u0430 \u043f\u043b\u044a\u0442\u043d\u043e \u043f\u0440\u0438\u043b\u0435\u043f\u043d\u0430\u043b\u0438 \u043a\u0430\u0442\u043e \u0431\u043e\u043a\u0441\u0435\u0440\u043a\u0438, \u0441 \u0438\u0437\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0430 \u0442\u043e\u0432\u0430, \u0447\u0435 \u0438\u043c\u0430\u0442 \u043f\u043e-\u043a\u044a\u0441\u043e \u043f\u0440\u0438\u043b\u044f\u0433\u0430\u043d\u0435. \u041a\u0443\u0444\u0430\u0440\u0438\u0442\u0435 \u043f\u043e\u043a\u0440\u0438\u0432\u0430\u0442 \u043f\u043e-\u043c\u0430\u043b\u043a\u043e \u043a\u0440\u0430\u043a\u0430 \u043e\u0442 \u0431\u043e\u043a\u0441\u0435\u0440\u043a\u0438\u0442\u0435"
+        },
+        {
+            "language": "Bosnian",
+            "text": "Prtlja\u017enici su usko prikladni kao bokserice, osim \u0161to imaju kra\u0107i fit. Prtlja\u017enici pokrivaju manje nogu od bokserica."
+        },
+        {
+            "language": "Montenegrin",
+            "text": "Prtlja\u017enici su usko uklopljeni kao bokserice, samo \u0161to imaju kra\u0107i napad. Prtlja\u017enici pokrivaju manje noge od bokserica"
+        },
+        {
+            "language": "Czech",
+            "text": "Tren\u00fdrky jsou p\u0159il\u00e9hav\u00e9 jako boxerky, jen maj\u00ed krat\u0161\u00ed st\u0159ih. Tren\u00fdrky zakr\u00fdvaj\u00ed nohu m\u00e9n\u011b ne\u017e boxerky"
+        },
+        {
+            "language": "Danish",
+            "text": "Trunks er t\u00e6tsiddende som boxerbriefs, bortset fra at de har en kortere pasform. Trunks d\u00e6kker mindre ben end briefs"
+        },
+        {
+            "language": "German",
+            "text": "Unterhosen sind eng anliegend wie Boxershorts, nur dass sie k\u00fcrzer geschnitten sind. Unterhosen bedecken daher weniger Bein als Boxershorts"
+        },
+        {
+            "language": "Greek",
+            "text": "\u03a4\u03b1 \u03ba\u03bf\u03bd\u03c4\u03ac \u03c0\u03b1\u03bd\u03c4\u03b5\u03bb\u03bf\u03bd\u03ac\u03ba\u03b9\u03b1 \u03b5\u03c6\u03b1\u03c1\u03bc\u03cc\u03b6\u03bf\u03c5\u03bd \u03cc\u03c0\u03c9\u03c2 \u03c4\u03b1 \u03bc\u03c0\u03bf\u03be\u03b5\u03c1\u03ac\u03ba\u03b9\u03b1, \u03b5\u03ba\u03c4\u03cc\u03c2 \u03b1\u03c0\u03cc \u03c4\u03bf \u03cc\u03c4\u03b9 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c0\u03b9\u03bf \u03ba\u03bf\u03bd\u03c4\u03ac. \u03a4\u03b1 \u03ba\u03bf\u03bd\u03c4\u03ac \u03c0\u03b1\u03bd\u03c4\u03b5\u03bb\u03bf\u03bd\u03ac\u03ba\u03b9\u03b1 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03bf\u03c5\u03bd \u03bb\u03b9\u03b3\u03cc\u03c4\u03b5\u03c1\u03bf \u03c0\u03cc\u03b4\u03b9 \u03b1\u03c0\u03cc \u03c4\u03bf \u03bc\u03c0\u03bf\u03be\u03b5\u03c1\u03ac\u03ba\u03b9"
+        },
+        {
+            "language": "Canadian English",
+            "text": "Trunks are close-fitting like boxer briefs, except they have a shorter fit. Trunks cover less leg than boxer briefs"
+        },
+        {
+            "language": "English",
+            "text": "Trunks are close-fitting like boxer briefs, except they have a shorter fit. Trunks cover less leg than boxer briefs"
+        },
+        {
+            "language": "USEnglish",
+            "text": "Trunks are close-fitting like boxer briefs, except they have a shorter fit. Trunks cover less leg than boxer briefs"
+        },
+        {
+            "language": "Spanish",
+            "text": "Los b\u00f3xers son ajustados tan como los b\u00f3xers cortos, pero a\u00fan m\u00e1s cortos. Los b\u00f3xers cubren menos pierna que los b\u00f3xers cortos"
+        },
+        {
+            "language": "Estonian",
+            "text": "P\u00fcksikud istuvad tihedamalt \u00fcmber nagu bokserp\u00fcksid, kuid need on l\u00fchema l\u00f5ikega. P\u00fcksikud katavad v\u00e4hem jalga kui bokserp\u00fcksid"
+        },
+        {
+            "language": "Finnish",
+            "text": "Alushousut istuvat napakasti kuten bokserit, mutta niiss\u00e4 on lyhyempi leikkaus. Alushousut peitt\u00e4v\u00e4t v\u00e4hemm\u00e4n reitt\u00e4 kuin bokserit"
+        },
+        {
+            "language": "Canadian French",
+            "text": "Les troncs sont aussi ajust\u00e9s que les boxers, mais ils sont plus courts et couvrent moins de jambes que les boxers"
+        },
+        {
+            "language": "French",
+            "text": "Les shorties sont aussi ajust\u00e9s que les boxers, mais ils sont plus courts. Les shorties couvrent moins de jambes que les boxers"
+        },
+        {
+            "language": "Croatian",
+            "text": "Ga\u0107e su bliske poput bokserica, osim \u0161to imaju kra\u0107e prianjanje. Ga\u0107e pokrivaju manje nogu od bokserica"
+        },
+        {
+            "language": "Hungarian",
+            "text": "A trunk als\u00f3nadr\u00e1g a boxerals\u00f3hoz hasonl\u00f3an szorosan illeszkedik, de r\u00f6videbb a sz\u00e1ra. A trunk als\u00f3 kevesebbet takar, mint a boxer"
+        },
+        {
+            "language": "Armenian",
+            "text": "\u0532\u0565\u057c\u0576\u0561\u056d\u0581\u056b\u056f\u0576\u0565\u0580\u0568 \u0574\u0578\u057f\u056b\u056f \u0565\u0576, \u056b\u0576\u0579\u057a\u0565\u057d \u0562\u057c\u0576\u0581\u0584\u0561\u0574\u0561\u0580\u057f\u056b\u056f\u056b \u056f\u0561\u0580\u0573 \u056f\u0561\u0580\u0573 \u0570\u0561\u0580\u0574\u0561\u0580\u0561\u0576\u0584: \u0532\u0565\u057c\u0576\u0561\u056d\u0581\u056b\u056f\u0576\u0565\u0580\u0568 \u0561\u057e\u0565\u056c\u056b \u0584\u056b\u0579 \u0565\u0576 \u056e\u0561\u056e\u056f\u0578\u0582\u0574 \u0578\u057f\u0584\u0568, \u0584\u0561\u0576 \u0562\u057c\u0576\u0581\u0584\u0561\u0574\u0561\u0580\u057f\u056b\u056f\u056b \u056f\u0561\u0580\u0573\u0561\u056f\u0576\u0565\u0580\u0568"
+        },
+        {
+            "language": "Icelandic",
+            "text": "Koffort passa vel eins og boxern\u00e6rbuxur, nema \u00fe\u00e6r passa styttra. Koffort hylja f\u00e6rri f\u00e6tur en boxern\u00e6rbuxur"
+        },
+        {
+            "language": "Italian",
+            "text": "I boxer aderenti parigamba presentano una lunghezza inferiore rispetto ai boxer aderenti standard, lasciando quindi le gambe completamente scoperte"
+        },
+        {
+            "language": "Japanese",
+            "text": "\u30c8\u30e9\u30f3\u30af\u30b9\u306f\u30dc\u30af\u30b5\u30fc\u30d6\u30ea\u30fc\u30d5\u306e\u3088\u3046\u306b\u3074\u3063\u305f\u308a\u3068\u30d5\u30a3\u30c3\u30c8\u3057\u307e\u3059\u304c\u3001\u30d5\u30a3\u30c3\u30c8\u611f\u304c\u77ed\u304f\u306a\u3063\u3066\u3044\u307e\u3059\u3002\u30c8\u30e9\u30f3\u30af\u30b9\u306f\u30dc\u30af\u30b5\u30fc\u30d6\u30ea\u30fc\u30d5\u3088\u308a\u3082\u811a\u3092\u8986\u3046\u90e8\u5206\u304c\u5c11\u306a\u3044"
+        },
+        {
+            "language": "Kazakh",
+            "text": "\u041e\u049b\u043f\u0430\u043d\u0434\u0430\u0440\u044b \u0431\u043e\u043a\u0441\u0448\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u049b\u0438\u044b\u0441\u0442\u044b\u0440\u044b\u043b\u0493\u0430\u043d\u043d\u0430\u043d \u0431\u0430\u0441\u049b\u0430, \u0431\u043e\u043a\u0441\u0448\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u043c\u0430\u04a3\u0434\u0430\u0439\u0448\u0430\u043b\u0430\u0440 \u0441\u0438\u044f\u049b\u0442\u044b \u0442\u044b\u0493\u044b\u0437 \u049b\u0438\u044b\u0441\u0442\u044b\u0440\u044b\u043b\u0493\u0430\u043d. \u041e\u049b\u043f\u0430\u049b\u0442\u0430\u0440 \u0431\u043e\u043a\u0441\u0448\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u0430\u049b\u043f\u0430\u0440\u0430\u0442\u049b\u0430 \u049b\u0430\u0440\u0430\u0493\u0430\u043d\u0434\u0430 \u0430\u044f\u049b\u0442\u044b \u0430\u0437 \u0436\u0430\u0431\u0430\u0434\u044b"
+        },
+        {
+            "language": "Korean",
+            "text": "\ud2b8\ub801\ud06c\ub294 \ubcf5\uc11c \ube0c\ub9ac\ud504\ucc98\ub7fc \ubab8\uc5d0 \uaf2d \ub9de\uc9c0\ub9cc \ud54f\uc774 \ub354 \uc9e7\uc2b5\ub2c8\ub2e4. \ud2b8\ub801\ud06c\ub294 \uc0ac\uac01 \ud32c\ud2f0\ubcf4\ub2e4 \ub2e4\ub9ac\ub97c \ub35c \ub36e\uc2b5\ub2c8\ub2e4."
+        },
+        {
+            "language": "Lithuanian",
+            "text": "Trumpik\u0117s yra prigludusios kaip boksin\u0117s kelnait\u0117s, i\u0161skyrus tai, kad jos yra trumpesn\u0117s. Baga\u017ein\u0117s dengia ma\u017eiau koj\u0173 nei boksin\u0117s kelnait\u0117s"
+        },
+        {
+            "language": "Latvian",
+            "text": "Bag\u0101\u017enieki ir cie\u0161i piegu\u013co\u0161i k\u0101 boksera biks\u012btes, iz\u0146emot to, ka tiem ir \u012bs\u0101ks piegriezums. Stumbri nosedz maz\u0101k k\u0101ju nek\u0101 bokseru biks\u012btes"
+        },
+        {
+            "language": "Macedonian",
+            "text": "\u0411\u0430\u0433\u0430\u0436\u043d\u0438\u0446\u0438\u0442\u0435 \u0441\u0435 \u0431\u043b\u0438\u0441\u043a\u0443 \u043a\u0430\u043a\u043e \u0431\u043e\u043a\u0441\u0435\u0440\u0441\u043a\u0438 \u0441\u043b\u0438\u043a\u0438, \u0441\u0430\u043c\u043e \u0448\u0442\u043e \u0438\u043c\u0430\u0430\u0442 \u043f\u043e\u043a\u0440\u0430\u0442\u043a\u0430 \u0432\u043a\u043b\u043e\u043f\u0443\u0432\u0430\u045a\u0435. \u0411\u0430\u0433\u0430\u0436\u043d\u0438\u0446\u0438\u0442\u0435 \u043f\u043e\u043a\u0440\u0438\u0432\u0430\u0430\u0442 \u043f\u043e\u043c\u0430\u043b\u043a\u0443 \u043d\u043e\u0437\u0435 \u043e\u0442\u043a\u043e\u043b\u043a\u0443 \u0431\u043e\u043a\u0441\u0435\u0440\u0441\u043a\u0438\u0442\u0435 \u0441\u043b\u0438\u043a\u0438"
+        },
+        {
+            "language": "Dutch",
+            "text": "Boxers zijn nauwsluitend en net wat korter dan boxer briefs. Hierdoor bedekken ze iets minder van het bovenbeen"
+        },
+        {
+            "language": "Norwegian",
+            "text": "Underbukser er like tettsittende som boksertruser, bortsett fra at de har en kortere passform. Underbukser dekker mindre av bena enn boksertruser"
+        },
+        {
+            "language": "Polish",
+            "text": "Hipsterki s\u0105 dopasowane jak kr\u00f3tkie bokserki, ale s\u0105 kr\u00f3tsze. Zakrywaj\u0105 mniej uda ni\u017c bokserki"
+        },
+        {
+            "language": "Portuguese",
+            "text": "As cuecas s\u00e3o justas como as cuecas boxer, mas t\u00eam um ajuste mais curto. As cuecas cobrem menos as pernas do que as cuecas boxer"
+        },
+        {
+            "language": "Romanian",
+            "text": "Trunchiurile sunt apropiate ca chilo\u021bii boxer, cu excep\u021bia faptului c\u0103 au o potrivire mai scurt\u0103. Trunchiurile acoper\u0103 mai pu\u021bin piciorul dec\u00e2t chilo\u021bii boxeri"
+        },
+        {
+            "language": "Slovak",
+            "text": "Tren\u00edrky s\u00fa priliehav\u00e9 ako boxerky, len maj\u00fa krat\u0161\u00ed strih. Tren\u00edrky zakr\u00fdvaj\u00fa menej nohy ako boxerky"
+        },
+        {
+            "language": "Slovenian",
+            "text": "Hla\u010de so oprijete kot boksarice, le da imajo kraj\u0161i kroj. Hla\u010de pokrivajo manj nog kot boksarice"
+        },
+        {
+            "language": "Albanian",
+            "text": "Bagazhet jan\u00eb t\u00eb ngushta si pantallona boksier\u00ebsh, p\u00ebrve\u00e7se kan\u00eb nj\u00eb p\u00ebrshtatje m\u00eb t\u00eb shkurt\u00ebr. Bagazhet mbulojn\u00eb m\u00eb pak k\u00ebmb\u00eb se pantallonat e boksierit"
+        },
+        {
+            "language": "Serbian",
+            "text": "\u041f\u0440\u0442\u0459\u0430\u0436\u043d\u0438\u0446\u0438 \u0441\u0443 \u0443\u0441\u043a\u043e \u0443\u043a\u043b\u043e\u043f\u0459\u0435\u043d\u0438 \u043a\u0430\u043e \u0431\u043e\u043a\u0441\u0435\u0440\u0438\u0446\u0435, \u0441\u0430\u043c\u043e \u0448\u0442\u043e \u0438\u043c\u0430\u0458\u0443 \u043a\u0440\u0430\u045b\u0438 \u043d\u0430\u043f\u0430\u0434. \u041f\u0440\u0442\u0459\u0430\u0436\u043d\u0438\u0446\u0438 \u043f\u043e\u043a\u0440\u0438\u0432\u0430\u0458\u0443 \u043c\u0430\u045a\u0435 \u043d\u043e\u0433\u0435 \u043e\u0434 \u0431\u043e\u043a\u0441\u0435\u0440\u0438\u0446\u0430"
+        },
+        {
+            "language": "Swedish",
+            "text": "Trunks \u00e4r \u00e5tsittande som boxerkalsonger, f\u00f6rutom att de har en kortare passform. Kalsongerna t\u00e4cker mindre av benen \u00e4n boxerkalsonger"
+        },
+        {
+            "language": "Turkish",
+            "text": "K\u0131sa boxerlar k\u00fclot boxerlar gibi \u00fczerinize tam oturan dar kesim bir modele sahiptir. Ancak k\u00fclot boxerlara g\u00f6re bacaklar\u0131n daha az k\u0131sm\u0131n\u0131 kapat\u0131r"
+        }
+    ],
+    "license_text": null,
+    "fit_commercial_text": null,
+    "wash_finishes": null,
+    "commercial_style_name": null,
+    "wash_and_cares": {
+        "washing": null,
+        "natural_drying": null,
+        "tumble_drying": null,
+        "dry_cleaning": null,
+        "ironing": null,
+        "bleaching": null,
+        "additional_cares": null
+    },
+    "collection_name": "2024 EXPRESS 7-8-9",
+    "retail_prices": [
+        {
+            "country": "AUS",
+            "currency": "AUD",
+            "recommended_retail_price": 19.95
+        },
+        {
+            "country": "AUT",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "BEL",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "CAN",
+            "currency": "CAD",
+            "recommended_retail_price": 18.0
+        },
+        {
+            "country": "CHE",
+            "currency": "CHF",
+            "recommended_retail_price": 16.9
+        },
+        {
+            "country": "CHL",
+            "currency": "USD",
+            "recommended_retail_price": 12.99
+        },
+        {
+            "country": "CZE",
+            "currency": "CZK",
+            "recommended_retail_price": 369.0
+        },
+        {
+            "country": "DEU",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "DNK",
+            "currency": "DKK",
+            "recommended_retail_price": 99.95
+        },
+        {
+            "country": "ESP",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "FIN",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "FRA",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "GBR",
+            "currency": "GBP",
+            "recommended_retail_price": 12.0
+        },
+        {
+            "country": "GRC",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "HRV",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "HUN",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "IND",
+            "currency": "INR",
+            "recommended_retail_price": 795.0
+        },
+        {
+            "country": "IRL",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "ITA",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "LBN",
+            "currency": "USD",
+            "recommended_retail_price": 12.95
+        },
+        {
+            "country": "MEX",
+            "currency": "MXN",
+            "recommended_retail_price": 349.0
+        },
+        {
+            "country": "NLD",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "NOR",
+            "currency": "NOK",
+            "recommended_retail_price": 149.95
+        },
+        {
+            "country": "NZL",
+            "currency": "NZD",
+            "recommended_retail_price": 39.99
+        },
+        {
+            "country": "PAN",
+            "currency": "USD",
+            "recommended_retail_price": 12.95
+        },
+        {
+            "country": "POL",
+            "currency": "PLN",
+            "recommended_retail_price": 69.99
+        },
+        {
+            "country": "RUS",
+            "currency": "RUB",
+            "recommended_retail_price": 1140.0
+        },
+        {
+            "country": "SAU",
+            "currency": "EUR",
+            "recommended_retail_price": 17.95
+        },
+        {
+            "country": "SVN",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "SWE",
+            "currency": "SEK",
+            "recommended_retail_price": 149.95
+        },
+        {
+            "country": "TUN",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "TUR",
+            "currency": "EUR",
+            "recommended_retail_price": 7.99
+        },
+        {
+            "country": "UKR",
+            "currency": "EUR",
+            "recommended_retail_price": 14.99
+        },
+        {
+            "country": "URY",
+            "currency": "USD",
+            "recommended_retail_price": 14.95
+        },
+        {
+            "country": "USA",
+            "currency": "USD",
+            "recommended_retail_price": 14.5
+        }
+    ],
+    "additional_prices": [
+        {
+            "country_code": "AUS",
+            "currency_code": "AUD",
+            "wholesale_price": 4.95,
+            "retail_price": 19.95
+        },
+        {
+            "country_code": "AUT",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "BEL",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "CAN",
+            "currency_code": "CAD",
+            "wholesale_price": 5.75,
+            "retail_price": 18.0
+        },
+        {
+            "country_code": "CHE",
+            "currency_code": "CHF",
+            "wholesale_price": 4.28,
+            "retail_price": 16.9
+        },
+        {
+            "country_code": "CHL",
+            "currency_code": "USD",
+            "wholesale_price": 3.75,
+            "retail_price": 12.99
+        },
+        {
+            "country_code": "CZE",
+            "currency_code": "CZK",
+            "wholesale_price": 83.76,
+            "retail_price": 369.0
+        },
+        {
+            "country_code": "DEU",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "DNK",
+            "currency_code": "DKK",
+            "wholesale_price": 25.5,
+            "retail_price": 99.95
+        },
+        {
+            "country_code": "ESP",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "FIN",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "FRA",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "GBR",
+            "currency_code": "GBP",
+            "wholesale_price": 3.06,
+            "retail_price": 12.0
+        },
+        {
+            "country_code": "GRC",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "HRV",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "HUN",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "IND",
+            "currency_code": "INR",
+            "wholesale_price": 295.0,
+            "retail_price": 795.0
+        },
+        {
+            "country_code": "IRL",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "ITA",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "LBN",
+            "currency_code": "USD",
+            "wholesale_price": 3.2,
+            "retail_price": 12.95
+        },
+        {
+            "country_code": "MEX",
+            "currency_code": "MXN",
+            "wholesale_price": 116.0,
+            "retail_price": 349.0
+        },
+        {
+            "country_code": "NLD",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "NOR",
+            "currency_code": "NOK",
+            "wholesale_price": 34.7,
+            "retail_price": 149.95
+        },
+        {
+            "country_code": "NZL",
+            "currency_code": "NZD",
+            "wholesale_price": 9.93,
+            "retail_price": 39.99
+        },
+        {
+            "country_code": "PAN",
+            "currency_code": "USD",
+            "wholesale_price": 3.2,
+            "retail_price": 12.95
+        },
+        {
+            "country_code": "POL",
+            "currency_code": "PLN",
+            "wholesale_price": 15.88,
+            "retail_price": 69.99
+        },
+        {
+            "country_code": "RUS",
+            "currency_code": "RUB",
+            "wholesale_price": 258.79,
+            "retail_price": 1140.0
+        },
+        {
+            "country_code": "SAU",
+            "currency_code": "EUR",
+            "wholesale_price": 3.66,
+            "retail_price": 17.95
+        },
+        {
+            "country_code": "SVN",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "SWE",
+            "currency_code": "SEK",
+            "wholesale_price": 35.94,
+            "retail_price": 149.95
+        },
+        {
+            "country_code": "TUN",
+            "currency_code": "EUR",
+            "wholesale_price": 3.03,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "TUR",
+            "currency_code": "EUR",
+            "wholesale_price": 3.2,
+            "retail_price": 7.99
+        },
+        {
+            "country_code": "UKR",
+            "currency_code": "EUR",
+            "wholesale_price": 3.4,
+            "retail_price": 14.99
+        },
+        {
+            "country_code": "URY",
+            "currency_code": "USD",
+            "wholesale_price": 4.7,
+            "retail_price": 14.95
+        },
+        {
+            "country_code": "USA",
+            "currency_code": "USD",
+            "wholesale_price": 4.4,
+            "retail_price": 14.5
+        }
+    ]
+}

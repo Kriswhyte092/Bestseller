@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOOS Products</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-page {
+            max-height: 100vh;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            width: 220px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .inventory-status {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .low-stock {
+            color: red;
+        }
+
+        .store-inventory {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .store-inventory p {
+            margin: 0;
+            padding: 2px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-page">
+        {% if message %}
+        <p style="text-align: center; font-size: 18px; color: red; margin: 20px;">{{ message }}</p>
+        {% else %}
+        <div class="product-container">
+            {% for product in products %}
+            <div class="product-card">
+                <img src="{{ product.image_url }}" alt="{{ product.name }}">
+                <h3>{{ product.name }}</h3>
+                <div class="store-inventory">
+                    <strong>Store Inventory:</strong>
+                    {% for store in product.store_inventory %}
+                        <p>{{ store.store_name }}: 
+                        <span class="{% if store.quantity <= 0 %}low-stock{% endif %}">
+                            {{ store.quantity }}
+                        </span>
+                        </p>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

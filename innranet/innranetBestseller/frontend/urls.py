@@ -1,14 +1,18 @@
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import include, path
 
 urlpatterns = [
-    path('', views.index, name='home'),
-    path('NOOS', views.index),
-    path('bonus', views.index),
-    path('login/', views.loginn),
-    path('create/', views.create_announcement, name='create_announcement'),
-    path('edit/<int:pk>/', views.edit_announcement, name='edit_announcement'),
-    path('delete/<int:pk>/', views.delete_announcement, name='delete_announcement'),
-    path('edit-announcement-ajax/', views.edit_announcement_ajax, name='edit_announcement_ajax'),
-    path('delete-announcement-ajax/', views.delete_announcement_ajax, name='delete_announcement_ajax'),
+    path("", views.index),
+    path("staff", views.staff, name="staff"),
+    path("NOOS", views.index, name="noos"),
+    path("bonus", views.index),
+    path("login/", views.loginn),
+    path("logout/", views.logout_view, name="logout"),
+    path("profile/", include("userprofile.urls")),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

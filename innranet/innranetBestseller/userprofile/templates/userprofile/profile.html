@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}" />
+    <style>
+        .logout-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff4b5c;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .logout-button:hover {
+            background-color: #ff1f3a;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-area">
+        <div class="profile-card">
+            <h1>Profile Details</h1>
+            <p><strong>Username:</strong> {{ username }}</p>
+            <p><strong>Access Level:</strong> {{ access_level }}</p>
+            <p><strong>Staff Access:</strong> {{ is_staff }}</p>
+            <p><strong>Superuser Access:</strong> {{ is_superuser }}</p>
+            <hr>
+            <div class="profile-actions">
+                <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Announcements and Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .content-section {
+            margin-bottom: 50px;
+        }
+        .announcement-list,
+        .image-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .announcement-card,
+        .image-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .announcement-card h3,
+        .image-card h3 {
+            margin: 0 0 10px 0;
+            color: #000;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .actions a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+        .actions a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Announcements</h1>
+    <div class="content-section announcement-list">
+        {% for announcement in announcements %}
+        <div class="announcement-card">
+            <h3>{{ announcement.title }}</h3>
+            <p>{{ announcement.content }}</p>
+            <form method="post" action="{% url 'delete_announcement' announcement.id %}">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h1>Images</h1>
+    <div class="content-section image-list">
+        {% for image in images %}
+        <div class="image-card">
+            <img src="{{ image.image.url }}" alt="{{ image.title }}" />
+            <h3>{{ image.title }}</h3>
+            <form method="post" action="{% url 'delete_image' image.id %}">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="actions">
+        <a href="{% url 'create_announcement' %}">Create Announcement</a>
+        <a href="{% url 'upload_image' %}">Upload Image</a>
+    </div>
+</body>
+</html>
+<a href="/" style="text-decoration: none;">
+    <button style="
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 15px;
+        background-color: #0f3460;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;">
+        
+        &larr; Back to Frontpage       
+    </button>
+</a>

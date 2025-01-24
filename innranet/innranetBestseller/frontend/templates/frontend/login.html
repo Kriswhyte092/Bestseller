@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <style> 
+        body {
+            background-image: url("{% static 'images/bestseller3.png' %}");
+            /* virkar ekki að importa myndina úr static css */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Innranet Bestseller</h1>
+        <h2>Login:</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Username</label>
+            <input type="text" id="username" name="fnm" placeholder="Enter Your Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pwd" placeholder="Enter Password" required>
+
+            <button class="submit-button" type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

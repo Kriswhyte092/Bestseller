@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Innranet</title>
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar left-sidebar">
+            <div class="sidebar-header">Bestseller</div>
+            <div class="sidebar-buttons">
+                <button class="sidebar-button" onclick="fetchContent('/noos/')">NOOS</button>
+                <button class="sidebar-button" onclick="loadContent('Væntanlegt')">Væntanlegt</button>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <a href="staff" class="topbar-title">Innranet</a>
+                <div class="topbar-user">
+                    <a href="#" class="user-profile">Profile</a>
+                    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Main Content -->
+                <div id="content-area">
+                    <h2>Welcome to Innranet</h2>
+                </div>
+
+                <!-- Image Container -->
+                <div id="frontpage-image-container">
+                    <!-- Image will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function loadProductInfo(productName) {
+                const url = `/noos/noos-info/?product=${encodeURIComponent(productName)}`;
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(html => {
+                        // Load the product info into the content area
+                        document.querySelector('#content-area').innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                        document.querySelector('#content-area').innerHTML = '<p>Error loading product information.</p>';
+                    });
+            }
+
+            function attachSidebarListeners() {
+                // Attach event listeners for the sidebar buttons
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/noos/\')"]').onclick = function () {
+                    fetchContent('/noos/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/bonus/\')"]').onclick = function () {
+                    fetchContent('/bonus/');
+                };
+        
+                document.querySelector('.sidebar-button[onclick="fetchContent(\'/laun/\')"]').onclick = function () {
+                    fetchContent('/laun/');
+                };
+            }
+        </script>
+        <!-- Right Sidebar -->
+        <div class="sidebar right-sidebar">
+            <div class="announcements-header">Announcements</div>
+            <ul id="announcement-list" class="announcement-list">
+                <!-- Announcements will be dynamically loaded here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+    function fetchContent(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                // Load content into the #content-area
+                document.getElementById('content-area').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+                document.getElementById('content-area').innerHTML = `<p>Error loading content.</p>`;
+            });
+    }
+
+        function fetchAnnouncements() {
+            fetch('/announcements/', {
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('announcement-list');
+                list.innerHTML = ''; // Clear existing announcements
+                data.forEach(announcement => {
+                    const li = document.createElement('li');
+                    li.textContent = `${announcement.title}: ${announcement.content}`;
+                    list.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error fetching announcements:', error));
+        }
+
+        window.onload = fetchAnnouncements;
+
+        function fetchFrontPageImages() {
+            fetch('/announcements/images/', { // Correct URL
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('frontpage-image-container');
+                container.innerHTML = ''; // Clear any existing content
+                if (data.images && data.images.length > 0) {
+                    data.images.forEach(imageUrl => {
+                        const img = document.createElement('img');
+                        img.src = imageUrl;  // Set the image URL
+                        img.alt = 'Front Page Image';
+                        img.style.marginBottom = '10px'; // Add spacing between images
+                        img.style.width = '100%'; // Ensure images fit within the container
+                        container.appendChild(img);  // Add each image to the container
+                    });
+                } else {
+                    container.innerHTML = '<p>No images available</p>';  // Placeholder if no images
+                }
+            })
+            .catch(error => console.error('Error fetching frontpage images:', error));
+        }
+        
+        window.onload = () => {
+            fetchAnnouncements();
+            fetchFrontPageImages(); // Updated to use the correct endpoint
+        };
+    </script>
+</body>
+</html>

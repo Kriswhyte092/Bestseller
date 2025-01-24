@@ -1,18 +1,328 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#main {
+.topbar {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Push items to opposite sides */
+  padding: 10px 20px;
+  background: #ffffff; /* Background color */
+  backdrop-filter: blur(10px); /* Add a blur effect */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  z-index: 1000; /* Ensure it stays on top */
+  margin-bottom: 20px;
+  border-radius: 10px;
   position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
+  width: 66.8%; /* Adjust width to fit between sidebars */
+  left: calc(15% + 35px); /* Align with the left sidebar */
 }
 
-#app {
-  height: 100%;
+.topbar:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Replace with the font-family used for 'Bestseller' */
+}
+
+.topbar-user {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.user-profile,
+.logout-button {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #1a1a2e;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.user-profile:hover,
+.logout-button:hover {
+  color: #1e6091;
+}
+
+.topbar-title {
+  text-decoration: none;
+  color: #1a1a2e;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -1px;
+  margin-right: auto;
+  /* Pushes the title to the left */
+}
+
+.topbar-add {
+  text-decoration: none;
+  color: #1a1a2e;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: auto;
+  /* Pushes the `+` to the right */
+  padding: 5px 10px;
+  /* Optional: Add spacing inside the `+` */
+  transition: color 0.3s;
+}
+
+.topbar-add:hover {
+  color: #1e6091;
+  /* Change color on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: sticky;
+  top: 0;
+}
+
+.left-sidebar {
+  width: 15%;
+  background-color: #1a1a2e;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+  border-radius: 8px; /* Curved corners */
+  position: fixed; 
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.left-sidebar:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.9); /* Enhance shadow on hover */
+}
+
+.right-sidebar {
+  border-radius: 8px; /* Curved corners */
+  position: fixed; /* Make it fixed relative to the viewport */
+  top: 20px;
+  right: 20px;
+  bottom: 1px;
+  width: 14.5%; /* Set a fixed width */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable scrolling for overflow */
+  z-index: 1000; /* Ensure it appears above other content */
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+.right-sidebar:hover {
+  transform: scale(1.01); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+.sidebar-header {
+  padding-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.sidebar-button {
+  background-color: #0f3460;
+  color: white;
+  border: 2px solid #1e6091; /* Add border outline */
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.sidebar-button {
+  background-color: #0f3460;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-button:hover {
+  background-color: #1e6091;
+  transform: scale(1.05); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* Stack the topbar and content */
+  min-height: 100vh;
   width: 100%;
+  max-width: 3000px; /* Set the maximum width */
+  margin: 0 auto; /* Center the main container */
+  /* Ensure it fills the full height of the viewport */
+  background-image: url("/static/images/art.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Align content */
+  align-items: stretch; /* Ensure equal height */
+  gap: 20px; /* Space between sections */
+  flex-grow: 1;
+  margin-left: 15%; /* Match the left-sidebar width and gap */
+  margin-right: 14.5%; /* Match the right-sidebar width and gap */
+  margin-top: 50px; /* Adjust for the topbar height (50px) and its bottom margin (20px) */
+  padding: 20px; /* Optional: Add padding for inner spacing */
+  overflow-y: auto; /* Enable scrolling for overflow */
+}
+
+#content-area {
+  flex: 1; /* Allow it to expand to fill space */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  /* Ensure it fills the full height of the parent container */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#content-area:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0px;
+  /* Add some spacing below the search bar */
+}
+
+.sidebar-button {
+  background-color: #0f3460;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-button:hover {
+  background-color: #1a1a2e;
+}
+
+#frontpage-image-container {
+  flex: 0; /* Do not take space when empty */
+  max-width: 20%;
+  display: none; /* Hidden by default */
+}
+
+#frontpage-image-container img {
+  width: 100%;
+  /* Scale the image to fit the container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
+  
+  /* Optional: Add shadow for aesthetics */
+  margin-bottom: 10px;
+  /* Add spacing between images */
+}
+
+#frontpage-image-container img:hover {
+  transform: scale(1.05); /* Slightly increase scale on hover */
+}
+
+#frontpage-image-container.has-images {
+  display: block; /* Make it visible */
+  flex: 1; /* Allow it to occupy space */
+}
+
+body {
+  overflow: hidden;
+  /* Disable scrolling for the entire page */
+}
+
+.announcements-header {
+  font-size: 24px;
+  /* Larger, bolder header */
+  font-weight: bold;
+  color: #333;
+  /* Darker color for emphasis */
+  margin-top: 12px;
+  margin-bottom: 38px;
+  /* Add more spacing below the header */
+  text-align: center;
+  /* Center-align the header */
+}
+
+.announcement-list {
+  list-style: none;
+  /* Remove bullet points */
+  padding: 0;
+  /* Remove default padding */
+  margin: 0;
+  /* Remove default margin */
+}
+
+.announcement-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.announcement-list li {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.announcement-list li:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+.announcement-list li .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+.announcement-list li .content {
+  font-size: 14px;
+  color: #555;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
 }

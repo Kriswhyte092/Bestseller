@@ -131,46 +131,11 @@ form button:hover {
   background-color: #14577b;
 }
 
-/* Announcements Container */
-#announcement-box {
-  background-color: #f4f4f9;
-  border-left: 2px solid #ddd;
+.profile-card {
+  background: var(--mainlightblue);
   padding: 20px;
-  overflow-y: auto;
-  height: 100%;
-  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Announcement Cards */
-.announcement-card {
-  background-color: #ffffff;
-  margin: 20px auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 500px; /* Ensures cards don't get too large */
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.announcement-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.announcement-card h4 {
-  font-size: 20px;
-  color: #1a1a2e;
-  margin-bottom: 10px;
-}
-
-.announcement-card p {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--navy-background);
   font-size: 16px;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.announcement-card small {
-  font-size: 12px;
-  color: #888;
 }

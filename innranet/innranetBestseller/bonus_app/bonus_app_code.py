@@ -12,7 +12,7 @@ class GoalExtractor:
         self.output_csv = output_csv
         self.name_mapping = {
             "VMK": "Vero Moda Kringlan",
-            "VIK": "Vila Kringlan",
+            "VIK": "Vila Kringla",
             "NIK": "Name It Kringlan",
             "JJK": "Jack & Jones Kringlan",
             "SLK": "Selected Kringlan",
@@ -83,7 +83,13 @@ class GoalExtractor:
             (2.0, 10000),
         ]
 
-        special_stores = {"VMK", "VIK", "NIK", "SLK"}
+        special_stores = {
+            "Vero Moda Kringlan", 
+            "Vila Kringla", 
+            "Name It Kringlan", 
+            "Selected Kringlan"
+            }
+
         bonus = 0
         if name in special_stores:
             for threshold, value in thresholds:

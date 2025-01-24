@@ -3,7 +3,7 @@ from api.personas_api import fetch_personas
 from api.shift_api import fetch_shifts
 from processing.data_cleaner import validate_personas, validate_shifts
 from processing.payroll_calculator import *
-from processing.payroll_generator import *
+#from processing.payroll_generator import *
 import pathlib
 
 from config import config
@@ -26,9 +26,10 @@ def main():
 
     #reikna payroll
     payroll_data = payroll_calculator().calculate_payroll(validated_users, validated_shifts)
+    for pay in payroll_data:
+        print(pay)
     # db.store_payroll(payroll_data)
     
-    for 
    # generate_payslipts(payroll_data)
    # generate_summary_report(paryoll_data)
 

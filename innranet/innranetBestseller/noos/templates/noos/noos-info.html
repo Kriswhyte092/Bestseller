@@ -20,6 +20,7 @@
             display: flex;
             flex-direction: row;
             gap: 20px;
+            background-color: lightblue;
         }
 
         /* Left side for the image slider */
@@ -46,7 +47,6 @@
             border-radius: 10px;
             transition: all 0.3s ease;
             cursor: pointer;
-            opacity: 0.7;
         }
 
         .product-gallery img:hover {
@@ -100,13 +100,23 @@
             font-weight: bold;
         }
 
-        .color-circle {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            margin-right: 5px;
-            border: 1px solid #ccc;
+        .color-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 40px;
+            border-radius: 8px;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            transition: border-color 0.3s;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .color-button:hover {
+            border-color: #000;
         }
     </style>
 </head>
@@ -126,34 +136,31 @@
             <!-- Product Name -->
             <h1>{{ name }}</h1>
 
-            <!-- Locations -->
-            <div class="product-section">
-                <h2>Locations:</h2>
-                <ul>
-                    {% for location, count in locations.items %}
-                        <li>{{ location }}: <span>{{ count }}</span></li>
-                    {% endfor %}
-                </ul>
-            </div>
-
             <!-- Color Variants -->
             <div class="product-section">
                 <h2>Color Variants:</h2>
                 <ul>
                     {% for color, hex in colors.items %}
-                        <li>
-                            <span class="color-circle" style="background-color: {{ hex }}"></span> {{ color }}
-                        </li>
+                    <li>
+                        <button class="color-button" style="background-color: {{ hex }}" title="{{ color }}">{{ color }}</button>
+                    </li>
                     {% endfor %}
                 </ul>
             </div>
 
-            <!-- Sizes -->
+            <!-- Sizes and Locations -->
             <div class="product-section">
-                <h2>Sizes:</h2>
+                <h2>Sizes and Locations:</h2>
                 <ul>
-                    {% for size in sizes %}
-                        <li>{{ size }}</li>
+                    {% for size, locations in sizes.items %}
+                        <li>
+                            <strong>{{ size }}</strong>
+                            <ul>
+                                {% for location, count in locations.items %}
+                                    <li>{{ location }}: <span>{{ count }}</span></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
                     {% endfor %}
                 </ul>
             </div>

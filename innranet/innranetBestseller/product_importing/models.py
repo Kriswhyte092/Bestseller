@@ -1,10 +1,9 @@
 class Product:
-    def __init__(self, name=str, itemNo=str, product_description=str, noos=False):
+    def __init__(self, name=str, itemNo=str, product_description=str):
         self.name = name
         self.itemNo = itemNo
         self.product_description = product_description
         self.colorVariants = []
-        self.noos = noos
         
     def __str__(self):
         color_variants_dict = {
@@ -16,7 +15,6 @@ class Product:
             f"Product Name: {self.name}\n"
             f"Item No: {self.itemNo}\n"
             f"Number of Color Variants: {len(self.colorVariants)}\n"
-            f"NOOS: {self.noos}\n"
             f"Description:\n{self.product_description}"
             f"Color Variants: {color_variants_dict}\n\n"
         )
@@ -26,15 +24,15 @@ class Product:
             "name": self.name,
             "itemNo": self.itemNo,
             "product_description": self.product_description,
-            "noos": self.noos,
             "colorVariants": [cv.to_dict() for cv in self.colorVariants],
         }
 
 class colorVariant:
-    def __init__(self, product=Product, colorName=str, colorCode=str):
+    def __init__(self, product=Product, colorName=str, colorCode=str, noos=False):
         self.product = product
         self.colorName = colorName
         self.colorCode = colorCode
+        self.noos = noos
         self.variant_details = []
         self.image_urls = []
         
@@ -44,6 +42,7 @@ class colorVariant:
             f"Parent Product: {self.product.name} / {self.product.itemNo}\n"
             f"Color: {self.colorName}\n"
             f"Code: {self.colorCode}\n"
+            f"NOOS: {self.noos}\n"
             f"Variants: {[v.size for v in self.variant_details]}\n"
             f"Number of images: {len(self.image_urls)}\n"
         )
@@ -52,6 +51,7 @@ class colorVariant:
         return {
             "colorName": self.colorName,
             "colorCode": self.colorCode,
+            "is_noos": self.noos,
             "sizes": [variant.size for variant in self.variant_details],
             "variants": [variant.to_dict() for variant in self.variant_details],
             "image_urls": self.image_urls,

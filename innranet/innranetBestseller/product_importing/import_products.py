@@ -2,6 +2,7 @@ import json
 from models import Product, colorVariant, Variant, Store, Inventory
 from api import bc_api_for_variant_stock, fashion_cloud_api
 from rich.console import Console
+import time
 
 console = Console()
 
@@ -142,13 +143,21 @@ def import_product(obj):
 #     console.print(p, style="purple")
 
 
-# Short list of product codes
+"""
+Short list of product codes,
+use this list for testing purposes.
+"""
 product_codes = [
     "12260628",
     "12260481",
     "12259664",
 ]
 
+
+"""
+Use this list to fetch product data from all JJ noos products, 
+else use the short list above for testing purposes.
+"""
 JJ_noos_barcodes = [
     "12230334", "12242998", "12136795", "12242690", "12152757",
     "12118114", "12263507", "12254346", "12206024", "12066296",
@@ -171,13 +180,11 @@ JJ_noos_barcodes = [
     "12156102", "12241611", "12251180", "12074784"
 ]
 
-import time
-
 # 
 start_time = time.time()
 
 # Fetch product data from Fashion Cloud API
-for code in JJ_noos_barcodes:
+for code in product_codes:
     fashion_cloud_product = fashion_cloud_api(code)
     p, v = import_product(fashion_cloud_product)
     console.print(p, style="purple")

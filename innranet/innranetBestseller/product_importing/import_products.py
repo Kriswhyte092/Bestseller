@@ -112,9 +112,10 @@ def import_product(obj):
 
 # List of local product files
 product_files = [
-    "product_12260628.json",
-    "product_12260481.json",
-    "product_12259664.json"
+    "noos_products/product_12260628.json",
+    "noos_products/product_12260481.json",
+    "noos_products/product_12259664.json",
+    "noos_products/product_12278009.json"
 ]
 # Extract product data
 # print the product data of each file in the product_files list

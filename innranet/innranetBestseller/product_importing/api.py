@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def bc_fetch_variant_stock():
+def bc_api_for_variant_stock():
     """
     Fetches product stock data from Bestseller API
     """
@@ -21,7 +21,7 @@ def bc_fetch_variant_stock():
         return None
 
 
-def fc_fetch_product_json(number):
+def fashion_cloud_api(number):
     """
     Takes in a products ItemNo and fetches the product data from Fashion Cloud API
     """

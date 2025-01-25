@@ -105,21 +105,30 @@ def import_product(obj):
     return product, variants 
 
 
-## Product files
-# product_12260628.json
-# product_12260481.json
-# product_12259664.json
+# # List of local product files
+# product_files = [
+#     "noos_products/product_12260628.json",
+#     "noos_products/product_12260481.json",
+#     "noos_products/product_12259664.json",
+#     "noos_products/product_12278009.json"
+# ]
+# # Extract product data
+# # print the product data of each file in the product_files list
+# for product_file in product_files:
+#     data = load_json(product_file)
+#     p, v = import_product(data)
+#     console.print(p, style="purple")
 
-# List of local product files
-product_files = [
-    "noos_products/product_12260628.json",
-    "noos_products/product_12260481.json",
-    "noos_products/product_12259664.json",
-    "noos_products/product_12278009.json"
+
+# List of product codes
+product_codes = [
+    "12260628",
+    "12260481",
+    "12259664",
+    "12278009"
 ]
-# Extract product data
-# print the product data of each file in the product_files list
-for product_file in product_files:
-    data = load_json(product_file)
-    p, v = import_product(data)
+# Fetch product data from Fashion Cloud API
+for code in product_codes:
+    fashion_cloud_product = fc_fetch_product_json(code)
+    p, v = import_product(fashion_cloud_product)
     console.print(p, style="purple")

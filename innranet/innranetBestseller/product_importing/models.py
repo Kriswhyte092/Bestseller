@@ -20,6 +20,15 @@ class Product:
             f"Description:\n{self.product_description}"
             f"Color Variants: {color_variants_dict}\n\n"
         )
+        
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "itemNo": self.itemNo,
+            "product_description": self.product_description,
+            "noos": self.noos,
+            "colorVariants": [cv.to_dict() for cv in self.colorVariants],
+        }
 
 class colorVariant:
     def __init__(self, product=Product, colorName=str, colorCode=str):
@@ -38,9 +47,18 @@ class colorVariant:
             f"Variants: {[v.size for v in self.variant_details]}\n"
             f"Number of images: {len(self.image_urls)}\n"
         )
-    
+        
+    def to_dict(self):
+        return {
+            "colorName": self.colorName,
+            "colorCode": self.colorCode,
+            "sizes": [variant.size for variant in self.variant_details],
+            "variants": [variant.to_dict() for variant in self.variant_details],
+            "image_urls": self.image_urls,
+        }
+
 class Variant:
-    def __init__(self, colorVariant=colorVariant, BarcodeNo=int, size=str, length=str):
+    def __init__(self, colorVariant=colorVariant, BarcodeNo=int, size=str, length=""):
         self.colorVariant = colorVariant
         self.BarcodeNo = BarcodeNo
         self.size = size
@@ -54,7 +72,15 @@ class Variant:
             f"Size: {self.size}\n"
             f"Length: {self.length}\n"
         )
-    
+
+    def to_dict(self):
+        return {
+            "colorVariant": self.colorVariant.colorName,
+            "BarcodeNo": self.BarcodeNo,
+            "size": self.size,
+            "length": self.length,
+        }
+
 class Store:
     def __init__(self, store_name=str):
         self.store_name = store_name

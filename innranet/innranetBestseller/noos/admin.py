@@ -31,3 +31,4 @@ class InventoryAdmin(admin.ModelAdmin):
     search_fields = ('store__store_name', 'variant__BarcodeNo')  # Enable search for related fields
     list_filter = ('store', 'variant')
     autocomplete_fields = ('store', 'variant')  # Improves usability for large datasets
+    

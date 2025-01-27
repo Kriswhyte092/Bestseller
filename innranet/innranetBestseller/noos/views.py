@@ -1,8 +1,6 @@
 import requests
 from django.shortcuts import render
 from django.http import JsonResponse
-from django.db.models import Q, Sum
-from noos.models import Product, Inventory
 import json
 import glob
 import os
@@ -217,49 +215,3 @@ def noos_info(request):
             )
 
     return JsonResponse({"error": "Product not found"}, status=404)
-
-
-def noos_products(request):
-    # Get the search query from the request
-    search_query = request.GET.get('search', '')
-
-    # Query NOOS products, filter by the search query if provided
-    products = Product.objects.annotate(
-        total_inventory=Sum('inventory__quantity')
-    ).filter(noos=True)
-
-    if search_query:
-        products = products.filter(
-            Q(ItemNo__icontains=search_query) | 
-            Q(VariantName__icontains=search_query) |
-            Q(BarcodeNo__icontains=search_query)
-        )
-
-    # Transform data for the template
-    product_list = []
-    for product in products:
-        # Get inventory details for each product
-        inventories = Inventory.objects.filter(product=product)
-        store_inventory = [
-            {
-                "store_name": inventory.store.store_name,
-                "quantity": inventory.quantity,
-            }
-            for inventory in inventories
-        ]
-
-        product_list.append({
-            "name": f"{product.BarcodeNo}",
-            "image_url": product.image_urls[0] if product.image_urls else "/static/images/no-image.png",
-            "store_inventory": store_inventory,
-        })
-
-    # Check if no products found
-    if not product_list:
-        print("No products found")
-        return render(request, 'noos/noos.html', {
-            "products": product_list,
-            "message": "Nothing found for your search query.",
-        })
-
-    return render(request, 'noos/noos.html', {"products": product_list})

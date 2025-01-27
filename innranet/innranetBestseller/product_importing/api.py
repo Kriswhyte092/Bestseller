@@ -1,5 +1,4 @@
 import requests
-import json
 
 
 def bc_api_for_variant_stock():

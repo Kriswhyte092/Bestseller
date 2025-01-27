@@ -151,7 +151,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 OUTPUTS_ROOT = os.path.join(BASE_DIR, "outputs")
 
 # Static files
-STATIC_URL = "/static/"
+STATIC_URL = "frontend/static/"
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "frontend/static")]
 

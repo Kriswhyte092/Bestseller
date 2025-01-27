@@ -4,15 +4,15 @@ from .models import Product, colorVariant, Variant, Store, Inventory
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'ItemNo', 'noos')  # Fields to display in the list view
+    list_display = ('id', 'name', 'itemNo')  # Fields to display in the list view
     search_fields = ('name', 'ItemNo')              # Fields to search
-    list_filter = ('noos',)                         # Filter options
 
 @admin.register(colorVariant)
 class ColorVariantsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'product', 'colorName', 'colorCode')  # Display product relationship and color details
+    list_display = ('id', 'product', 'colorName', 'colorCode', 'noos')  # Display product relationship and color details
     search_fields = ('colorName', 'colorCode')
     list_filter = ('colorName',)
+    list_filter = ('noos',)                         # Filter options
 
 @admin.register(Variant)
 class VariantsAdmin(admin.ModelAdmin):

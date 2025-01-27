@@ -102,7 +102,7 @@ def import_product(obj):
                                 
                                 # Create variant object for each SKU
                                 variant = Variant(colorVariant=color_variant, BarcodeNo=sku['ean13'], size=sku['size'])
-                                color_variant.variant_details.append(variant)
+                                color_variant.variants.append(variant)
                                 
                                 # debuging
                                 console.print(variant)

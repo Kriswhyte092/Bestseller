@@ -7,7 +7,7 @@ class Product:
         
     def __str__(self):
         color_variants_dict = {
-            cv.colorName: [variant.size for variant in cv.variant_details] 
+            cv.colorName: [v.size for v in cv.variants] 
             for cv in self.colorVariants
         }
         return (
@@ -33,7 +33,7 @@ class colorVariant:
         self.colorName = colorName
         self.colorCode = colorCode
         self.noos = noos
-        self.variant_details = []
+        self.variants = []
         self.image_urls = []
         
     def __str__(self):
@@ -43,7 +43,7 @@ class colorVariant:
             f"Color: {self.colorName}\n"
             f"Code: {self.colorCode}\n"
             f"NOOS: {self.noos}\n"
-            f"Variants: {[v.size for v in self.variant_details]}\n"
+            f"Variants: {[v.size for v in self.variants]}\n"
             f"Number of images: {len(self.image_urls)}\n"
         )
         
@@ -52,8 +52,8 @@ class colorVariant:
             "colorName": self.colorName,
             "colorCode": self.colorCode,
             "is_noos": self.noos,
-            "sizes": [variant.size for variant in self.variant_details],
-            "variants": [variant.to_dict() for variant in self.variant_details],
+            "sizes": [v.size for v in self.variants],
+            "variants": [v.to_dict() for v in self.variants],
             "image_urls": self.image_urls,
         }
 

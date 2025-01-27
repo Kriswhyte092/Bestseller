@@ -1,29 +1,31 @@
 from django.core.management.base import BaseCommand
-from noos.models import Product
+from noos.models import Product, colorVariant, Variant, Store, Inventory
 from django.db.models import Count
 
 class Command(BaseCommand):
-    help = "Remove duplicate products from the database"
+    help = "Remove duplicate products, colorVariants, Variants, Stores, and Inventory from the database"
 
     def handle(self, *args, **kwargs):
-        count = Product.objects.count()
-        if count == 0:
-            self.stdout.write(self.style.WARNING("No products found in the database!"))
-            return
-                
+        self.remove_duplicates(Product, ['name', 'itemNo'], "products")
+        self.remove_duplicates(colorVariant, ['product', 'colorName', 'colorCode'], "colorVariants")
+        self.remove_duplicates(Variant, ['colorVariant', 'BarcodeNo', 'size'], "Variants")
+        self.remove_duplicates(Store, ['store_name'], "Stores")
+        self.remove_duplicates(Inventory, ['store', 'variant'], "Inventory")
+
+    def remove_duplicates(self, model, fields, model_name):
         duplicates = (
-            Product.objects.values('name', 'itemNo')
+            model.objects.values(*fields)
             .annotate(count=Count('id'))
             .filter(count__gt=1)
         )
         number_of_duplicates = len(duplicates)
         
         if not duplicates:
-            self.stdout.write(self.style.SUCCESS("No duplicate products found!"))
+            self.stdout.write(self.style.SUCCESS(f"No duplicate {model_name} found!"))
             return
 
         for duplicate in duplicates:
-            products = Product.objects.filter(name=duplicate['name'], itemNo=duplicate['itemNo'])
-            products.exclude(id=products.first().id).delete()
+            items = model.objects.filter(**{field: duplicate[field] for field in fields})
+            items.exclude(id=items.first().id).delete()
 
-        self.stdout.write(self.style.SUCCESS(f"Successfully removed {number_of_duplicates} duplicate products!"))
+        self.stdout.write(self.style.NOTICE(f"Successfully removed {number_of_duplicates} duplicate {model_name}!"))

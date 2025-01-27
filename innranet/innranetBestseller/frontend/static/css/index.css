@@ -1,25 +1,24 @@
 .topbar {
   display: flex;
-  /* Use flexbox for alignment */
-  align-items: center;
-  /* Align items vertically */
-  justify-content: space-between;
-  /* Push items to opposite sides */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Push items to opposite sides */
   padding: 10px 20px;
-  /* Add padding inside the bar */
-  background: rgba(255, 255, 255, 0.8);
-  /* Background color */
-  backdrop-filter: blur(10px);
-  /* Add a blur effect */
-  border-bottom: 1px solid #ddd;
-  /* Add a bottom border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Optional shadow */
-  z-index: 1000;
-  /* Ensure it stays on top */
+  background: #ffffff; /* Background color */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  z-index: 1000; /* Ensure it stays on top */
   margin-bottom: 20px;
-  /* Add padding below the topbar */
   border-radius: 10px;
+  position: fixed;
+  width: 66.8%; /* Adjust width to fit between sidebars */
+  left: calc(15% + 35px); /* Align with the left sidebar */
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+
+.topbar:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
 }
 
 body {
@@ -30,7 +29,6 @@ body {
 .topbar-user {
   display: inline-block;
   margin-left: 10px;
-
 }
 
 .user-profile,
@@ -81,18 +79,43 @@ body {
 }
 
 .left-sidebar {
-  width: 250px;
+  width: 15%;
   background-color: #1a1a2e;
   padding: 20px;
-  height: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+  border-radius: 8px; /* Curved corners */
+  position: fixed; 
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.left-sidebar:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.9); /* Enhance shadow on hover */
 }
 
 .right-sidebar {
-  width: 300px;
-  background-color: #f0f0f0;
-  padding: 20px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  border-radius: 8px; /* Curved corners */
+  position: fixed; /* Make it fixed relative to the viewport */
+  top: 20px;
+  right: 20px;
+  bottom: 1px;
+  width: 14.5%; /* Set a fixed width */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable scrolling for overflow */
+  z-index: 1000; /* Ensure it appears above other content */
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.right-sidebar:hover {
+  transform: scale(1.01); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 
 .sidebar-header {
@@ -105,11 +128,82 @@ body {
   text-align: center;
 }
 
+.sidebar-search-btn {
+  background-color: #0f3460;
+  color: white;
+  border: 1px solid white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 9.5px 21px;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-.sidebar-buttons {
+.sidebar-search-btn:hover {
+  background-color: #1a1a2e;
+}
+
+
+.main {
   display: flex;
   flex-direction: column;
+  /* Stack the topbar and content */
+  min-height: 100vh;
   width: 100%;
+  max-width: 3000px; /* Set the maximum width */
+  margin: 0 auto; /* Center the main container */
+  /* Ensure it fills the full height of the viewport */
+  /*background-image: url("/static/images/art.jpg");*/
+  background-color: lightgray;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Align content */
+  align-items: stretch; /* Ensure equal height */
+  gap: 20px; /* Space between sections */
+  flex-grow: 1;
+  margin-left: 15%; /* Match the left-sidebar width and gap */
+  margin-right: 14.5%; /* Match the right-sidebar width and gap */
+  margin-top: 50px; /* Adjust for the topbar height (50px) and its bottom margin (20px) */
+  padding: 20px; /* Optional: Add padding for inner spacing */
+  overflow-y: auto; /* Enable scrolling for overflow */
+}
+
+#content-area {
+  flex: 1; /* Allow it to expand to fill space */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  /* Ensure it fills the full height of the parent container */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+#content-area:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0px;
+  /* Add some spacing below the search bar */
 }
 
 .sidebar-button {
@@ -127,88 +221,15 @@ body {
 }
 
 .sidebar-button:hover {
-  background-color: #1e6091;
-  transform: scale(1.03);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  /* Stack the topbar and content */
-  min-height: 100vh;
-  /* Ensure it fills the full height of the viewport */
-}
-
-.content-wrapper {
-  display: flex;
-  /* Align content and image side by side */
-  justify-content: space-between;
-  /* Space between main content and image */
-  align-items: stretch;
-  /* Stretch items to fill equal height */
-  gap: 20px;
-  /* Add spacing between sections */
-  flex-grow: 1;
-  /* Allow the content wrapper to grow and take remaining space */
-}
-
-#content-area {
-  flex: 2;
-  /* Allow the main content to take up more space horizontally */
-  background-color: white;
-  /* White background for the content area */
-  padding: 20px;
-  /* Add padding inside */
-  border-radius: 10px;
-  /* Optional: Rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  /* Optional: Add shadow */
-  display: flex;
-  /* Use flexbox inside the content area */
-  flex-direction: column;
-  /* Stack content vertically */
-  justify-content: center;
-  /* Center content vertically */
-  min-height: 100%;
-  /* Ensure it fills the full height of the parent container */
-}
-
-.search-container {
-  display: flex;
-  width: 100%;
-  margin-bottom: 0px;
-  /* Add some spacing below the search bar */
-}
-
-.sidebar-button {
-  background-color: #0f3460;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.sidebar-button:hover {
   background-color: #1a1a2e;
+  transform: scale(1.05); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 #frontpage-image-container {
-  flex: 1;
-  /* Image container takes up less space */
-  max-width: 300px;
-  /* Limit maximum width */
-  height: calc(100vh - 50px);
-  /* Adjust height to fit the screen, minus padding or margins */
-  overflow-y: auto;
-  /* Enable vertical scrolling for the image container */
-  text-align: center;
-  /* Center the images inside the container */
-  position: relative;
-  /* Ensure it remains positioned within its parent */
+  flex: 0; /* Do not take space when empty */
+  max-width: 20%;
+  display: none; /* Hidden by default */
 }
 
 #frontpage-image-container img {
@@ -218,10 +239,19 @@ body {
   /* Maintain the aspect ratio */
   border-radius: 10px;
   /* Optional: Add rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
   /* Optional: Add shadow for aesthetics */
   margin-bottom: 10px;
   /* Add spacing between images */
+}
+
+#frontpage-image-container img:hover {
+  transform: scale(1.05); /* Slightly increase scale on hover */
+}
+
+#frontpage-image-container.has-images {
+  display: block; /* Make it visible */
+  flex: 1; /* Allow it to occupy space */
 }
 
 body {
@@ -264,9 +294,14 @@ body {
   border: 1px solid white;
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+
+.announcement-list li:hover {
+  transform: scale(1.005); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }
 .announcement-list li .title {
   font-size: 18px;

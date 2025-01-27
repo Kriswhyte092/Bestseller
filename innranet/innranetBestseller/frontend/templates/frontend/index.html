@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -26,14 +25,12 @@
                             placeholder="Search products..."
                             style="width: 70%; text-align: left; padding-left: 10px; border: none; border-radius: 8px 0 0 8px; height: 37px; margin-top: 10px;"
                         />
-                        <button class="sidebar-button" id="sidebar-search-btn" onclick="searchProducts()" style="border-radius: 0 8px 8px 0; font-weight: bold;">Search</button>
+                        <button class="sidebar-search-btn" onclick="searchProducts()">Search</button>
                     </div>
                     <button class="sidebar-button" onclick="fetchContent('/noos/')" style="font-weight: bold;">NOOS</button>
                     <button class="sidebar-button" onclick="loadContent('Væntanlegt')" style="font-weight: bold;">Væntanlegt</button>
                     <button class="sidebar-button" onclick="fetchContent('/bonus/')" style="font-weight: bold;">Bonus</button>
                     <div class="sidebar-button" onclick="fetchContent('/laun/')" style="font-weight: bold;">Laun</div>
-                    
-
             </div>
         </div>
 
@@ -59,7 +56,14 @@
                 <div id="frontpage-image-container">
                     <!-- Image will be dynamically loaded here -->
                 </div>
+                <!-- Right Sidebar -->
+                <div class="sidebar right-sidebar">
+                <div class="announcements-header">Announcements</div>
+                <ul id="announcement-list" class="announcement-list">
+                    <!-- Announcements will be dynamically loaded here -->
+                </ul>
             </div>
+        </div>
         </div>
         <script>
             function loadContent(url) {
@@ -121,14 +125,6 @@
                 };
             }
         </script>
-
-        <!-- Right Sidebar -->
-        <div class="sidebar right-sidebar">
-            <div class="announcements-header">Announcements</div>
-            <ul id="announcement-list" class="announcement-list">
-                <!-- Announcements will be dynamically loaded here -->
-            </ul>
-        </div>
     </div>
 
     <script>
@@ -179,39 +175,35 @@
     .catch(error => console.error('Error fetching announcements:', error));
 }
 
-
-        function fetchFrontPageImages() {
-            fetch('/announcements/images/', { // Correct URL
-                headers: {
-                    "X-Requested-With": "XMLHttpRequest"
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('frontpage-image-container');
-                container.innerHTML = ''; // Clear any existing content
-                if (data.images && data.images.length > 0) {
-                    data.images.forEach(imageUrl => {
-                        const img = document.createElement('img');
-                        img.src = imageUrl;  // Set the image URL
-                        img.alt = 'Front Page Image';
-                        img.style.marginBottom = '10px'; // Add spacing between images
-                        img.style.width = '100%'; // Ensure images fit within the container
-                        container.appendChild(img);  // Add each image to the container
-                    });
-                } else {
-                    container.innerHTML = '<p>No images available</p>';  // Placeholder if no images
-                }
-            })
-            .catch(error => console.error('Error fetching frontpage images:', error));
-        }
+    function fetchFrontPageImages() {
+        fetch('/announcements/images/', {
+            headers: { "X-Requested-With": "XMLHttpRequest" }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('frontpage-image-container');
+            container.innerHTML = ''; // Clear existing content
+            if (data.images && data.images.length > 0) {
+                container.classList.add('has-images'); // Add class when images are present
+                data.images.forEach(imageUrl => {
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    img.alt = 'Front Page Image';
+                    img.style.marginBottom = '10px';
+                    img.style.width = '100%';
+                    container.appendChild(img);
+                });
+            } else {
+                container.classList.remove('has-images'); // Remove class if no images
+            }
+        })
+        .catch(error => console.error('Error fetching frontpage images:', error));
+    }
         
         window.onload = () => {
             fetchAnnouncements();
             fetchFrontPageImages(); // Updated to use the correct endpoint
         };
-
-        
     </script>
 </body>
 </html>

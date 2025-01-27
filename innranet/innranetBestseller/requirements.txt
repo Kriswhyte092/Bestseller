@@ -16,3 +16,4 @@ tzdata==2022.1
 pandas
 openpyxl
 psycopg2==2.9.7
+gunicorn

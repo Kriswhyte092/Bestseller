@@ -8,20 +8,27 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .product-info-container {
-            max-width: 800px;
-            margin: 40px auto;
+            width: 100%; /* Set width to 100% */
+            height: 100%;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 12px; /* Update border radius to 12px */
             padding: 20px;
             display: flex;
             flex-direction: row;
             gap: 20px;
-            background-color: lightblue;
+            background-color: white;
+            margin: auto;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
         }
+
 
         /* Left side for the image slider */
         .product-gallery-container {
@@ -33,6 +40,7 @@
             align-items: center;
             justify-content: center;
         }
+
 
         .product-gallery {
             display: flex;
@@ -118,6 +126,41 @@
         .color-button:hover {
             border-color: #000;
         }
+
+        .size-box {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .location-list {
+            margin-top: 10px;
+        }
+
+        .location-list li {
+            display: flex;
+            align-items: center;
+        }
+
+        .location-list li span {
+            margin-left: 5px;
+        }
+
+        .icon {
+            font-size: 16px;
+        }
+
+        .icon.check {
+            color: green;
+        }
+
+        .icon.cross {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -151,18 +194,25 @@
             <!-- Sizes and Locations -->
             <div class="product-section">
                 <h2>Sizes and Locations:</h2>
-                <ul>
+                <div>
                     {% for size, locations in sizes.items %}
-                        <li>
+                        <div class="size-box">
                             <strong>{{ size }}</strong>
-                            <ul>
+                            <ul class="location-list">
                                 {% for location, count in locations.items %}
-                                    <li>{{ location }}: <span>{{ count }}</span></li>
+                                    <li>
+                                        {{ location }}: <span>{{ count }}</span>
+                                        {% if count > 0 %}
+                                            <span class="icon check">&#10003;</span>
+                                        {% else %}
+                                            <span class="icon cross">&#10007;</span>
+                                        {% endif %}
+                                    </li>
                                 {% endfor %}
                             </ul>
-                        </li>
+                        </div>
                     {% endfor %}
-                </ul>
+                </div>
             </div>
         </div>
     </div>

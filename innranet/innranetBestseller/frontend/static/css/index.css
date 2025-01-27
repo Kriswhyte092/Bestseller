@@ -4,20 +4,21 @@
   justify-content: space-between; /* Push items to opposite sides */
   padding: 10px 20px;
   background: #ffffff; /* Background color */
-  backdrop-filter: blur(10px); /* Add a blur effect */
   border-bottom: 1px solid #ddd; /* Add a bottom border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow */
   z-index: 1000; /* Ensure it stays on top */
   margin-bottom: 20px;
   border-radius: 10px;
   position: fixed;
   width: 66.8%; /* Adjust width to fit between sidebars */
   left: calc(15% + 35px); /* Align with the left sidebar */
+  transition: transform 0.15s, box-shadow 0.15s;
 }
+
 
 .topbar:hover {
   transform: scale(1.005); /* Slightly increase scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
 }
 
 body {
@@ -88,6 +89,7 @@ body {
   left: 20px;
   bottom: 20px;
   margin-bottom: 10px;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .left-sidebar:hover {
@@ -108,6 +110,7 @@ body {
   z-index: 1000; /* Ensure it appears above other content */
   margin-bottom: 20px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .right-sidebar:hover {
@@ -125,26 +128,15 @@ body {
   text-align: center;
 }
 
-.sidebar-button {
+.sidebar-search-btn {
   background-color: #0f3460;
   color: white;
-  border: 2px solid #1e6091; /* Add border outline */
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin: 10px 0;
-  font-size: 14px;
-  text-align: center;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow */
-}
-
-.sidebar-button {
-  background-color: #0f3460;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
+  border: 1px solid white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 9.5px 21px;
   margin: 10px 0;
   font-size: 14px;
   text-align: center;
@@ -153,11 +145,10 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar-button:hover {
-  background-color: #1e6091;
-  transform: scale(1.05); /* Slightly increase scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+.sidebar-search-btn:hover {
+  background-color: #1a1a2e;
 }
+
 
 .main {
   display: flex;
@@ -168,7 +159,8 @@ body {
   max-width: 3000px; /* Set the maximum width */
   margin: 0 auto; /* Center the main container */
   /* Ensure it fills the full height of the viewport */
-  background-image: url("/static/images/art.jpg");
+  /*background-image: url("/static/images/art.jpg");*/
+  background-color: lightgray;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,6 +191,7 @@ body {
   min-height: 100%;
   /* Ensure it fills the full height of the parent container */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
 #content-area:hover {
@@ -219,13 +212,18 @@ body {
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
-  margin-bottom: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-button:hover {
   background-color: #1a1a2e;
+  transform: scale(1.05); /* Slightly increase scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 #frontpage-image-container {

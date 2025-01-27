@@ -1,4 +1,9 @@
 import requests
+import logging
+
+
+# Configure logging to write to a file
+logging.basicConfig(filename='log/error_fetching.log', level=logging.ERROR, format='%(message)s')
 
 
 def bc_api_for_variant_stock():
@@ -36,5 +41,6 @@ def fashion_cloud_api(number):
         return response.json()
     
     except requests.RequestException as e:
-        print(f"\nError fetching data: {e}\nError on product number: {number}")
+        logging.error(number)
+        print(f"Error fetching data: {e}")
         return None

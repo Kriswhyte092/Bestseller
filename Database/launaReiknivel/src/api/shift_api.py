@@ -6,7 +6,7 @@ def fetch_shifts(url, key):
     # dags. format
     #yyyy-mm-ddT00:01:00Z/yyyy-mm-ddT23:59:00Z
     #dates = get_dates()
-    dates = "2024-11-21/2024-12-20"
+    dates = "2024-12-21/2025-01-20"
     url = f"{url}/reports/timesheets?dates={dates}"
 
     headers = {

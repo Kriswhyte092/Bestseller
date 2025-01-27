@@ -23,9 +23,10 @@ class payroll_calculator:
             
             if total_worked_hours == 0:
                 continue
+            
 
             payroll_data.append({
-                'employee_id': employee['id'],
+                'employee_name': employee['legal_name']+ ' ' + employee['lastname'],
                 'worked_hours': total_worked_hours,
                 'DV': DV,
                 'EV': EV,
@@ -40,8 +41,8 @@ class payroll_calculator:
         clock_out = datetime.strptime(shift['clock_out'], '%Y-%m-%dT%H:%M:%S%z')
 
         worked_hours = (clock_out - clock_in).seconds / 3600
-        if shift['break_minutes'] > 0:
-            worked_hours -= shift['break_minutes']
+        #if shift['break_minutes'] > 0:
+        #    worked_hours -= shift['break_minutes']
         
         return round(worked_hours, 2)
 
@@ -82,7 +83,7 @@ class payroll_calculator:
         after_hours_total = after_hours.total_seconds() / 3600
         nighttime_hours_total = nighttime_hours.total_seconds() / 3600
 
-        return round(regular_hours_total,2), round(after_hours_total, 2), round(nighttime_hours_total, 2) 
+        return round(regular_hours_total, 2), round(after_hours_total, 2), round(nighttime_hours_total, 2) 
 
     def calculate_weekend_hours(self, clock_in, clock_out):
         regular_hours = timedelta(0)
@@ -114,7 +115,7 @@ class payroll_calculator:
         date = datetime.strptime(date, '%Y-%m-%d')
         return date.weekday() >= 5
 
-    
+## bæta við is_red_day(): 
 
 #p = PayrollCalculator()
 #user = [{

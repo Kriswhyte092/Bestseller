@@ -3,8 +3,9 @@ from api.personas_api import fetch_personas
 from api.shift_api import fetch_shifts
 from processing.data_cleaner import validate_personas, validate_shifts
 from processing.payroll_calculator import *
-from processing.payroll_generator import *
 import pathlib
+import openpyxl
+import datetime
 
 from config import config
 
@@ -26,9 +27,21 @@ def main():
 
     #reikna payroll
     payroll_data = payroll_calculator().calculate_payroll(validated_users, validated_shifts)
-    # db.store_payroll(payroll_data)
     
-    for 
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Paryoll Data"
+
+    headers = list(payroll_data[0].keys())
+    ws.append(headers)
+
+    for val in payroll_data:
+        ws.append(list(val.values()))
+
+    workingDir = pathlib.Path(__file__).parent.resolve()
+    output_file = f"{str(workingDir)}/payroll_data_{datetime.datetime.now().strftime("%B")}.xlsx"
+    wb.save(output_file)
+    # db.store_payroll(payroll_data)
    # generate_payslipts(payroll_data)
    # generate_summary_report(paryoll_data)
 

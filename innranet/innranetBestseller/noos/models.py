@@ -5,35 +5,40 @@ from django.db import models
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
-    ItemNo = models.CharField(max_length=255)
-    colorVariants = models.JSONField(default=list, blank=True)
-    noos = models.BooleanField(default=False)
+    itemNo = models.CharField(max_length=255)
+    product_description = models.TextField(default="No description added")
 
     def __str__(self):
-        return f"{self.ItemNo} - {self.VariantCode} - {self.BarcodeNo} - {self.VariantName}"  # Adjust as necessary
+        return f"{self.name} ({self.itemNo})"
 
 class colorVariant(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="color_variants")
+    product = models.ForeignKey(
+        Product, 
+        on_delete=models.CASCADE, 
+        related_name="color_variants"
+    )
     colorName = models.CharField(max_length=255)
-    colorCode = models.CharField(max_length=255)
-    variant_details = models.JSONField(default=list, blank=True)
-    image_urls = models.JSONField(blank=True, default=list)  # Updated to use callable default
+    colorCode = models.CharField(max_length=50)
+    noos = models.BooleanField(default=False)
+    # Variants will be referenced by a reverse relationship.
+    # image_urls can be handled by a separate model or a JSON field:
+    image_urls = models.JSONField(default=list)  # if you're on Django 3.1+
 
     def __str__(self):
-        return f"{self.colorCode} - {self.colorName}"
+        return f"{self.product.name} / {self.colorName}"
 
 class Variant(models.Model):
     colorVariant = models.ForeignKey(
-        colorVariant,
-        on_delete=models.CASCADE,
-        related_name="related_variants"  # Avoids clash
+        colorVariant, 
+        on_delete=models.CASCADE, 
+        related_name="variants"
     )
-    BarcodeNo = models.IntegerField(("BarcodeNo"), blank=True, null=True)
-    size = models.CharField(max_length=255)
-    length = models.CharField(max_length=255)
-    
+    BarcodeNo = models.BigIntegerField(default=0)
+    size = models.CharField(max_length=50)
+    length = models.CharField(max_length=50, blank=True)
+
     def __str__(self):
-        return f"{self.VariantCode} - {self.BarcodeNo}"
+        return f"[{self.BarcodeNo}] {self.colorVariant.colorName}"
 
 class Store(models.Model):
     store_name = models.CharField(max_length=255)
@@ -43,11 +48,8 @@ class Store(models.Model):
 
 class Inventory(models.Model):
     store = models.ForeignKey(Store, on_delete=models.CASCADE)
-    variant = models.ForeignKey(Variant, on_delete=models.CASCADE, default=None) 
+    variant = models.ForeignKey(Variant, on_delete=models.CASCADE)
     quantity = models.IntegerField()
 
-    class Meta:
-        unique_together = ('store', 'variant')  # Ensures one inventory record per store-product pair
-
     def __str__(self):
-        return f"{self.store.store_name} - {self.variant.VariantCode} - {self.quantity}"
+        return f"{self.store} / {self.variant} / Qty: {self.quantity}"

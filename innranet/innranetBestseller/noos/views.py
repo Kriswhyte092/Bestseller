@@ -193,6 +193,25 @@ def noos_info(request):
         if product_data.get("name") == product_name:
             image_urls = []
             extract_image_urls(product_data, image_urls)
-            return render(request, "noos/noos-info.html", {"name": product_data.get("name"), "image_urls": image_urls})
+
+            # Example data (replace with actual product data structure)
+            locations = {"Reykjavik": 15, "Akureyri": 7, "Selfoss": 10}
+            colors = product_data.get("colors", {"Red": "#FF0000", "Blue": "#0000FF"})
+            sizes = product_data.get("sizes", ["S", "M", "L", "XL"])
+
+            # Create a dictionary with the same locations for each size
+            sizes_with_locations = {size: locations for size in sizes}
+
+            return render(
+                request,
+                "noos/noos-info.html",
+                {
+                    "name": product_data.get("name"),
+                    "image_urls": image_urls,
+                    "locations": locations,
+                    "colors": colors,
+                    "sizes": sizes_with_locations,  # Pass sizes with locations
+                },
+            )
 
     return JsonResponse({"error": "Product not found"}, status=404)

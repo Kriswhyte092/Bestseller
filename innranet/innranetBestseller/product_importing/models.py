@@ -3,18 +3,18 @@ class Product:
         self.name = name
         self.itemNo = itemNo
         self.product_description = product_description
-        self.colorVariants = []
+        self.color_variants = []
         
     def __str__(self):
         color_variants_dict = {
             cv.colorName: [v.size for v in cv.variants] 
-            for cv in self.colorVariants
+            for cv in self.color_variants
         }
         return (
             f"-- Product --\n"
             f"Product Name: {self.name}\n"
             f"Item No: {self.itemNo}\n"
-            f"Number of Color Variants: {len(self.colorVariants)}\n"
+            f"Number of Color Variants: {len(self.color_variants)}\n"
             f"Description:\n{self.product_description}"
             f"Color Variants: {color_variants_dict}\n\n"
         )
@@ -24,7 +24,7 @@ class Product:
             "name": self.name,
             "itemNo": self.itemNo,
             "product_description": self.product_description,
-            "colorVariants": [cv.to_dict() for cv in self.colorVariants],
+            "colorVariants": [cv.to_dict() for cv in self.color_variants],
         }
 
 class colorVariant:

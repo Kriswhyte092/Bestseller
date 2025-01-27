@@ -9,14 +9,14 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(colorVariant)
 class ColorVariantsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'product', 'colorName', 'colorCode', 'noos')  # Display product relationship and color details
+    list_display = ('product', 'colorName', 'colorCode', 'noos')  # Display product relationship and color details
     search_fields = ('colorName', 'colorCode')
     list_filter = ('colorName',)
     list_filter = ('noos',)                         # Filter options
 
 @admin.register(Variant)
 class VariantsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'colorVariant', 'BarcodeNo', 'size', 'length')  # Display variant details
+    list_display = ('colorVariant', 'BarcodeNo', 'size', 'length')  # Display variant details
     search_fields = ('BarcodeNo', 'size', 'length')
     list_filter = ('size', 'length')
 
@@ -27,8 +27,8 @@ class StoreAdmin(admin.ModelAdmin):
 
 @admin.register(Inventory)
 class InventoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'store', 'variant', 'quantity')  # Display inventory details
+    list_display = ('store', 'variant', 'quantity')  # Display inventory details
     search_fields = ('store__store_name', 'variant__BarcodeNo')  # Enable search for related fields
-    list_filter = ('store', 'variant')
+    list_filter = ('store',)
     autocomplete_fields = ('store', 'variant')  # Improves usability for large datasets
     

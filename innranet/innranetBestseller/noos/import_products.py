@@ -5,8 +5,7 @@ from noos.models import Product, colorVariant, Variant, Store, Inventory
 from noos.product_apis import bc_api_for_variant_stock, fashion_cloud_api
 
 # Set up logging
-logging.basicConfig(filename='log/import_products.log', level=logging.ERROR, 
-                    format='%(asctime)s %(levelname)s:%(message)s')
+
 
 # Load the JSON file
 def load_json(file_name):
@@ -30,17 +29,19 @@ store_mapping = {
 }
 
 # Imports product details from a given object
-def import_product(obj, code):
-    print(f"Processing product: {code}")
-    
+def import_product(obj, code):    
     """
     Extract product details from a nested object and return a Product instance.
     """
+    logging.basicConfig(filename='log/import_products.log', level=logging.ERROR, 
+                        format='%(asctime)s %(levelname)s:%(message)s')
     try:
         if obj is None:
-            print(f"\nError: Received None object - code: {code}\n")
+            logging.error(f"Error: Received None object - code: {code}")
             return None, None
         
+        logging.info(f"Processing product: {code}")
+
         product_name = obj.get('name', 'N/A') # Extract product name
         product_number = obj.get('number', 'N/A') # Extract product number
         

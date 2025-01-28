@@ -74,7 +74,6 @@ class GoalExtractor:
 
     def get_bonus(self, name, index):
         thresholds = [
-            (0.8, 2000),
             (1.0, 2000),
             (1.15, 3000),
             (1.3, 4000),

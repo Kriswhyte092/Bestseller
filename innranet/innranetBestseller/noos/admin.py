@@ -1,65 +1,53 @@
 from django.contrib import admin
-from .models import Product, Store, Inventory
-from django.db import models  # Add this import
+from .models import Product, colorVariant, Variant, Store, Inventory
+from django.db import models
 
-# Register your models here.
-class InventoryFilter(admin.SimpleListFilter):
-    title = 'Inventory Level'
+
+class InventoryLevelFilter(admin.SimpleListFilter):
+    title = ('Inventory Level')
     parameter_name = 'inventory_level'
 
     def lookups(self, request, model_admin):
-        return [
-            ('zero_or_below', 'Zero or Below'),
-            ('above_zero', 'Above Zero'),
-        ]
+        return (
+            ('below_0', ('Below 0')),
+            ('low', ('Low')),
+            ('medium', ('Medium')),
+            ('high', ('High')),
+        )
 
     def queryset(self, request, queryset):
-        if self.value() == 'zero_or_below':
-            return queryset.filter(inventory__quantity__lte=0)
-        elif self.value() == 'above_zero':
-            return queryset.filter(inventory__quantity__gt=0)
+        if self.value() == 'below_0':
+            return queryset.filter(quantity__lt=0)
+        if self.value() == 'low':
+            return queryset.filter(quantity__lt=10)
+        if self.value() == 'medium':
+            return queryset.filter(quantity__gte=10, quantity__lt=50)
+        if self.value() == 'high':
+            return queryset.filter(quantity__gte=50)
+        return queryset
 
-# Custom filter for has_image_urls# Custom filter for has_image_urls
-class HasImageUrlsFilter(admin.SimpleListFilter):
-    title = 'Has Image URLs'  # Display title in the admin
+class HasImageURLsFilter(admin.SimpleListFilter):
+    title = ('Has Image URLs')
     parameter_name = 'has_image_urls'
 
     def lookups(self, request, model_admin):
-        return [
-            ('yes', 'Has Image URLs'),
-            ('no', 'No Image URLs'),
-        ]
+        return (
+            ('yes', ('Yes')),
+            ('no', ('No')),
+        )
 
     def queryset(self, request, queryset):
         if self.value() == 'yes':
-            return queryset.exclude(image_urls=[])
-        elif self.value() == 'no':
-            return queryset.filter(image_urls=[])
+            return queryset.filter(image_urls__isnull=False).exclude(image_urls=[])
+        if self.value() == 'no':
+            return queryset.filter(image_urls__isnull=True) | queryset.filter(image_urls=[])
         return queryset
-
-@admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
-    list_display = ('ItemNo', 'VariantCode', 'BarcodeNo', 'VariantName', 'noos', 'has_image_urls', 'inventory_level')
-    list_filter = ('noos', HasImageUrlsFilter)
-    search_fields = ('ItemNo', 'VariantCode', 'BarcodeNo', 'VariantName')  # Fields to search in
-
-    def has_image_urls(self, obj):
-        return bool(obj.image_urls)
-    has_image_urls.boolean = True
-    has_image_urls.short_description = 'Has Image URLs'
-
-    def inventory_level(self, obj):
-        # Aggregate total inventory across all stores for this product
-        inventory = obj.inventory_set.aggregate(total=models.Sum('quantity'))['total']
-        return inventory if inventory else 0
-    inventory_level.short_description = 'Total Inventory'
-
 
 class InventoryInline(admin.TabularInline):
     model = Inventory
-    extra = 0  # Prevent extra empty rows
-    fields = ('product', 'quantity', 'noos_status', 'has_image_urls_status')
-    readonly_fields = ('product', 'quantity', 'noos_status', 'has_image_urls_status')  # Make fields read-only
+    extra = 0  # No extra empty forms
+    fields = ('variant', 'quantity', 'noos_status', 'has_image_urls_status')  # Fields to display
+    readonly_fields = ('variant', 'quantity', 'noos_status', 'has_image_urls_status')  # Make fields read-only
 
     def noos_status(self, obj):
         # Access the related product's noos field
@@ -73,15 +61,85 @@ class InventoryInline(admin.TabularInline):
     has_image_urls_status.short_description = 'Has Image URLs'
     has_image_urls_status.boolean = True  # Show checkmarks in the admin
 
+class VariantInline(admin.TabularInline):
+    model = Variant
+    extra = 0  # No extra empty forms
+    fields = ('BarcodeNo', 'size', 'length')  # Fields to display
+    readonly_fields = ('BarcodeNo', 'size', 'length')  # Make fields read-only
 
-class StoreAdmin(admin.ModelAdmin):
-    list_display = ('store_name',)  # Adjust fields as per your Store model
-    inlines = [InventoryInline]  # Include the inline for inventory
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'itemNo')  # Fields to display in the list view
+    search_fields = ('name', 'itemNo')              # Fields to search
 
-class InventoryAdmin(admin.ModelAdmin):
-    list_display = ('product', 'store', 'quantity', 'has_image_urls')
-    list_filter = ('store', 'product')
+@admin.register(colorVariant)
+class ColorVariantsAdmin(admin.ModelAdmin):
+    list_display = ('product', 'colorName', 'colorCode', 'noos', 'has_image_urls_status')  # Display product relationship and color details
+    search_fields = ('colorName', 'colorCode')
+    list_filter = ('noos', HasImageURLsFilter)                         # Filter options
+    inlines = [VariantInline]  # Add the inline admin class
     
+    def has_image_urls_status(self, obj):
+        # Check if the related product has image URLs
+        return bool(obj.image_urls)
+    has_image_urls_status.short_description = 'Has Image URLs'
+    has_image_urls_status.boolean = True  # Show checkmarks in the admin
 
-admin.site.register(Store, StoreAdmin)
-admin.site.register(Inventory)
+@admin.register(Variant)
+class VariantsAdmin(admin.ModelAdmin):
+    list_display = ('colorVariant', 'BarcodeNo', 'size', 'length')  # Display variant details
+    search_fields = ('BarcodeNo', 'size', 'length')
+    list_filter = ('size', 'length', )  # Add custom filter
+    inlines = [InventoryInline]  # Add the inline admin class
+
+@admin.register(Store)
+class StoreAdmin(admin.ModelAdmin):
+    list_display = ('id', 'store_name')  # Display store information
+    search_fields = ('store_name',)
+
+@admin.register(Inventory)
+class InventoryAdmin(admin.ModelAdmin):
+    list_display = ('store', 'variant', 'variant_size', 'quantity')
+    search_fields = ('store__store_name', 'variant__BarcodeNo')
+    list_filter = ('store', InventoryLevelFilter)
+    autocomplete_fields = ('store', 'variant')
+
+    fields = (
+        'store_name_display',
+        'variant_barcode_display',
+        'variant_color_display',
+        'variant_size_display',
+        'variant_length_display',
+        'quantity'
+    )
+    readonly_fields = (
+        'store_name_display',
+        'variant_barcode_display',
+        'variant_color_display',
+        'variant_size_display',
+        'variant_length_display'
+    )
+
+    def store_name_display(self, obj):
+        return obj.store.store_name if obj.store else ''
+    store_name_display.short_description = 'Store Name'
+
+    def variant_barcode_display(self, obj):
+        return obj.variant.BarcodeNo if obj.variant else ''
+    variant_barcode_display.short_description = 'Barcode'
+
+    def variant_color_display(self, obj):
+        return obj.variant.colorVariant.colorName if obj.variant and obj.variant.colorVariant else ''
+    variant_color_display.short_description = 'Color Name'
+
+    def variant_size_display(self, obj):
+        return obj.variant.size if obj.variant else ''
+    variant_size_display.short_description = 'Size'
+
+    def variant_length_display(self, obj):
+        return obj.variant.length if obj.variant else ''
+    variant_length_display.short_description = 'Length'
+    
+# 5713748311462
+# 5715516200558
+# 5715607268436

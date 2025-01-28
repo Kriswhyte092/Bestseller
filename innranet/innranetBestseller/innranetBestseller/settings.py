@@ -167,6 +167,8 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 CSRF_TRUSTED_ORIGINS = ['https://stingray-app-jnsgr.ondigitalocean.app/']  # Include your domain here
 
+SESSION_COOKIE_DOMAIN = '.stingray-app-jnsgr.ondigitalocean.app'
+
 # Middleware
 MIDDLEWARE += (
     [

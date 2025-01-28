@@ -38,4 +38,8 @@ def logout_view(request):
     return redirect("/login")
 
 
-# fag
+from django.http import JsonResponse
+
+def session_test_view(request):
+    request.session['test_key'] = 'test_value'
+    return JsonResponse({'session_test': request.session.get('test_key')})

@@ -45,31 +45,25 @@ def noos_info_view(request):
     product_name = request.GET.get("product")
     product = get_object_or_404(Product, name=product_name)
 
-    color_variants = [
-        {
+    # Gather variants with size inventory
+    color_variants = []
+    for color_variant in product.color_variants.prefetch_related("variants").all():
+        variant_data = {
             "color_name": color_variant.colorName,
             "color_code": color_variant.colorCode,
             "images": color_variant.image_urls,
+            "sizes": {},
         }
-        for color_variant in product.color_variants.all()
-    ]
-
-    sizes = {}
-    for variant in product.color_variants.prefetch_related("variants").all():
-        for v in variant.variants.all():
-            inventory = Inventory.objects.filter(variant=v)
+        for variant in color_variant.variants.all():
+            inventory = Inventory.objects.filter(variant=variant)
             locations = {inv.store.store_name: inv.quantity for inv in inventory}
-            if v.size not in sizes:
-                sizes[v.size] = {}
-            sizes[v.size].update(locations)
+            if variant.size not in variant_data["sizes"]:
+                variant_data["sizes"][variant.size] = locations
+        color_variants.append(variant_data)
 
     data = {
         "name": product.name,
-        "image_urls": [url for color in color_variants for url in color["images"]],
-        "colors": {
-            color["color_name"]: color["color_code"] for color in color_variants
-        },
-        "sizes": sizes,
+        "variants": color_variants,  # All variants with their sizes and inventory
     }
 
     return render(request, "noos/noos-info.html", data)

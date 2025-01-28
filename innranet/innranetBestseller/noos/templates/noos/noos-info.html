@@ -8,81 +8,16 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-            height: 100vh; /* Ensure the body takes the full height of the viewport */
-            overflow: hidden; /* Prevent overflow */
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         .product-info-container {
             width: 100%;
-            
-            margin: 20px auto;
-            height: 100%;
+            margin: auto;
+            padding: 20px;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 12px; /* Update border radius to 12px */
-            padding: 20px;
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            background-color: white;
-            margin: auto;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-        }
-
-
-        /* Left side for the image slider */
-        .product-gallery-container {
-            flex: 1;
-            max-height: 400px;
-            overflow-x: auto;
-            overflow-y: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        .product-gallery {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 10px;
-        }
-
-        .product-gallery img {
-            flex: 0 0 auto;
-            max-height: 300px;
-            width: auto;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .product-gallery img:hover {
-            transform: scale(1.05);
-            opacity: 1;
-        }
-
-        .product-gallery img.active {
-            flex-grow: 1;
-            max-height: 350px;
-            opacity: 1;
-        }
-
-        /* Right side for product details */
-        .product-details {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .product-details h1 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #333;
+            border-radius: 12px;
+            overflow:auto;
         }
 
         .product-section {
@@ -92,136 +27,74 @@
         .product-section h2 {
             font-size: 18px;
             margin-bottom: 10px;
-            color: #555;
         }
 
-        .product-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .variant {
+            margin-bottom: 20px;
         }
 
-        .product-section ul li {
-            font-size: 16px;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .product-section ul li span {
-            font-weight: bold;
-        }
-
-        .color-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100px;
-            height: 40px;
-            border-radius: 8px;
-            margin: 5px;
-            cursor: pointer;
-            border: 2px solid #ddd;
-            transition: border-color 0.3s;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        .color-button:hover {
-            border-color: #000;
-        }
-
-        .size-box {
-            display: inline-block;
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f0f0f0;
-            cursor: pointer;
-        }
-
-        .location-list {
+        table {
+            width: 100%;
+            border-collapse: collapse;
             margin-top: 10px;
         }
 
-        .location-list li {
-            display: flex;
-            align-items: center;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
         }
 
-        .location-list li span {
-            margin-left: 5px;
-        }
-
-        .icon {
-            font-size: 16px;
-        }
-
-        .icon.check {
-            color: green;
-        }
-
-        .icon.cross {
-            color: red;
+        th {
+            background-color: #f4f4f4;
         }
     </style>
 </head>
 <body>
     <div class="product-info-container">
-        <!-- Left: Image slider -->
-        <div class="product-gallery-container">
-            <div class="product-gallery" id="product-gallery">
-                {% for url in image_urls %}
-                    <img src="{{ url }}" alt="{{ name }}" onclick="makeActive(this)">
-                {% endfor %}
+        <!-- Product Name -->
+        <h1>{{ name }}</h1>
+
+        <!-- Variants -->
+        <div class="product-section">
+            <h2>Variants</h2>
+            {% for variant in variants %}
+            <div class="variant">
+                <h3 style="display: flex; align-items: center; gap: 10px;">
+                    <span style="width: 30px; height: 30px; background-color: {{ variant.color_code }}; display: inline-block; border-radius: 50%;"></span>
+                    {{ variant.color_name }}
+                </h3>
+
+                <!-- Sizes and Inventory -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Store</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for size, locations in variant.sizes.items %}
+                            {% for store, quantity in locations.items %}
+                            <tr>
+                                <td>{{ size }}</td>
+                                <td>{{ store }}</td>
+                                <td>{{ quantity }}</td>
+                            </tr>
+                            {% endfor %}
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
-        </div>
-
-        <!-- Right: Product details -->
-        <div class="product-details">
-            <!-- Product Name -->
-            <h1>{{ name }}</h1>
-
-<!-- Color Variants -->
-<div class="product-section">
-    <h2>Color Variants:</h2>
-    <ul>
-        {% for color, hex in colors.items %}
-        <li>
-            <button class="color-button" style="background-color: {{ hex }}" title="{{ color }}" onclick="showInventory('{{ color }}')">
-                {{ color }}
-            </button>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-
-            <!-- Sizes and Locations -->
-            <div class="product-section">
-                <h2>Sizes and Locations:</h2>
-                <div id="inventory-details"></div>
-                <div>
-                    {% for size, locations in sizes.items %}
-                        <div class="size-box">
-                            <strong>{{ size }}</strong>
-                            <ul class="location-list">
-                                {% for location, count in locations.items %}
-                                    <li>
-                                        {{ location }}: <span>{{ count }}</span>
-                                        {% if count > 0 %}
-                                            <span class="icon check">&#10003;</span>
-                                        {% else %}
-                                            <span class="icon cross">&#10007;</span>
-                                        {% endif %}
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
+</body>
+</html>
+
+</html>
+    
 
     <script>
         function makeActive(selectedImage) {

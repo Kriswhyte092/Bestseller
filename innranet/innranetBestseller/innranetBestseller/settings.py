@@ -163,6 +163,10 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+
+CSRF_TRUSTED_ORIGINS = ['https://stingray-app-jnsgr.ondigitalocean.app/']  # Include your domain here
+
 # Middleware
 MIDDLEWARE += (
     [

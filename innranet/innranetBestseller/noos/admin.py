@@ -99,7 +99,47 @@ class StoreAdmin(admin.ModelAdmin):
 
 @admin.register(Inventory)
 class InventoryAdmin(admin.ModelAdmin):
-    list_display = ('store', 'variant', 'variant_size', 'quantity')  # Display inventory details including variant size
-    search_fields = ('store__store_name', 'variant__BarcodeNo')  # Enable search for related fields
-    list_filter = ('store', InventoryLevelFilter)  # Filter options
-    autocomplete_fields = ('store', 'variant')  # Improves usability for large datasets
+    list_display = ('store', 'variant', 'variant_size', 'quantity')
+    search_fields = ('store__store_name', 'variant__BarcodeNo')
+    list_filter = ('store', InventoryLevelFilter)
+    autocomplete_fields = ('store', 'variant')
+
+    fields = (
+        'store_name_display',
+        'variant_barcode_display',
+        'variant_color_display',
+        'variant_size_display',
+        'variant_length_display',
+        'quantity'
+    )
+    readonly_fields = (
+        'store_name_display',
+        'variant_barcode_display',
+        'variant_color_display',
+        'variant_size_display',
+        'variant_length_display'
+    )
+
+    def store_name_display(self, obj):
+        return obj.store.store_name if obj.store else ''
+    store_name_display.short_description = 'Store Name'
+
+    def variant_barcode_display(self, obj):
+        return obj.variant.BarcodeNo if obj.variant else ''
+    variant_barcode_display.short_description = 'Barcode'
+
+    def variant_color_display(self, obj):
+        return obj.variant.colorVariant.colorName if obj.variant and obj.variant.colorVariant else ''
+    variant_color_display.short_description = 'Color Name'
+
+    def variant_size_display(self, obj):
+        return obj.variant.size if obj.variant else ''
+    variant_size_display.short_description = 'Size'
+
+    def variant_length_display(self, obj):
+        return obj.variant.length if obj.variant else ''
+    variant_length_display.short_description = 'Length'
+    
+# 5713748311462
+# 5715516200558
+# 5715607268436

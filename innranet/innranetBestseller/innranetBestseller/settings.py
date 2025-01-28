@@ -159,11 +159,18 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 LOGIN_URL = "/login/"  # Update if your login URL is different
 
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
+
 # Middleware
 MIDDLEWARE += (
     [
         "django.middleware.security.SecurityMiddleware",
         "django.contrib.sessions.middleware.SessionMiddleware",
+        'django.middleware.common.CommonMiddleware',
+        'django.middleware.csrf.CsrfViewMiddleware',
+        'django.contrib.auth.middleware.AuthenticationMiddleware',
     ]
     if "MIDDLEWARE" in globals()
     else [

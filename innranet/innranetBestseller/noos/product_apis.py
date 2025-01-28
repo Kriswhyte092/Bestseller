@@ -3,8 +3,20 @@ import logging
 
 
 # Configure logging to write to a file
-logging.basicConfig(filename='log/error_fetching.log', level=logging.ERROR, format='%(message)s')
+# Create a logger for the module
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.ERROR)
 
+# Create a file handler for this logger
+file_handler = logging.FileHandler('log/error_fetching.log')
+file_handler.setLevel(logging.ERROR)
+
+# Create and set a formatter for the handler
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+
+# Add the handler to the logger
+logger.addHandler(file_handler)
 
 def bc_api_for_variant_stock():
     """
@@ -41,6 +53,6 @@ def fashion_cloud_api(number):
         return response.json()
     
     except requests.RequestException as e:
-        logging.error(number)
+        logging.error(f"Error fetching data for {number}: {e}")
         print(f"Error fetching data: {e}")
         return None

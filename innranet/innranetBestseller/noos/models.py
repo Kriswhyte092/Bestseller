@@ -56,7 +56,7 @@ class Variant(models.Model):
     length = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
-        return f"{self.colorVariant.product.name} - {self.colorVariant.colorName} {self.size} [Barcode: {self.BarcodeNo}] "
+        return f"{self.colorVariant.product.name} / {self.colorVariant.colorName} - [Barcode: {self.BarcodeNo}] "
 
 class Store(models.Model):
     store_name = models.CharField(max_length=255)
@@ -73,3 +73,7 @@ class Inventory(models.Model):
 
     def __str__(self):
         return f"{self.store} / {self.variant} / Qty: {self.quantity}"
+
+    def variant_size(self):
+        return self.variant.size
+    variant_size.short_description = 'Variant Size'

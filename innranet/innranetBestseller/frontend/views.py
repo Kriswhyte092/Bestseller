@@ -40,6 +40,9 @@ def logout_view(request):
 
 from django.http import JsonResponse
 
-def session_test_view(request):
-    request.session['test_key'] = 'test_value'
-    return JsonResponse({'session_test': request.session.get('test_key')})
+def debug_session(request):
+    request.session['debug'] = 'test'
+    return JsonResponse({
+        'session_value': request.session.get('debug'),
+        'session_key': request.session.session_key,
+    })

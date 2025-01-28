@@ -3,7 +3,7 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
-from .views import session_test_view
+from .views import debug_session
 
 urlpatterns = [
     path("", views.index),
@@ -13,7 +13,7 @@ urlpatterns = [
     path("login/", views.loginn),
     path("logout/", views.logout_view, name="logout"),
     path("profile/", include("userprofile.urls")),
-    path('test-session/', session_test_view),
+    path('debug_session/', debug_session),
 ]
 
 if settings.DEBUG:

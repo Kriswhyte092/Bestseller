@@ -25,7 +25,7 @@ class Product(models.Model):
 
         return (
             f"{self.name} ({self.itemNo})"
-            f" - {len(self.color_variants.all())} color variants\n"
+            f" - {len(self.color_variants.all())} color variants"
             # f"{color_variants_str}"
         )
         
@@ -56,7 +56,7 @@ class Variant(models.Model):
     length = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
-        return f"{self.colorVariant.product.name} / {self.colorVariant.colorName} - [Barcode: {self.BarcodeNo}] "
+        return f"{self.colorVariant.product.name} / {self.colorVariant.colorName} - {self.size}"
 
 class Store(models.Model):
     store_name = models.CharField(max_length=255)
@@ -72,7 +72,7 @@ class Inventory(models.Model):
             unique_together = ('store', 'variant')  # Ensures one inventory record per store-product pair
 
     def __str__(self):
-        return f"{self.store} / {self.variant} / Qty: {self.quantity}"
+        return f"{self.store.store_name} / {self.variant} - Qty: {self.quantity}"
 
     def variant_size(self):
         return self.variant.size

@@ -1,217 +1,75 @@
-import requests
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
-import json
-import glob
-import os
-
-NOOS_FOLDER = "noos_products"
+from .models import Product, Inventory, Variant
 
 
-# Function to fetch and store JSON
-def fetch_and_store_json(barcodes):
+def get_inventory_for_variant(request):
+    """
+    Fetch and return inventory details for a specific variant.
+    """
+    variant_id = request.GET.get("variant_id")
+    variant = get_object_or_404(Variant, id=variant_id)
 
-    base_url = "https://apigw.bestseller.com/pds/style/"
-    headers = {"Ocp-Apim-Subscription-Key": "0d5c75bf70b244e6a7ab7480f6e39b07"}
+    inventory_data = [
+        {"store": inv.store.store_name, "quantity": inv.quantity}
+        for inv in Inventory.objects.filter(variant=variant)
+    ]
 
-    for barcode in barcodes:
-        if os.path.exists(f"noos_products/product_{barcode}.json"):
-            continue
-
-        api_url = f"{base_url}{barcode}"
-        try:
-            response = requests.get(api_url, headers=headers)
-            response.raise_for_status()  # Raise an exception for HTTP errors
-
-            file_path = os.path.join(NOOS_FOLDER, f"product_{barcode}.json")
-
-            # Save each product's data in a separate file
-            with open(file_path, "w") as file:
-                json.dump(response.json(), file, indent=4)
-        except requests.RequestException as e:
-            print(f"Error fetching data for barcode {barcode}: {e}")
+    return JsonResponse({"variant_id": variant_id, "inventory": inventory_data})
 
 
-def extract_image_urls(data, urls):
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if key == "images" and isinstance(value, list):
-                for image in value:
-                    if isinstance(image, dict) and "urls" in image:
-                        urls.append(image["urls"][0]["url"])
-            else:
-                extract_image_urls(value, urls)
-    elif isinstance(data, list):
-        for item in data:
-            extract_image_urls(item, urls)
+def noos_view(request):
+    """
+    View for displaying all NOOS products with their names and images.
+    """
+    products = Product.objects.all()
+    product_data = [
+        {
+            "name": product.name,
+            "image_url": (
+                product.color_variants.first().image_urls[0]
+                if product.color_variants.exists()
+                and product.color_variants.first().image_urls
+                else ""
+            ),
+        }
+        for product in products
+    ]
+    return render(request, "noos/noos.html", {"products": product_data})
 
 
-def noos(request):
-    barcodes = list(
-        set(
-            [
-                "12230334",
-                "12242998",
-                "12136795",
-                "12242690",
-                "12152757",
-                "12118114",
-                "12263507",
-                "12254346",
-                "12206024",
-                "12066296",
-                "12059471",
-                "12022977",
-                "12269002",
-                "12248067",
-                "12111773",
-                "12075392",
-                "12248070",
-                "12266069",
-                "12262858",
-                "12203642",
-                "12240477",
-                "12150724",
-                "12217091",
-                "12236089",
-                "12209663",
-                "12133074",
-                "12147024",
-                "12148275",
-                "12259815",
-                "12248551",
-                "12168656",
-                "12263530",
-                "12263335",
-                "12261690",
-                "12111026",
-                "12113450",
-                "12278009",
-                "12216664",
-                "12193754",
-                "12139912",
-                "12141844",
-                "12258150",
-                "12193553",
-                "12260907",
-                "12150148",
-                "12150160",
-                "12150158",
-                "12159954",
-                "12200751",
-                "12138115",
-                "12227385",
-                "12260628",
-                "12182486",
-                "12248409",
-                "12266046",
-                "12192150",
-                "12097662",
-                "12208157",
-                "12259944",
-                "12267470",
-                "12259945",
-                "12210830",
-                "12270279",
-                "12208364",
-                "12189339",
-                "12157417",
-                "12157321",
-                "12259666",
-                "12259664",
-                "12257479",
-                "12265328",
-                "12239460",
-                "12268183",
-                "12257492",
-                "12265298",
-                "12265315",
-                "12182461",
-                "12268609",
-                "12258672",
-                "12259449",
-                "12259393",
-                "12259459",
-                "12260481",
-                "12156101",
-                "12254412",
-                "12205777",
-                "12113648",
-                "12059220",
-                "12200404",
-                "12258848",
-                "12156102",
-                "12241611",
-                "12251180",
-                "12074784",
-            ]
-        )
-    )  # JJ NOOS barcodes
-    fetch_and_store_json(barcodes)
+def noos_info_view(request):
+    """
+    View for displaying product details such as color variants, sizes, and inventory.
+    """
+    product_name = request.GET.get("product")
+    product = get_object_or_404(Product, name=product_name)
 
-    search_query = request.GET.get("search", "")
-    products = []
+    color_variants = [
+        {
+            "color_name": color_variant.colorName,
+            "color_code": color_variant.colorCode,
+            "images": color_variant.image_urls,
+        }
+        for color_variant in product.color_variants.all()
+    ]
 
-    for product_data in load_all_products():
-        product_name = product_data.get("name", "").lower()
-        product_number = str(product_data.get("number", ""))
-        if search_query in product_name or search_query in product_number:
-            image_urls = []
-            extract_image_urls(product_data, image_urls)
-            if image_urls:
-                products.append(
-                    {
-                        "name": product_data.get("name"),
-                        "image_url": image_urls[0],
-                        "id": product_data.get("id"),
-                    }
-                )
+    sizes = {}
+    for variant in product.color_variants.prefetch_related("variants").all():
+        for v in variant.variants.all():
+            inventory = Inventory.objects.filter(variant=v)
+            locations = {inv.store.store_name: inv.quantity for inv in inventory}
+            if v.size not in sizes:
+                sizes[v.size] = {}
+            sizes[v.size].update(locations)
 
-    return render(request, "noos/noos.html", {"products": products})
+    data = {
+        "name": product.name,
+        "image_urls": [url for color in color_variants for url in color["images"]],
+        "colors": {
+            color["color_name"]: color["color_code"] for color in color_variants
+        },
+        "sizes": sizes,
+    }
 
-
-def load_all_products():
-    products = []
-    for file_path in glob.glob(
-        "noos_products/product_*.json"
-    ):  # Match all product files
-        try:
-            with open(file_path, "r") as file:
-                product_data = json.load(file)
-                products.append(product_data)
-        except (json.JSONDecodeError, FileNotFoundError) as e:
-            print(f"Error reading or parsing file {file_path}: {e}")
-    return products
-
-
-def noos_info(request):
-    product_name = request.GET.get("product", None)
-    if not product_name:
-        return JsonResponse({"error": "No product specified"}, status=400)
-
-    for product_data in load_all_products():
-        if product_data.get("name") == product_name:
-            image_urls = []
-            extract_image_urls(product_data, image_urls)
-
-            # Example data (replace with actual product data structure)
-            locations = {"Reykjavik": 15, "Akureyri": 7, "Selfoss": 10}
-            colors = product_data.get("colors", {"Red": "#FF0000", "Blue": "#0000FF"})
-            sizes = product_data.get("sizes", ["S", "M", "L", "XL"])
-
-            # Create a dictionary with the same locations for each size
-            sizes_with_locations = {size: locations for size in sizes}
-
-            return render(
-                request,
-                "noos/noos-info.html",
-                {
-                    "name": product_data.get("name"),
-                    "image_urls": image_urls,
-                    "locations": locations,
-                    "colors": colors,
-                    "sizes": sizes_with_locations,  # Pass sizes with locations
-                },
-            )
-
-    return JsonResponse({"error": "Product not found"}, status=404)
+    return render(request, "noos/noos-info.html", data)

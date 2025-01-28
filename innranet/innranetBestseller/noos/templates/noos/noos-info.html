@@ -9,13 +9,16 @@
             padding: 0;
             background-color: #f9f9f9;
             height: 100vh; /* Ensure the body takes the full height of the viewport */
+            overflow: hidden; /* Prevent overflow */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .product-info-container {
-            width: 100%; /* Set width to 100% */
+            width: 100%;
+            
+            margin: 20px auto;
             height: 100%;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -179,21 +182,24 @@
             <!-- Product Name -->
             <h1>{{ name }}</h1>
 
-            <!-- Color Variants -->
-            <div class="product-section">
-                <h2>Color Variants:</h2>
-                <ul>
-                    {% for color, hex in colors.items %}
-                    <li>
-                        <button class="color-button" style="background-color: {{ hex }}" title="{{ color }}">{{ color }}</button>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
+<!-- Color Variants -->
+<div class="product-section">
+    <h2>Color Variants:</h2>
+    <ul>
+        {% for color, hex in colors.items %}
+        <li>
+            <button class="color-button" style="background-color: {{ hex }}" title="{{ color }}" onclick="showInventory('{{ color }}')">
+                {{ color }}
+            </button>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
             <!-- Sizes and Locations -->
             <div class="product-section">
                 <h2>Sizes and Locations:</h2>
+                <div id="inventory-details"></div>
                 <div>
                     {% for size, locations in sizes.items %}
                         <div class="size-box">
@@ -234,6 +240,24 @@
                 images[0].classList.add('active');
             }
         };
+    </script>
+    <script>
+        function showInventory(color) {
+            fetch(`/get-variant-inventory/?variant_id=${encodeURIComponent(color)}`)
+                .then(response => response.json())
+                .then(data => {
+                    const inventoryDetails = document.getElementById("inventory-details");
+                    if (data.inventory && data.inventory.length > 0) {
+                        const inventoryHtml = data.inventory
+                            .map(inv => `<p>${inv.store}: ${inv.quantity}</p>`)
+                            .join("");
+                        inventoryDetails.innerHTML = inventoryHtml;
+                    } else {
+                        inventoryDetails.innerHTML = "<p>No inventory available.</p>";
+                    }
+                })
+                .catch(error => console.error("Error fetching inventory:", error));
+        }
     </script>
 </body>
 </html>
